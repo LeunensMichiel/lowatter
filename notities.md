@@ -53,13 +53,15 @@ Heeft uw gebouw een Legionella probleem? Denkt u dat we iets voor u kunnen betek
     * Fysiek adres
     * Link naar linkedin
 
+## Overig
+
 - Nederlands en Engels
 - Footers
 - Domeinnaam
 - Naam
 - Geen dark themed site
 - Kleurenschema is Zwart-Wit-Groen, kleurenschema gaat nog veranderen
-- Fonts: staat nog open
+- Fonts: staat nog open, in de aard van Oswald.
 - Vaste navigatie, geen mobile
 - Ze gaan mij een lijst doorsturen voor Search Optimization
 - Footer vrij basic met linked in, copyright, Logo, minimaal contact
