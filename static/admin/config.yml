@@ -1,0 +1,27 @@
+backend:
+    name: git-gateway
+    branch: temp
+  
+  media_folder: static/img
+  public_folder: /img
+  
+  site_url: https://lowatter.com
+  logo_url: https://lowatter.com/uploads/logo.svg
+  
+  publish_mode: editorial_workflow
+
+  local_backend: true
+
+  collections:
+    - label: "Paginas"
+    name: "pages"
+    editor:
+      preview: true
+    files:
+      - label: "Hoofdpagina"
+        name: "landingpage"
+        media_folder: ""
+        public_folder: ""
+        file: "src/markdown/pages/landing.md"
+        fields:
+          
