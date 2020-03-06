@@ -1,17 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Navbar from "./navigation/navbar"
+
+import "../stylesheets/style.scss"
+
 const Layout = ({ children }) => {
   return (
-    <>
-      <div style={{ width: "90vw", margin: "0 auto" }}>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built by
-          <a href="https://www.leunesmedia.com"> Leunes Media</a>
-        </footer>
-      </div>
-    </>
+    <div className="wrapper">
+      <Navbar />
+      <main>{children}</main>
+    </div>
   )
 }
 

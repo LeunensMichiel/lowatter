@@ -1,0 +1,36 @@
+$black: #2d302d;
+$darkAccent: #164449;
+$white: #fafaff;
+$accent: #4bb98b;
+$accent2: #4dd996;
+$secondaryBlack: #616765;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper,
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns:
+    minmax(60px, 1fr)
+    repeat(6, minmax(50px, 190px))
+    minmax(60px, 1fr);
+}
+
+a {
+  color: $black;
+  text-decoration: inherit;
+}
