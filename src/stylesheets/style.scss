@@ -19,6 +19,8 @@ body,
   height: 100%;
   width: 100%;
   overflow: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 main {
@@ -28,8 +30,8 @@ main {
     minmax(60px, 1fr)
     repeat(6, minmax(50px, 190px))
     minmax(60px, 1fr);
+  align-content: start;
 }
-
 a {
   color: $black;
   text-decoration: inherit;
