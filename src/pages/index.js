@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { Global, css } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
@@ -19,6 +20,8 @@ import Blob2 from "../images/svg/blobs/blob2.inline.svg"
 import Blob3 from "../images/svg/blobs/blob3.inline.svg"
 import Blob4 from "../images/svg/blobs/blob4.inline.svg"
 import Blob5 from "../images/svg/blobs/blob5.inline.svg"
+import SmolDots from "../images/svg/dots/dots-smol.inline.svg"
+import BigDots from "../images/svg/dots/dots-large.inline.svg"
 
 const LandingText = styled.div`
   grid-column: 2 / span 3;
@@ -41,7 +44,7 @@ const Waves = styled.div`
   background-position: 50% 100%;
   z-index: 1;
   position: relative;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 `
 
 const UpperWave = styled.div`
@@ -65,6 +68,12 @@ const LegionellaContainer = styled.div`
     position: absolute;
     right: 0;
   }
+`
+
+const LegionellaSip = styled.div`
+  grid-column: 4 / span 2;
+  position: relative;
+  margin-bottom: 10rem;
 `
 
 const BlobRow = styled.div`
@@ -118,7 +127,7 @@ const BlobPicture = styled.div`
     background: ${colors.gradient};
     opacity: .20;
     z-index: 8;
-}
+  }
   `
 
 const ContactUs = styled.div`
@@ -135,7 +144,6 @@ const ContactUs = styled.div`
   background-size: 100% 100%;
   background-position: 50% 50%;
   text-align: center;
-
   h1 {
     color: ${colors.white};
     width: 100%;
@@ -149,11 +157,29 @@ const ContactUs = styled.div`
   }
 `
 
+const DotStyle = css`
+  grid-column: 1;
+  height: 100%;
+  max-height: 450px;
+
+  &.bigdots {
+    grid-column: 8;
+    justify-self: end;
+  }
+`
+
 const IndexPage = ({ data }) => {
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
   const intl = useIntl()
   return (
     <Layout>
+      <Global
+        styles={css`
+          .globalfooter {
+            background-color: ${colors.black};
+          }
+        `}
+      />
       <SEO title="Home" description="Homepage of LoWatter" lang={intl.locale} />
       <LandingText>
         <h1>{"Controlling Legionella\nin tapwater"}</h1>
@@ -177,31 +203,36 @@ const IndexPage = ({ data }) => {
         </LegionellaContainer>
         <UpperWave />
       </Waves>
+      <LegionellaSip>
+        <Legionella width={115} height={32} rotate={21} top={0} right={0} />
+      </LegionellaSip>
       {data.landing.frontmatter.blobitems
         .filter(blob => blob.lang === intl.locale)
         .map((blob, index) => (
-          <BlobRow id={`about${index}`} key={blob.title} even={index % 2}>
-            <InfoBlobText even={index % 2}>
-              <h2>{blob.title}</h2>
-              <p>{blob.description}</p>
-            </InfoBlobText>
-            <InfoBlob>
-              {blobs[index % 5]}
-              <BlobPicture index={index % 5}>
-                <Img
-                  fluid={blob.image.childImageSharp.fluid}
-                  objectFit="cover"
-                  objectPosition="50% 50%"
-                  alt={blob.description}
-                  title={blob.title}
-                  style={{ position: "static" }}
-                />
-              </BlobPicture>
-            </InfoBlob>
-          </BlobRow>
+          <>
+            <BlobRow id={`about${index}`} key={blob.title} even={index % 2}>
+              <InfoBlobText even={index % 2}>
+                <h2>{blob.title}</h2>
+                <p>{blob.description}</p>
+              </InfoBlobText>
+              <InfoBlob>
+                {blobs[index % 5]}
+                <BlobPicture index={index % 5}>
+                  <Img
+                    fluid={blob.image.childImageSharp.fluid}
+                    objectFit="cover"
+                    objectPosition="50% 50%"
+                    alt={blob.description}
+                    title={blob.title}
+                    style={{ position: "static" }}
+                  />
+                </BlobPicture>
+              </InfoBlob>
+            </BlobRow>
+            {index % 5 === 1 && <BigDots className="bigdots" css={DotStyle} />}
+            {index % 5 === 2 && <SmolDots css={DotStyle} />}
+          </>
         ))}
-      {/* dont forget to add small legionella thingie */}
-      {/* <Legionella width={181} height={59} rotate={24} top={0} right={360} /> */}
       <ContactUs>
         <h1>Wat kunnen we betekenen voor u?</h1>
         <p>

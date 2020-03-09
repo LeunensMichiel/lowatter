@@ -99,6 +99,16 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-lodash`,
     {
+      resolve: `gatsby-plugin-fixhash`,
+      options: {
+        offsetY: 20, // number, optional offset
+        scrollToOptions: {
+          // see: https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions
+          behavior: `smooth`,
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {

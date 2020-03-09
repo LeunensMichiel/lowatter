@@ -8,7 +8,7 @@ import colors from "../framework/colors"
 import Logo from "../../images/svg/logo.inline.svg"
 import wave from "../../images/svg/waves/navwave.svg"
 
-const NavigationBarContainer = styled.div`
+const NavigationBarContainer = styled.header`
   width: 100%;
   background-image: url(${wave});
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ const NavigationBarContainer = styled.div`
   padding: 1.5rem 0;
 `
 
-const NavigationBar = styled.div`
+const NavigationBar = styled.nav`
   display: flex;
   align-items: center;
   width: 100%;
@@ -35,13 +35,6 @@ const NavigationItems = styled.div`
 const NavigationItem = styled(Link)`
   margin: 1rem;
   font-size: 1.25rem;
-  transition: color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-  -webkit-backface-visibility: hidden;
-
-  &:hover,
-  &:focus {
-    color: ${colors.accent};
-  }
 `
 
 const Navbar = props => {
