@@ -48,3 +48,11 @@ h2 {
   text-transform: uppercase;
   line-height: inherit;
 }
+
+.stop-color {
+  stop-color: $accent;
+}
+
+.alt-color {
+  stop-color: $accent2;
+}

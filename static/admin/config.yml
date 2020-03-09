@@ -1,19 +1,19 @@
 backend:
-    name: git-gateway
-    branch: temp
-  
-  media_folder: static/img
-  public_folder: /img
-  
-  site_url: https://lowatter.com
-  logo_url: https://lowatter.com/uploads/logo.svg
-  
-  publish_mode: editorial_workflow
+  name: git-gateway
+  branch: temp
 
-  local_backend: true
+media_folder: static/uploads
+public_folder: /uploads
 
-  collections:
-    - label: "Paginas"
+site_url: https://lowatter.com
+logo_url: https://lowatter.com/uploads/logo.svg
+
+publish_mode: editorial_workflow
+
+local_backend: true
+
+collections:
+  - label: "Paginas"
     name: "pages"
     editor:
       preview: true
@@ -24,4 +24,29 @@ backend:
         public_folder: ""
         file: "src/markdown/pages/landing.md"
         fields:
-          
+          - label: "InfoBlobs"
+            hint: "De blobs, ofwel groene bollen, op je hoofdpagina. Elke blob heeft een Titel, beschrijving en afbeelding."
+            name: "blobitems"
+            widget: "list"
+            fields:
+              - {
+                  label: Titel van Blob,
+                  name: title,
+                  widget: string,
+                  hint: "Titel van een blob op je pagina, bvb 'Wie zijn we'",
+                }
+              - { label: "Beschrijving van Blob", name: "description", widget: "text" }
+              - label: "Afbeelding van Blob"
+                name: "image"
+                widget: "image"
+                hint: "Afbeelding van een blob op je pagina, bvb de afbeelding naast: 'Wie zijn we'. Probeer de afbeelding altijd zo klein mogelijk te houden! Maximum grootte: 650kb"
+                media_library:
+                  config:
+                    max_file_size: 650000
+                    multiple: false
+              - label: "Taal"
+                name: "lang"
+                widget: "select"
+                options:
+                  - { label: "Nederlands", value: "nl" }
+                  - { label: "English", value: "en" }

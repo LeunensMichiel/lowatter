@@ -1,0 +1,12 @@
+<svg width="479" height="439" viewBox="0 0 479 439" fill="none" xmlns="http://www.w3.org/2000/svg">
+<clipPath clipPathUnits="objectBoundingBox" id="clippie5">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.411,0.013 C0.574,-0.007,0.757,-0.019,0.87,0.097 C0.992,0.222,1,0.422,0.967,0.581 C0.905,0.722,0.71,0.711,0.57,0.781 C0.423,0.854,0.302,1,0.151,0.988 C-0.002,0.925,0.02,0.709,0.005,0.548 C-0.007,0.422,-0.002,0.295,0.075,0.194 C0.156,0.088,0.278,0.029,0.411,0.013" fill="url(#paint0_linear)"/>
+</clipPath>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M196.968 5.50047C274.817 -3.11368 362.461 -8.17625 416.773 42.6366C475.191 97.292 496.577 185.009 463.199 254.581C433.569 316.342 339.929 311.607 273.135 342.031C202.797 374.069 144.893 460.111 72.1768 432.686C-0.824898 405.154 9.70984 310.691 2.35056 239.905C-3.38714 184.717 -0.890812 129.208 36.0054 84.7692C74.485 38.4229 133.068 12.5711 196.968 5.50047Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="-1.78319e-06" y1="219.001" x2="452.487" y2="328.53" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4BB98B"/>
+<stop offset="1" stop-color="#4DD996"/>
+</linearGradient>
+</defs>
+</svg>
