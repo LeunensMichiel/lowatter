@@ -12,6 +12,7 @@ import Legionella from "../components/framework/legionella"
 
 import wave from "../images/svg/waves/bottomwaves.svg"
 import upperwave from "../images/svg/waves/bottomwaveUpper.svg"
+import contactwave from "../images/svg/waves/contactus.svg"
 import Water from "../images/svg/waves/waterstream.inline.svg"
 import Blob1 from "../images/svg/blobs/blob1.inline.svg"
 import Blob2 from "../images/svg/blobs/blob2.inline.svg"
@@ -120,7 +121,35 @@ const BlobPicture = styled.div`
 }
   `
 
-const IndexPage = ({ location, data }) => {
+const ContactUs = styled.div`
+  height: 100%;
+  min-height: 800px;
+  min-height: 90vh;
+  grid-column: 1 / span 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(${contactwave});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  text-align: center;
+
+  h1 {
+    color: ${colors.white};
+    width: 100%;
+    max-width: 750px;
+  }
+  p {
+    color: ${colors.darkAccent};
+    width: 100%;
+    max-width: 750px;
+    margin-bottom: 4rem;
+  }
+`
+
+const IndexPage = ({ data }) => {
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
   const intl = useIntl()
   return (
@@ -128,11 +157,8 @@ const IndexPage = ({ location, data }) => {
       <SEO title="Home" description="Homepage of LoWatter" lang={intl.locale} />
       <LandingText>
         <h1>{"Controlling Legionella\nin tapwater"}</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, et tincidunt
-          rutrum dui suspendisse.
-        </p>
-        <Button link={`${location.pathname}#about0`} text="Learn more" />
+        <p>Site is nog in opbouw.</p>
+        <Button link="#about0" text="Learn more" />
         <Button left={1} link="/contact/" text="Contact us" accent />
       </LandingText>
       <Waves>
@@ -176,6 +202,15 @@ const IndexPage = ({ location, data }) => {
         ))}
       {/* dont forget to add small legionella thingie */}
       {/* <Legionella width={181} height={59} rotate={24} top={0} right={360} /> */}
+      <ContactUs>
+        <h1>Wat kunnen we betekenen voor u?</h1>
+        <p>
+          Heeft uw gebouw een Legionella probleem? Denkt u dat we iets voor u kunnen
+          betekenen of wenst u meer informatie, contacteer ons gerust voor een verkennend
+          gesprek. Elke vraag wordt vertrouwelijk behandeld.
+        </p>
+        <Button left={1} link="/contact/" text="Contacteer ons" accent />
+      </ContactUs>
     </Layout>
   )
 }
