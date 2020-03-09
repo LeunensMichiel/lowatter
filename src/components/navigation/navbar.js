@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
 

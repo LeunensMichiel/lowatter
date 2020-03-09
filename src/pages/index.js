@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
+import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
@@ -77,7 +78,6 @@ const BlobRow = styled.div`
 
 const InfoBlobText = styled.div`
   flex-basis: 40%;
-  /* padding: 0 2rem; */
   text-align: ${props => (props.even ? "right" : "left")};
 `
 
@@ -96,7 +96,6 @@ const InfoBlob = styled.div`
     z-index: 4;
   }
 `
-
 const BlobPicture = styled.div`
   height: 100%;
   width: 100%;
@@ -108,63 +107,78 @@ const BlobPicture = styled.div`
   .gatsby-image-wrapper {
     max-height: 400px;
   }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: ${colors.gradient};
+    opacity: .20;
+    z-index: 8;
+}
   `
 
-const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
-
-const IndexPage = ({ location, data }) => (
-  <Layout>
-    <SEO title="Home" description="Homepage of LoWatter" />
-    <LandingText>
-      <h1>{"Controlling Legionella\nin tapwater"}</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, et tincidunt rutrum
-        dui suspendisse.
-      </p>
-      <Button link={`${location.pathname}#about0`} text="Learn more" />
-      <Button left={1} link="/contact/" text="Contact us" accent />
-    </LandingText>
-    <Waves>
-      <LegionellaContainer>
-        <Water className="water" />
-        <Legionella width={135} height={53} rotate={-13} top={380} right={400} />
-        <Legionella width={190} height={72} rotate={-30} top={390} right={320} />
-        <Legionella width={220} height={84} rotate={-36} top={200} right={-50} />
-        <Legionella width={206} height={83} rotate={-50} top={480} right={50} />
-        <Legionella width={162} height={51} rotate={-56} top={200} right={150} />
-        <Legionella width={168} height={49} rotate={-53} top={400} right={530} />
-        <Legionella width={123} height={55} rotate={-23} top={600} right={570} />
-        <Legionella width={165} height={74} rotate={-41} top={570} right={650} />
-        <Legionella width={125} height={45} rotate={-34} top={570} right={350} />
-        <Legionella width={181} height={59} rotate={24} top={560} right={360} />
-      </LegionellaContainer>
-      <UpperWave />
-    </Waves>
-    {data.landing.frontmatter.blobitems.map((blob, index) => (
-      <BlobRow id={`about${index}`} key={blob.title} even={index % 2}>
-        <InfoBlobText even={index % 2}>
-          <h2>{blob.title}</h2>
-          <p>{blob.description}</p>
-        </InfoBlobText>
-        <InfoBlob>
-          {blobs[index % 5]}
-          <BlobPicture index={index % 5}>
-            <Img
-              fluid={blob.image.childImageSharp.fluid}
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt={blob.description}
-              title={blob.title}
-              style={{ position: "static" }}
-            />
-          </BlobPicture>
-        </InfoBlob>
-      </BlobRow>
-    ))}
-    {/* dont forget to add small legionella thingie */}
-    {/* <Legionella width={181} height={59} rotate={24} top={0} right={360} /> */}
-  </Layout>
-)
+const IndexPage = ({ location, data }) => {
+  const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
+  const intl = useIntl()
+  return (
+    <Layout>
+      <SEO title="Home" description="Homepage of LoWatter" lang={intl.locale} />
+      <LandingText>
+        <h1>{"Controlling Legionella\nin tapwater"}</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, et tincidunt
+          rutrum dui suspendisse.
+        </p>
+        <Button link={`${location.pathname}#about0`} text="Learn more" />
+        <Button left={1} link="/contact/" text="Contact us" accent />
+      </LandingText>
+      <Waves>
+        <LegionellaContainer>
+          <Water className="water" />
+          <Legionella width={135} height={53} rotate={-13} top={380} right={400} />
+          <Legionella width={190} height={72} rotate={-30} top={390} right={320} />
+          <Legionella width={220} height={84} rotate={-36} top={200} right={-50} />
+          <Legionella width={206} height={83} rotate={-50} top={480} right={50} />
+          <Legionella width={162} height={51} rotate={-56} top={200} right={150} />
+          <Legionella width={168} height={49} rotate={-53} top={400} right={530} />
+          <Legionella width={123} height={55} rotate={-23} top={600} right={570} />
+          <Legionella width={165} height={74} rotate={-41} top={570} right={650} />
+          <Legionella width={125} height={45} rotate={-34} top={570} right={350} />
+          <Legionella width={181} height={59} rotate={24} top={560} right={360} />
+        </LegionellaContainer>
+        <UpperWave />
+      </Waves>
+      {data.landing.frontmatter.blobitems
+        .filter(blob => blob.lang === intl.locale)
+        .map((blob, index) => (
+          <BlobRow id={`about${index}`} key={blob.title} even={index % 2}>
+            <InfoBlobText even={index % 2}>
+              <h2>{blob.title}</h2>
+              <p>{blob.description}</p>
+            </InfoBlobText>
+            <InfoBlob>
+              {blobs[index % 5]}
+              <BlobPicture index={index % 5}>
+                <Img
+                  fluid={blob.image.childImageSharp.fluid}
+                  objectFit="cover"
+                  objectPosition="50% 50%"
+                  alt={blob.description}
+                  title={blob.title}
+                  style={{ position: "static" }}
+                />
+              </BlobPicture>
+            </InfoBlob>
+          </BlobRow>
+        ))}
+      {/* dont forget to add small legionella thingie */}
+      {/* <Legionella width={181} height={59} rotate={24} top={0} right={360} /> */}
+    </Layout>
+  )
+}
 
 export default IndexPage
 

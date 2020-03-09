@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-intl"
 import styled from "@emotion/styled"
 
 import colors from "../framework/colors"
@@ -25,12 +25,7 @@ const Button = ({
     <>
       {!external ? (
         //Gatsby Link
-        <ButtonWrapper
-          right={right}
-          left={left}
-          accent={accent ? 1 : 0}
-          to={link}
-        >
+        <ButtonWrapper right={right} left={left} accent={accent ? 1 : 0} to={link}>
           {text}
         </ButtonWrapper>
       ) : (
