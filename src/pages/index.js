@@ -132,8 +132,8 @@ const BlobPicture = styled.div`
 
 const ContactUs = styled.div`
   height: 100%;
-  min-height: 800px;
-  min-height: 90vh;
+  min-height: 900px;
+  min-height: 95vh;
   grid-column: 1 / span 8;
   display: flex;
   flex-direction: column;

@@ -73,7 +73,7 @@ module.exports = {
         background_color: `#4DD996`,
         theme_color: `#4DD996`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/favicon.png`,
         localize: [
           {
             start_url: `/en/`,

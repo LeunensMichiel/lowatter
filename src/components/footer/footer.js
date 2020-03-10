@@ -114,9 +114,8 @@ const LogoContainer = styled.div`
     display: flex;
   }
   svg {
-    transition: fill 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     fill: ${colors.white} !important;
-    -webkit-backface-visibility: hidden;
+    transition: fill 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     &:hover,
     &:focus {
       fill: ${colors.accent2} !important;

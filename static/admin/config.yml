@@ -67,3 +67,60 @@ collections:
                 options:
                   - { label: "Nederlands", value: "nl" }
                   - { label: "English", value: "en" }
+      - label: "TeamPagina"
+        name: "teampage"
+        media_folder: ""
+        public_folder: ""
+        file: "src/markdown/pages/team.md"
+        fields:
+          - label: "Team Kaarten"
+            hint: "De Teamkaarten. Elk kaartje bevat een afbeelding, naam, functietitel, onderliggende functies, en linkedin link. Ernaast staat een zelfgeschreven biografie. Als laatste is er een taal-attribuut"
+            name: "teamcards"
+            identifier_field: number
+            widget: "list"
+            fields:
+              - label: "ID van persoon"
+                name: "number"
+                hint: "Dit moet uniek zijn per kaart per persoon!! Dit moet tijdelijk. Dus stel dat je 2 kaartjes voor Elisa hebt (voor 2 talen), moet dit telkens een uniek nummer zijn."
+                widget: "number"
+                valueType: "int"
+              - label: "Taal"
+                name: "lang"
+                widget: "select"
+                options:
+                  - { label: "Nederlands", value: "nl" }
+                  - { label: "English", value: "en" }
+              - { label: Naam, name: name, widget: string, hint: "Naam van de persoon" }
+              - {
+                  label: Ondertitel,
+                  name: subtitle,
+                  widget: string,
+                  hint: "Titel van de persoon",
+                }
+              - {
+                  label: "Persoonsbeschrijving",
+                  name: "description",
+                  widget: "text",
+                  hint: "Beschrijving van een persoon.",
+                }
+              - label: "Profielfoto"
+                name: "image"
+                widget: "image"
+                hint: "Maximum grootte: 650kb"
+                media_library:
+                  config:
+                    max_file_size: 650000
+                    multiple: false
+              - {
+                  label: LinkedIn URL,
+                  name: linkedIn,
+                  widget: string,
+                  hint: "Url van LinkedIn Profiel",
+                }
+              - {
+                  label: "Biografie",
+                  name: "bio",
+                  widget: "markdown",
+                  buttons:
+                    ["bold", "italic", "link", "quote", "bulleted-list", "numbered-list"],
+                }

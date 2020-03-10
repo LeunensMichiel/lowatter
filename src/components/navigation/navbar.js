@@ -35,6 +35,10 @@ const NavigationItems = styled.div`
 const NavigationItem = styled(Link)`
   margin: 1rem;
   font-size: 1.25rem;
+
+  &.active {
+    color: ${colors.accent2};
+  }
 `
 
 const Navbar = props => {
@@ -45,11 +49,21 @@ const Navbar = props => {
           <Logo css={{ width: "145px" }} />
         </Link>
         <NavigationItems>
-          <NavigationItem to="/team/">Our Team</NavigationItem>
-          <NavigationItem to="/story/">Our Story</NavigationItem>
-          <NavigationItem to="/products/">Our Products</NavigationItem>
-          <NavigationItem to="/consultancy/">Our Consultancy</NavigationItem>
-          <NavigationItem to="/contact/">Contact Us</NavigationItem>
+          <NavigationItem activeClassName="active" to="/team/">
+            Our Team
+          </NavigationItem>
+          <NavigationItem activeClassName="active" to="/story/">
+            Our Story
+          </NavigationItem>
+          <NavigationItem activeClassName="active" to="/products/">
+            Our Products
+          </NavigationItem>
+          <NavigationItem activeClassName="active" to="/consultancy/">
+            Our Consultancy
+          </NavigationItem>
+          <NavigationItem activeClassName="active" to="/contact/">
+            Contact Us
+          </NavigationItem>
         </NavigationItems>
       </NavigationBar>
     </NavigationBarContainer>

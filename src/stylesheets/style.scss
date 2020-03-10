@@ -11,6 +11,10 @@ $secondaryBlack: #616765;
   padding: 0;
 }
 
+html {
+  background: $white;
+}
+
 html,
 body,
 #___gatsby,
@@ -28,16 +32,15 @@ main {
   min-height: 80%;
   display: grid;
   grid-template-columns:
-    minmax(60px, 1fr)
-    repeat(6, minmax(50px, 190px))
-    minmax(60px, 1fr);
+    minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(60px, 1fr);
   align-content: start;
 }
+
 a {
   color: $black;
   text-decoration: inherit;
+  transition: color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 
-  transition: color 0.2s cubic-bezier(0.19, 1, 0.22, 1);
   &:hover,
   &:focus {
     color: $accent2;
@@ -48,12 +51,30 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   line-height: inherit;
+  font-style: normal;
 }
 
 h2 {
   font-size: 2.25rem;
   text-transform: uppercase;
   line-height: inherit;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: inherit;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: inherit;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .stop-color {
