@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import { Link } from "gatsby-plugin-intl"
+import { IntlContextConsumer, changeLocale, Link } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
 
@@ -77,6 +77,7 @@ const SubFooter = styled.div`
   > a {
     text-decoration: underline;
     margin-right: 0.875rem;
+    cursor: pointer;
   }
   span {
     margin-left: auto;
@@ -159,8 +160,15 @@ const Footer = () => {
       <hr />
       <SubFooter>
         <Link>Terms and Conditions</Link>
-        <Link>en</Link>
-        <Link>nl</Link>
+        <IntlContextConsumer>
+          {({ languages }) =>
+            languages.map(language => (
+              <a key={language} onClick={() => changeLocale(language)}>
+                {language}
+              </a>
+            ))
+          }
+        </IntlContextConsumer>
         <Link>Sitemap</Link>
         <span>
           <sup>© </sup>LOWATTER 2019 | All Rights Reserved. Designed and developed by{" "}
