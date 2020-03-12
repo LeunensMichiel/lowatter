@@ -4,14 +4,22 @@ import styled from "@emotion/styled"
 
 import colors from "../framework/colors"
 
-const ButtonWrapper = styled(Link)`
+const LinkWrapper = styled(Link)`
   background: ${props => (props.accent ? colors.darkAccent : colors.gradient)};
   border-radius: 140px;
   padding: 0.875rem 3rem;
   color: ${colors.white};
   margin-right: ${props => `${props.right}rem`};
   margin-left: ${props => `${props.left}rem`};
+  text-align: center;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: ${props => (props.accent ? colors.accent2 : colors.darkAccent)};
+  }
 `
+const ButtonWrapper = LinkWrapper.withComponent("button")
 
 const Button = ({
   text = "Button",
@@ -20,17 +28,29 @@ const Button = ({
   accent = false,
   left = 0,
   right = 0,
+  submit = false,
 }) => {
   return (
     <>
-      {!external ? (
-        //Gatsby Link
-        <ButtonWrapper right={right} left={left} accent={accent ? 1 : 0} to={link}>
+      {submit ? (
+        //Submit button
+        <ButtonWrapper
+          as="button"
+          type="submit"
+          right={right}
+          left={left}
+          accent={accent ? 1 : 0}
+        >
           {text}
         </ButtonWrapper>
+      ) : !external ? (
+        //Gatsby Link
+        <LinkWrapper right={right} left={left} accent={accent ? 1 : 0} to={link}>
+          {text}
+        </LinkWrapper>
       ) : (
         //External Link
-        <ButtonWrapper
+        <LinkWrapper
           as="a"
           accent={accent ? 1 : 0}
           href={link}
@@ -40,7 +60,7 @@ const Button = ({
           left={left}
         >
           {text}
-        </ButtonWrapper>
+        </LinkWrapper>
       )}
     </>
   )
