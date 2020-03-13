@@ -151,7 +151,7 @@ const Footer = () => {
           </div>
           <div>
             <Link to="/products/">Our Products</Link>
-            <Link to="/consultancy/">Our Consultancy</Link>
+            <Link to="/services/">Our Services</Link>
             <Link to="/contact/">Contact</Link>
           </div>
         </Navigation>

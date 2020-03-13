@@ -58,8 +58,8 @@ const Navbar = props => {
           <NavigationItem activeClassName="active" to="/products/">
             Our Products
           </NavigationItem>
-          <NavigationItem activeClassName="active" to="/consultancy/">
-            Our Consultancy
+          <NavigationItem activeClassName="active" to="/services/">
+            Our Services
           </NavigationItem>
           <NavigationItem activeClassName="active" to="/contact/">
             Contact Us

@@ -124,3 +124,15 @@ collections:
                   buttons:
                     ["bold", "italic", "link", "quote", "bulleted-list", "numbered-list"],
                 }
+  - name: "blog"
+    label: "Blog"
+    folder: "src/markdown/story"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Kleine beschrijving", name: "description", widget: "string" }
+      - { label: "Artikel", name: "body", widget: "markdown" }

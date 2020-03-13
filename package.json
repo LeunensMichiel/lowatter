@@ -39,6 +39,7 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "react-map-gl": "^5.2.3",
+    "react-modal": "^3.11.2",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
   },

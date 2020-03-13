@@ -42,11 +42,11 @@ const Blob = styled(Blob2)`
   }
 `
 
-const ConsultancyPage = ({ data }) => {
+const ServicesPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Consultancy" description="Consultancy and advice of LoWatter." />
+      <SEO title="Our Services" description="Consultancy and advice of LoWatter." />
       <Title>More Info Coming Soon!</Title>'
       <Description>
         LoWatter provides case specific knowledge through consultancy on either
@@ -58,4 +58,4 @@ const ConsultancyPage = ({ data }) => {
     </Layout>
   )
 }
-export default ConsultancyPage
+export default ServicesPage
