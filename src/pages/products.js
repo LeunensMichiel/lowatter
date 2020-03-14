@@ -35,7 +35,7 @@ const ProductPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Our Products" description="Services and products of LoWatter." />
-      <Title>More Info Coming Soon!</Title>'
+      <Title>More Info Coming Soon!</Title>
       <Description>
         With the innovative domestic hot water controller you can lower the energy use,
         cost and infection risk during production, storage and distribution of your

@@ -6,6 +6,7 @@ import Modal from "react-modal"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
+import Story from "../components/story"
 import SEO from "../components/seo"
 
 import Blob1 from "../images/svg/blobs/bgBlob.inline.svg"
@@ -13,6 +14,7 @@ import Blob2 from "../images/svg/blobs/bgBlob2.inline.svg"
 import Blob3 from "../images/svg/blobs/bgBlob3.inline.svg"
 import Blob4 from "../images/svg/blobs/bgBlob4.inline.svg"
 import Blob5 from "../images/svg/blobs/bgBlob5.inline.svg"
+import Cross from "../images/svg/cross.inline.svg"
 
 const TimelineContainer = styled.div`
   grid-column: 2 / span 6;
@@ -126,18 +128,59 @@ const TimelineItemContent = styled.div`
   }
 `
 
+const StyledCross = styled(Cross)`
+  grid-column: 8;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  width: 64px;
+  cursor: pointer;
+  fill: ${colors.white};
+  transition: fill 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:hover,
+  &:focus {
+    fill: ${colors.darkAccent};
+  }
+`
+
 const StoryPage = ({ data }) => {
   const intl = useIntl()
+  const [modalIsOpen, setIsOpen] = useState(false)
+  const [currentStory, setCurrentStory] = useState(0)
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
+
+  const openModal = index => {
+    setIsOpen(true)
+    setCurrentStory(index)
+  }
+  const closeModal = () => {
+    setIsOpen(false)
+  }
 
   return (
     <Layout>
       <SEO title="Our Story" description="The stories of LoWatter" />
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        className="modal"
+        overlayClassName="overlay"
+        appElement={document.getElementById("gatsby-focus-wrapper")}
+        contentLabel={data.stories.edges[currentStory].node.frontmatter.title}
+      >
+        <StyledCross onClick={closeModal} />
+        {data.stories.edges[currentStory] && (
+          <Story story={data.stories.edges[currentStory]} />
+        )}
+      </Modal>
       <TimelineContainer>
         {data.stories.edges.map((story, index) => {
           const date = new Date(story.node.frontmatter.date)
           return (
-            <TimelineItem>
+            <TimelineItem
+              onClick={() => openModal(index)}
+              key={story.node.frontmatter.date}
+            >
               <TimelineItemContent>
                 <h3>{story.node.frontmatter.title}</h3>
                 <small>

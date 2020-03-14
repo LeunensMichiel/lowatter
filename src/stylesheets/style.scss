@@ -4,6 +4,7 @@ $white: #fafaff;
 $accent: #4bb98b;
 $accent2: #4dd996;
 $secondaryBlack: #616765;
+$gradient: linear-gradient(102.48deg, #4bb98b 9.06%, #4dd996 90.94%);
 
 * {
   box-sizing: border-box;
@@ -86,4 +87,25 @@ h4 {
 
 .alt-color {
   stop-color: $accent2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal {
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(
+      60px,
+      1fr
+    );
+  min-height: 100%;
+  background: $gradient;
+  overflow-y: auto;
 }
