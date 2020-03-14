@@ -28,14 +28,32 @@ const LandingText = styled.div`
   grid-column: 2 / span 3;
   white-space: pre-wrap;
   margin: 6.5rem 0;
+  > h1 {
+    max-width: 500px;
+  }
   > p {
-    width: 66%;
+    max-width: 360px;
     margin-bottom: 3rem;
+    color: ${colors.darkAccent};
   }
   z-index: 3;
 
   @media ${screens.mobileM} {
     grid-column: 2 / span 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    > h1 {
+      width: 95%;
+      font-size: 2rem;
+    }
+  }
+  @media ${screens.mobileS} {
+    > h1 {
+      width: 100%;
+      font-size: 1.8rem;
+    }
   }
 `
 
@@ -50,6 +68,11 @@ const Waves = styled.div`
   z-index: 1;
   position: relative;
   margin-bottom: 10rem;
+  @media ${screens.mobileM} {
+    background-size: 100% 200px;
+    height: 200px;
+    margin-bottom: 5rem;
+  }
 `
 
 const UpperWave = styled.div`
@@ -61,6 +84,11 @@ const UpperWave = styled.div`
   position: absolute;
   top: -20px;
   z-index: 10;
+
+  @media ${screens.mobileM} {
+    height: 300px;
+    background-size: 100% 220px;
+  }
 `
 
 const LegionellaContainer = styled.div`
@@ -73,12 +101,22 @@ const LegionellaContainer = styled.div`
     position: absolute;
     right: 0;
   }
+  @media ${screens.mobileM} {
+    top: -200px;
+    .water {
+      top: -200px;
+      width: 50%;
+    }
+  }
 `
 
 const LegionellaSip = styled.div`
   grid-column: 4 / span 2;
   position: relative;
   margin-bottom: 10rem;
+  @media ${screens.mobileM} {
+    margin-bottom: 5rem;
+  }
 `
 
 const BlobRow = styled.div`
@@ -89,11 +127,21 @@ const BlobRow = styled.div`
   flex-direction: ${props => (props.even ? "row-reverse" : "row")};
   margin-bottom: 10rem;
   height: 100%;
+
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
 `
 
-const InfoBlobText = styled.div`
+const InfoBlobText = styled.article`
   flex-basis: 40%;
   text-align: ${props => (props.even ? "right" : "left")};
+  @media ${screens.mobileM} {
+    flex-basis: unset;
+  }
 `
 
 const InfoBlob = styled.div`
@@ -109,6 +157,9 @@ const InfoBlob = styled.div`
     width: 100%;
     transform: rotate(90deg);
     z-index: 4;
+  }
+  @media ${screens.mobileM} {
+    flex-basis: unset;
   }
 `
 const BlobPicture = styled.div`
@@ -135,7 +186,7 @@ const BlobPicture = styled.div`
   }
   `
 
-const ContactUs = styled.div`
+const ContactUs = styled.section`
   height: 100%;
   min-height: 900px;
   min-height: 95vh;
@@ -160,6 +211,14 @@ const ContactUs = styled.div`
     max-width: 750px;
     margin-bottom: 4rem;
   }
+  @media ${screens.mobileM} {
+    padding: 12rem 16px;
+    background-size: 100% 100%;
+    p {
+      text-align: justify;
+      margin-bottom: 2rem;
+    }
+  }
 `
 
 const DotStyle = css`
@@ -170,6 +229,9 @@ const DotStyle = css`
   &.bigdots {
     grid-column: 8;
     justify-self: end;
+  }
+  @media ${screens.mobileM} {
+    display: none;
   }
 `
 
@@ -187,7 +249,7 @@ const IndexPage = ({ data }) => {
       />
       <SEO title="Home" description="Homepage of LoWatter" lang={intl.locale} />
       <LandingText>
-        <h1>{"Controlling Legionella\nin tapwater"}</h1>
+        <h1>{"Controlling Legionella in tapwater"}</h1>
         <p>Site is nog in opbouw.</p>
         <Button link="#about0" text="Learn more" />
         <Button left={1} link="/contact/" text="Contact us" accent />
@@ -245,7 +307,7 @@ const IndexPage = ({ data }) => {
           betekenen of wenst u meer informatie, contacteer ons gerust voor een verkennend
           gesprek. Elke vraag wordt vertrouwelijk behandeld.
         </p>
-        <Button left={1} link="/contact/" text="Contacteer ons" accent />
+        <Button link="/contact/" text="Contacteer ons" accent />
       </ContactUs>
     </Layout>
   )

@@ -3,6 +3,7 @@ import { Link } from "gatsby-plugin-intl"
 import styled from "@emotion/styled"
 
 import colors from "../framework/colors"
+import screens from "../framework/screens"
 
 const LinkWrapper = styled(Link)`
   background: ${props => (props.accent ? colors.darkAccent : colors.gradient)};
@@ -17,6 +18,13 @@ const LinkWrapper = styled(Link)`
   &:hover,
   &:focus {
     color: ${props => (props.accent ? colors.accent2 : colors.darkAccent)};
+  }
+
+  @media ${screens.mobileM} {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: ${props => `${props.right}rem`};
+    margin-top: ${props => `${props.left}rem`};
   }
 `
 const ButtonWrapper = LinkWrapper.withComponent("button")

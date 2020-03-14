@@ -9,15 +9,16 @@ import Logo from "../../images/svg/logo.inline.svg"
 import UGent from "../../images/svg/ugent.inline.svg"
 import LinkedIn from "../../images/svg/linkedin.inline.svg"
 import footerwave from "../../images/svg/waves/footerwave.svg"
+import screens from "../framework/screens"
 
 const FooterContainer = styled.footer`
   margin-top: auto;
   padding-top: 2rem;
-  height: 500px;
-  height: 45vh;
+  min-height: 500px;
+  min-height: 45vh;
   display: grid;
-  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(
-      60px,
+  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
+      16px,
       1fr
     );
   align-content: center;
@@ -34,6 +35,9 @@ const FooterContainer = styled.footer`
     background: ${colors.white};
     margin: 1.25rem 0;
   }
+  @media ${screens.mobileM} {
+    grid-row-gap: 1rem;
+  }
 `
 
 const ContactInfo = styled.aside`
@@ -47,6 +51,10 @@ const ContactInfo = styled.aside`
   span:nth-of-type(2) {
     margin: 0.625rem 0;
   }
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 4;
+    width: 100%;
+  }
 `
 const NavigationWrapper = styled.aside`
   grid-column: 6 / span 2;
@@ -54,6 +62,10 @@ const NavigationWrapper = styled.aside`
   span {
     font-weight: 600;
     text-transform: uppercase;
+  }
+  @media ${screens.mobileM} {
+    grid-column: 6 / span 2;
+    width: 100%;
   }
 `
 
@@ -66,6 +78,15 @@ const Navigation = styled.nav`
     text-decoration: underline;
     &:nth-of-type(2) {
       margin-left: 2rem;
+    }
+  }
+  @media ${screens.mobileM} {
+    margin-top: 0.66rem;
+    flex-direction: column;
+    div {
+      &:nth-of-type(2) {
+        margin-left: 0;
+      }
     }
   }
 `
@@ -91,6 +112,16 @@ const SubFooter = styled.div`
       }
     }
   }
+  @media ${screens.mobileM} {
+    flex-direction: column;
+    align-items: center;
+    span {
+      width: 66%;
+      margin-left: 0;
+      text-align: center;
+      margin: 2rem 0;
+    }
+  }
 `
 
 const LogoStyle = css`
@@ -101,6 +132,12 @@ const LogoStyle = css`
   }
   &.ugent {
     grid-column: 3;
+  }
+  @media ${screens.mobileM} {
+    &.ugent {
+      grid-column: 6 / span 2;
+      width: 100px;
+    }
   }
 `
 
@@ -119,6 +156,13 @@ const LogoContainer = styled.div`
     &:hover,
     &:focus {
       fill: ${colors.accent2} !important;
+    }
+  }
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 4;
+    justify-content: space-evenly;
+    svg {
+      max-width: 120px;
     }
   }
 `

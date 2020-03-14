@@ -1,6 +1,6 @@
 const screens = {
-  mobileS: `(max-width: 480px)`,
-  mobileSLandscape: `(max-width: 480px) and (orientation: landscape)`,
+  mobileS: `(max-width: 374px)`,
+  mobileSLandscape: `(max-width: 374px) and (orientation: landscape)`,
 
   mobileM: `(max-width: 767px)`,
   mobileMLandscape: `(max-width: 767px) and (orientation: landscape)`,
