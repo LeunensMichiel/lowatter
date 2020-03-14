@@ -1,19 +1,19 @@
 backend:
-    name: git-gateway
-    branch: temp
-  
-  media_folder: static/img
-  public_folder: /img
-  
-  site_url: https://lowatter.com
-  logo_url: https://lowatter.com/uploads/logo.svg
-  
-  publish_mode: editorial_workflow
+  name: git-gateway
+  branch: temp
 
-  local_backend: true
+media_folder: static/uploads
+public_folder: /uploads
 
-  collections:
-    - label: "Paginas"
+site_url: https://lowatter.com
+logo_url: https://lowatter.com/uploads/logo.svg
+
+publish_mode: editorial_workflow
+
+local_backend: true
+
+collections:
+  - label: "Paginas"
     name: "pages"
     editor:
       preview: true
@@ -24,4 +24,115 @@ backend:
         public_folder: ""
         file: "src/markdown/pages/landing.md"
         fields:
-          
+          - {
+              label: Hoofdpaginatitel,
+              name: title,
+              widget: string,
+              hint: "Titel vande hoofdpagina, (controlling legionella in tapwater)",
+            }
+          - {
+              label: "Beschrijving van Blob",
+              name: "description",
+              widget: "text",
+              hint: "Beschrijving van de hoofdpagina. Komt onder de titel en boven de knoppen",
+            }
+          - label: "InfoBlobs"
+            hint: "De blobs, ofwel groene bollen, op je hoofdpagina. Elke blob heeft een Titel, beschrijving en afbeelding."
+            name: "blobitems"
+            widget: "list"
+            fields:
+              - {
+                  label: Titel van Blob,
+                  name: title,
+                  widget: string,
+                  hint: "Titel van een blob op je pagina, bvb 'Wie zijn we'",
+                }
+              - {
+                  label: "Beschrijving van Blob",
+                  name: "description",
+                  widget: "text",
+                  hint: "Beschrijving van een blob op je pagina.",
+                }
+              - label: "Afbeelding van Blob"
+                name: "image"
+                widget: "image"
+                hint: "Afbeelding van een blob op je pagina, bvb de afbeelding naast: 'Wie zijn we'. Probeer de afbeelding altijd zo klein mogelijk te houden! Maximum grootte: 650kb"
+                media_library:
+                  config:
+                    max_file_size: 650000
+                    multiple: false
+              - label: "Taal"
+                name: "lang"
+                widget: "select"
+                options:
+                  - { label: "Nederlands", value: "nl" }
+                  - { label: "English", value: "en" }
+      - label: "TeamPagina"
+        name: "teampage"
+        media_folder: ""
+        public_folder: ""
+        file: "src/markdown/pages/team.md"
+        fields:
+          - label: "Team Kaarten"
+            hint: "De Teamkaarten. Elk kaartje bevat een afbeelding, naam, functietitel, onderliggende functies, en linkedin link. Ernaast staat een zelfgeschreven biografie. Als laatste is er een taal-attribuut"
+            name: "teamcards"
+            identifier_field: number
+            widget: "list"
+            fields:
+              - label: "ID van persoon"
+                name: "number"
+                hint: "Dit moet uniek zijn per kaart per persoon!! Dit moet tijdelijk. Dus stel dat je 2 kaartjes voor Elisa hebt (voor 2 talen), moet dit telkens een uniek nummer zijn."
+                widget: "number"
+                valueType: "int"
+              - label: "Taal"
+                name: "lang"
+                widget: "select"
+                options:
+                  - { label: "Nederlands", value: "nl" }
+                  - { label: "English", value: "en" }
+              - { label: Naam, name: name, widget: string, hint: "Naam van de persoon" }
+              - {
+                  label: Ondertitel,
+                  name: subtitle,
+                  widget: string,
+                  hint: "Titel van de persoon",
+                }
+              - {
+                  label: "Persoonsbeschrijving",
+                  name: "description",
+                  widget: "text",
+                  hint: "Beschrijving van een persoon.",
+                }
+              - label: "Profielfoto"
+                name: "image"
+                widget: "image"
+                hint: "Maximum grootte: 650kb"
+                media_library:
+                  config:
+                    max_file_size: 650000
+                    multiple: false
+              - {
+                  label: LinkedIn URL,
+                  name: linkedIn,
+                  widget: string,
+                  hint: "Url van LinkedIn Profiel",
+                }
+              - {
+                  label: "Biografie",
+                  name: "bio",
+                  widget: "markdown",
+                  buttons:
+                    ["bold", "italic", "link", "quote", "bulleted-list", "numbered-list"],
+                }
+  - name: "blog"
+    label: "Blog"
+    folder: "src/markdown/story"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Kleine beschrijving", name: "description", widget: "string" }
+      - { label: "Artikel", name: "body", widget: "markdown" }

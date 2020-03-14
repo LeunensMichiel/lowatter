@@ -34,23 +34,14 @@ const BlobContainer = styled.div`
     color: ${colors.darkAccent};
   }
 `
-
-const LegionellaSip = styled.div`
-  grid-column: 4 / span 2;
-  position: relative;
-`
-
-const NotFoundPage = () => (
+const ThanksPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Thank you" />
     <BlobContainer>
-      <h1>Uh-oh.</h1>
-      <h2>This page does not exist.</h2>
+      <h1>Thanks!</h1>
+      <h2>We'll be in touch soon.</h2>
     </BlobContainer>
-    <LegionellaSip>
-      <Legionella width={115} height={32} rotate={21} bottom={-50} left={0} />
-    </LegionellaSip>
   </Layout>
 )
 
-export default NotFoundPage
+export default ThanksPage
