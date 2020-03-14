@@ -7,6 +7,7 @@ import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
+import screens from "../components/framework/screens"
 import SEO from "../components/seo"
 import Button from "../components/buttons/button"
 import Legionella from "../components/framework/legionella"
@@ -32,6 +33,10 @@ const LandingText = styled.div`
     margin-bottom: 3rem;
   }
   z-index: 3;
+
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+  }
 `
 
 const Waves = styled.div`
@@ -209,8 +214,8 @@ const IndexPage = ({ data }) => {
       {data.landing.frontmatter.blobitems
         .filter(blob => blob.lang === intl.locale)
         .map((blob, index) => (
-          <>
-            <BlobRow id={`about${index}`} key={blob.title} even={index % 2}>
+          <React.Fragment key={blob.title}>
+            <BlobRow id={`about${index}`} even={index % 2}>
               <InfoBlobText even={index % 2}>
                 <h2>{blob.title}</h2>
                 <p>{blob.description}</p>
@@ -231,7 +236,7 @@ const IndexPage = ({ data }) => {
             </BlobRow>
             {index % 5 === 1 && <BigDots className="bigdots" css={DotStyle} />}
             {index % 5 === 2 && <SmolDots css={DotStyle} />}
-          </>
+          </React.Fragment>
         ))}
       <ContactUs>
         <h1>Wat kunnen we betekenen voor u?</h1>

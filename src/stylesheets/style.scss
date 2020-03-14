@@ -12,6 +12,11 @@ $gradient: linear-gradient(102.48deg, #4bb98b 9.06%, #4dd996 90.94%);
   padding: 0;
 }
 
+::selection {
+  background-color: $accent;
+  color: $white;
+}
+
 html {
   background: $white;
 }
@@ -32,8 +37,8 @@ body,
 main {
   min-height: 80%;
   display: grid;
-  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(
-      60px,
+  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
+      16px,
       1fr
     );
   align-content: start;
@@ -56,6 +61,10 @@ h1 {
   text-transform: uppercase;
   line-height: inherit;
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
@@ -63,6 +72,10 @@ h2 {
   text-transform: uppercase;
   line-height: inherit;
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2rem;
+  }
 }
 
 h3 {
@@ -70,6 +83,10 @@ h3 {
   text-transform: uppercase;
   line-height: inherit;
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.25rem;
+  }
 }
 
 h4 {
@@ -79,6 +96,9 @@ h4 {
   font-family: Oswald;
   font-style: normal;
   font-weight: 600;
+  @media screen and (max-width: 767px) {
+    font-size: 1.125rem;
+  }
 }
 
 .stop-color {
@@ -101,8 +121,8 @@ h4 {
 
 .modal {
   display: grid;
-  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(
-      60px,
+  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
+      16px,
       1fr
     );
   min-height: 100%;
