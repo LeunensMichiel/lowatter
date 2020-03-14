@@ -165,7 +165,9 @@ const StoryPage = ({ data }) => {
         onRequestClose={closeModal}
         className="modal"
         overlayClassName="overlay"
-        appElement={document.getElementById("gatsby-focus-wrapper")}
+        appElement={
+          typeof window !== "undefined" && document.getElementById("gatsby-focus-wrapper")
+        }
         contentLabel={data.stories.edges[currentStory].node.frontmatter.title}
       >
         <StyledCross onClick={closeModal} />
