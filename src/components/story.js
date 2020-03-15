@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { FormattedMessage, FormattedDate, useIntl } from "gatsby-plugin-intl"
+import { FormattedDate } from "gatsby-plugin-intl"
 
 import "../stylesheets/style.scss"
 import colors from "./framework/colors"
@@ -38,13 +38,12 @@ const StoryContainer = styled.div`
       }
     }
   }
-  @media ${screens.tablet} {
+
+  @media ${screens.mobileM} {
     grid-column: 2 / span 6;
     article {
       margin: 2rem 0;
     }
-  }
-  @media ${screens.mobileM} {
     p {
       img {
         &[alt~="right"] {
@@ -64,14 +63,13 @@ const StoryContainer = styled.div`
 
 const StyledDots = styled(Dots)`
   grid-column: 1;
-  margin-top: 50%;
-  @media ${screens.tablet} {
+  margin-top: 5rem;
+  @media ${screens.mobileM} {
     display: none;
   }
 `
 
 const Story = ({ story }) => {
-  const intl = useIntl()
   const date = new Date(story.node.frontmatter.date)
   return (
     <>

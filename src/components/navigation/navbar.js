@@ -1,7 +1,6 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { Link } from "gatsby-plugin-intl"
+import { useIntl, Link } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
 
@@ -17,7 +16,7 @@ const NavigationBarContainer = styled.header`
   background-position: calc(50% - 300px) 100%;
   padding: 1.5rem 0;
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     background: ${colors.darkAccent};
     position: fixed;
     top: 0;
@@ -43,7 +42,7 @@ const NavigationBar = styled.nav`
   max-width: 1140px;
   margin: 0 auto;
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     align-items: flex-start;
     flex-direction: column;
     .cls-1 {
@@ -61,7 +60,7 @@ const NavigationItems = styled.div`
   justify-content: space-evenly;
   margin-right: -1rem;
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     flex-direction: column;
     margin-right: 0;
     margin-left: 0;
@@ -73,12 +72,13 @@ const NavigationItems = styled.div`
 const NavigationItem = styled(Link)`
   margin: 1rem;
   font-size: 1.25rem;
+  text-transform: capitalize;
 
   &.active {
     color: ${colors.accent2};
   }
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     margin: 1rem 0;
     font-size: 2rem;
     color: ${colors.white};
@@ -138,12 +138,13 @@ const NavIcon = styled.div`
       }
     }
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     display: block;
   }
 `
 
 const Navbar = ({ show, hamburgerClickHandler }) => {
+  const intl = useIntl()
   return (
     <>
       <NavIcon
@@ -165,19 +166,19 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
           </Link>
           <NavigationItems>
             <NavigationItem activeClassName="active" to="/team/">
-              Our Team
+              {intl.formatMessage({ id: "navigation.team" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/story/">
-              Our Story
+              {intl.formatMessage({ id: "navigation.story" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/products/">
-              Our Products
+              {intl.formatMessage({ id: "navigation.products" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/services/">
-              Our Services
+              {intl.formatMessage({ id: "navigation.services" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/contact/">
-              Contact Us
+              {intl.formatMessage({ id: "navigation.contact" })}
             </NavigationItem>
           </NavigationItems>
         </NavigationBar>
@@ -185,7 +186,5 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
     </>
   )
 }
-
-Navbar.propTypes = {}
 
 export default Navbar

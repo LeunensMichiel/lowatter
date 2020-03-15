@@ -2,7 +2,8 @@ import React from "react"
 import styled from "@emotion/styled"
 import Img from "gatsby-image/withIEPolyfill"
 import { graphql } from "gatsby"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
+import showdown from "showdown"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
@@ -19,7 +20,7 @@ import Blob8 from "../images/svg/blobs/blob8.inline.svg"
 const Title = styled.h1`
   margin-top: 6.25rem;
   margin-bottom: 1.5rem;
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 4;
   @media ${screens.tablet} {
     grid-column: 2 / span 6;
   }
@@ -180,7 +181,7 @@ const CardBody = styled.article`
     }
   }
 `
-
+const converter = new showdown.Converter()
 const TeamPage = ({ data }) => {
   const blobs = [
     <Blob6 style={{ position: "absolute" }} />,
@@ -190,8 +191,12 @@ const TeamPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Team" description="The people begind LoWatter" />
-      <Title>Meet our team!</Title>
+      <SEO
+        title={intl.formatMessage({ id: "seo.teamTitle" })}
+        description={intl.formatMessage({ id: "seo.teamDescription" })}
+        lang={intl.locale}
+      />
+      <Title>{intl.formatMessage({ id: "team.title" })}</Title>
       <Dots />
       {data.team.frontmatter.teamcards
         .filter(person => person.lang === intl.locale)
@@ -207,7 +212,6 @@ const TeamPage = ({ data }) => {
                     objectPosition="50% 50%"
                     alt={person.name}
                     title={person.name}
-                    // style={{ position: "absolute" }}
                   />
                 </ProfilePic>
                 <CardInfoDetails>
@@ -224,7 +228,9 @@ const TeamPage = ({ data }) => {
                 </CardInfoDetails>
               </CardInfo>
               <CardBody>
-                <div dangerouslySetInnerHTML={{ __html: person.bio }} />
+                <div
+                  dangerouslySetInnerHTML={{ __html: converter.makeHtml(person.bio) }}
+                />
               </CardBody>
             </Card>
             {index % 5 === 0 && (

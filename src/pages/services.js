@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -35,6 +35,9 @@ const Description = styled.p`
     color: ${colors.darkAccent};
     padding-bottom: 10rem;
   }
+  @media ${screens.mobileMLandscape} {
+    color: ${colors.darkAccent};
+  }
 `
 
 const Blob = styled(Blob2)`
@@ -59,14 +62,13 @@ const ServicesPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Services" description="Consultancy and advice of LoWatter." />
-      <Title>More Info Coming Soon!</Title>
-      <Description>
-        LoWatter provides case specific knowledge through consultancy on either
-        disinfection or energy savings with a Legionella pneumophila predicting simulation
-        model in order to lower the energy use, cost and infection risk during production,
-        storage and distribution of domestic hot water.
-      </Description>
+      <SEO
+        title={intl.formatMessage({ id: "seo.servicesTitle" })}
+        description={intl.formatMessage({ id: "seo.servicesDescription" })}
+        lang={intl.locale}
+      />
+      <Title>{intl.formatMessage({ id: "services.title" })}</Title>
+      <Description>{intl.formatMessage({ id: "services.description" })}</Description>
       <Blob />
       <Legionella bottom={200} right={250} width={136} height={43} rotate={45} />
     </Layout>

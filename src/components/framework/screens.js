@@ -1,10 +1,9 @@
 const screens = {
   mobileS: `(max-width: 374px)`,
-  mobileSLandscape: `(max-width: 374px) and (orientation: landscape)`,
+  mobileSLandscape: `(max-width: 750px) and (max-height: 500px) and (orientation: landscape)`,
 
   mobileM: `(max-width: 767px)`,
-  mobileMLandscape: `(max-width: 890px) and (orientation: landscape)`,
-  mobileMPortraitOrLandscape: `(max-width: 767px) or ((max-width: 890px) and (orientation: landscape))`,
+  mobileMLandscape: `(max-width: 890px) and (max-height: 500px) and (orientation: landscape)`,
 
   tablet: `(max-width: 1024px)`,
   tabletland: `(max-width: 1024px) and (orientation: landscape)`,
