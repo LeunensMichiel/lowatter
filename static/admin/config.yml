@@ -15,6 +15,7 @@ local_backend: true
 collections:
   - label: "Paginas"
     name: "pages"
+    delete: false
     editor:
       preview: true
     files:
@@ -128,6 +129,7 @@ collections:
     label: "Blog"
     folder: "src/markdown/story"
     create: true
+    delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: true
@@ -137,6 +139,23 @@ collections:
       - { label: "Kleine beschrijving", name: "description", widget: "string" }
       - { label: "Artikel", name: "body", widget: "markdown" }
       - { label: "Mijlpaal", name: "isMilestone", widget: "boolean" }
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }
+  - name: "TermsAndConditions"
+    label: "Algemene Voorwaarden"
+    folder: "src/markdown/terms"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: lang
+    editor:
+      preview: true
+    fields:
+      - { label: "Algemene voorwaarden", name: "body", widget: "markdown" }
       - label: "Taal"
         name: "lang"
         widget: "select"

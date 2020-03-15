@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import Img from "gatsby-image/withIEPolyfill"
 import { graphql } from "gatsby"
 import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import showdown from "showdown"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
@@ -180,7 +181,7 @@ const CardBody = styled.article`
     }
   }
 `
-
+const converter = new showdown.Converter()
 const TeamPage = ({ data }) => {
   const blobs = [
     <Blob6 style={{ position: "absolute" }} />,
@@ -224,7 +225,9 @@ const TeamPage = ({ data }) => {
                 </CardInfoDetails>
               </CardInfo>
               <CardBody>
-                <div dangerouslySetInnerHTML={{ __html: person.bio }} />
+                <div
+                  dangerouslySetInnerHTML={{ __html: converter.makeHtml(person.bio) }}
+                />
               </CardBody>
             </Card>
             {index % 5 === 0 && (

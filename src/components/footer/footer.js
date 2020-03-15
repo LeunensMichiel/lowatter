@@ -238,7 +238,7 @@ const Footer = () => {
       </NavigationWrapper>
       <hr />
       <SubFooter>
-        <Link>Terms and Conditions</Link>
+        <Link to="/terms/">Terms and Conditions</Link>
         <IntlContextConsumer>
           {({ languages }) =>
             languages.map(language => (
