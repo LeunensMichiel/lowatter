@@ -136,3 +136,10 @@ collections:
       - { label: "Datum", name: "date", widget: "datetime" }
       - { label: "Kleine beschrijving", name: "description", widget: "string" }
       - { label: "Artikel", name: "body", widget: "markdown" }
+      - { label: "Mijlpaal", name: "isMilestone", widget: "boolean" }
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }

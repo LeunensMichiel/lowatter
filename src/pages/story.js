@@ -62,7 +62,7 @@ const TimelineItem = styled.div`
       width: 100%;
       position: absolute;
       z-index: 2;
-      fill: ${colors.accent};
+      fill: ${props => (props.isMilestone ? colors.darkAccent : colors.accent)};
     }
     span {
       z-index: 4;
@@ -77,7 +77,7 @@ const TimelineItem = styled.div`
     padding-right: 0;
     align-self: flex-end;
     > div {
-      background: ${colors.accent2};
+      background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
       text-align: right;
       align-items: flex-end;
       border-radius: 82px 35px;
@@ -85,11 +85,11 @@ const TimelineItem = styled.div`
         right: auto;
         left: -12rem;
         svg {
-          fill: ${colors.accent2};
+          ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
         }
       }
       &:after {
-        background-color: ${colors.accent2};
+        background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
         right: auto;
         left: -7.5px;
       }
@@ -140,10 +140,10 @@ const TimelineItemContent = styled.div`
   flex-direction: column;
   position: relative;
   text-align: left;
-  background: ${colors.accent};
+  background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent)};
   border-radius: 35px 82px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
-  color: ${colors.darkAccent};
+  color: ${props => (props.isMilestone ? colors.white : colors.darkAccent)};
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition-delay: 0.05s;
@@ -156,10 +156,11 @@ const TimelineItemContent = styled.div`
   }
   small {
     margin-bottom: 1.5rem;
+    color: ${props => (props.isMilestone ? colors.accent2 : colors.darkAccent)};
   }
   &:after {
     content: " ";
-    background-color: ${colors.accent};
+    background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent)};
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
     position: absolute;
     right: -7.5px;
@@ -235,25 +236,30 @@ const StoryPage = ({ data }) => {
       </Modal>
       <TimelineContainer>
         {data.stories.edges.map((story, index) => {
-          const date = new Date(story.node.frontmatter.date)
-          return (
-            <TimelineItem
-              onClick={() => openModal(index)}
-              key={story.node.frontmatter.date}
-            >
-              <TimelineItemContent>
-                <h3>{story.node.frontmatter.title}</h3>
-                <small>
-                  <FormattedDate value={date} />
-                </small>
-                <p>{story.node.frontmatter.description}</p>
-                <div className="blob">
-                  {blobs[index % 5]}
-                  <span>{date.getFullYear()}</span>
-                </div>
-              </TimelineItemContent>
-            </TimelineItem>
-          )
+          if (story.node.frontmatter.lang === intl.locale) {
+            const date = new Date(story.node.frontmatter.date)
+            return (
+              <TimelineItem
+                onClick={() => openModal(index)}
+                key={story.node.frontmatter.date}
+                isMilestone={story.node.frontmatter.isMilestone ? 1 : 0}
+              >
+                <TimelineItemContent
+                  isMilestone={story.node.frontmatter.isMilestone ? 1 : 0}
+                >
+                  <h3>{story.node.frontmatter.title}</h3>
+                  <small>
+                    <FormattedDate value={date} />
+                  </small>
+                  <p>{story.node.frontmatter.description}</p>
+                  <div className="blob">
+                    {blobs[index % 5]}
+                    <span>{date.getFullYear()}</span>
+                  </div>
+                </TimelineItemContent>
+              </TimelineItem>
+            )
+          }
         })}
       </TimelineContainer>
     </Layout>
@@ -273,6 +279,8 @@ export const query = graphql`
             title
             description
             date
+            lang
+            isMilestone
           }
           html
         }
