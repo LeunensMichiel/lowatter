@@ -1,1 +1,22 @@
-{}
+{
+    "navigation.contact": {
+        "translation": "Contact Us",
+        "notes": ""
+    },
+    "navigation.products": {
+        "translation": "Our Products",
+        "notes": ""
+    },
+    "navigation.services": {
+        "translation": "Our Services",
+        "notes": ""
+    },
+    "navigation.story": {
+        "translation": "Our Story",
+        "notes": ""
+    },
+    "navigation.team": {
+        "translation": "Our Team",
+        "notes": ""
+    }
+}
