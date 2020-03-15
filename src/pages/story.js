@@ -15,6 +15,7 @@ import Blob3 from "../images/svg/blobs/bgBlob3.inline.svg"
 import Blob4 from "../images/svg/blobs/bgBlob4.inline.svg"
 import Blob5 from "../images/svg/blobs/bgBlob5.inline.svg"
 import Cross from "../images/svg/cross.inline.svg"
+import screens from "../components/framework/screens"
 
 const TimelineContainer = styled.div`
   grid-column: 2 / span 6;
@@ -31,6 +32,13 @@ const TimelineContainer = styled.div`
     height: 100%;
     border-radius: 4px;
     z-index: -1;
+  }
+
+  @media ${screens.mobileM} {
+    margin: 6.25rem 0;
+    &:after {
+      left: calc(100% - 32px);
+    }
   }
 `
 
@@ -87,9 +95,46 @@ const TimelineItem = styled.div`
       }
     }
   }
+
+  @media ${screens.mobileM} {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding-right: 72px;
+    > div {
+      .blob {
+        right: -72px;
+        padding: 0.625rem;
+        svg {
+          height: 64px;
+        }
+        span {
+          font-size: 1.125rem;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      padding-left: 0;
+      padding-right: 72px;
+      align-self: initial;
+      > div {
+        text-align: left;
+        align-items: flex-start;
+        border-radius: 35px 82px;
+        .blob {
+          left: initial;
+          right: -72px;
+        }
+        &:after {
+          right: -7.5px;
+          left: initial;
+        }
+      }
+    }
+  }
 `
 
 const TimelineItemContent = styled.div`
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -102,11 +147,9 @@ const TimelineItemContent = styled.div`
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition-delay: 0.05s;
-
   &:hover {
     transform: translate(0, -5px);
   }
-
   h3 {
     color: ${colors.white};
     margin-bottom: 0;
@@ -114,7 +157,6 @@ const TimelineItemContent = styled.div`
   small {
     margin-bottom: 1.5rem;
   }
-
   &:after {
     content: " ";
     background-color: ${colors.accent};
@@ -126,6 +168,12 @@ const TimelineItemContent = styled.div`
     width: 15px;
     height: 15px;
   }
+  @media ${screens.mobileM} {
+    padding: 2rem 1rem;
+    p {
+      font-size: 0.875rem;
+    }
+  }
 `
 
 const StyledCross = styled(Cross)`
@@ -136,10 +184,14 @@ const StyledCross = styled(Cross)`
   cursor: pointer;
   fill: ${colors.white};
   transition: fill 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-
   &:hover,
   &:focus {
     fill: ${colors.darkAccent};
+  }
+  @media ${screens.mobileM} {
+    margin-top: 1rem;
+    width: 45px;
+    grid-column: 2;
   }
 `
 

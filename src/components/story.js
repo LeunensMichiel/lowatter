@@ -5,6 +5,7 @@ import { FormattedMessage, FormattedDate, useIntl } from "gatsby-plugin-intl"
 
 import "../stylesheets/style.scss"
 import colors from "./framework/colors"
+import screens from "./framework/screens"
 import Dots from "../images/svg/dots/dots-blog.inline.svg"
 
 const StoryContainer = styled.div`
@@ -37,11 +38,35 @@ const StoryContainer = styled.div`
       }
     }
   }
+
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+    article {
+      margin: 2rem 0;
+    }
+    p {
+      img {
+        &[alt~="right"] {
+          width: 100%;
+          padding-left: 0;
+          float: none;
+        }
+        &[alt~="left"] {
+          width: 100%;
+          float: none;
+          padding-right: 0;
+        }
+      }
+    }
+  }
 `
 
 const StyledDots = styled(Dots)`
   grid-column: 1;
   margin-top: 50%;
+  @media ${screens.mobileM} {
+    display: none;
+  }
 `
 
 const Story = ({ story }) => {
