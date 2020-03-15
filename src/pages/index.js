@@ -213,7 +213,7 @@ const ContactUs = styled.section`
   }
   @media ${screens.mobileM} {
     padding: 12rem 16px;
-    background-size: 100% 100%;
+    background-size: 200% 100%;
     p {
       text-align: justify;
       margin-bottom: 2rem;

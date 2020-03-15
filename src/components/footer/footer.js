@@ -37,6 +37,8 @@ const FooterContainer = styled.footer`
   }
   @media ${screens.mobileM} {
     grid-row-gap: 1rem;
+    padding-top: 10rem;
+    background-size: 200% 100%;
   }
 `
 

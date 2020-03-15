@@ -8,6 +8,7 @@ import colors from "../components/framework/colors"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Legionella from "../components/framework/legionella"
+import screens from "../components/framework/screens"
 
 import SmolDots from "../images/svg/dots/dots-smol-horizontal.inline.svg"
 import LinkedIn from "../images/svg/linkedin.inline.svg"
@@ -19,10 +20,17 @@ const Title = styled.h1`
   margin-top: 6.25rem;
   margin-bottom: 1.5rem;
   grid-column: 2 / span 2;
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+  }
 `
 
 const Dots = styled(SmolDots)`
   grid-column: 1 / span 2;
+  @media ${screens.mobileM} {
+    grid-column: 1 / span 8;
+    width: 60%;
+  }
 `
 
 const CardBase = styled.div`
@@ -40,6 +48,15 @@ const CardBase = styled.div`
     width: 103%;
     height: 107%;
   }
+  @media ${screens.mobileM} {
+    grid-column: 1 / span 8;
+    margin: 2rem 0;
+    height: unset;
+    min-height: 600px;
+    > svg {
+      height: 600px;
+    }
+  }
 `
 
 const Card = styled.section`
@@ -49,19 +66,29 @@ const Card = styled.section`
   border-radius: 50px;
   z-index: 20;
   height: 100%;
+  @media ${screens.mobileM} {
+    flex-direction: column;
+    width: calc(100% - 32px);
+  }
 `
 
 const CardInfo = styled.aside`
   background: ${colors.gradient};
   flex-basis: 40%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
+  @media ${screens.mobileM} {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+  }
 `
 
 const CardInfoDetails = styled.div`
   padding: 1rem 2.25rem;
+
   h3 {
     color: ${colors.white};
     margin-bottom: 0;
@@ -87,18 +114,39 @@ const CardInfoDetails = styled.div`
       fill: ${colors.darkAccent};
     }
   }
+  @media ${screens.mobileM} {
+    padding: 1rem 1.5rem;
+    h4 {
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    svg {
+      width: 25px;
+    }
+  }
 `
 
 const ProfilePic = styled.div`
   position: relative;
   width: 100%;
-  &:after {
-    display: block;
-    content: "";
-    padding-bottom: 100%;
+  padding-bottom: 100%;
+  .gatsby-image-wrapper {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   img {
     border-top-left-radius: 50px;
+  }
+  @media ${screens.mobileM} {
+    img {
+      border-top-right-radius: 50px;
+    }
   }
 `
 
@@ -112,6 +160,15 @@ const CardBody = styled.article`
   div {
     max-height: 100%;
     overflow-y: auto;
+  }
+  @media ${screens.mobileM} {
+    padding: 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    div {
+      max-height: 300px;
+      font-size: 0.875rem;
+    }
   }
 `
 
@@ -130,18 +187,18 @@ const TeamPage = ({ data }) => {
       {data.team.frontmatter.teamcards
         .filter(person => person.lang === intl.locale)
         .map((person, index) => (
-          <CardBase even={index % 2 === 0}>
+          <CardBase even={index % 2 === 0} key={person.name}>
             {blobs[index % 3]}
             <Card>
               <CardInfo>
                 <ProfilePic>
                   <Img
-                    fluid={person.image.childImageSharp.fixed}
+                    fluid={person.image.childImageSharp.fluid}
                     objectFit="cover"
                     objectPosition="50% 50%"
                     alt={person.name}
                     title={person.name}
-                    style={{ position: "static" }}
+                    // style={{ position: "absolute" }}
                   />
                 </ProfilePic>
                 <CardInfoDetails>
@@ -203,8 +260,8 @@ export const query = graphql`
           subtitle
           image {
             childImageSharp {
-              fixed(width: 700, quality: 85) {
-                ...GatsbyImageSharpFixed_withWebp
+              fluid(maxWidth: 700, quality: 85) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
