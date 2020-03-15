@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import colors from "../components/framework/colors"
 import Legionella from "../components/framework/legionella"
+import screens from "../components/framework/screens"
 
 import Blob9 from "../images/svg/blobs/blob9.svg"
 
@@ -32,6 +33,18 @@ const BlobContainer = styled.div`
   }
   h2 {
     color: ${colors.darkAccent};
+  }
+
+  @media ${screens.mobileM} {
+    width: 100%;
+    grid-column: 2 / span 6;
+    margin-top: 2.5rem;
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 `
 const ThanksPage = () => (

@@ -5,14 +5,22 @@ import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Legionella from "../components/framework/legionella"
+import screens from "../components/framework/screens"
 
 import MedDots from "../images/svg/dots/dots-medium.inline.svg"
+import colors from "../components/framework/colors"
 
 const Title = styled.h1`
   grid-column: 3 / span 4;
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 2rem;
+  z-index: 50;
+
+  @media ${screens.mobileM} {
+    margin-top: 6.25rem;
+    grid-column: 2 / span 6;
+  }
 `
 
 const Description = styled.p`
@@ -20,6 +28,13 @@ const Description = styled.p`
   text-align: center;
   font-size: 1.25rem;
   padding-bottom: 5rem;
+  z-index: 50;
+
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+    padding-bottom: 10rem;
+    color: ${colors.darkAccent};
+  }
 `
 
 const Dots = styled(MedDots)`
@@ -28,6 +43,10 @@ const Dots = styled(MedDots)`
   justify-self: end;
   height: 100%;
   margin-top: 5rem;
+  @media ${screens.mobileM} {
+    max-width: 50px;
+    margin-top: 0;
+  }
 `
 
 const ProductPage = ({ data }) => {
