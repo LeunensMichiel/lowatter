@@ -1,0 +1,22 @@
+{
+    "navigation.contact": {
+        "translation": "Contact",
+        "notes": ""
+    },
+    "navigation.products": {
+        "translation": "Onze producten",
+        "notes": ""
+    },
+    "navigation.services": {
+        "translation": "Onze diensten",
+        "notes": ""
+    },
+    "navigation.story": {
+        "translation": "Ons verhaal",
+        "notes": ""
+    },
+    "navigation.team": {
+        "translation": "Ons Team",
+        "notes": ""
+    }
+}
