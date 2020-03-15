@@ -8,6 +8,7 @@ import colors from "../components/framework/colors"
 import Button from "../components/buttons/button"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import screens from "../components/framework/screens"
 
 import "mapbox-gl/dist/mapbox-gl.css"
 import Pin from "../images/svg/location.inline.svg"
@@ -32,22 +33,39 @@ const ContactWrapper = styled.div`
     width: 100%;
     max-width: 580px;
   }
+
+  @media ${screens.mobileM} {
+    svg {
+      max-width: 95%;
+      top: -80px;
+    }
+  }
 `
 
 const FormContainer = styled.section`
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
   min-height: 75%;
   background: ${colors.white};
+  border-radius: 50px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   z-index: 45;
-  position: relative;
 
   h1 {
     position: absolute;
     color: ${colors.white};
     top: -75px;
+  }
+  @media ${screens.mobileM} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    h1 {
+      top: -45px;
+      font-size: 1.5rem;
+    }
   }
 `
 
@@ -63,11 +81,30 @@ const InnerForm = styled.form`
     grid-column: 4;
     cursor: pointer;
   }
+  @media ${screens.mobileM} {
+    padding: 1.5rem;
+    grid-gap: 1.125rem 0;
+    width: 100%;
+    button {
+      grid-column: 1 / span 4;
+    }
+  }
 `
 
 const MapForm = styled.aside`
   flex-basis: 30%;
   min-height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  @media ${screens.mobileM} {
+    flex-basis: unset;
+    height: 400px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+  }
 `
 
 const InputWrapper = styled.div`
@@ -100,6 +137,9 @@ const InputWrapper = styled.div`
     margin-bottom: 0.5rem;
     color: ${colors.darkAccent};
   }
+  @media ${screens.mobileM} {
+    grid-column: 1 / span 4;
+  }
 `
 
 const ContactInfo = styled.aside`
@@ -117,6 +157,10 @@ const ContactInfo = styled.aside`
   }
   span:nth-of-type(2) {
     margin: 0.625rem 0;
+  }
+  @media ${screens.mobileM} {
+    margin: 10rem 0;
+    grid-column: 2 / span 4;
   }
 `
 
@@ -140,6 +184,9 @@ const DotsContainer = styled.div`
   display: flex;
   align-items: center;
   z-index: 5;
+  @media ${screens.mobileM} {
+    grid-column: 6 / span 2;
+  }
 `
 
 const ContactPage = ({ data }) => {
@@ -243,14 +290,14 @@ const ContactPage = ({ data }) => {
               onViewportChange={setViewport}
               mapboxApiAccessToken={`${process.env.GATSBY_MAP_API}`}
             >
-              <div style={{ position: "absolute", right: 10, top: 10 }}>
+              <div style={{ position: "absolute", right: 18, top: 26 }}>
                 <FullscreenControl />
               </div>
-              <div style={{ position: "absolute", right: 10, top: 50 }}>
+              <div style={{ position: "absolute", right: 18, top: 66 }}>
                 <NavigationControl />
               </div>
               <Marker longitude={3.727775} latitude={51.045966}>
-                <Pin />
+                <Pin style={{ width: "40px" }} />
               </Marker>
             </ReactMapGL>
           </MapForm>
