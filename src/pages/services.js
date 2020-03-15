@@ -7,12 +7,19 @@ import SEO from "../components/seo"
 
 import Blob2 from "../images/svg/blobs/blob2.inline.svg"
 import colors from "../components/framework/colors"
+import screens from "../components/framework/screens"
 
 const Title = styled.h1`
   grid-column: 3 / span 4;
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 2rem;
+  z-index: 3;
+
+  @media ${screens.mobileM} {
+    margin-top: 6.25rem;
+    grid-column: 2 / span 6;
+  }
 `
 
 const Description = styled.p`
@@ -21,6 +28,11 @@ const Description = styled.p`
   font-size: 1.25rem;
   z-index: 3;
   padding-bottom: 5rem;
+
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+    color: ${colors.darkAccent};
+  }
 `
 
 const Blob = styled(Blob2)`
@@ -36,7 +48,6 @@ const Blob = styled(Blob2)`
   .stop-color {
     stop-color: ${colors.accent2};
   }
-
   .alt-color {
     stop-color: ${colors.accent2};
   }

@@ -21,7 +21,7 @@ const ContactWrapper = styled.div`
   grid-column: 2 / span 6;
   position: relative;
 
-  svg {
+  > svg {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +35,7 @@ const ContactWrapper = styled.div`
   }
 
   @media ${screens.mobileM} {
-    svg {
+    > svg {
       max-width: 95%;
       top: -80px;
     }
@@ -177,6 +177,9 @@ const ContactWave = styled.div`
   align-self: end;
   margin-bottom: 17rem;
   z-index: 1;
+  @media ${screens.mobileM} {
+    background-size: 200% 100%;
+  }
 `
 
 const DotsContainer = styled.div`
@@ -186,6 +189,7 @@ const DotsContainer = styled.div`
   z-index: 5;
   @media ${screens.mobileM} {
     grid-column: 6 / span 2;
+    justify-self: start;
   }
 `
 
@@ -297,7 +301,7 @@ const ContactPage = ({ data }) => {
                 <NavigationControl />
               </div>
               <Marker longitude={3.727775} latitude={51.045966}>
-                <Pin style={{ width: "40px" }} />
+                <Pin />
               </Marker>
             </ReactMapGL>
           </MapForm>
