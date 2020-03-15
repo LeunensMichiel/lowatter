@@ -1,4 +1,6 @@
 {
+    "404.subtitle": "Deze pagina bestaat niet.",
+    "404.title": "Oh-oh.",
     "contact.company": "Bedrijf",
     "contact.companyPlaceholder": "Mijn bedrijf",
     "contact.email": "E-mail",
@@ -32,7 +34,25 @@
     "navigation.team": "Ons Team",
     "product.description": "Met de innovatieve warmwaterregelaar kunt u het energieverbruik, de kosten en het infectierisico tijdens de productie, opslag en distributie van uw sanitair warm water verlagen. Dit is mogelijk door de temperatuur van de productie van sanitair warm water te verlagen, terwijl het risico van Legionella pneumophila onder controle wordt gehouden met het warmteschokregime.",
     "product.title": "Meer info volgt binnenkort!",
+    "seo.404": "404: Niet gevonden",
+    "seo.contactDescription": "Neem contact op met LoWatter en vraag om meer informatie.",
+    "seo.contactTitle": "Contacteer ons",
+    "seo.indexDescription": "Voorpagina van LoWatter.",
+    "seo.indexTitle": "Home",
+    "seo.productsDescription": "Producten van LoWatter.",
+    "seo.productTitle": "Onze producten",
+    "seo.servicesDescription": "Consultancy en advies van LoWatter.",
+    "seo.servicesTitle": "Onze diensten",
+    "seo.storyDescription": "De geschiedenis van LoWatter.",
+    "seo.storyTitle": "Ons Verhaal",
+    "seo.teamDescription": "De mensen achter LoWatter",
+    "seo.teamTitle": "Ons team",
+    "seo.termsDescription": "Algemene voorwaarden van LoWatter.",
+    "seo.termsTitle": "Onze Algemene Voorwaarden",
+    "seo.thanks": "Dank u wel.",
     "services.description": "LoWatter levert case-specifieke kennis door middel van consultancy op het gebied van desinfectie of energiebesparing met een Legionella pneumophila voorspellend simulatiemodel om het energieverbruik, de kosten en het infectierisico tijdens de productie, opslag en distributie van sanitair warm water te verlagen.",
     "services.title": "Meer info volgt binnenkort!",
-    "team.title": "Maak kennis met ons team!"
+    "team.title": "Maak kennis met ons team!",
+    "thanks.subtitle": "We nemen snel contact met u op.",
+    "thanks.title": "Bedankt!"
 }
