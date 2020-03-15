@@ -22,7 +22,7 @@ const TimelineContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 10rem 0;
+  margin: 6.25rem 0;
   &:after {
     background: ${colors.gradientReverse};
     content: "";

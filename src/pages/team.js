@@ -20,7 +20,7 @@ import Blob8 from "../images/svg/blobs/blob8.inline.svg"
 const Title = styled.h1`
   margin-top: 6.25rem;
   margin-bottom: 1.5rem;
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 4;
   @media ${screens.tablet} {
     grid-column: 2 / span 6;
   }
@@ -192,7 +192,7 @@ const TeamPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Our Team" description="The people begind LoWatter" lang={intl.locale} />
-      <Title>Meet our team!</Title>
+      <Title>{intl.formatMessage({ id: "team.title" })}</Title>
       <Dots />
       {data.team.frontmatter.teamcards
         .filter(person => person.lang === intl.locale)
@@ -208,7 +208,6 @@ const TeamPage = ({ data }) => {
                     objectPosition="50% 50%"
                     alt={person.name}
                     title={person.name}
-                    // style={{ position: "absolute" }}
                   />
                 </ProfilePic>
                 <CardInfoDetails>

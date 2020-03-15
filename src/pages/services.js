@@ -67,13 +67,8 @@ const ServicesPage = ({ data }) => {
         description="Consultancy and advice of LoWatter."
         lang={intl.locale}
       />
-      <Title>More Info Coming Soon!</Title>
-      <Description>
-        LoWatter provides case specific knowledge through consultancy on either
-        disinfection or energy savings with a Legionella pneumophila predicting simulation
-        model in order to lower the energy use, cost and infection risk during production,
-        storage and distribution of domestic hot water.
-      </Description>
+      <Title>{intl.formatMessage({ id: "services.title" })}</Title>
+      <Description>{intl.formatMessage({ id: "services.description" })}</Description>
       <Blob />
       <Legionella bottom={200} right={250} width={136} height={43} rotate={45} />
     </Layout>

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { useIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { useIntl, Link } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
 

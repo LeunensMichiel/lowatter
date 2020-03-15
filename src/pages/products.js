@@ -61,14 +61,8 @@ const ProductPage = ({ data }) => {
         description="Services and products of LoWatter."
         lang={intl.locale}
       />
-      <Title>More Info Coming Soon!</Title>
-      <Description>
-        With the innovative domestic hot water controller you can lower the energy use,
-        cost and infection risk during production, storage and distribution of your
-        domestic hot water. This is possible by lowering the domestic hot water production
-        temperature, while keeping the Legionella pneumophila risk under control with the
-        heat shock regime.
-      </Description>
+      <Title>{intl.formatMessage({ id: "product.title" })}</Title>
+      <Description>{intl.formatMessage({ id: "product.description" })}</Description>
       <Dots />
       <Legionella bottom={200} left={250} width={136} height={43} rotate={-55} />
     </Layout>

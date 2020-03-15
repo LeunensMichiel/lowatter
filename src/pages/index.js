@@ -29,7 +29,7 @@ const LandingText = styled.div`
   white-space: pre-wrap;
   margin: 6.5rem 0;
   > h1 {
-    max-width: 500px;
+    max-width: 550px;
   }
   > p {
     max-width: 360px;
@@ -272,10 +272,15 @@ const IndexPage = ({ data }) => {
       />
       <SEO title="Home" description="Homepage of LoWatter" lang={intl.locale} />
       <LandingText>
-        <h1>{"Controlling Legionella in tapwater"}</h1>
-        <p>Site is nog in opbouw.</p>
-        <Button link="#about0" text="Learn more" />
-        <Button left={1} link="/contact/" text="Contact us" accent />
+        <h1>{intl.formatMessage({ id: "index.title" })}</h1>
+        <p>{intl.formatMessage({ id: "index.subtitle" })}</p>
+        <Button link="#about0" text={intl.formatMessage({ id: "index.learnMore" })} />
+        <Button
+          left={1}
+          link="/contact/"
+          text={intl.formatMessage({ id: "index.contactUs" })}
+          accent
+        />
       </LandingText>
       <Waves>
         <LegionellaContainer>
@@ -324,13 +329,13 @@ const IndexPage = ({ data }) => {
           </React.Fragment>
         ))}
       <ContactUs>
-        <h1>Wat kunnen we betekenen voor u?</h1>
-        <p>
-          Heeft uw gebouw een Legionella probleem? Denkt u dat we iets voor u kunnen
-          betekenen of wenst u meer informatie, contacteer ons gerust voor een verkennend
-          gesprek. Elke vraag wordt vertrouwelijk behandeld.
-        </p>
-        <Button link="/contact/" text="Contacteer ons" accent />
+        <h1>{intl.formatMessage({ id: "index.contactTitle" })}</h1>
+        <p>{intl.formatMessage({ id: "index.contactDescription" })}</p>
+        <Button
+          link="/contact/"
+          text={intl.formatMessage({ id: "index.contactUs" })}
+          accent
+        />
       </ContactUs>
     </Layout>
   )

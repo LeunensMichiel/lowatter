@@ -222,7 +222,7 @@ const ContactPage = ({ data }) => {
       <ContactWrapper>
         <Blob />
         <FormContainer>
-          <h1>Let's Connect!</h1>
+          <h1>{intl.formatMessage({ id: "contact.title" })}</h1>
           <InnerForm
             name="contact"
             method="post"
@@ -233,8 +233,9 @@ const ContactPage = ({ data }) => {
             <input type="hidden" name="form-name" value="contact" />
             <input name="bot-field" style={{ display: "none" }} />
             <InputWrapper>
-              <label for="firstname">
-                First Name<sup>*</sup>
+              <label htmlFor="firstname">
+                {intl.formatMessage({ id: "contact.firstName" })}
+                <sup>*</sup>
               </label>
               <input
                 id="firstname"
@@ -242,12 +243,13 @@ const ContactPage = ({ data }) => {
                 type="text"
                 required
                 autoComplete
-                placeholder="John"
+                placeholder={intl.formatMessage({ id: "contact.firstNamePlaceholder" })}
               />
             </InputWrapper>
             <InputWrapper>
-              <label for="lastName">
-                Last Name<sup>*</sup>
+              <label htmlFor="lastName">
+                {intl.formatMessage({ id: "contact.lastName" })}
+                <sup>*</sup>
               </label>
               <input
                 id="lastName"
@@ -255,12 +257,13 @@ const ContactPage = ({ data }) => {
                 type="text"
                 required
                 autoComplete
-                placeholder="Doe"
+                placeholder={intl.formatMessage({ id: "contact.lastNamePlaceholder" })}
               />
             </InputWrapper>
             <InputWrapper span>
-              <label for="email">
-                Email<sup>*</sup>
+              <label htmlFor="email">
+                {intl.formatMessage({ id: "contact.email" })}
+                <sup>*</sup>
               </label>
               <input
                 id="email"
@@ -268,35 +271,43 @@ const ContactPage = ({ data }) => {
                 type="email"
                 required
                 autoComplete
-                placeholder="example@provider.com"
+                placeholder={intl.formatMessage({ id: "contact.emailPlaceholder" })}
               />
             </InputWrapper>
             <InputWrapper>
-              <label for="company">Company</label>
+              <label htmlFor="company">
+                {intl.formatMessage({ id: "contact.company" })}
+              </label>
               <input
                 id="company"
                 name="company"
                 type="text"
                 required
-                placeholder="My Company"
+                placeholder={intl.formatMessage({ id: "contact.companyPlaceholder" })}
               />
             </InputWrapper>
             <InputWrapper>
-              <label for="phone">Phone Number</label>
-              <input id="phone" name="phone" type="tel" placeholder="+32 123 45 67 89" />
+              <label htmlFor="phone">{intl.formatMessage({ id: "contact.phone" })}</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder={intl.formatMessage({ id: "contact.phonePlaceholder" })}
+              />
             </InputWrapper>
             <InputWrapper span>
-              <label for="message">
-                Message<sup>*</sup>
+              <label htmlFor="message">
+                {intl.formatMessage({ id: "contact.message" })}
+                <sup>*</sup>
               </label>
               <textarea
                 id="message"
                 name="message"
                 required
-                placeholder="Tell us how we can help you."
+                placeholder={intl.formatMessage({ id: "contact.messagePlaceholder" })}
               />
             </InputWrapper>
-            <Button text="Send" submit />
+            <Button text={intl.formatMessage({ id: "contact.send" })} submit />
           </InnerForm>
           <MapForm>
             <ReactMapGL
@@ -323,9 +334,9 @@ const ContactPage = ({ data }) => {
       <ContactWave />
       <ContactInfo>
         <span>Lowatter</span>
-        <span>info@lowatter.com</span>
-        <span>Sint-Pietersnieuwstraat 41 B4</span>
-        <span>9000 Ghent, Belgium</span>
+        <span>{intl.formatMessage({ id: "footer.email" })}</span>
+        <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[0]}</span>
+        <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[1]}</span>
       </ContactInfo>
       <DotsContainer>
         <Dots />

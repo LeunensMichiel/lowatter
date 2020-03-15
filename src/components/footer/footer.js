@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import { IntlContextConsumer, changeLocale, Link } from "gatsby-plugin-intl"
+import { IntlContextConsumer, changeLocale, Link, useIntl } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
 
@@ -204,6 +204,7 @@ const LogoContainer = styled.div`
 `
 
 const Footer = () => {
+  const intl = useIntl()
   return (
     <FooterContainer className="globalfooter">
       <LogoContainer>
@@ -216,29 +217,33 @@ const Footer = () => {
       </LogoContainer>
       <UGent className="ugent" css={LogoStyle} />
       <ContactInfo>
-        <span>Let's stay in touch</span>
-        <span>info@lowatter.com</span>
-        <span>Sint-Pietersnieuwstraat 41 B4</span>
-        <span>9000 Ghent, Belgium</span>
+        <span>{intl.formatMessage({ id: "footer.addressTitle" })}</span>
+        <span>{intl.formatMessage({ id: "footer.email" })}</span>
+        <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[0]}</span>
+        <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[1]}</span>
       </ContactInfo>
       <NavigationWrapper>
-        <span>Navigation</span>
+        <span>{intl.formatMessage({ id: "footer.navTitle" })}</span>
         <Navigation>
           <div>
             <Link to="/">Home</Link>
-            <Link to="/team/">Our Team</Link>
-            <Link to="/story/">Our Story</Link>
+            <Link to="/team/"> {intl.formatMessage({ id: "navigation.team" })}</Link>
+            <Link to="/story/"> {intl.formatMessage({ id: "navigation.story" })}</Link>
           </div>
           <div>
-            <Link to="/products/">Our Products</Link>
-            <Link to="/services/">Our Services</Link>
-            <Link to="/contact/">Contact</Link>
+            <Link to="/products/">
+              {intl.formatMessage({ id: "navigation.products" })}
+            </Link>
+            <Link to="/services/">
+              {intl.formatMessage({ id: "navigation.services" })}
+            </Link>
+            <Link to="/contact/">{intl.formatMessage({ id: "navigation.contact" })}</Link>
           </div>
         </Navigation>
       </NavigationWrapper>
       <hr />
       <SubFooter>
-        <Link to="/terms/">Terms and Conditions</Link>
+        <Link to="/terms/">{intl.formatMessage({ id: "footer.terms" })}</Link>
         <IntlContextConsumer>
           {({ languages }) =>
             languages.map(language => (
@@ -249,7 +254,7 @@ const Footer = () => {
           }
         </IntlContextConsumer>
         <span>
-          <sup>© </sup>LOWATTER 2019 | All Rights Reserved. Designed and developed by{" "}
+          <sup>© </sup>LOWATTER 2019 | {intl.formatMessage({ id: "footer.subText" })}{" "}
           <a href="https://www.leunesmedia.com" target="_blank" rel="noopener noreferrer">
             Leunes Media
           </a>
