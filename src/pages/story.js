@@ -72,7 +72,7 @@ const TimelineItem = styled.div`
     }
   }
 
-  &:nth-child(odd) {
+  &:nth-of-type(odd) {
     padding-left: 134px;
     padding-right: 0;
     align-self: flex-end;
@@ -112,7 +112,7 @@ const TimelineItem = styled.div`
         }
       }
     }
-    &:nth-child(odd) {
+    &:nth-of-type(odd) {
       padding-left: 0;
       padding-right: 72px;
       align-self: initial;
@@ -217,7 +217,7 @@ const StoryPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Our Story" description="The stories of LoWatter" />
+      <SEO title="Our Story" description="The stories of LoWatter" lang={intl.locale} />
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

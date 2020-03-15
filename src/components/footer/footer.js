@@ -248,7 +248,6 @@ const Footer = () => {
             ))
           }
         </IntlContextConsumer>
-        <Link>Sitemap</Link>
         <span>
           <sup>© </sup>LOWATTER 2019 | All Rights Reserved. Designed and developed by{" "}
           <a href="https://www.leunesmedia.com" target="_blank" rel="noopener noreferrer">

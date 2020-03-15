@@ -56,7 +56,11 @@ const ProductPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Products" description="Services and products of LoWatter." />
+      <SEO
+        title="Our Products"
+        description="Services and products of LoWatter."
+        lang={intl.locale}
+      />
       <Title>More Info Coming Soon!</Title>
       <Description>
         With the innovative domestic hot water controller you can lower the energy use,

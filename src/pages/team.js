@@ -190,7 +190,7 @@ const TeamPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Team" description="The people begind LoWatter" />
+      <SEO title="Our Team" description="The people begind LoWatter" lang={intl.locale} />
       <Title>Meet our team!</Title>
       <Dots />
       {data.team.frontmatter.teamcards

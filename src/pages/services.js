@@ -62,7 +62,11 @@ const ServicesPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Services" description="Consultancy and advice of LoWatter." />
+      <SEO
+        title="Our Services"
+        description="Consultancy and advice of LoWatter."
+        lang={intl.locale}
+      />
       <Title>More Info Coming Soon!</Title>
       <Description>
         LoWatter provides case specific knowledge through consultancy on either

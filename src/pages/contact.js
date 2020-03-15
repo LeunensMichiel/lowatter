@@ -217,6 +217,7 @@ const ContactPage = ({ data }) => {
       <SEO
         title="Contact Us"
         description="Contact Lowatter for consultancy and pricing of our services and ask for more information"
+        lang={intl.locale}
       />
       <ContactWrapper>
         <Blob />
