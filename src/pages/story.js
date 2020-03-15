@@ -193,7 +193,7 @@ const StyledCross = styled(Cross)`
     grid-column: 7;
     margin-top: 2.5rem;
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     justify-self: start;
     margin-top: 1rem;
     width: 45px;

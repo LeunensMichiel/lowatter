@@ -35,6 +35,9 @@ const Description = styled.p`
     padding-bottom: 10rem;
     color: ${colors.darkAccent};
   }
+  @media ${screens.mobileMLandscape} {
+    color: ${colors.darkAccent};
+  }
 `
 
 const Dots = styled(MedDots)`

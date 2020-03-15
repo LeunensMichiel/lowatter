@@ -35,7 +35,12 @@ const FooterContainer = styled.footer`
     background: ${colors.white};
     margin: 1.25rem 0;
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
+    grid-row-gap: 1rem;
+    padding-top: 10rem;
+    background-size: 200% 100%;
+  }
+  @media ${screens.mobileMLandscape} {
     grid-row-gap: 1rem;
     padding-top: 10rem;
     background-size: 200% 100%;
@@ -62,9 +67,8 @@ const ContactInfo = styled.aside`
     width: 100%;
     align-items: stretch;
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileSLandscape} {
     grid-column: 3 / span 2;
-    align-items: stretch;
   }
 `
 const NavigationWrapper = styled.aside`
@@ -74,9 +78,12 @@ const NavigationWrapper = styled.aside`
     font-weight: 600;
     text-transform: uppercase;
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     grid-column: 6 / span 2;
     width: 100%;
+  }
+  @media ${screens.mobileSLandscape} {
+    grid-column: 6 / span 2;
   }
 `
 
@@ -123,7 +130,7 @@ const SubFooter = styled.div`
       }
     }
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     flex-direction: column;
     align-items: center;
     span {
@@ -132,6 +139,9 @@ const SubFooter = styled.div`
       text-align: center;
       margin: 2rem 0;
     }
+  }
+  @media ${screens.mobileMLandscape} {
+    margin: 2rem 0;
   }
 `
 
@@ -147,10 +157,15 @@ const LogoStyle = css`
   @media ${screens.tablet} {
     width: 90%;
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     &.ugent {
       grid-column: 6 / span 2;
       width: 100px;
+    }
+  }
+  @media ${screens.mobileSLandscape} {
+    &.ugent {
+      grid-column: 6 / span 2;
     }
   }
 `
@@ -175,7 +190,7 @@ const LogoContainer = styled.div`
   @media ${screens.tablet} {
     height: 80%;
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     height: 100%;
     grid-column: 2 / span 4;
     justify-content: space-evenly;
@@ -183,7 +198,7 @@ const LogoContainer = styled.div`
       max-width: 120px;
     }
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileSLandscape} {
     grid-column: 3 / span 2;
   }
 `

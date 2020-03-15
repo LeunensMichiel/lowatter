@@ -17,7 +17,7 @@ const NavigationBarContainer = styled.header`
   background-position: calc(50% - 300px) 100%;
   padding: 1.5rem 0;
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     background: ${colors.darkAccent};
     position: fixed;
     top: 0;
@@ -43,7 +43,7 @@ const NavigationBar = styled.nav`
   max-width: 1140px;
   margin: 0 auto;
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     align-items: flex-start;
     flex-direction: column;
     .cls-1 {
@@ -61,7 +61,7 @@ const NavigationItems = styled.div`
   justify-content: space-evenly;
   margin-right: -1rem;
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     flex-direction: column;
     margin-right: 0;
     margin-left: 0;
@@ -78,7 +78,7 @@ const NavigationItem = styled(Link)`
     color: ${colors.accent2};
   }
 
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     margin: 1rem 0;
     font-size: 2rem;
     color: ${colors.white};
@@ -138,7 +138,7 @@ const NavIcon = styled.div`
       }
     }
   }
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
     display: block;
   }
 `

@@ -195,7 +195,11 @@ const DotsContainer = styled.div`
   display: flex;
   align-items: center;
   z-index: 5;
-  @media ${screens.mobileMPortraitOrLandscape} {
+  @media ${screens.mobileM} {
+    grid-column: 6 / span 2;
+    justify-self: start;
+  }
+  @media ${screens.mobileMLandscape} {
     grid-column: 6 / span 2;
     justify-self: start;
   }

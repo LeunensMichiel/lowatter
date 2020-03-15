@@ -110,7 +110,14 @@ const LegionellaContainer = styled.div`
   }
   @media ${screens.mobileMLandscape} {
     .water {
+      top: 0;
+    }
+  }
+  @media ${screens.mobileSLandscape} {
+    top: -200px;
+    .water {
       top: -280px;
+      width: 50%;
     }
   }
 `
@@ -196,6 +203,7 @@ const ContactUs = styled.section`
   min-height: 900px;
   min-height: 95vh;
   grid-column: 1 / span 8;
+  margin-bottom: -2px;
   display: flex;
   flex-direction: column;
   justify-content: center;

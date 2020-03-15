@@ -35,6 +35,9 @@ const Description = styled.p`
     color: ${colors.darkAccent};
     padding-bottom: 10rem;
   }
+  @media ${screens.mobileMLandscape} {
+    color: ${colors.darkAccent};
+  }
 `
 
 const Blob = styled(Blob2)`
