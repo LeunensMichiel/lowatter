@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { FormattedMessage, FormattedDate, useIntl } from "gatsby-plugin-intl"
+import { FormattedDate } from "gatsby-plugin-intl"
 
 import "../stylesheets/style.scss"
 import colors from "./framework/colors"
@@ -70,7 +70,6 @@ const StyledDots = styled(Dots)`
 `
 
 const Story = ({ story }) => {
-  const intl = useIntl()
   const date = new Date(story.node.frontmatter.date)
   return (
     <>

@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
@@ -25,7 +25,7 @@ import SmolDots from "../images/svg/dots/dots-smol.inline.svg"
 import BigDots from "../images/svg/dots/dots-large.inline.svg"
 
 const LandingText = styled.div`
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 4;
   white-space: pre-wrap;
   margin: 6.5rem 0;
   > h1 {
@@ -37,15 +37,15 @@ const LandingText = styled.div`
     color: ${colors.darkAccent};
   }
   z-index: 3;
-
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     grid-column: 2 / span 6;
+  }
+  @media ${screens.mobileM} {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     > h1 {
-      width: 95%;
       font-size: 2rem;
     }
   }
@@ -270,7 +270,11 @@ const IndexPage = ({ data }) => {
           }
         `}
       />
-      <SEO title="Home" description="Homepage of LoWatter" lang={intl.locale} />
+      <SEO
+        title={intl.formatMessage({ id: "seo.indexTitle" })}
+        description={intl.formatMessage({ id: "seo.indexDescription" })}
+        lang={intl.locale}
+      />
       <LandingText>
         <h1>{intl.formatMessage({ id: "index.title" })}</h1>
         <p>{intl.formatMessage({ id: "index.subtitle" })}</p>

@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import colors from "../components/framework/colors"
-import Legionella from "../components/framework/legionella"
 import screens from "../components/framework/screens"
 
 import Blob9 from "../images/svg/blobs/blob9.svg"
@@ -52,10 +51,10 @@ const ThanksPage = () => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Thank you" lang={intl.locale} />
+      <SEO title={intl.formatMessage({ id: "seo.thanks" })} lang={intl.locale} />
       <BlobContainer>
-        <h1>Thanks!</h1>
-        <h2>We'll be in touch soon.</h2>
+        <h1>{intl.formatMessage({ id: "thanks.title" })}</h1>
+        <h2>{intl.formatMessage({ id: "thanks.subtitle" })}</h2>
       </BlobContainer>
     </Layout>
   )

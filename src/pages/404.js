@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -58,10 +58,10 @@ const NotFoundPage = () => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="404: Not found" lang={intl.locale} />
+      <SEO title={intl.formatMessage({ id: "seo.404" })} lang={intl.locale} />
       <BlobContainer>
-        <h1>Uh-oh.</h1>
-        <h2>This page does not exist.</h2>
+        <h1>{intl.formatMessage({ id: "404.title" })}</h1>
+        <h2>{intl.formatMessage({ id: "404.subtitle" })}</h2>
       </BlobContainer>
       <LegionellaSip>
         <Legionella width={115} height={32} rotate={21} bottom={-50} left={0} />

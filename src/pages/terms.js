@@ -1,14 +1,12 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Legionella from "../components/framework/legionella"
 import screens from "../components/framework/screens"
 
 import MedDots from "../images/svg/dots/dots-medium.inline.svg"
-import colors from "../components/framework/colors"
 
 const Description = styled.div`
   grid-column: 3 / span 4;
@@ -41,8 +39,8 @@ const TermsconditionsPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Our Terms and Conditions"
-        description="Terms and conditions of LoWatter."
+        title={intl.formatMessage({ id: "seo.termsTitle" })}
+        description={intl.formatMessage({ id: "seo.termsDescription" })}
         lang={intl.locale}
       />
       {data.terms.edges.map(term => {

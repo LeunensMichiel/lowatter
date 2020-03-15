@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import Img from "gatsby-image/withIEPolyfill"
 import { graphql } from "gatsby"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import showdown from "showdown"
 
 import colors from "../components/framework/colors"
@@ -191,7 +191,11 @@ const TeamPage = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
-      <SEO title="Our Team" description="The people begind LoWatter" lang={intl.locale} />
+      <SEO
+        title={intl.formatMessage({ id: "seo.teamTitle" })}
+        description={intl.formatMessage({ id: "seo.teamDescription" })}
+        lang={intl.locale}
+      />
       <Title>{intl.formatMessage({ id: "team.title" })}</Title>
       <Dots />
       {data.team.frontmatter.teamcards

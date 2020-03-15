@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { graphql } from "gatsby"
-import { FormattedMessage, FormattedDate, useIntl } from "gatsby-plugin-intl"
+import { FormattedDate, useIntl } from "gatsby-plugin-intl"
 import Modal from "react-modal"
 
 import colors from "../components/framework/colors"
@@ -218,7 +218,11 @@ const StoryPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Our Story" description="The stories of LoWatter" lang={intl.locale} />
+      <SEO
+        title={intl.formatMessage({ id: "seo.storyTitle" })}
+        description={intl.formatMessage({ id: "seo.storyDescription" })}
+        lang={intl.locale}
+      />
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -259,6 +263,8 @@ const StoryPage = ({ data }) => {
                 </TimelineItemContent>
               </TimelineItem>
             )
+          } else {
+            return null
           }
         })}
       </TimelineContainer>

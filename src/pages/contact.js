@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
-import { graphql } from "gatsby"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import ReactMapGL, { Marker, NavigationControl, FullscreenControl } from "react-map-gl"
 
 import colors from "../components/framework/colors"
@@ -215,8 +214,8 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Contact Us"
-        description="Contact Lowatter for consultancy and pricing of our services and ask for more information"
+        title={intl.formatMessage({ id: "seo.contactTitle" })}
+        description={intl.formatMessage({ id: "seo.contactDescription" })}
         lang={intl.locale}
       />
       <ContactWrapper>

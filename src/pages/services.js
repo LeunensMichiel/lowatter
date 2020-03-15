@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -63,8 +63,8 @@ const ServicesPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Our Services"
-        description="Consultancy and advice of LoWatter."
+        title={intl.formatMessage({ id: "seo.servicesTitle" })}
+        description={intl.formatMessage({ id: "seo.servicesDescription" })}
         lang={intl.locale}
       />
       <Title>{intl.formatMessage({ id: "services.title" })}</Title>

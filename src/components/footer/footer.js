@@ -130,11 +130,15 @@ const SubFooter = styled.div`
       }
     }
   }
+  @media ${screens.tablet} {
+    span {
+      width: 66%;
+    }
+  }
   @media ${screens.mobileM} {
     flex-direction: column;
     align-items: center;
     span {
-      width: 66%;
       margin-left: 0;
       text-align: center;
       margin: 2rem 0;
@@ -247,7 +251,14 @@ const Footer = () => {
         <IntlContextConsumer>
           {({ languages }) =>
             languages.map(language => (
-              <a key={language} onClick={() => changeLocale(language)}>
+              <a
+                key={language}
+                onKeyDown={() => changeLocale(language)}
+                onClick={() => changeLocale(language)}
+                aria-pressed="false"
+                tabIndex="0"
+                role="button"
+              >
                 {language}
               </a>
             ))
