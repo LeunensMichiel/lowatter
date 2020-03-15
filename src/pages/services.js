@@ -4,6 +4,7 @@ import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Legionella from "../components/framework/legionella"
 
 import Blob2 from "../images/svg/blobs/blob2.inline.svg"
 import colors from "../components/framework/colors"
@@ -32,6 +33,7 @@ const Description = styled.p`
   @media ${screens.mobileM} {
     grid-column: 2 / span 6;
     color: ${colors.darkAccent};
+    padding-bottom: 10rem;
   }
 `
 
@@ -58,7 +60,7 @@ const ServicesPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Our Services" description="Consultancy and advice of LoWatter." />
-      <Title>More Info Coming Soon!</Title>'
+      <Title>More Info Coming Soon!</Title>
       <Description>
         LoWatter provides case specific knowledge through consultancy on either
         disinfection or energy savings with a Legionella pneumophila predicting simulation
@@ -66,6 +68,7 @@ const ServicesPage = ({ data }) => {
         storage and distribution of domestic hot water.
       </Description>
       <Blob />
+      <Legionella bottom={200} right={250} width={136} height={43} rotate={45} />
     </Layout>
   )
 }

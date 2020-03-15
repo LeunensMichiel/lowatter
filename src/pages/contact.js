@@ -81,6 +81,11 @@ const InnerForm = styled.form`
     grid-column: 4;
     cursor: pointer;
   }
+  @media ${screens.tablet} {
+    button {
+      grid-column: 3 / span 2;
+    }
+  }
   @media ${screens.mobileM} {
     padding: 1.5rem;
     grid-gap: 1.125rem 0;
@@ -137,7 +142,7 @@ const InputWrapper = styled.div`
     margin-bottom: 0.5rem;
     color: ${colors.darkAccent};
   }
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     grid-column: 1 / span 4;
   }
 `
@@ -161,6 +166,9 @@ const ContactInfo = styled.aside`
   @media ${screens.mobileM} {
     margin: 10rem 0;
     grid-column: 2 / span 4;
+  }
+  @media ${screens.mobileMLandscape} {
+    grid-column: 3 / span 3;
   }
 `
 
@@ -187,7 +195,7 @@ const DotsContainer = styled.div`
   display: flex;
   align-items: center;
   z-index: 5;
-  @media ${screens.mobileM} {
+  @media ${screens.mobileMPortraitOrLandscape} {
     grid-column: 6 / span 2;
     justify-self: start;
   }

@@ -3,7 +3,8 @@ const screens = {
   mobileSLandscape: `(max-width: 374px) and (orientation: landscape)`,
 
   mobileM: `(max-width: 767px)`,
-  mobileMLandscape: `(max-width: 767px) and (orientation: landscape)`,
+  mobileMLandscape: `(max-width: 890px) and (orientation: landscape)`,
+  mobileMPortraitOrLandscape: `(max-width: 767px) or ((max-width: 890px) and (orientation: landscape))`,
 
   tablet: `(max-width: 1024px)`,
   tabletland: `(max-width: 1024px) and (orientation: landscape)`,

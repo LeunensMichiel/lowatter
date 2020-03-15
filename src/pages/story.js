@@ -188,7 +188,13 @@ const StyledCross = styled(Cross)`
   &:focus {
     fill: ${colors.darkAccent};
   }
-  @media ${screens.mobileM} {
+  @media ${screens.laptop} {
+    justify-self: end;
+    grid-column: 7;
+    margin-top: 2.5rem;
+  }
+  @media ${screens.mobileMPortraitOrLandscape} {
+    justify-self: start;
     margin-top: 1rem;
     width: 45px;
     grid-column: 2;

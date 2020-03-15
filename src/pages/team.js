@@ -20,14 +20,14 @@ const Title = styled.h1`
   margin-top: 6.25rem;
   margin-bottom: 1.5rem;
   grid-column: 2 / span 2;
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     grid-column: 2 / span 6;
   }
 `
 
 const Dots = styled(SmolDots)`
   grid-column: 1 / span 2;
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     grid-column: 1 / span 8;
     width: 60%;
   }
@@ -47,6 +47,13 @@ const CardBase = styled.div`
   > svg {
     width: 103%;
     height: 107%;
+  }
+  @media ${screens.tablet} {
+    grid-column: 2 / span 6;
+    height: 520px;
+  }
+  @media ${screens.laptop} {
+    height: 600px;
   }
   @media ${screens.mobileM} {
     grid-column: 1 / span 8;
@@ -114,7 +121,7 @@ const CardInfoDetails = styled.div`
       fill: ${colors.darkAccent};
     }
   }
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     padding: 1rem 1.5rem;
     h4 {
       margin-bottom: 1rem;
@@ -161,13 +168,15 @@ const CardBody = styled.article`
     max-height: 100%;
     overflow-y: auto;
   }
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     padding: 1.5rem;
+    font-size: 0.875rem;
+  }
+  @media ${screens.mobileM} {
     border-top-right-radius: 0;
     border-bottom-left-radius: 50px;
     div {
       max-height: 300px;
-      font-size: 0.875rem;
     }
   }
 `

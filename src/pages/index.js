@@ -108,6 +108,11 @@ const LegionellaContainer = styled.div`
       width: 50%;
     }
   }
+  @media ${screens.mobileMLandscape} {
+    .water {
+      top: -280px;
+    }
+  }
 `
 
 const LegionellaSip = styled.div`
@@ -211,6 +216,12 @@ const ContactUs = styled.section`
     max-width: 750px;
     margin-bottom: 4rem;
   }
+  @media ${screens.tablet} {
+    h1,
+    p {
+      max-width: 600px;
+    }
+  }
   @media ${screens.mobileM} {
     margin-top: 3rem;
     padding: 12rem 16px;
@@ -219,6 +230,9 @@ const ContactUs = styled.section`
       text-align: justify;
       margin-bottom: 2rem;
     }
+  }
+  @media ${screens.mobileMLandscape} {
+    min-height: 650px;
   }
 `
 

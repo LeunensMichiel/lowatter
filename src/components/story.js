@@ -38,12 +38,13 @@ const StoryContainer = styled.div`
       }
     }
   }
-
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     grid-column: 2 / span 6;
     article {
       margin: 2rem 0;
     }
+  }
+  @media ${screens.mobileM} {
     p {
       img {
         &[alt~="right"] {
@@ -64,7 +65,7 @@ const StoryContainer = styled.div`
 const StyledDots = styled(Dots)`
   grid-column: 1;
   margin-top: 50%;
-  @media ${screens.mobileM} {
+  @media ${screens.tablet} {
     display: none;
   }
 `
