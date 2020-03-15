@@ -1,7 +1,6 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { Link } from "gatsby-plugin-intl"
+import { useIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
 
@@ -73,6 +72,7 @@ const NavigationItems = styled.div`
 const NavigationItem = styled(Link)`
   margin: 1rem;
   font-size: 1.25rem;
+  text-transform: capitalize;
 
   &.active {
     color: ${colors.accent2};
@@ -144,6 +144,7 @@ const NavIcon = styled.div`
 `
 
 const Navbar = ({ show, hamburgerClickHandler }) => {
+  const intl = useIntl()
   return (
     <>
       <NavIcon
@@ -165,19 +166,19 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
           </Link>
           <NavigationItems>
             <NavigationItem activeClassName="active" to="/team/">
-              Our Team
+              {intl.formatMessage({ id: "navigation.team" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/story/">
-              Our Story
+              {intl.formatMessage({ id: "navigation.story" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/products/">
-              Our Products
+              {intl.formatMessage({ id: "navigation.products" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/services/">
-              Our Services
+              {intl.formatMessage({ id: "navigation.services" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/contact/">
-              Contact Us
+              {intl.formatMessage({ id: "navigation.contact" })}
             </NavigationItem>
           </NavigationItems>
         </NavigationBar>
@@ -185,7 +186,5 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
     </>
   )
 }
-
-Navbar.propTypes = {}
 
 export default Navbar
