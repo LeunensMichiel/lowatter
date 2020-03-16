@@ -92,7 +92,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
