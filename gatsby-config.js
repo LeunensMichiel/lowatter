@@ -92,8 +92,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: false,
+      },
+    }`gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-lodash`,
