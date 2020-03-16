@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
-    "gatsby": "^2.19.44",
+    "gatsby": "^2.19.45",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-emotion": "^4.1.25",
@@ -15,7 +15,7 @@
     "gatsby-plugin-lodash": "^3.1.22",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-netlify-cache": "^1.2.0",
-    "gatsby-plugin-netlify-cms": "^4.1.40",
+    "gatsby-plugin-netlify-cms": "^4.1.42",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-react-svg": "^3.0.0",
