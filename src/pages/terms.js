@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { useIntl } from "gatsby-plugin-intl"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
