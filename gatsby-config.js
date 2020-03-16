@@ -97,7 +97,8 @@ module.exports = {
       options: {
         enableIdentityWidget: false,
       },
-    }`gatsby-plugin-sitemap`,
+    },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-lodash`,
