@@ -30,10 +30,9 @@ const NotificationContainer = styled.aside`
   right: 4rem;
   z-index: 200;
   background: ${colors.darkAccent};
-  padding: 2rem 2rem;
+  padding: 2rem;
   border-radius: 50px 25px;
   animation: ${FadeIn} 1s ease;
-
   h4 {
     font-size: 1rem;
     color: ${colors.white};
@@ -55,6 +54,26 @@ const NotificationContainer = styled.aside`
       color: ${colors.white};
     }
   }
+  @media ${screens.mobileM} {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px 25px 0 0;
+    padding: 1.5rem;
+    max-width: unset;
+    h4 {
+      font-size: 0.875rem;
+      padding-top: 0.5rem;
+      margin-bottom: 0.1rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+    a {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+  }
 `
 
 const NotificationCross = styled(Cross)`
@@ -68,6 +87,9 @@ const NotificationCross = styled(Cross)`
   &:hover,
   &:focus {
     fill: ${colors.accent2};
+  }
+  @media ${screens.mobileM} {
+    top: -12px;
   }
 `
 

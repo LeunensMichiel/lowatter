@@ -4,6 +4,7 @@ import { Global, css } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import { useIntl } from "gatsby-plugin-intl"
+import showdown from "showdown"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
@@ -150,6 +151,9 @@ const BlobRow = styled.div`
 const InfoBlobText = styled.article`
   flex-basis: 40%;
   text-align: ${props => (props.even ? "right" : "left")};
+  strong {
+    color: ${colors.accent};
+  }
   @media ${screens.mobileM} {
     flex-basis: unset;
   }
@@ -260,6 +264,7 @@ const DotStyle = css`
 const IndexPage = ({ data }) => {
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
   const intl = useIntl()
+  const converter = new showdown.Converter()
   return (
     <Layout>
       <Global
@@ -311,7 +316,11 @@ const IndexPage = ({ data }) => {
             <BlobRow id={`about${index}`} even={index % 2}>
               <InfoBlobText even={index % 2}>
                 <h2>{blob.title}</h2>
-                <p>{blob.description}</p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: converter.makeHtml(blob.description),
+                  }}
+                />
               </InfoBlobText>
               <InfoBlob>
                 {blobs[index % 5]}

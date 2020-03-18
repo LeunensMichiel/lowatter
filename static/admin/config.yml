@@ -39,7 +39,7 @@ collections:
               - {
                   label: "Beschrijving van Blob",
                   name: "description",
-                  widget: "text",
+                  widget: "markdown",
                   hint: "Beschrijving van een blob op je pagina.",
                 }
               - label: "Afbeelding van Blob"

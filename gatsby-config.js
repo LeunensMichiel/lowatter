@@ -48,6 +48,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1440,
+              quality: 85,
             },
           },
         ],
@@ -96,7 +97,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-lodash`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

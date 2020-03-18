@@ -3,16 +3,16 @@ blobitems:
   - title: Wie zijn we?
     description: >-
       Aan de Universiteit Gent werd er de laatste jaren wetenschappelijk
-      onderzoek verricht naar Legionella in sanitair warmwatersystemen. Centraal
-      in dit onderzoek staat het evenwicht tussen gezondheid en
+      onderzoek verricht naar Legionella in sanitair **warmwatersystemen**.
+      Centraal in dit onderzoek staat het evenwicht tussen gezondheid en
       energiebesparing.
     image: ghent_university.jpg
     lang: nl
   - title: Who are we?
     description: >-
       At the University of Ghent, scientific research has been conducted on
-      Legionella in sanitary hot water systems in recent years. Central in this
-      research is the balance between health and energy saving.
+      Legionella in **sanitary hot water** systems in recent years. Central in
+      this research is the balance between health and energy saving.
     image: ghent_university.jpg
     lang: en
   - title: Wat doen we?
@@ -34,7 +34,7 @@ blobitems:
     lang: nl
   - title: Wat maakt onze technologie uniek?
     description: >-
-      De oplossingen die wij voorstellen zijn duurzaam, het feit dat we geen
+      De oplossingen die wij voorstellen zijn **duurzaam**, het feit dat we geen
       chemicaliën toevoegen aan het drinkwater maakt onze technologie uniek.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: nl
