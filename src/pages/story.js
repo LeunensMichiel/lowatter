@@ -52,11 +52,12 @@ const TimelineItem = styled.div`
 
   .blob {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: calc(50% - 3rem);
-    right: -12rem;
+    right: -11.5rem;
     padding: 1.5rem;
     svg {
       width: 100%;
@@ -67,8 +68,11 @@ const TimelineItem = styled.div`
     span {
       z-index: 4;
       color: ${colors.white};
-      font-size: 1.875rem;
+      font-size: 1.5rem;
       font-weight: 600;
+      &:first-of-type {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -83,7 +87,7 @@ const TimelineItem = styled.div`
       border-radius: 82px 35px;
       .blob {
         right: auto;
-        left: -12rem;
+        left: -11.5rem;
         svg {
           ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
         }
@@ -102,13 +106,16 @@ const TimelineItem = styled.div`
     padding-right: 72px;
     > div {
       .blob {
-        right: -72px;
+        right: -69px;
         padding: 0.625rem;
         svg {
           height: 64px;
         }
         span {
-          font-size: 1.125rem;
+          font-size: 1rem;
+          &:first-of-type {
+            font-size: 0.8rem;
+          }
         }
       }
     }
@@ -122,7 +129,7 @@ const TimelineItem = styled.div`
         border-radius: 35px 82px;
         .blob {
           left: initial;
-          right: -72px;
+          right: -69px;
         }
         &:after {
           right: -7.5px;
@@ -258,6 +265,9 @@ const StoryPage = ({ data }) => {
                   <p>{story.node.frontmatter.description}</p>
                   <div className="blob">
                     {blobs[index % 5]}
+                    <span>
+                      <FormattedDate value={date} month="short" />
+                    </span>
                     <span>{date.getFullYear()}</span>
                   </div>
                 </TimelineItemContent>

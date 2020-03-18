@@ -67,7 +67,7 @@ module.exports = {
       options: {
         name: `LoWatter`,
         short_name: `LoWatter`,
-        description: `Beheren van legionella in kraantjeswater.`,
+        description: `Bestrijding van legionella in kraantjeswater.`,
         start_url: `/nl/`,
         lang: `nl`,
         background_color: `#4DD996`,

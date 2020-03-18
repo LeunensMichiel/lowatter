@@ -41,7 +41,7 @@ const CardBase = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 620px;
   &:last-of-type {
     margin-bottom: 10rem;
   }
@@ -96,6 +96,9 @@ const CardInfo = styled.aside`
 
 const CardInfoDetails = styled.div`
   padding: 1rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   h3 {
     color: ${colors.white};
@@ -107,10 +110,19 @@ const CardInfoDetails = styled.div`
   }
   p {
     color: ${colors.darkAccent};
-    text-transform: capitalize;
     font-size: 0.875rem;
+    line-height: 1;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
   a {
+    display: block;
+    height: 33px;
+    margin-top: auto;
     &:hover,
     &:focus {
       svg {
@@ -163,7 +175,7 @@ const CardBody = styled.article`
   border-top-right-radius: 50px;
   background: ${colors.white};
   flex-basis: 60%;
-  padding: 2.25rem;
+  padding: 2rem 2.25rem;
   text-align: justify;
   div {
     max-height: 100%;

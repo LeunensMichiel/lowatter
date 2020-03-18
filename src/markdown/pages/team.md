@@ -44,7 +44,7 @@ teamcards:
     subtitle: Wetenschapper & Ondernemer
     description: |-
       Dr. Ing.
-
+      
       Onderzoek en ontwikkeling (R&D), technologie en simulatie
     image: liendebacker_v2.jpg
     linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
@@ -52,9 +52,8 @@ teamcards:
       In 2009, I graduated cum laude as an civil engineer (Hogeschool Gent) with
       a master dissertation about “Restoration of the church-of-our-Lady in
       Bruges. Stability of the tower using an FEM-analysis.” (Buildsoft package
-      + ANSYS).\
+      + ANSYS).
 
-      \
 
       Because I really liked the research part, I started since august 2010 as a
       PhD-researcher in the research group of Building Physics at The Faculty of
@@ -67,9 +66,8 @@ teamcards:
       possible damage risks to the cultural heritage. Supervisor of this
       research project were Prof. Arnold Janssens (Ghent university, Dept. of
       Architecture & Urban Planning) and Prof. Michel De Paepe (Ghent
-      university, Dept. of Flow, Heat and Combustion Mechanics).\
+      university, Dept. of Flow, Heat and Combustion Mechanics).
 
-      \
 
       During these years, I became really interested in whole building
       simulations and more-over in the physics, mathematical background and the
