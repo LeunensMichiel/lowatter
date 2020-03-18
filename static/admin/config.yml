@@ -113,8 +113,8 @@ collections:
                   buttons:
                     ["bold", "italic", "link", "quote", "bulleted-list", "numbered-list"],
                 }
-  - name: "blog"
-    label: "Blog"
+  - name: "stories"
+    label: "Story"
     folder: "src/markdown/story"
     create: true
     delete: true
@@ -150,3 +150,46 @@ collections:
         options:
           - { label: "Nederlands", value: "nl" }
           - { label: "English", value: "en" }
+  - label: "Notificatie"
+    name: "notification"
+    identifier_field: description
+    delete: false
+    editor:
+      preview: true
+    files:
+      - label: "Notificatie"
+        name: "notification"
+        file: "src/markdown/notification.md"
+        fields:
+          - { label: "Titel Nederlands", name: "titleNl", widget: "string" }
+          - { label: "Titel Engels", name: "titleEn", widget: "string" }
+          - { label: "Beschrijving Nederlands", name: "descriptionNl", widget: "text" }
+          - { label: "Beschrijving Engels", name: "descriptionEn", widget: "text" }
+          - {
+              label: "Begindatum",
+              name: "begindate",
+              widget: "datetime",
+              hint: "Vanaf wanneer moet de notificatie actief staan?",
+            }
+          - {
+              label: "Einddatum",
+              name: "enddate",
+              widget: "datetime",
+              hint: "Tot wanneer moet de notificatie actief blijven?",
+            }
+          - label: "Overeenkomende Storiestory (nl)"
+            name: "relatedStoryNl"
+            widget: "relation"
+            collection: "stories"
+            searchFields: ["title"]
+            displayFields: ["title", "date"]
+            valueField: "body"
+            required: false
+          - label: "Overeenkomende story (en)"
+            name: "relatedStoryEn"
+            widget: "relation"
+            collection: "stories"
+            searchFields: ["title"]
+            displayFields: ["title", "date"]
+            valueField: "body"
+            required: false
