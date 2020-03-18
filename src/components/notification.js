@@ -122,8 +122,10 @@ const Notification = ({ notification }) => {
   const converter = new showdown.Converter()
   const [modalIsOpen, setIsOpen] = useState(false)
   const [notificationIsOpen, setNotificationIsOpen] = useState(
-    localStorage.getItem("notification") !==
-      `${notification.titleNl}-${notification.begindate}`
+    typeof window !== `undefined`
+      ? localStorage.getItem("notification") !==
+          `${notification.titleNl}-${notification.begindate}`
+      : false
   )
   const story = {
     title: intl.locale === "nl" ? notification.titleNl : notification.titleEn,
@@ -144,10 +146,12 @@ const Notification = ({ notification }) => {
   }
 
   const setLocalStorage = () => {
-    localStorage.setItem(
-      "notification",
-      `${notification.titleNl}-${notification.begindate}`
-    )
+    if (typeof window !== `undefined`) {
+      localStorage.setItem(
+        "notification",
+        `${notification.titleNl}-${notification.begindate}`
+      )
+    }
   }
 
   return (
