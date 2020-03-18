@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { FormattedDate } from "gatsby-plugin-intl"
 
-import "../stylesheets/style.scss"
 import colors from "./framework/colors"
 import screens from "./framework/screens"
 import Dots from "../images/svg/dots/dots-blog.inline.svg"
@@ -70,16 +69,16 @@ const StyledDots = styled(Dots)`
 `
 
 const Story = ({ story }) => {
-  const date = new Date(story.node.frontmatter.date)
+  const date = new Date(story.date)
   return (
     <>
       <StyledDots />
       <StoryContainer>
-        <h1>{story.node.frontmatter.title}</h1>
+        <h1>{story.title}</h1>
         <small>
           <FormattedDate value={date} />
         </small>
-        <article dangerouslySetInnerHTML={{ __html: story.node.html }} />
+        <article dangerouslySetInnerHTML={{ __html: story.html }} />
       </StoryContainer>
     </>
   )

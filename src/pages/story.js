@@ -223,6 +223,12 @@ const StoryPage = ({ data }) => {
     setIsOpen(false)
   }
 
+  let story = {
+    title: data.stories.edges[currentStory].node.frontmatter.title,
+    date: data.stories.edges[currentStory].node.frontmatter.date,
+    html: data.stories.edges[currentStory].node.html,
+  }
+
   return (
     <Layout>
       <SEO
@@ -241,9 +247,7 @@ const StoryPage = ({ data }) => {
         contentLabel={data.stories.edges[currentStory].node.frontmatter.title}
       >
         <StyledCross onClick={closeModal} />
-        {data.stories.edges[currentStory] && (
-          <Story story={data.stories.edges[currentStory]} />
-        )}
+        {data.stories.edges[currentStory] && <Story story={story} />}
       </Modal>
       <TimelineContainer>
         {data.stories.edges.map((story, index) => {
