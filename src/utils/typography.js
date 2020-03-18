@@ -2,7 +2,7 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.5,
-  headerFontFamily: ["Anton", "serif"],
+  headerFontFamily: ["Asap", "sans-serif"],
   bodyFontFamily: ["Oswald", "sans-serif"],
   headerColor: "#2D302D",
   bodyColor: "#616765",
@@ -12,8 +12,8 @@ const typography = new Typography({
       styles: ["400", "600"],
     },
     {
-      name: "Anton",
-      styles: ["400"],
+      name: "Asap",
+      styles: ["700"],
     },
   ],
 })

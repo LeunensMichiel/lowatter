@@ -6,21 +6,21 @@ blobitems:
       onderzoek verricht naar Legionella in sanitair warmwatersystemen. Centraal
       in dit onderzoek staat het evenwicht tussen gezondheid en
       energiebesparing.
-    image: hannah-xu-cy_wqgv7aly-unsplash.jpg
+    image: ghent_university.jpg
     lang: nl
   - title: Who are we?
     description: >-
       At the University of Ghent, scientific research has been conducted on
       Legionella in sanitary hot water systems in recent years. Central in this
       research is the balance between health and energy saving.
-    image: hannah-xu-cy_wqgv7aly-unsplash.jpg
+    image: ghent_university.jpg
     lang: en
-  - title: WAT DOEN WE?
+  - title: Wat doen we?
     description: >-
       Sinds kort zijn we ook actief in de praktijk, onder de vorm van
       dienstverlening. In eerste instantie willen we via consultancy
       casespecifieke kennis verschaffen rond desinfectie en energiebesparing.
-    image: helloquence-5fnmwej4taa-unsplash.jpg
+    image: photo-by-onne-beauty-on-unsplash_v2.jpg
     lang: nl
   - title: Hoe doen we dit?
     description: >-
@@ -30,21 +30,21 @@ blobitems:
       Bovendien kunnen we casespecifieke duurzame oplossingen met elkaar
       vergelijken om zo tot de meest (kost)effectieve oplossing te komen
       alvorens die in de praktijk te implementeren.
-    image: thisisengineering-raeng-kivbdtyilqc-unsplash.jpg
+    image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: nl
-  - title: WAT MAAKT ONZE TECHNOLOGIE UNIEK?
+  - title: Wat maakt onze technologie uniek?
     description: >-
       De oplossingen die wij voorstellen zijn duurzaam, het feit dat we geen
       chemicaliën toevoegen aan het drinkwater maakt onze technologie uniek.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: nl
-  - title: IN WELKE GEBOUWEN?
-    description: >
+  - title: In welke gebouwen?
+    description: >-
       We focussen zowel op residentiële als publieke gebouwen met een grote
       warmwatervraag, denk hierbij aan appartementsgebouwen, woonzorgcentra,
       sportcomplexen, hotels en ziekenhuizen.
     lang: nl
-    image: dimitri-houtteman-kaxkanhmt0c-unsplash.jpg
+    image: photo-by-roberto-nickson-on-unsplash_v2.jpg
   - title: How do we accomplish this?
     description: >-
       In concrete terms, this means that we can quickly and efficiently identify
@@ -53,6 +53,6 @@ blobitems:
       can compare case specific sustainable solutions with each other in order
       to arrive at the most (cost) effective solution before implementing it in
       practice.
-    image: thisisengineering-raeng-kivbdtyilqc-unsplash.jpg
+    image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: en
 ---

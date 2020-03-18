@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: temp
+  branch: master
 
 media_folder: static/uploads
 public_folder: /uploads
@@ -9,6 +9,8 @@ site_url: https://lowatter.com
 logo_url: https://lowatter.com/uploads/logo.svg
 
 publish_mode: editorial_workflow
+
+local_backend: true
 
 collections:
   - label: "Paginas"
@@ -23,18 +25,6 @@ collections:
         public_folder: ""
         file: "src/markdown/pages/landing.md"
         fields:
-          - {
-              label: Hoofdpaginatitel,
-              name: title,
-              widget: string,
-              hint: "Titel vande hoofdpagina, (controlling legionella in tapwater)",
-            }
-          - {
-              label: "Beschrijving van Blob",
-              name: "description",
-              widget: "text",
-              hint: "Beschrijving van de hoofdpagina. Komt onder de titel en boven de knoppen",
-            }
           - label: "InfoBlobs"
             hint: "De blobs, ofwel groene bollen, op je hoofdpagina. Elke blob heeft een Titel, beschrijving en afbeelding."
             name: "blobitems"

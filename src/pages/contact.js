@@ -62,8 +62,8 @@ const FormContainer = styled.section`
     align-items: center;
     justify-content: stretch;
     h1 {
-      top: -45px;
-      font-size: 1.5rem;
+      top: -40px;
+      font-size: 1.125rem;
     }
   }
 `

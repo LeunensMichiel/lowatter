@@ -214,7 +214,11 @@ const Footer = () => {
       <LogoContainer>
         <Logo className="lowatter" css={LogoStyle} />
         <span>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/company/lowatter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedIn />
           </a>
         </span>
@@ -265,7 +269,8 @@ const Footer = () => {
           }
         </IntlContextConsumer>
         <span>
-          <sup>© </sup>LOWATTER 2019 | {intl.formatMessage({ id: "footer.subText" })}{" "}
+          <sup>© </sup>LOWATTER {new Date().getFullYear()} |{" "}
+          {intl.formatMessage({ id: "footer.subText" })}{" "}
           <a href="https://www.leunesmedia.com" target="_blank" rel="noopener noreferrer">
             Leunes Media
           </a>

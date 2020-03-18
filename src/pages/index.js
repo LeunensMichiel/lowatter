@@ -29,7 +29,7 @@ const LandingText = styled.div`
   white-space: pre-wrap;
   margin: 6.5rem 0;
   > h1 {
-    max-width: 550px;
+    max-width: 580px;
   }
   > p {
     max-width: 360px;
@@ -51,7 +51,6 @@ const LandingText = styled.div`
   }
   @media ${screens.mobileS} {
     > h1 {
-      width: 100%;
       font-size: 1.8rem;
     }
   }

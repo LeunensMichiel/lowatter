@@ -6,14 +6,16 @@ import colors from "../framework/colors"
 import screens from "../framework/screens"
 
 const LinkWrapper = styled(Link)`
+  display: inline-block;
   background: ${props => (props.accent ? colors.darkAccent : colors.gradient)};
   border-radius: 140px;
-  padding: 0.875rem 3rem;
+  padding: 1rem 3rem;
   color: ${colors.white};
   margin-right: ${props => `${props.right}rem`};
   margin-left: ${props => `${props.left}rem`};
   text-align: center;
   border: none;
+  min-width: 200px;
 
   &:hover,
   &:focus {
