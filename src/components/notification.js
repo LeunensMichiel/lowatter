@@ -121,11 +121,13 @@ const Notification = ({ notification }) => {
 
   const [modalIsOpen, setIsOpen] = useState(false)
   const [notificationIsOpen, setNotificationIsOpen] = useState(false)
-  useEffect(() =>
-    setNotificationIsOpen(
-      localStorage.getItem("notification") !==
-        `${notification.titleNl}-${notification.begindate}`
-    )
+  useEffect(
+    () =>
+      setNotificationIsOpen(
+        localStorage.getItem("notification") !==
+          `${notification.titleNl}-${notification.begindate}`
+      ),
+    [notification.titleNl, notification.begindate]
   )
 
   const story = {

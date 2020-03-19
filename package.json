@@ -39,7 +39,6 @@
     "react-map-gl": "^5.2.3",
     "react-modal": "^3.11.2",
     "react-typography": "^0.16.19",
-    "showdown": "^1.9.1",
     "typeface-asap": "^1.1.3",
     "typeface-oswald": "^1.1.4",
     "typography": "^0.16.19"
