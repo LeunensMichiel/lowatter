@@ -1,11 +1,10 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
 import { useIntl } from "gatsby-plugin-intl"
 import Modal from "react-modal"
-import showdown from "showdown"
 
 import colors from "./framework/colors"
 import screens from "./framework/screens"
@@ -119,23 +118,25 @@ const StyledCross = styled(Cross)`
 `
 const Notification = ({ notification }) => {
   const intl = useIntl()
-  const converter = new showdown.Converter()
+
   const [modalIsOpen, setIsOpen] = useState(false)
-  const [notificationIsOpen, setNotificationIsOpen] = useState(
-    typeof window !== `undefined`
-      ? localStorage.getItem("notification") !==
+  const [notificationIsOpen, setNotificationIsOpen] = useState(false)
+  useEffect(
+    () =>
+      setNotificationIsOpen(
+        localStorage.getItem("notification") !==
           `${notification.titleNl}-${notification.begindate}`
-      : false
+      ),
+    [notification.titleNl, notification.begindate]
   )
+
   const story = {
     title: intl.locale === "nl" ? notification.titleNl : notification.titleEn,
     description:
       intl.locale === "nl" ? notification.descriptionNl : notification.descriptionEn,
     date: notification.begindate,
     html:
-      intl.locale === "nl"
-        ? converter.makeHtml(notification.relatedStoryNl)
-        : converter.makeHtml(notification.relatedStoryEn),
+      intl.locale === "nl" ? notification.relatedStoryNl : notification.relatedStoryEn,
   }
 
   const openModal = () => {
@@ -144,7 +145,6 @@ const Notification = ({ notification }) => {
   const closeModal = () => {
     setIsOpen(false)
   }
-
   const setLocalStorage = () => {
     if (typeof window !== `undefined`) {
       localStorage.setItem(
