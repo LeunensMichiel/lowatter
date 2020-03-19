@@ -6,16 +6,7 @@ const typography = new Typography({
   bodyFontFamily: ["Oswald", "sans-serif"],
   headerColor: "#2D302D",
   bodyColor: "#616765",
-  googleFonts: [
-    {
-      name: "Oswald",
-      styles: ["400", "600"],
-    },
-    {
-      name: "Asap",
-      styles: ["700"],
-    },
-  ],
+  omitGoogleFont: true,
 })
 
 typography.injectStyles()
