@@ -4,7 +4,6 @@ import { Global, css } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import { useIntl } from "gatsby-plugin-intl"
-import showdown from "showdown"
 
 import colors from "../components/framework/colors"
 import Layout from "../components/layout"
@@ -264,7 +263,6 @@ const DotStyle = css`
 const IndexPage = ({ data }) => {
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
   const intl = useIntl()
-  const converter = new showdown.Converter()
   return (
     <Layout>
       <Global
@@ -318,7 +316,7 @@ const IndexPage = ({ data }) => {
                 <h2>{blob.title}</h2>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: converter.makeHtml(blob.description),
+                    __html: blob.description,
                   }}
                 />
               </InfoBlobText>
