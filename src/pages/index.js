@@ -5,11 +5,12 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import { useIntl } from "gatsby-plugin-intl"
 
-import colors from "../components/framework/colors"
 import Layout from "../components/layout"
-import screens from "../components/framework/screens"
 import SEO from "../components/seo"
+import Notification from "../components/notification"
 import Button from "../components/buttons/button"
+import colors from "../components/framework/colors"
+import screens from "../components/framework/screens"
 import Legionella from "../components/framework/legionella"
 
 import wave from "../images/svg/waves/bottomwaves.svg"
@@ -263,6 +264,9 @@ const DotStyle = css`
 const IndexPage = ({ data }) => {
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
   const intl = useIntl()
+  const currentDate = new Date()
+  const beginDate = new Date(data.notification.frontmatter.begindate)
+  const endDate = new Date(data.notification.frontmatter.enddate)
   return (
     <Layout>
       <Global
@@ -277,6 +281,9 @@ const IndexPage = ({ data }) => {
         description={intl.formatMessage({ id: "seo.indexDescription" })}
         lang={intl.locale}
       />
+      {currentDate >= beginDate && currentDate < endDate && (
+        <Notification notification={data.notification.frontmatter} />
+      )}
       <LandingText>
         <h1>{intl.formatMessage({ id: "index.title" })}</h1>
         <p>{intl.formatMessage({ id: "index.subtitle" })}</p>
@@ -370,6 +377,18 @@ export const query = graphql`
           lang
           title
         }
+      }
+    }
+    notification: markdownRemark(fileAbsolutePath: { regex: "/notification.md/" }) {
+      frontmatter {
+        descriptionEn
+        descriptionNl
+        enddate
+        begindate
+        relatedStoryNl
+        relatedStoryEn
+        titleEn
+        titleNl
       }
     }
   }
