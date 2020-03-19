@@ -93,8 +93,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-robots-txt`,
@@ -106,10 +104,11 @@ module.exports = {
         },
       },
     },
-
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cache`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify`,
   ],
 }
