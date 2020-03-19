@@ -44,10 +44,10 @@ const Blob = styled(Blob2)`
   grid-column: 8;
   grid-row: 1 / span 2;
   justify-self: end;
-  height: 100%;
-  margin-top: 4rem;
+  margin-top: 10rem;
   margin-right: -10rem;
   width: 300px;
+  height: auto;
   z-index: 1;
   transform: rotate(180deg);
   .stop-color {
@@ -55,6 +55,10 @@ const Blob = styled(Blob2)`
   }
   .alt-color {
     stop-color: ${colors.accent2};
+  }
+  @media ${screens.mobileM} {
+    height: 100%;
+    margin-top: 0;
   }
 `
 

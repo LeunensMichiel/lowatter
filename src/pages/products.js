@@ -44,11 +44,11 @@ const Dots = styled(MedDots)`
   grid-column: 8;
   grid-row: 1 / span 2;
   justify-self: end;
-  height: 100%;
-  margin-top: 5rem;
+  margin-top: 10rem;
   @media ${screens.mobileM} {
     max-width: 50px;
     margin-top: 0;
+    height: 100%;
   }
 `
 
