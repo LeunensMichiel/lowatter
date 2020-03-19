@@ -314,7 +314,7 @@ const IndexPage = ({ data }) => {
             <BlobRow id={`about${index}`} even={index % 2}>
               <InfoBlobText even={index % 2}>
                 <h2>{blob.title}</h2>
-                <p
+                <div
                   dangerouslySetInnerHTML={{
                     __html: blob.description,
                   }}
