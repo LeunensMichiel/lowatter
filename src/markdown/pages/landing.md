@@ -49,7 +49,9 @@ blobitems:
       Concreet wil dit zeggen dat we snel en efficiënt de **oorzaak van een
       infectie** in een warmwatersysteem kunnen opsporen, met behulp van onze
       sterke UGent know-how en ons **predictief Legionella pneumophila
-      simulatiemodel**. 
+      simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe
+      om de Legionella-concentratie te berekenen op iedere locatie in het
+      systeem voor elk casespecifiek systeem. 
 
 
       Naast het opsporen van de oorzaken die tot te hoge
@@ -64,6 +66,11 @@ blobitems:
       In concrete terms, this means that we can quickly and efficiently identify
       the **cause of an infection** in a hot water system, using our UGent
       know-how and our predictive **Legionella pneumophila simulation model**.
+      This self-developed dynamic simulation model makes it possible to
+      calculate the Legionella concentration at any point in the system for each
+      case-specific system.
+
+
       Moreover, we can compare case specific solutions in order find the **most
       sustainable and (cost) effective solution** before implementing it in
       practice.
@@ -71,27 +78,38 @@ blobitems:
     lang: en
   - title: Wat maakt onze technologie uniek?
     description: >-
-      De oplossingen die wij voorstellen zijn duurzaam, het feit dat we geen
-      chemicaliën toevoegen aan het drinkwater maakt onze technologie uniek.
+      De oplossingen die wij voorstellen zijn duurzaam, het feit dat we **geen
+      chemicaliën** toevoegen aan het drinkwater maakt onze technologie uniek.
+
+
+      Ook onze methodiek is uniek. We combineren metingen, monitoring en
+      simulaties. Dit zorgt voor een beter inzicht in het gehele
+      warmwatersysteem en een effectieve oplossing waarbij we **de oorzaak
+      aanpakken**.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: nl
   - title: ' What makes our technology unique?'
     description: >-
-      The solutions we propose are sustainable, the fact that we do not add any
-      chemicals to the drinking water makes our technology unique.
+      The solutions we propose are sustainable, the fact that we **do not add
+      any chemicals** to the drinking water makes our technology unique.
+
+
+      Our methodology is also unique. We combine measurements, monitoring and
+      simulations. These provide a better insight in the entire hot water system
+      and an effective solution by **tackling the cause**.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: en
   - title: In welke gebouwen?
     description: >-
-      We focussen zowel op residentiële als publieke gebouwen met een grote
-      warmwatervraag, denk hierbij aan appartementsgebouwen, woonzorgcentra,
+      We focussen zowel op residentiële als publieke **gebouwen met een grote
+      warmwatervraag**, denk hierbij aan appartementsgebouwen, woonzorgcentra,
       sportcomplexen, hotels en ziekenhuizen.
     lang: nl
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
   - title: ' In which buildings?'
     description: >-
-      We focus on both residential and public buildings with a large hot water
-      demand, such as apartment buildings, residential care centers, sports
+      We focus on both residential and public **buildings with a large hot water
+      demand**, such as apartment buildings, residential care centers, sports
       complexes, hotels and hospitals.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
