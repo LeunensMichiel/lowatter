@@ -44,6 +44,90 @@ teamcards:
       In 2020 kreeg Elisa een persoonlijk **spin-off mandaat** van het Vlaams
       Agentschap Innoveren en Ondernemen (VLAIO) ter voorbereiding op het
       oprichten van een spin-off bedrijf.
+  - number: 2
+    lang: en
+    name: Elisa Van Kenhove
+    subtitle: Entrepreneur & Scientist
+    description: |-
+      PhD in Civil Engineering: Architecture
+
+      Business development and management, market and legal affairs
+    linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
+    bio: >-
+      Elisa Van Kenhove (°1991) obtained her degree 'Master of Science in
+      Engineering: Architecture (Architectural Design and Construction
+      Techniques)' (UGent, 2014, magna cum laude) with a master thesis on the
+      optimization of a GEOTABS office building.
+
+
+      Since 2014 she has been a **researcher** at the research group 'Building
+      Physics, Construction and Climate Control' of Ghent University, with her
+      main topics being technical installations in buildings, energy use in
+      homes and renovation of protected heritage. She also carries out teaching
+      tasks.
+
+
+      In 2014 (start January 1, 2015), Elisa received a personal **PhD grant**
+      from the Agency for Innovation by Science and Technology (IWT/VLAIO) on
+      the topic 'Thermohydraulic and Biologic Modeling of Legionella Pneumophila
+      Proliferation in Domestic Hot Water Systems'. The aim of this PhD was to
+      develop a simulation model that allows to investigate the infection risk
+      by Legionella pneumophila in the design phase of domestic hot water
+      systems and to test the effectiveness of disinfection techniques on an
+      infected system. This model served as a basis for evaluating commonly used
+      sanitary hot water installations and their energy-efficient alternatives
+      in order to arrive at new 'best practice' guidelines. In 2018, Elisa
+      obtained her PhD in Civil Engineering: Architecture.
+
+
+      In 2018, Elisa's team received a **valorisation grant** from the IOF
+      (UGent) to valorise the research carried out during the PhD.
+
+
+      In 2020, Elisa received a personal **spin-off mandate** from the Flemish
+      Agency for Innovation and Entrepreneurship (VLAIO) in preparation for
+      setting up a spin-off company.
+    image: elisavankenhove_v3.jpg
+  - number: 3
+    lang: nl
+    name: Lien de Backer
+    subtitle: Wetenschapper & Ondernemer
+    description: |-
+      Doctoraat in de Ingenieurswetenschappen
+
+      Onderzoek en ontwikkeling (R&D), technologie en simulatie
+    image: liendebacker_v2.jpg
+    linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
+    bio: >-
+      In 2009 studeerde ik cum laude af als burgerlijk ingenieur (Hogeschool
+      Gent) met een masterproef over “Restauratie van de Onze-Lieve-Vrouwkerk te
+      Brugge. Stabiliteit van de toren met een FEM-analyse. ” (Buildsoft-pakket
+      + ANSYS).
+
+
+      Omdat ik het onderzoeksgedeelte erg leuk vond, ben ik sinds augustus 2010
+      begonnen als doctoraatsonderzoeker in de onderzoeksgroep Bouwfysica van de
+      Faculteit Ingenieurswetenschappen en Architectuur van de Universiteit
+      Gent. Van 2010-2013 was ik betrokken bij het onderzoeksproject
+      "Strategieën voor vochtmodellering van historische gebouwen om de
+      schaderisico's te beheersen." Dit werk was onderdeel van een FWO-project
+      dat zich toelegt op de ontwikkeling van een simulatiestrategie om de
+      relatie tussen buiten- en binnenklimaat, gebouwschil en HVAC-ontwerp in
+      historische gebouwen te analyseren en om mogelijke schade risico's voor
+      het cultureel erfgoed te evalueren. Promotor van dit onderzoeksproject
+      waren Prof. Arnold Janssens (Universiteit Gent, Vakgroep Architectuur &
+      Stedenbouw) en Prof. Michel De Paepe (Universiteit Gent, Vakgroep Flow,
+      Heat and Combustion Mechanics).
+
+
+      Gedurende deze jaren raakte ik erg geïnteresseerd in hele bouwsimulaties
+      en meer in de fysica, wiskundige achtergrond en het programmeergedeelte
+      achter deze software (TRNSYS, Modelica, Energyplus, Matlab, ...). Het
+      gebruiken en aanpassen van deze software om het modelleren van
+      praktijkgevallen te verbeteren is het uiteindelijke doel. Achter het
+      onderzoek vind ik het ook leuk om studenten te begeleiden en te proberen
+      hun interesse te wekken voor het wetenschappelijke deel van techniek:
+      architectuur.
   - number: 5
     lang: nl
     name: Emiel Vermeersch
@@ -91,86 +175,4 @@ teamcards:
       fugiat quis exercitation labore consequat qui est cillum eiusmod occaecat
       laboris. Eu eiusmod labore pariatur sunt consectetur cillum ex aliquip
       proident sint officia.
-  - number: 3
-    lang: nl
-    name: Lien de Backer
-    subtitle: Wetenschapper & Ondernemer
-    description: |-
-      Dr. Ing.
-
-      Onderzoek en ontwikkeling (R&D), technologie en simulatie
-    image: liendebacker_v2.jpg
-    linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
-    bio: >-
-      In 2009, I graduated cum laude as an civil engineer (Hogeschool Gent) with
-      a master dissertation about “Restoration of the church-of-our-Lady in
-      Bruges. Stability of the tower using an FEM-analysis.” (Buildsoft package
-      + ANSYS).
-
-
-      Because I really liked the research part, I started since august 2010 as a
-      PhD-researcher in the research group of Building Physics at The Faculty of
-      Engineering and Architecture of Ghent University. From 2010-2013, I was
-      involved in the research project “Strategies for moisture modelling of
-      historical buildings in order to control damage risks.” This work was a
-      part of a FWO-project dedicated to the development of a simulation
-      strategy to analyse the interrelation between outdoor and indoor climate,
-      building envelope and HVAC-design in historical buildings and to evaluate
-      possible damage risks to the cultural heritage. Supervisor of this
-      research project were Prof. Arnold Janssens (Ghent university, Dept. of
-      Architecture & Urban Planning) and Prof. Michel De Paepe (Ghent
-      university, Dept. of Flow, Heat and Combustion Mechanics).
-
-
-      During these years, I became really interested in whole building
-      simulations and more-over in the physics, mathematical background and the
-      programming part behind these software (TRNSYS, Modelica, Energyplus,
-      Matlab,…). Using and adapting these software, to improve the modelling of
-      practical cases is the final goal. Behind the research, I also like to
-      guide students and to try to arouse their interest in the scientific part
-      of engineering: architecture.
-  - number: 2
-    lang: en
-    name: Elisa Van Kenhove
-    subtitle: Entrepreneur & Scientist
-    description: |-
-      PhD in Civil Engineering: Architecture
-
-      Business development and management, market and legal affairs
-    linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
-    bio: >-
-      Elisa Van Kenhove (°1991) obtained her degree 'Master of Science in
-      Engineering: Architecture (Architectural Design and Construction
-      Techniques)' (UGent, 2014, magna cum laude) with a master thesis on the
-      optimization of a GEOTABS office building.
-
-
-      Since 2014 she has been a **researcher** at the research group 'Building
-      Physics, Construction and Climate Control' of Ghent University, with her
-      main topics being technical installations in buildings, energy use in
-      homes and renovation of protected heritage. She also carries out teaching
-      tasks.
-
-
-      In 2014 (start January 1, 2015), Elisa received a personal **PhD grant**
-      from the Agency for Innovation by Science and Technology (IWT/VLAIO) on
-      the topic 'Thermohydraulic and Biologic Modeling of Legionella Pneumophila
-      Proliferation in Domestic Hot Water Systems'. The aim of this PhD was to
-      develop a simulation model that allows to investigate the infection risk
-      by Legionella pneumophila in the design phase of domestic hot water
-      systems and to test the effectiveness of disinfection techniques on an
-      infected system. This model served as a basis for evaluating commonly used
-      sanitary hot water installations and their energy-efficient alternatives
-      in order to arrive at new 'best practice' guidelines. In 2018, Elisa
-      obtained her PhD in Civil Engineering: Architecture.
-
-
-      In 2018, Elisa's team received a **valorisation grant** from the IOF
-      (UGent) to valorise the research carried out during the PhD.
-
-
-      In 2020, Elisa received a personal **spin-off mandate** from the Flemish
-      Agency for Innovation and Entrepreneurship (VLAIO) in preparation for
-      setting up a spin-off company.
-    image: elisavankenhove_v3.jpg
 ---
