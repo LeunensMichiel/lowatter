@@ -175,21 +175,8 @@ teamcards:
     image: emielvermeersch.jpg
     linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
     bio: >-
-      Occaecat **eiusmod duis** Lorem minim esse est nulla quis labore
-      exercitation minim ad dolore. Duis dolore labore fugiat proident excepteur
-      ea commodo nisi consectetur aliquip amet.Anim mollit mollit consequat esse
-      non proident aliquip. Consequat dolor officia mollit culpa ad sunt eu ad
-      et minim elit mollit nulla nulla. Velit et consectetur *proident ut* enim
-      sit minim est consequat.Adipisicing fugiat esse consequat qui anim
-      consectetur deserunt in magna ad cupidatat pariatur fugiat. Ad occaecat
-      incididunt sunt excepteur commodo pariatur cillum quis exercitation aute.
-      **In voluptate ea enim velit.** Elit excepteur dolor sunt eu dolor et
-      laboris duis. Id fugiat quis exercitation labore consequat qui est cillum
-      eiusmod occaecat laboris. Eu eiusmod labore pariatur sunt consectetur
-      cillum ex aliquip proident sint officia. Occaecat esse eiusmod laborum
-      nostrud cupidatat enim fugiat elit id. Consectetur dolor duis cupidatat
-      voluptate reprehenderit est exercitation laborum labore. Et in pariatur
-      qui enim.
+      Occaecat eiusmod duis Lorem minim esse est nulla quis labore exercitation
+      minim ad dolore.
   - number: 6
     lang: en
     name: Emiel Vermeersch
@@ -202,17 +189,5 @@ teamcards:
     linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
     bio: >-
       Occaecat eiusmod duis Lorem minim esse est nulla quis labore exercitation
-      minim ad dolore. Duis dolore labore fugiat proident excepteur ea commodo
-      nisi consectetur aliquip amet.Anim mollit mollit consequat esse non
-      proident aliquip. Consequat dolor officia mollit culpa ad sunt eu ad et
-      minim elit mollit nulla nulla. Velit et consectetur proident ut enim sit
-      minim est consequat.Adipisicing fugiat esse consequat qui anim consectetur
-      deserunt in magna ad cupidatat pariatur fugiat. Ad occaecat incididunt
-      sunt excepteur commodo pariatur cillum quis exercitation aute. In
-      voluptate ea enim velit. Elit excepteur dolor sunt eu dolor et laboris
-      duis. Id fugiat quis exercitation labore consequat qui est cillum eiusmod
-      occaecat laboris. Eu eiusmod labore pariatur sunt consectetur cillum ex
-      aliquip proident sint officia. Occaecat esse eiusmod laborum nostrud
-      cupidatat enim fugiat elit id. Consectetur dolor duis cupidatat voluptate
-      reprehenderit est exercitation laborum labore. Et in pariatur qui enim.
+      minim ad dolore.
 ---
