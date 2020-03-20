@@ -38,7 +38,7 @@ teamcards:
 
       In 2018 behaalde Elisa haar doctoraat in de ingenieurswetenschappen:
       architectuur.
-  - number: 2
+  - number: 3
     lang: nl
     name: Lien de Backer
     subtitle: Wetenschapper & Ondernemer
@@ -76,7 +76,7 @@ teamcards:
       practical cases is the final goal. Behind the research, I also like to
       guide students and to try to arouse their interest in the scientific part
       of engineering: architecture.
-  - number: 3
+  - number: 5
     lang: nl
     name: Emiel Vermeersch
     subtitle: Wetenschapper & Ondernemer
