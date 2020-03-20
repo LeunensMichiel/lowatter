@@ -175,4 +175,43 @@ teamcards:
       fugiat quis exercitation labore consequat qui est cillum eiusmod occaecat
       laboris. Eu eiusmod labore pariatur sunt consectetur cillum ex aliquip
       proident sint officia.
+  - number: 2
+    lang: en
+    name: Lien De Backer
+    subtitle: Scientist & Entrepreneur
+    description: |-
+      PhD in Civil Engineering
+
+      Research and development (R&D), technology and simulation
+    image: liendebacker_v2.jpg
+    linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
+    bio: >-
+      In 2009, I graduated cum laude as an civil engineer (Hogeschool Gent) with
+      a master dissertation about “Restoration of the church-of-our-Lady in
+      Bruges. Stability of the tower using an FEM-analysis.” (Buildsoft package
+      + ANSYS).
+
+
+      Because I really liked the research part, I started since august 2010 as a
+      PhD-researcher in the research group of Building Physics at The Faculty of
+      Engineering and Architecture of Ghent University. From 2010-2013, I was
+      involved in the research project “Strategies for moisture modelling of
+      historical buildings in order to control damage risks.” This work was a
+      part of a FWO-project dedicated to the development of a simulation
+      strategy to analyse the interrelation between outdoor and indoor climate,
+      building envelope and HVAC-design in historical buildings and to evaluate
+      possible damage risks to the cultural heritage. Supervisor of this
+      research project were Prof. Arnold Janssens (Ghent university, Dept. of
+      Architecture & Urban Planning) and Prof. Michel De Paepe (Ghent
+      university, Dept. of Flow, Heat and Combustion Mechanics).
+
+
+
+      During these years, I became really interested in whole building
+      simulations and more-over in the physics, mathematical background and the
+      programming part behind these software (TRNSYS, Modelica, Energyplus,
+      Matlab,…). Using and adapting these software, to improve the modelling of
+      practical cases is the final goal. Behind the research, I also like to
+      guide students and to try to arouse their interest in the scientific part
+      of engineering: architecture.
 ---
