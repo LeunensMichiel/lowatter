@@ -1,19 +1,10 @@
 ---
-title: Lorem Ipsum
-date: 2020-04-13T14:59:37.355Z
-description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus cras et
-  pretium tincidunt mattis. Orci, dignissim ut quis tempus volutpat id morbi.
-  Sagittis, fermentum ac ipsum rhoncus mauris tellus, magna suscipit.
+title: IOF Advanced beurs
+date: 2018-01-11T11:00:00.000Z
+description: IOF Advanced beurs gekregen
 isMilestone: false
 lang: nl
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc in diam sagittis viverra risus. Sed et vitae posuere etiam quisque. Enim pellentesque dictum pretium commodo metus dictum. Urna quis quam at placerat mi risus posuere eleifend. Placerat turpis sed malesuada vitae eget aenean vitae, sapien magna. Enim augue elit scelerisque etiam mauris, sit ultrices. Aliquet quam aliquam senectus nibh aliquam morbi ornare sed congue. Urna arcu, turpis magna habitasse sem cras. Massa at ligula est dignissim. Nibh convallis eu quis in orci.
+IOF
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc in diam sagittis viverra risus. Sed et vitae posuere etiam quisque. Enim pellentesque dictum pretium commodo metus dictum. Urna quis quam at placerat mi risus posuere eleifend. Placerat turpis sed malesuada vitae eget aenean vitae, sapien magna. Enim augue elit scelerisque etiam mauris, sit ultrices. Aliquet quam aliquam senectus nibh aliquam morbi ornare sed congue. Urna arcu, turpis magna habitasse sem cras. Massa at ligula est dignissim. Nibh convallis eu quis in orci.
-
-![right](/uploads/louis-reed-pwckf7l4-no-unsplash.jpg "lorem")
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc in diam sagittis viverra risus. Sed et vitae posuere etiam quisque. Enim pellentesque dictum pretium commodo metus dictum. 
-
-Urna quis quam at placerat mi risus posuere eleifend. Placerat turpis sed malesuada vitae eget aenean vitae, sapien magna. Enim augue elit scelerisque etiam mauris, sit ultrices. Aliquet quam aliquam senectus nibh aliquam morbi ornare sed congue. Urna arcu, turpis magna habitasse sem cras. Massa at ligula est dignissim. Nibh convallis eu quis in orci.
+![right]( "lorem")
