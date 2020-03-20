@@ -17,10 +17,10 @@ teamcards:
       over de optimalisatie van een GEOTABS kantoorgebouw.
 
 
-      Sinds 2014 is ze **onderzoeker** binnen de onderzoeksgroep ‘Bouwfysica,
-      Constructie en Klimaatbeheersing’ van de UGent, met als voornaamste topics
-      technische installaties in gebouwen, energiegebruik in woningen en
-      renovatie van beschermd erfgoed. Daarnaast voert ze onderwijstaken uit.
+      Sinds 2014 is ze **onderzoeker** binnen de onderzoeksgroep Bouwfysica van
+      de UGent, met als voornaamste topics technische installaties in gebouwen,
+      energiegebruik in woningen en renovatie van beschermd erfgoed. Daarnaast
+      voert ze onderwijstaken uit.
 
 
       In 2014 (start 1 januari 2015) kreeg Elisa een persoonlijke
@@ -60,11 +60,10 @@ teamcards:
       optimization of a GEOTABS office building.
 
 
-      Since 2014 she has been a **researcher** at the research group 'Building
-      Physics, Construction and Climate Control' of Ghent University, with her
-      main topics being technical installations in buildings, energy use in
-      homes and renovation of protected heritage. She also carries out teaching
-      tasks.
+      Since 2014 she has been a **researcher** at the Building Physics research
+      group of Ghent University, with her main topics being technical
+      installations in buildings, energy use in homes and renovation of
+      protected heritage. She also carries out teaching tasks.
 
 
       In 2014 (start January 1, 2015), Elisa received a personal **PhD grant**
@@ -99,35 +98,34 @@ teamcards:
     image: liendebacker_v2.jpg
     linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
     bio: >-
-      In 2009 studeerde ik cum laude af als burgerlijk ingenieur (Hogeschool
-      Gent) met een masterproef over “Restauratie van de Onze-Lieve-Vrouwkerk te
-      Brugge. Stabiliteit van de toren met een FEM-analyse. ” (Buildsoft-pakket
-      + ANSYS).
+      Lien studeerde in 2009 af met onderscheiding als Industrieel Ingenieur
+      (Hogeschool Gent) met een masterproef over 'Restauratie van de
+      Onze-Lieve-Vrouwkerk te Brugge. Stabiliteit van de toren met een
+      FEM-analyse' (Buildsoft-pakket + ANSYS).
 
 
-      Omdat ik het onderzoeksgedeelte erg leuk vond, ben ik sinds augustus 2010
-      begonnen als doctoraatsonderzoeker in de onderzoeksgroep Bouwfysica van de
-      Faculteit Ingenieurswetenschappen en Architectuur van de Universiteit
-      Gent. Van 2010-2013 was ik betrokken bij het onderzoeksproject
-      "Strategieën voor vochtmodellering van historische gebouwen om de
-      schaderisico's te beheersen." Dit werk was onderdeel van een FWO-project
-      dat zich toelegt op de ontwikkeling van een simulatiestrategie om de
-      relatie tussen buiten- en binnenklimaat, gebouwschil en HVAC-ontwerp in
-      historische gebouwen te analyseren en om mogelijke schade risico's voor
-      het cultureel erfgoed te evalueren. Promotor van dit onderzoeksproject
-      waren Prof. Arnold Janssens (Universiteit Gent, Vakgroep Architectuur &
-      Stedenbouw) en Prof. Michel De Paepe (Universiteit Gent, Vakgroep Flow,
-      Heat and Combustion Mechanics).
+      In augustus 2010 is Lien gestart als **doctoraatsonderzoeker** in de
+      onderzoeksgroep Bouwfysica (UGent). Van 2010-2013 was Lien betrokken bij
+      het onderzoeksproject 'Strategieën voor vochtmodellering van historische
+      gebouwen om de schaderisico's te beheersen'. Dit werk was onderdeel van
+      een FWO-project dat zich toelegt op de ontwikkeling van een
+      simulatiestrategie om de relatie tussen buiten- en binnenklimaat,
+      gebouwschil en HVAC-ontwerp in historische gebouwen te analyseren en om
+      mogelijke schaderisico's voor het cultureel erfgoed te evalueren.
 
 
-      Gedurende deze jaren raakte ik erg geïnteresseerd in hele bouwsimulaties
-      en meer in de fysica, wiskundige achtergrond en het programmeergedeelte
-      achter deze software (TRNSYS, Modelica, Energyplus, Matlab, ...). Het
-      gebruiken en aanpassen van deze software om het modelleren van
-      praktijkgevallen te verbeteren is het uiteindelijke doel. Achter het
-      onderzoek vind ik het ook leuk om studenten te begeleiden en te proberen
-      hun interesse te wekken voor het wetenschappelijke deel van techniek:
-      architectuur.
+      Gedurende deze jaren raakte Lien erg geïnteresseerd in gebouwsimulaties
+      (bijvoorbeeld: TRNSYS, Modelica, Energyplus, Matlab). Het ontwikkelen en
+      gebruiken van simulatietools om specifieke cases uit de praktijk te
+      modelleren en verbeteren is wat haar het meest aanspreekt.
+
+
+      Lien behaalde haar doctoraat in de Ingenieurswetenschappen in 2018.
+
+
+      In 2018 behaalde Lien met haar team een **valorisatiebeurs** van het IOF
+      (UGent) om het onderzoek verricht tijdens Elisa haar doctoraat te
+      valoriseren.
   - number: 4
     lang: en
     name: Lien De Backer
