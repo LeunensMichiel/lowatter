@@ -9,7 +9,7 @@ teamcards:
 
       Bedrijfsontwikkeling en -management, markt en juridische zaken
     image: elisavankenhove_v3.jpg
-    linkedIn: "https://www.linkedin.com/in/elisavankenhove/"
+    linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
     bio: >-
       Elisa Van Kenhove (°1991) behaalde haar diploma ‘Master of Science in de
       ingenieurswetenschappen: architectuur (architectuurontwerp en
@@ -47,7 +47,7 @@ teamcards:
 
       Onderzoek en ontwikkeling (R&D), technologie en simulatie
     image: liendebacker_v2.jpg
-    linkedIn: "https://www.linkedin.com/in/lien-de-backer-4a7aa225/"
+    linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
     bio: >-
       In 2009, I graduated cum laude as an civil engineer (Hogeschool Gent) with
       a master dissertation about “Restoration of the church-of-our-Lady in
@@ -76,7 +76,7 @@ teamcards:
       practical cases is the final goal. Behind the research, I also like to
       guide students and to try to arouse their interest in the scientific part
       of engineering: architecture.
-  - number: 8
+  - number: 3
     lang: nl
     name: Emiel Vermeersch
     subtitle: Wetenschapper & Ondernemer
@@ -85,7 +85,7 @@ teamcards:
 
       Labo en in situ onderzoek
     image: emielvermeersch.jpg
-    linkedIn: "https://www.linkedin.com/in/emiel-vermeersch-4a3646171/"
+    linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
     bio: >-
       Occaecat **eiusmod duis** Lorem minim esse est nulla quis labore
       exercitation minim ad dolore. Duis dolore labore fugiat proident excepteur
