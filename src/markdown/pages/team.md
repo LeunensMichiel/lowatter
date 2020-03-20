@@ -37,8 +37,9 @@ teamcards:
       haar doctoraat in de Ingenieurswetenschappen: Architectuur.
 
 
-      In 2018 behaalde Elisa haar team een **valorisatiebeurs** van het IOF
-      (UGent) om het onderzoek verricht tijdens het doctoraat te valoriseren.
+      In 2018 behaalde het LoWatter-team een **valorisatiebeurs** van het IOF
+      (UGent) om het onderzoek verricht tijdens Elisa haar doctoraat te
+      valoriseren.
 
 
       In 2020 kreeg Elisa een persoonlijk **spin-off mandaat** van het Vlaams
@@ -57,7 +58,7 @@ teamcards:
       Elisa Van Kenhove (°1991) obtained her degree 'Master of Science in
       Engineering: Architecture (Architectural Design and Construction
       Techniques)' (UGent, 2014, magna cum laude) with a master thesis on the
-      optimization of a GEOTABS office building.
+      optimisation of a GEOTABS office building.
 
 
       Since 2014 she has been a **researcher** at the Building Physics research
@@ -79,8 +80,8 @@ teamcards:
       obtained her PhD in Civil Engineering: Architecture.
 
 
-      In 2018, Elisa's team received a **valorisation grant** from the IOF
-      (UGent) to valorise the research carried out during the PhD.
+      In 2018, the LoWatter team received a **valorisation grant** from the IOF
+      (UGent) to valorise the Legionella research carried out at UGent.
 
 
       In 2020, Elisa received a personal **spin-off mandate** from the Flemish
@@ -123,9 +124,8 @@ teamcards:
       Lien behaalde haar doctoraat in de Ingenieurswetenschappen in 2018.
 
 
-      In 2018 behaalde Lien met haar team een **valorisatiebeurs** van het IOF
-      (UGent) om het onderzoek verricht tijdens Elisa haar doctoraat te
-      valoriseren.
+      In 2018 behaalde het LoWatter-team een **valorisatiebeurs** van het IOF
+      (UGent) om het Legionella onderzoek verder te valoriseren.
   - number: 4
     lang: en
     name: Lien De Backer
@@ -162,8 +162,8 @@ teamcards:
       Lien received her PhD in Civil Engineering in 2018.
 
 
-      In 2018, Lien and her team obtained a **valorisation grant** from IOF
-      (UGent) to valorise the research carried out during Elisa her PhD.
+      In 2018, the LoWatter team received a **valorisation grant** from the IOF
+      (UGent) to valorise the Legionella research carried out at UGent.
   - number: 5
     lang: nl
     name: Emiel Vermeersch
@@ -175,8 +175,22 @@ teamcards:
     image: emielvermeersch.jpg
     linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
     bio: >-
-      Occaecat eiusmod duis Lorem minim esse est nulla quis labore exercitation
-      minim ad dolore.
+      Emiel Vermeersch (°1996) behaalde zijn diploma ‘Master of Science in de
+      Ingenieurswetenschappen: Architectuur (Architectuurontwerp en
+      Bouwtechniek)’ (UGent, 2019, grote onderscheiding) met een masterthesis
+      over 'Het ontwerp van een gezond én duurzaam warmwatersysteem - binnen een
+      waterdichte regelgeving'.
+
+
+      Sinds 2019 is hij **wetenschappelijk medewerker** binnen de
+      onderzoeksgroep Bouwfysica van de UGent, met als voornaamste focus het
+      ontwerp en de opbouw van een Legionella proefopstelling. Daarenboven helpt
+      hij mee met het opvolgen van monitoringcampagnes en desinfectiestrategieën
+      in met Legionella geïnfecteerde gebouwen.
+
+
+      In 2018 behaalde het LoWatter team een **valorisatiebeurs** van het IOF
+      (UGent) om het Legionella onderzoek te valoriseren.
   - number: 6
     lang: en
     name: Emiel Vermeersch
@@ -188,6 +202,20 @@ teamcards:
     image: emielvermeersch.jpg
     linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
     bio: >-
-      Occaecat eiusmod duis Lorem minim esse est nulla quis labore exercitation
-      minim ad dolore.
+      Emiel Vermeersch (°1996) obtained his diploma 'Master of Science in
+      Engineering: Architecture (Architectural Design and Construction
+      Techniques)' (UGent, 2019, magna cum laude) with a master thesis on
+      'Designing a Healthy and Sustainable Hot Water System - Considering its
+      Legal Context'.
+
+
+      Since 2019 he is a **scientific assistant** within the Building Physics
+      research group of Ghent University, with the main focus being the design
+      and construction of a Legionella test set-up. In addition, he helps to
+      follow up monitoring campaigns and disinfection strategies in buildings
+      infected with Legionella.
+
+
+      In 2018, the LoWatter team obtained a  **valorisation grant**  from the
+      IOF (UGent) to valorise the Legionella research.
 ---
