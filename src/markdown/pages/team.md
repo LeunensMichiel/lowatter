@@ -3,41 +3,47 @@ teamcards:
   - number: 1
     lang: nl
     name: Elisa Van Kenhove
-    subtitle: Wetenschapper & Ondernemer
+    subtitle: Ondernemer & Wetenschapper
     description: |-
-      Dr. Ir.-Arch.
+      Doctoraat in de Ingenieurswetenschappen: Architectuur
 
       Bedrijfsontwikkeling en -management, markt en juridische zaken
     image: elisavankenhove_v3.jpg
     linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
     bio: >-
       Elisa Van Kenhove (°1991) behaalde haar diploma ‘Master of Science in de
-      ingenieurswetenschappen: architectuur (architectuurontwerp en
-      bouwtechniek)’ (UGent, 2014, grote onderscheiding) met een masterthesis
+      Ingenieurswetenschappen: Architectuur (Architectuurontwerp en
+      Bouwtechniek)’ (UGent, 2014, grote onderscheiding) met een masterthesis
       over de optimalisatie van een GEOTABS kantoorgebouw.
 
 
-      Sinds 2014 is ze onderzoeker binnen de onderzoeksgroep ‘Bouwfysica,
+      Sinds 2014 is ze **onderzoeker** binnen de onderzoeksgroep ‘Bouwfysica,
       Constructie en Klimaatbeheersing’ van de UGent, met als voornaamste topics
       technische installaties in gebouwen, energiegebruik in woningen en
       renovatie van beschermd erfgoed. Daarnaast voert ze onderwijstaken uit.
 
 
       In 2014 (start 1 januari 2015) kreeg Elisa een persoonlijke
-      doctoraatsbeurs van het agentschap voor Innovatie door Wetenschap en
-      Technologie (IWT) op het onderwerp ‘Gekoppelde thermodynamische en
-      biologische modellering van Legionella Pneumophila besmetting in sanitair
-      warm water systemen’. Dit doctoraat heeft als doel een simulatiemodel te
-      ontwikkelen dat toelaat het infectierisico door Legionella Pneumophila te
-      onderzoeken in de ontwerpfase van sanitair warm water systemen en de
-      effectiviteit van desinfectie technieken op een geïnfecteerd systeem te
-      testen. Dat model zal als basis dienen voor het evalueren van
-      veelgebruikte sanitair warm water installaties en hun energiezuinige
-      alternatieven om zo tot nieuwe ‘best practice’ richtlijnen te komen.
+      **doctoraatsbeurs** van het agentschap voor Innovatie door Wetenschap en
+      Technologie (IWT/VLAIO) op het onderwerp ‘Gekoppelde thermohydraulische en
+      biologische modellering van Legionella pneumophila besmetting in sanitair
+      warmwatersystemen’. Dit doctoraat had als doel een simulatiemodel te
+      ontwikkelen dat toelaat het infectierisico door Legionella pneumophila te
+      onderzoeken in de ontwerpfase van sanitair warmwatersystemen en de
+      effectiviteit van desinfectietechnieken op een geïnfecteerd systeem te
+      testen. Dit model diende als basis voor het evalueren van veelgebruikte
+      sanitair warmwaterinstallaties en hun energiezuinige alternatieven om zo
+      tot nieuwe ‘best practice’ richtlijnen te komen. In 2018 behaalde Elisa
+      haar doctoraat in de Ingenieurswetenschappen: Architectuur.
 
 
-      In 2018 behaalde Elisa haar doctoraat in de ingenieurswetenschappen:
-      architectuur.
+      In 2018 behaalde Elisa haar team een **valorisatiebeurs** van het IOF
+      (UGent) om het onderzoek verricht tijdens het doctoraat te valoriseren.
+
+
+      In 2020 kreeg Elisa een persoonlijk **spin-off mandaat** van het Vlaams
+      Agentschap Innoveren en Ondernemen (VLAIO) ter voorbereiding op het
+      oprichten van een spin-off bedrijf.
   - number: 3
     lang: nl
     name: Lien de Backer
