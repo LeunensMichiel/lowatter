@@ -98,8 +98,8 @@ teamcards:
     image: liendebacker_v2.jpg
     linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
     bio: >-
-      Lien studeerde in 2009 af met onderscheiding als Industrieel Ingenieur
-      (Hogeschool Gent) met een masterproef over 'Restauratie van de
+      Lien studeerde in 2009 af met grote onderscheiding als Industrieel
+      Ingenieur (Hogeschool Gent) met een masterproef over 'Restauratie van de
       Onze-Lieve-Vrouwkerk te Brugge. Stabiliteit van de toren met een
       FEM-analyse' (Buildsoft-pakket + ANSYS).
 
@@ -115,8 +115,8 @@ teamcards:
 
 
       Gedurende deze jaren raakte Lien erg geïnteresseerd in gebouwsimulaties
-      (bijvoorbeeld: TRNSYS, Modelica, Energyplus, Matlab). Het ontwikkelen en
-      gebruiken van simulatietools om specifieke cases uit de praktijk te
+      (met bijvoorbeeld: TRNSYS, Modelica, Energyplus, Matlab). Het ontwikkelen
+      en gebruiken van simulatietools om specifieke cases uit de praktijk te
       modelleren en verbeteren is wat haar het meest aanspreekt.
 
 
@@ -137,34 +137,33 @@ teamcards:
     image: liendebacker_v2.jpg
     linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
     bio: >-
-      In 2009, I graduated cum laude as an civil engineer (Hogeschool Gent) with
-      a master dissertation about “Restoration of the church-of-our-Lady in
-      Bruges. Stability of the tower using an FEM-analysis.” (Buildsoft package
-      + ANSYS).
+      In 2009, Lien graduated magna cum laude as an Industrial Engineer
+      (Hogeschool Gent) with a master dissertation about 'Restoration of the
+      Church-of-our-Lady in Bruges. Stability of the Tower Using an
+      FEM-Analysis' (Buildsoft package + ANSYS).
 
 
-      Because I really liked the research part, I started since august 2010 as a
-      PhD-researcher in the research group of Building Physics at The Faculty of
-      Engineering and Architecture of Ghent University. From 2010-2013, I was
-      involved in the research project “Strategies for moisture modelling of
-      historical buildings in order to control damage risks.” This work was a
-      part of a FWO-project dedicated to the development of a simulation
-      strategy to analyse the interrelation between outdoor and indoor climate,
-      building envelope and HVAC-design in historical buildings and to evaluate
-      possible damage risks to the cultural heritage. Supervisor of this
-      research project were Prof. Arnold Janssens (Ghent university, Dept. of
-      Architecture & Urban Planning) and Prof. Michel De Paepe (Ghent
-      university, Dept. of Flow, Heat and Combustion Mechanics).
+      In August 2010, Lien started as a **PhD-researcher** in the Building
+      Physics research group (UGent). From 2010-2013, she was involved in the
+      research project 'Strategies for Moisture Modelling of Historical
+      Buildings in order to Control Damage Risks'. This work was part of a
+      FWO-project dedicated to the development of a simulation strategy to
+      analyse the interrelation between outdoor and indoor climate, building
+      envelope and HVAC-design in historical buildings and to evaluate possible
+      damage risks to the cultural heritage.
 
 
+      During these years, Lien became interested in building simulations (for
+      example with: TRNSYS, Modelica, Energyplus, Matlab). Developing and using
+      simulation tools to model and improve specific cases from practice is what
+      appeals to her the most.
 
-      During these years, I became really interested in whole building
-      simulations and more-over in the physics, mathematical background and the
-      programming part behind these software (TRNSYS, Modelica, Energyplus,
-      Matlab,…). Using and adapting these software, to improve the modelling of
-      practical cases is the final goal. Behind the research, I also like to
-      guide students and to try to arouse their interest in the scientific part
-      of engineering: architecture.
+
+      Lien received her PhD in Civil Engineering in 2018.
+
+
+      In 2018, Lien and her team obtained a **valorisation grant** from IOF
+      (UGent) to valorise the research carried out during Elisa her PhD.
   - number: 5
     lang: nl
     name: Emiel Vermeersch
