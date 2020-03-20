@@ -129,4 +129,48 @@ teamcards:
       fugiat quis exercitation labore consequat qui est cillum eiusmod occaecat
       laboris. Eu eiusmod labore pariatur sunt consectetur cillum ex aliquip
       proident sint officia.
+  - number: 4
+    lang: en
+    name: Elisa Van Kenhove
+    subtitle: Entrepreneur & Scientist
+    description: |-
+      PhD in Civil Engineering: Architecture
+
+      Business development and management, market and legal affairs
+    linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
+    bio: >-
+      Elisa Van Kenhove (°1991) obtained her degree 'Master of Science in
+      Engineering: Architecture (Architectural Design and Construction
+      Techniques)' (UGent, 2014, magna cum laude) with a master thesis on the
+      optimization of a GEOTABS office building.
+
+
+      Since 2014 she has been a **researcher** at the research group 'Building
+      Physics, Construction and Climate Control' of Ghent University, with her
+      main topics being technical installations in buildings, energy use in
+      homes and renovation of protected heritage. She also carries out teaching
+      tasks.
+
+
+      In 2014 (start January 1, 2015), Elisa received a personal **PhD grant**
+      from the Agency for Innovation by Science and Technology (IWT/VLAIO) on
+      the topic 'Thermohydraulic and Biologic Modeling of Legionella Pneumophila
+      Proliferation in Domestic Hot Water Systems'. The aim of this PhD was to
+      develop a simulation model that allows to investigate the infection risk
+      by Legionella pneumophila in the design phase of domestic hot water
+      systems and to test the effectiveness of disinfection techniques on an
+      infected system. This model served as a basis for evaluating commonly used
+      sanitary hot water installations and their energy-efficient alternatives
+      in order to arrive at new 'best practice' guidelines. In 2018, Elisa
+      obtained her PhD in Civil Engineering: Architecture.
+
+
+      In 2018, Elisa's team received a **valorisation grant** from the IOF
+      (UGent) to valorise the research carried out during the PhD.
+
+
+      In 2020, Elisa received a personal **spin-off mandate** from the Flemish
+      Agency for Innovation and Entrepreneurship (VLAIO) in preparation for
+      setting up a spin-off company.
+    image: elisavankenhove_v3.jpg
 ---
