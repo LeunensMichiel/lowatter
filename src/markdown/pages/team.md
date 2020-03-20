@@ -44,7 +44,7 @@ teamcards:
       In 2020 kreeg Elisa een persoonlijk **spin-off mandaat** van het Vlaams
       Agentschap Innoveren en Ondernemen (VLAIO) ter voorbereiding op het
       oprichten van een spin-off bedrijf.
-  - number: 2
+  - number: 5
     lang: nl
     name: Emiel Vermeersch
     subtitle: Wetenschapper & Ondernemer
@@ -129,7 +129,7 @@ teamcards:
       practical cases is the final goal. Behind the research, I also like to
       guide students and to try to arouse their interest in the scientific part
       of engineering: architecture.
-  - number: 4
+  - number: 2
     lang: en
     name: Elisa Van Kenhove
     subtitle: Entrepreneur & Scientist
