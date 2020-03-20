@@ -28,40 +28,45 @@ blobitems:
     lang: en
   - title: Wat doen we?
     description: >-
-      Sinds kort zijn we ook actief in de praktijk, onder de vorm van
-      dienstverlening. In eerste instantie willen we via consultancy
+      Sinds kort zijn we ook actief in de praktijk en brengen zo onze kennis
+      naar het werkveld. In eerste instantie willen we via consultancy
       casespecifieke kennis verschaffen rond **desinfectie en
-      energiebesparing**.
+      energiebesparing**. Aanvullend geven we ook advies omtrent de monitoring
+      van warmwaterinstallaties.
     image: photo-by-onne-beauty-on-unsplash_v2.jpg
     lang: nl
   - title: What are we doing?
     description: >-
-      Recently we are also active in practice, in the form of services.
-      Initially, we want to provide case-specific knowledge about **disinfection
-      and energy savings** through consultancy.
+      Recently we have also become active in practice, bringing our knowledge to
+      the professional field. In first instance, we want to provide
+      case-specific knowledge about **disinfection and energy savings** through
+      consultancy. In addition, we also advise on the monitoring of hot water
+      installations.
     image: photo-by-onne-beauty-on-unsplash_v2.jpg
     lang: en
   - title: Hoe doen we dit?
     description: >-
       Concreet wil dit zeggen dat we snel en efficiënt de **oorzaak van een
-      infectie** in een warmwatersysteem kunnen opsporen, met behulp van ons
-      predictief Legionella pneumophila **simulatiemodel** en onze sterk knowhow
-      opgebouwd gedurende jaren wetenschappelijk onderzoek, field research en
-      praktijkgerichte lessen omtrent simulaties en systeemontwerp. Naast het
-      opsporen van oorzaken tot te hoge legionellaconcentraties in het gehele
-      systemen, kunnen we casespecifiek verschillende oplossingen met elkaar
-      vergelijken om zo tot de **meest duurzame en (kost)effectieve oplossing**
-      te komen alvorens die in de praktijk te implementeren.
+      infectie** in een warmwatersysteem kunnen opsporen, met behulp van onze
+      sterke UGent know-how en ons **predictief Legionella pneumophila
+      simulatiemodel**. 
+
+
+      Naast het opsporen van de oorzaken die tot te hoge
+      Legionella-concentraties in het systeem leiden, kunnen we casespecifiek
+      verschillende oplossingen met elkaar vergelijken om zo tot de **meest
+      duurzame en (kost)effectieve oplossing** te komen alvorens die in de
+      praktijk te implementeren.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: nl
   - title: How do we accomplish this?
     description: >-
       In concrete terms, this means that we can quickly and efficiently identify
-      the **cause** of an infection in a hot water system, using our UGent
-      know-how and our predictive Legionella pneumophila simulation model.
-      Moreover, we can compare case specific sustainable solutions with each
-      other in order to arrive at the most (cost) effective solution before
-      implementing it in practice.
+      the **cause of an infection** in a hot water system, using our UGent
+      know-how and our predictive **Legionella pneumophila simulation model**.
+      Moreover, we can compare case specific solutions in order find the **most
+      sustainable and (cost) effective solution** before implementing it in
+      practice.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: en
   - title: Wat maakt onze technologie uniek?
