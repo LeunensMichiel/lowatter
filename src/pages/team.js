@@ -174,11 +174,12 @@ const CardBody = styled.article`
   border-top-right-radius: 50px;
   background: ${colors.white};
   flex-basis: 60%;
-  padding: 2rem 2.25rem;
+  padding: 2rem 1.25rem;
   text-align: justify;
   div {
     max-height: 100%;
     overflow-y: auto;
+    padding: 0 1rem;
   }
   @media ${screens.tablet} {
     padding: 1.5rem;
@@ -188,6 +189,7 @@ const CardBody = styled.article`
     border-top-right-radius: 0;
     border-bottom-left-radius: 50px;
     div {
+      padding: 0;
       max-height: 300px;
     }
   }

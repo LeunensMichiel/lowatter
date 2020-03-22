@@ -212,15 +212,20 @@ const StyledCross = styled(Cross)`
 const StoryPage = ({ data }) => {
   const intl = useIntl()
   const [modalIsOpen, setIsOpen] = useState(false)
+  const [animationShouldPlay, setAnimationShouldPlay] = useState(false)
   const [currentStory, setCurrentStory] = useState(0)
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
 
   const openModal = index => {
     setIsOpen(true)
+    setAnimationShouldPlay(true)
     setCurrentStory(index)
   }
   const closeModal = () => {
-    setIsOpen(false)
+    setAnimationShouldPlay(false)
+    setTimeout(() => {
+      setIsOpen(false)
+    }, 300)
   }
 
   let story = {
@@ -239,7 +244,9 @@ const StoryPage = ({ data }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        className="modal"
+        className={`modal ${
+          animationShouldPlay ? " story__active" : " story__not__active"
+        }`}
         overlayClassName="overlay"
         appElement={
           typeof window !== "undefined" && document.getElementById("gatsby-focus-wrapper")
@@ -256,7 +263,7 @@ const StoryPage = ({ data }) => {
             return (
               <TimelineItem
                 onClick={() => openModal(index)}
-                key={story.node.frontmatter.date}
+                key={`${story.node.frontmatter.date}${story.node.frontmatter.title}`}
                 isMilestone={story.node.frontmatter.isMilestone ? 1 : 0}
               >
                 <TimelineItemContent

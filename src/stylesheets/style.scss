@@ -32,17 +32,18 @@ body,
   overflow: auto;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 main {
   min-height: 80%;
+  position: relative;
   display: grid;
   grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
       16px,
       1fr
     );
   align-content: start;
-  position: relative;
 }
 
 a {
@@ -137,6 +138,33 @@ h4 {
   align-content: start;
 
   min-height: 100%;
-  background: $gradient;
+  background: $accent;
   overflow-y: auto;
+  &.story__active {
+    animation: bubbleIn 0.5s ease-in-out forwards;
+  }
+  &.story__not__active {
+    animation: bubbleOut 0.3s ease-in-out backwards;
+  }
+}
+
+@keyframes bubbleIn {
+  from {
+    clip-path: circle(0% at 50% 50%);
+    background: $accent;
+  }
+  to {
+    clip-path: circle(100%);
+    background: $accent;
+  }
+}
+@keyframes bubbleOut {
+  from {
+    clip-path: circle(100%);
+    background: $accent;
+  }
+  to {
+    clip-path: circle(0% at 50% 50%);
+    background: $accent;
+  }
 }

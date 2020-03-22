@@ -152,6 +152,7 @@ const ContactInfo = styled.aside`
   flex-direction: column;
   margin: 15rem 0;
   z-index: 5;
+  position: relative;
   color: ${colors.darkAccent};
   font-size: 1.25rem;
   span:first-of-type {

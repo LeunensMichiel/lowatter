@@ -4,7 +4,8 @@ export const onClientEntry = async () => {
     console.log("IntersectionObserver polyfilled! 🖐")
   }
 }
+
 export const onInitialClientRender = async () => {
-  await import("typeface-asap")
+  await import("typeface-open-sans")
   await import("typeface-oswald")
 }

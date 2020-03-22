@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Global, css } from "@emotion/core"
+import { Global, css, keyframes } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import { useIntl } from "gatsby-plugin-intl"
@@ -25,12 +25,29 @@ import Blob5 from "../images/svg/blobs/blob5.inline.svg"
 import SmolDots from "../images/svg/dots/dots-smol.inline.svg"
 import BigDots from "../images/svg/dots/dots-large.inline.svg"
 
+const swell = keyframes`
+  0%, 100% {
+    transform: translate3d(0,-10px,0);
+  }
+  50% {
+    transform: translate3d(0,10px,0);
+  }
+`
+const swellReverse = keyframes`
+  0%, 100% {
+    transform: translate3d(0,8px,0);
+  }
+  50% {
+    transform: translate3d(0,-8px,0);
+  }
+`
+
 const LandingText = styled.div`
   grid-column: 2 / span 4;
   white-space: pre-wrap;
   margin: 6.5rem 0;
   > h1 {
-    max-width: 580px;
+    max-width: 680px;
   }
   > p {
     max-width: 360px;
@@ -62,16 +79,20 @@ const Waves = styled.div`
   width: 100%;
   height: 350px;
   background-image: url(${wave});
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 100% 350px;
   background-position: 50% 100%;
   z-index: 1;
   position: relative;
   margin-bottom: 10rem;
+  animation: ${swellReverse} 10s ease-in-out infinite;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
   @media ${screens.mobileM} {
     background-size: 100% 200px;
     height: 200px;
     margin-bottom: 5rem;
+    animation: none;
   }
 `
 
@@ -79,15 +100,19 @@ const UpperWave = styled.div`
   width: 100%;
   height: 400px;
   background-image: url(${upperwave});
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 100% 400px;
   position: absolute;
   top: -20px;
   z-index: 10;
-
+  transform: translate3d(0, 0, 0);
+  animation: ${swell} 10s ease-in-out -5s infinite;
+  opacity: 1;
+  will-change: transform;
   @media ${screens.mobileM} {
     height: 300px;
     background-size: 100% 220px;
+    animation: none;
   }
 `
 
@@ -126,6 +151,10 @@ const LegionellaSip = styled.div`
   grid-column: 4 / span 2;
   position: relative;
   margin-bottom: 10rem;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    transform: translate(-10px);
+  }
   @media ${screens.mobileM} {
     margin-bottom: 5rem;
   }
@@ -166,6 +195,10 @@ const InfoBlob = styled.div`
   align-items: center;
   height: 300px;
   position: relative;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    transform: scale(1.05);
+  }
   svg {
     position: absolute;
     height: 100%;
