@@ -152,7 +152,7 @@ const TimelineItemContent = styled.div`
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   color: ${props => (props.isMilestone ? colors.white : colors.darkAccent)};
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition-delay: 0.05s;
   &:hover {
     transform: translate(0, -5px);

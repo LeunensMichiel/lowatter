@@ -69,10 +69,15 @@ const CardBase = styled.div`
 const Card = styled.section`
   display: flex;
   position: relative;
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   z-index: 20;
   height: 100%;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:hover {
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  }
   @media ${screens.mobileM} {
     flex-direction: column;
     width: calc(100% - 32px);

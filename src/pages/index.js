@@ -27,18 +27,24 @@ import BigDots from "../images/svg/dots/dots-large.inline.svg"
 
 const swell = keyframes`
   0%, 100% {
-    transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-6px,0);
+    background-size: 100% 350px;
+
   }
   50% {
-    transform: translate3d(0,10px,0);
+    transform: translate3d(0,6px,0);
+    background-size: 120% 350px;
+
   }
 `
 const swellReverse = keyframes`
   0%, 100% {
     transform: translate3d(0,8px,0);
+    background-size: 100% 350px;
   }
   50% {
     transform: translate3d(0,-8px,0);
+    background-size: 120% 350px;
   }
 `
 
@@ -85,7 +91,7 @@ const Waves = styled.div`
   z-index: 1;
   position: relative;
   margin-bottom: 10rem;
-  animation: ${swellReverse} 10s ease-in-out infinite;
+  animation: ${swellReverse} 15s ease-in-out infinite;
   transform: translate3d(0, 0, 0);
   will-change: transform;
   @media ${screens.mobileM} {
@@ -106,7 +112,7 @@ const UpperWave = styled.div`
   top: -20px;
   z-index: 10;
   transform: translate3d(0, 0, 0);
-  animation: ${swell} 10s ease-in-out -5s infinite;
+  animation: ${swell} 15s ease-in-out -7s infinite;
   opacity: 1;
   will-change: transform;
   @media ${screens.mobileM} {
@@ -197,7 +203,8 @@ const InfoBlob = styled.div`
   position: relative;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   &:hover {
-    transform: scale(1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition-delay: 0.15s;
   }
   svg {
     position: absolute;

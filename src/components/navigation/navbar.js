@@ -41,6 +41,16 @@ const NavigationBar = styled.nav`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  svg {
+    .cls-1 {
+      transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    &:hover {
+      .cls-1 {
+        fill: ${colors.darkAccent};
+      }
+    }
+  }
 
   @media ${screens.mobileM} {
     align-items: flex-start;
@@ -59,7 +69,7 @@ const NavigationItems = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-right: -1rem;
-
+  position: relative;
   @media ${screens.mobileM} {
     flex-direction: column;
     margin-right: 0;
@@ -73,7 +83,7 @@ const NavigationItem = styled(Link)`
   margin: 1rem;
   font-size: 1.25rem;
   text-transform: capitalize;
-
+  display: inline-block;
   &.active {
     color: ${colors.accent2};
   }

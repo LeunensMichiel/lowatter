@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
+import { keyframes } from "@emotion/core"
+
 import { useIntl } from "gatsby-plugin-intl"
 import ReactMapGL, { Marker, NavigationControl, FullscreenControl } from "react-map-gl"
 
@@ -14,6 +16,15 @@ import Pin from "../images/svg/location.inline.svg"
 import Blob from "../images/svg/blobs/blobContact.inline.svg"
 import contactwave from "../images/svg/waves/contactusNoFooter.svg"
 import Dots from "../images/svg/dots/dots-large-patch.inline.svg"
+
+const swell = keyframes`
+  0%, 100% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 120% 100%;
+  }
+`
 
 const ContactWrapper = styled.div`
   margin-top: 10rem;
@@ -185,8 +196,11 @@ const ContactWave = styled.div`
   align-self: end;
   margin-bottom: 17rem;
   z-index: 1;
+  animation: ${swell} 10s ease-in-out -5s infinite;
+
   @media ${screens.mobileM} {
     background-size: 200% 100%;
+    animation: none;
   }
 `
 
