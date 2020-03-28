@@ -87,7 +87,6 @@ const InnerForm = styled.form`
   padding: 3rem;
 
   button {
-    transition: color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     grid-column: 4;
     cursor: pointer;
   }
@@ -158,16 +157,21 @@ const InputWrapper = styled.div`
 `
 
 const ContactInfo = styled.aside`
-  grid-column: 3 / span 2;
+  grid-column: 2 / span 6;
+  justify-self: center;
   display: flex;
   flex-direction: column;
-  margin: 15rem 0;
-  z-index: 5;
+  margin: 12rem 0;
+  padding: 1.5rem;
   position: relative;
+  z-index: 5;
+  background: ${colors.white};
   color: ${colors.darkAccent};
   font-size: 1.25rem;
+  border-radius: 38px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   span:first-of-type {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -175,11 +179,7 @@ const ContactInfo = styled.aside`
     margin: 0.625rem 0;
   }
   @media ${screens.mobileM} {
-    margin: 10rem 0;
-    grid-column: 2 / span 4;
-  }
-  @media ${screens.mobileMLandscape} {
-    grid-column: 3 / span 3;
+    margin: 6.25rem 0;
   }
 `
 
@@ -201,21 +201,19 @@ const ContactWave = styled.div`
   @media ${screens.mobileM} {
     background-size: 200% 100%;
     animation: none;
+    margin-bottom: 10rem;
   }
 `
 
 const DotsContainer = styled.div`
-  grid-column: 5 / span 2;
-  display: flex;
-  align-items: center;
+  position: absolute;
+  bottom: -80px;
+  right: 40px;
+  width: 250px;
   z-index: 5;
   @media ${screens.mobileM} {
-    grid-column: 6 / span 2;
-    justify-self: start;
-  }
-  @media ${screens.mobileMLandscape} {
-    grid-column: 6 / span 2;
-    justify-self: start;
+    right: 0;
+    bottom: -20px;
   }
 `
 
@@ -344,6 +342,9 @@ const ContactPage = ({ data }) => {
             </ReactMapGL>
           </MapForm>
         </FormContainer>
+        <DotsContainer>
+          <Dots />
+        </DotsContainer>
       </ContactWrapper>
       <ContactWave />
       <ContactInfo>
@@ -352,9 +353,6 @@ const ContactPage = ({ data }) => {
         <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[0]}</span>
         <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[1]}</span>
       </ContactInfo>
-      <DotsContainer>
-        <Dots />
-      </DotsContainer>
     </Layout>
   )
 }

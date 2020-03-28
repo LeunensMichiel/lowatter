@@ -1,12 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "@emotion/styled"
-import { useIntl, Link } from "gatsby-plugin-intl"
+import { IntlContextConsumer, changeLocale, Link, useIntl } from "gatsby-plugin-intl"
 
 import colors from "../framework/colors"
+import screens from "../framework/screens"
 
 import Logo from "../../images/svg/logo.inline.svg"
+import TripleDot from "../../images/svg/triple-dot-menu.inline.svg"
 import wave from "../../images/svg/waves/navwave.svg"
-import screens from "../framework/screens"
 
 const NavigationBarContainer = styled.header`
   width: 100%;
@@ -153,8 +154,121 @@ const NavIcon = styled.div`
   }
 `
 
+const StyledDotMenu = styled.div`
+  align-self: center;
+  padding: 1rem;
+  padding-top: 22px;
+  cursor: pointer;
+  position: relative;
+  &:hover,
+  &:focus {
+    svg {
+      fill: ${colors.accent2};
+    }
+  }
+  svg {
+    transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  @media ${screens.mobileM} {
+    padding: 0;
+    svg {
+      display: none;
+    }
+  }
+`
+
+const DotNav = styled.nav`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  float: left;
+  background: ${colors.white};
+  border-radius: 4px;
+  box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.2);
+  opacity: ${props => (props.show ? "1" : "0")};
+  visibility: ${props => (props.show ? "visible" : "hidden")};
+  transform: ${props =>
+    props.show ? "translate(0, 0) scale(1)" : "translate(0, 15px) scale(0.95)"};
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  .more-menu-caret {
+    position: absolute;
+    top: -10px;
+    left: 14px;
+    width: 18px;
+    height: 10px;
+    float: left;
+    overflow: hidden;
+  }
+  .more-menu-caret-outer,
+  .more-menu-caret-inner {
+    position: absolute;
+    display: inline-block;
+    margin-left: -1px;
+    font-size: 0;
+    line-height: 1;
+  }
+
+  .more-menu-caret-outer {
+    border-bottom: 10px solid #dbdbdb;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: auto;
+    left: 0;
+    top: 0;
+    width: auto;
+  }
+  .more-menu-caret-inner {
+    top: 1px;
+    left: 1px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+  }
+  > a {
+    padding: 0.66rem 1rem;
+    position: relative;
+    border-radius: 4px;
+    z-index: 14;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover,
+    &:focus {
+      background: ${colors.accent2};
+      color: ${colors.white};
+    }
+  }
+
+  @media ${screens.mobileM} {
+    position: static;
+    justify-content: center;
+    flex-direction: row;
+    visibility: visible;
+    background: transparent;
+    box-shadow: none;
+    opacity: 1;
+    transform: none;
+
+    > a {
+      color: ${colors.white};
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      &:hover,
+      &:focus {
+        background: transparent;
+        color: ${colors.accent2};
+      }
+    }
+    .more-menu-caret {
+      display: none;
+    }
+  }
+`
+
 const Navbar = ({ show, hamburgerClickHandler }) => {
   const intl = useIntl()
+  const [overflowMenuActive, setOverflowMenuActive] = useState(false)
   return (
     <>
       <NavIcon
@@ -175,21 +289,55 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
             <Logo css={{ width: "145px" }} />
           </Link>
           <NavigationItems>
+            <NavigationItem activeClassName="active" to="/">
+              Home
+            </NavigationItem>
             <NavigationItem activeClassName="active" to="/team/">
               {intl.formatMessage({ id: "navigation.team" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/story/">
               {intl.formatMessage({ id: "navigation.story" })}
             </NavigationItem>
-            <NavigationItem activeClassName="active" to="/products/">
+            {/* <NavigationItem activeClassName="active" to="/products/">
               {intl.formatMessage({ id: "navigation.products" })}
-            </NavigationItem>
+            </NavigationItem> */}
             <NavigationItem activeClassName="active" to="/services/">
               {intl.formatMessage({ id: "navigation.services" })}
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/contact/">
               {intl.formatMessage({ id: "navigation.contact" })}
             </NavigationItem>
+            <StyledDotMenu
+              aria-pressed="false"
+              tabIndex="0"
+              role="button"
+              onKeyDown={() => setOverflowMenuActive(!overflowMenuActive)}
+              onClick={() => setOverflowMenuActive(!overflowMenuActive)}
+            >
+              <TripleDot />
+              <DotNav show={overflowMenuActive}>
+                <div className="more-menu-caret">
+                  <div className="more-menu-caret-outer"></div>
+                  <div className="more-menu-caret-inner"></div>
+                </div>
+                <IntlContextConsumer>
+                  {({ languages }) =>
+                    languages.map(language => (
+                      <a
+                        key={language}
+                        onKeyDown={() => changeLocale(language)}
+                        onClick={() => changeLocale(language)}
+                        aria-pressed="false"
+                        tabIndex="0"
+                        role="button"
+                      >
+                        {language}
+                      </a>
+                    ))
+                  }
+                </IntlContextConsumer>
+              </DotNav>
+            </StyledDotMenu>
           </NavigationItems>
         </NavigationBar>
       </NavigationBarContainer>

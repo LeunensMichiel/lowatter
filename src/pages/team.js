@@ -10,26 +10,38 @@ import SEO from "../components/seo"
 import Legionella from "../components/framework/legionella"
 import screens from "../components/framework/screens"
 
-import SmolDots from "../images/svg/dots/dots-smol-horizontal.inline.svg"
 import LinkedIn from "../images/svg/linkedin.inline.svg"
 import Blob6 from "../images/svg/blobs/blob6.inline.svg"
 import Blob7 from "../images/svg/blobs/blob7.inline.svg"
 import Blob8 from "../images/svg/blobs/blob8.inline.svg"
 
 const Title = styled.h1`
-  margin-top: 6.25rem;
-  margin-bottom: 1.5rem;
   grid-column: 2 / span 4;
+  margin-top: 6.25rem;
+  font-size: 1.5rem;
+  position: relative;
+  &::after {
+    content: "";
+    width: 120px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    background: ${colors.gradient};
+    z-index: -2;
+    border-radius: 3px;
+  }
+  @media ${screens.mobileM} {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    &::after {
+      content: "";
+      width: 60px;
+    }
+  }
   @media ${screens.tablet} {
     grid-column: 2 / span 6;
-  }
-`
-
-const Dots = styled(SmolDots)`
-  grid-column: 1 / span 2;
-  @media ${screens.tablet} {
-    grid-column: 1 / span 8;
-    width: 60%;
   }
 `
 
@@ -181,6 +193,7 @@ const CardBody = styled.article`
   flex-basis: 60%;
   padding: 2rem 1.25rem;
   text-align: justify;
+  hyphens: auto;
   div {
     max-height: 100%;
     overflow-y: auto;
@@ -214,7 +227,7 @@ const TeamPage = ({ data }) => {
         lang={intl.locale}
       />
       <Title>{intl.formatMessage({ id: "team.title" })}</Title>
-      <Dots />
+      <Legionella width={115} height={32} rotate={21} top={100} right={200} />
       {data.team.frontmatter.teamcards
         .filter(person => person.lang === intl.locale)
         .map((person, index) => (

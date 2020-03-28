@@ -59,6 +59,9 @@ a {
 
 p {
   white-space: pre-line;
+  @media screen and (max-width: 767px) {
+    font-size: 0.9rem;
+  }
 }
 
 h1 {
@@ -67,7 +70,7 @@ h1 {
   line-height: inherit;
   font-style: normal;
   white-space: pre-line;
-
+  letter-spacing: -0.06rem;
   @media screen and (max-width: 767px) {
     font-size: 1.875rem;
   }
@@ -79,9 +82,10 @@ h2 {
   line-height: inherit;
   font-style: normal;
   white-space: pre-line;
+  letter-spacing: -0.05rem;
 
   @media screen and (max-width: 767px) {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -91,6 +95,7 @@ h3 {
   line-height: inherit;
   font-style: normal;
   white-space: pre-line;
+  letter-spacing: -0.05rem;
 
   @media screen and (max-width: 767px) {
     font-size: 1.25rem;
@@ -105,6 +110,7 @@ h4 {
   font-style: normal;
   font-weight: 600;
   white-space: pre-line;
+  letter-spacing: -0.05rem;
 
   @media screen and (max-width: 767px) {
     font-size: 1rem;

@@ -6,7 +6,7 @@ import { IntlContextConsumer, changeLocale, Link, useIntl } from "gatsby-plugin-
 import colors from "../framework/colors"
 
 import Logo from "../../images/svg/logo.inline.svg"
-import UGent from "../../images/svg/ugent.inline.svg"
+import UGent from "../../images/svg/ugent-white.inline.svg"
 import LinkedIn from "../../images/svg/linkedin.inline.svg"
 import footerwave from "../../images/svg/waves/footerwave.svg"
 import screens from "../framework/screens"
@@ -22,7 +22,7 @@ const FooterContainer = styled.footer`
       1fr
     );
   align-content: center;
-  align-items: start;
+  align-items: center;
   background-image: url(${footerwave});
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -118,6 +118,16 @@ const SubFooter = styled.div`
     margin-right: 0.875rem;
     cursor: pointer;
   }
+  svg {
+    padding-bottom: 10px;
+    width: 1.5rem;
+    fill: ${colors.white} !important;
+    transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover,
+    &:focus {
+      fill: ${colors.accent2} !important;
+    }
+  }
   span {
     margin-left: auto;
     justify-self: flex-end;
@@ -130,15 +140,11 @@ const SubFooter = styled.div`
       }
     }
   }
-  @media ${screens.tablet} {
-    span {
-      width: 66%;
-    }
-  }
   @media ${screens.mobileM} {
     flex-direction: column;
     align-items: center;
     span {
+      font-size: 0.8rem;
       margin-left: 0;
       text-align: center;
       margin: 2rem 0;
@@ -150,60 +156,28 @@ const SubFooter = styled.div`
 `
 
 const LogoStyle = css`
-  width: 140px;
-  max-height: 118px;
+  grid-column: 2;
+  width: 100%;
   .cls-1 {
     fill: ${colors.white} !important;
   }
   &.ugent {
     grid-column: 3;
+    width: 100px;
+    justify-self: center;
   }
-  @media ${screens.tablet} {
-    width: 90%;
-  }
-  @media ${screens.mobileM} {
-    &.ugent {
-      grid-column: 6 / span 2;
-      width: 100px;
-    }
-  }
-  @media ${screens.mobileSLandscape} {
-    &.ugent {
-      grid-column: 6 / span 2;
-    }
-  }
-`
 
-const LogoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-column: 2;
-  height: 100%;
-  span {
-    display: flex;
-  }
-  svg {
-    fill: ${colors.white} !important;
-    transition: fill 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-    &:hover,
-    &:focus {
-      fill: ${colors.accent2} !important;
-    }
-  }
-  @media ${screens.tablet} {
-    height: 80%;
-  }
   @media ${screens.mobileM} {
-    height: 100%;
-    grid-column: 2 / span 4;
-    justify-content: space-evenly;
-    svg {
-      max-width: 120px;
+    grid-column: 2 / span 2;
+    &.ugent {
+      justify-self: initial;
+      grid-column: 6 / span 2;
     }
   }
   @media ${screens.mobileSLandscape} {
-    grid-column: 3 / span 2;
+    &.ugent {
+      grid-column: 6 / span 2;
+    }
   }
 `
 
@@ -211,18 +185,7 @@ const Footer = () => {
   const intl = useIntl()
   return (
     <FooterContainer className="globalfooter">
-      <LogoContainer>
-        <Logo className="lowatter" css={LogoStyle} />
-        <span>
-          <a
-            href="https://www.linkedin.com/company/lowatter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedIn />
-          </a>
-        </span>
-      </LogoContainer>
+      <Logo className="lowatter" css={LogoStyle} />
       <UGent className="ugent" css={LogoStyle} />
       <ContactInfo>
         <span>{intl.formatMessage({ id: "footer.addressTitle" })}</span>
@@ -251,6 +214,13 @@ const Footer = () => {
       </NavigationWrapper>
       <hr />
       <SubFooter>
+        <a
+          href="https://www.linkedin.com/company/lowatter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedIn />
+        </a>
         <Link to="/terms/">{intl.formatMessage({ id: "footer.terms" })}</Link>
         <IntlContextConsumer>
           {({ languages }) =>

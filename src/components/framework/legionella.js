@@ -41,6 +41,7 @@ const Legionella = ({
 }) => {
   return (
     <LegionellaShell
+      className="legionella"
       rotate={rotate}
       width={width}
       height={height}

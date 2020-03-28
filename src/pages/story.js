@@ -8,6 +8,8 @@ import colors from "../components/framework/colors"
 import Layout from "../components/layout"
 import Story from "../components/story"
 import SEO from "../components/seo"
+import screens from "../components/framework/screens"
+import Legionella from "../components/framework/legionella"
 
 import Blob1 from "../images/svg/blobs/bgBlob.inline.svg"
 import Blob2 from "../images/svg/blobs/bgBlob2.inline.svg"
@@ -15,7 +17,6 @@ import Blob3 from "../images/svg/blobs/bgBlob3.inline.svg"
 import Blob4 from "../images/svg/blobs/bgBlob4.inline.svg"
 import Blob5 from "../images/svg/blobs/bgBlob5.inline.svg"
 import Cross from "../images/svg/cross.inline.svg"
-import screens from "../components/framework/screens"
 
 const TimelineContainer = styled.div`
   grid-column: 2 / span 6;
@@ -80,7 +81,7 @@ const TimelineItem = styled.div`
     padding-left: 134px;
     padding-right: 0;
     align-self: flex-end;
-    > div {
+    > div:not(.legionella) {
       background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
       text-align: right;
       align-items: flex-end;
@@ -104,7 +105,7 @@ const TimelineItem = styled.div`
     width: 100%;
     margin: 0.5rem 0;
     padding-right: 72px;
-    > div {
+    > div:not(.legionella) {
       .blob {
         right: -69px;
         padding: 0.625rem;
@@ -123,7 +124,7 @@ const TimelineItem = styled.div`
       padding-left: 0;
       padding-right: 72px;
       align-self: initial;
-      > div {
+      > div:not(.legionella) {
         text-align: left;
         align-items: flex-start;
         border-radius: 35px 82px;
@@ -160,6 +161,7 @@ const TimelineItemContent = styled.div`
   h3 {
     color: ${colors.white};
     margin-bottom: 0;
+    width: 100%;
   }
   small {
     margin-bottom: 1.5rem;
@@ -176,8 +178,17 @@ const TimelineItemContent = styled.div`
     width: 15px;
     height: 15px;
   }
+  @media ${screens.tablet} {
+    h3 {
+      font-size: 1rem;
+      hyphens: auto;
+    }
+  }
   @media ${screens.mobileM} {
     padding: 2rem 1rem;
+    small {
+      font-size: 0.66rem;
+    }
     p {
       font-size: 0.875rem;
     }
@@ -269,7 +280,7 @@ const StoryPage = ({ data }) => {
                 <TimelineItemContent
                   isMilestone={story.node.frontmatter.isMilestone ? 1 : 0}
                 >
-                  <h3>{story.node.frontmatter.title}</h3>
+                  <h3 lang={intl.locale}>{story.node.frontmatter.title}</h3>
                   <small>
                     <FormattedDate value={date} />
                   </small>
@@ -282,6 +293,12 @@ const StoryPage = ({ data }) => {
                     <span>{date.getFullYear()}</span>
                   </div>
                 </TimelineItemContent>
+                {index % 5 === 1 && (
+                  <Legionella width={115} height={32} rotate={21} top={75} right={-400} />
+                )}
+                {index % 5 === 4 && (
+                  <Legionella width={90} height={26} rotate={-31} top={75} left={-400} />
+                )}
               </TimelineItem>
             )
           } else {
