@@ -158,6 +158,8 @@ const StyledDotMenu = styled.div`
   align-self: center;
   padding: 1rem;
   padding-top: 22px;
+  outline: none;
+
   cursor: pointer;
   position: relative;
   &:hover,
