@@ -13,7 +13,7 @@ const Description = styled.div`
   grid-column: 3 / span 4;
   text-align: center;
   font-size: 1.25rem;
-  margin-top: 10rem;
+  margin: 6.25rem 0;
   padding-bottom: 5rem;
   z-index: 50;
   text-align: justify;

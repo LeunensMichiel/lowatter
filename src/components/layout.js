@@ -7,9 +7,21 @@ import Footer from "./footer/footer"
 
 import "../stylesheets/style.scss"
 
+const IsIE = () => {
+  if (typeof window !== `undefined`) {
+    return window.navigator.userAgent.match(/(MSIE|Trident)/)
+  }
+}
+
 const Layout = ({ children }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
   let backdrop
+
+  if (IsIE()) {
+    alert(
+      "You are using an old, unsupported and unsecure webbrowser (Internet Explorer). Therefore, this site will NOT WORK properly. Please install an updated and secure browser like GOOGLE CHROME or FIREFOX."
+    )
+  }
 
   if (sideDrawerOpen) {
     backdrop = (

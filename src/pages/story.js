@@ -8,6 +8,8 @@ import colors from "../components/framework/colors"
 import Layout from "../components/layout"
 import Story from "../components/story"
 import SEO from "../components/seo"
+import screens from "../components/framework/screens"
+import Legionella from "../components/framework/legionella"
 
 import Blob1 from "../images/svg/blobs/bgBlob.inline.svg"
 import Blob2 from "../images/svg/blobs/bgBlob2.inline.svg"
@@ -15,7 +17,6 @@ import Blob3 from "../images/svg/blobs/bgBlob3.inline.svg"
 import Blob4 from "../images/svg/blobs/bgBlob4.inline.svg"
 import Blob5 from "../images/svg/blobs/bgBlob5.inline.svg"
 import Cross from "../images/svg/cross.inline.svg"
-import screens from "../components/framework/screens"
 
 const TimelineContainer = styled.div`
   grid-column: 2 / span 6;
@@ -80,7 +81,7 @@ const TimelineItem = styled.div`
     padding-left: 134px;
     padding-right: 0;
     align-self: flex-end;
-    > div {
+    > div:not(.legionella) {
       background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
       text-align: right;
       align-items: flex-end;
@@ -104,7 +105,7 @@ const TimelineItem = styled.div`
     width: 100%;
     margin: 0.5rem 0;
     padding-right: 72px;
-    > div {
+    > div:not(.legionella) {
       .blob {
         right: -69px;
         padding: 0.625rem;
@@ -123,7 +124,7 @@ const TimelineItem = styled.div`
       padding-left: 0;
       padding-right: 72px;
       align-self: initial;
-      > div {
+      > div:not(.legionella) {
         text-align: left;
         align-items: flex-start;
         border-radius: 35px 82px;
@@ -152,7 +153,7 @@ const TimelineItemContent = styled.div`
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   color: ${props => (props.isMilestone ? colors.white : colors.darkAccent)};
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition-delay: 0.05s;
   &:hover {
     transform: translate(0, -5px);
@@ -160,6 +161,7 @@ const TimelineItemContent = styled.div`
   h3 {
     color: ${colors.white};
     margin-bottom: 0;
+    width: 100%;
   }
   small {
     margin-bottom: 1.5rem;
@@ -176,8 +178,17 @@ const TimelineItemContent = styled.div`
     width: 15px;
     height: 15px;
   }
+  @media ${screens.tablet} {
+    h3 {
+      font-size: 1rem;
+      hyphens: auto;
+    }
+  }
   @media ${screens.mobileM} {
     padding: 2rem 1rem;
+    small {
+      font-size: 0.66rem;
+    }
     p {
       font-size: 0.875rem;
     }
@@ -212,15 +223,20 @@ const StyledCross = styled(Cross)`
 const StoryPage = ({ data }) => {
   const intl = useIntl()
   const [modalIsOpen, setIsOpen] = useState(false)
+  const [animationShouldPlay, setAnimationShouldPlay] = useState(false)
   const [currentStory, setCurrentStory] = useState(0)
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
 
   const openModal = index => {
     setIsOpen(true)
+    setAnimationShouldPlay(true)
     setCurrentStory(index)
   }
   const closeModal = () => {
-    setIsOpen(false)
+    setAnimationShouldPlay(false)
+    setTimeout(() => {
+      setIsOpen(false)
+    }, 300)
   }
 
   let story = {
@@ -239,7 +255,9 @@ const StoryPage = ({ data }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        className="modal"
+        className={`modal ${
+          animationShouldPlay ? " story__active" : " story__not__active"
+        }`}
         overlayClassName="overlay"
         appElement={
           typeof window !== "undefined" && document.getElementById("gatsby-focus-wrapper")
@@ -256,13 +274,13 @@ const StoryPage = ({ data }) => {
             return (
               <TimelineItem
                 onClick={() => openModal(index)}
-                key={story.node.frontmatter.date}
+                key={`${story.node.frontmatter.date}${story.node.frontmatter.title}`}
                 isMilestone={story.node.frontmatter.isMilestone ? 1 : 0}
               >
                 <TimelineItemContent
                   isMilestone={story.node.frontmatter.isMilestone ? 1 : 0}
                 >
-                  <h3>{story.node.frontmatter.title}</h3>
+                  <h3 lang={intl.locale}>{story.node.frontmatter.title}</h3>
                   <small>
                     <FormattedDate value={date} />
                   </small>
@@ -275,6 +293,12 @@ const StoryPage = ({ data }) => {
                     <span>{date.getFullYear()}</span>
                   </div>
                 </TimelineItemContent>
+                {index % 5 === 1 && (
+                  <Legionella width={115} height={32} rotate={21} top={75} right={-400} />
+                )}
+                {index % 5 === 4 && (
+                  <Legionella width={90} height={26} rotate={-31} top={75} left={-400} />
+                )}
               </TimelineItem>
             )
           } else {

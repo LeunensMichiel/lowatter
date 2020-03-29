@@ -10,26 +10,38 @@ import SEO from "../components/seo"
 import Legionella from "../components/framework/legionella"
 import screens from "../components/framework/screens"
 
-import SmolDots from "../images/svg/dots/dots-smol-horizontal.inline.svg"
 import LinkedIn from "../images/svg/linkedin.inline.svg"
 import Blob6 from "../images/svg/blobs/blob6.inline.svg"
 import Blob7 from "../images/svg/blobs/blob7.inline.svg"
 import Blob8 from "../images/svg/blobs/blob8.inline.svg"
 
 const Title = styled.h1`
-  margin-top: 6.25rem;
-  margin-bottom: 1.5rem;
   grid-column: 2 / span 4;
+  margin-top: 6.25rem;
+  font-size: 1.5rem;
+  position: relative;
+  &::after {
+    content: "";
+    width: 120px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    background: ${colors.gradient};
+    z-index: -2;
+    border-radius: 3px;
+  }
+  @media ${screens.mobileM} {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    &::after {
+      content: "";
+      width: 60px;
+    }
+  }
   @media ${screens.tablet} {
     grid-column: 2 / span 6;
-  }
-`
-
-const Dots = styled(SmolDots)`
-  grid-column: 1 / span 2;
-  @media ${screens.tablet} {
-    grid-column: 1 / span 8;
-    width: 60%;
   }
 `
 
@@ -69,10 +81,15 @@ const CardBase = styled.div`
 const Card = styled.section`
   display: flex;
   position: relative;
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   z-index: 20;
   height: 100%;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:hover {
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  }
   @media ${screens.mobileM} {
     flex-direction: column;
     width: calc(100% - 32px);
@@ -174,11 +191,13 @@ const CardBody = styled.article`
   border-top-right-radius: 50px;
   background: ${colors.white};
   flex-basis: 60%;
-  padding: 2rem 2.25rem;
+  padding: 2rem 1.25rem;
   text-align: justify;
+  hyphens: auto;
   div {
     max-height: 100%;
     overflow-y: auto;
+    padding: 0 1rem;
   }
   @media ${screens.tablet} {
     padding: 1.5rem;
@@ -188,6 +207,7 @@ const CardBody = styled.article`
     border-top-right-radius: 0;
     border-bottom-left-radius: 50px;
     div {
+      padding: 0;
       max-height: 300px;
     }
   }
@@ -207,7 +227,7 @@ const TeamPage = ({ data }) => {
         lang={intl.locale}
       />
       <Title>{intl.formatMessage({ id: "team.title" })}</Title>
-      <Dots />
+      <Legionella width={115} height={32} rotate={21} top={100} right={200} />
       {data.team.frontmatter.teamcards
         .filter(person => person.lang === intl.locale)
         .map((person, index) => (

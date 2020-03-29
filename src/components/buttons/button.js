@@ -16,10 +16,13 @@ const LinkWrapper = styled(Link)`
   text-align: center;
   border: none;
   min-width: 200px;
-
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-backface-visibility: hidden;
   &:hover,
   &:focus {
-    color: ${props => (props.accent ? colors.accent2 : colors.darkAccent)};
+    color: ${props => (props.accent ? colors.white : colors.darkAccent)};
+    background: ${props => (props.accent ? colors.black : colors.gradient)};
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.05);
   }
 
   @media ${screens.mobileM} {

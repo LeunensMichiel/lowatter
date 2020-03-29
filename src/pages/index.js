@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Global, css } from "@emotion/core"
+import { Global, css, keyframes } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import { useIntl } from "gatsby-plugin-intl"
@@ -25,12 +25,34 @@ import Blob5 from "../images/svg/blobs/blob5.inline.svg"
 import SmolDots from "../images/svg/dots/dots-smol.inline.svg"
 import BigDots from "../images/svg/dots/dots-large.inline.svg"
 
+const swell = keyframes`
+  0%, 100% {
+    transform: translate3d(0,-6px,0);
+    background-size: 100% 600px;
+
+  }
+  50% {
+    transform: translate3d(0,6px,0);
+    background-size: 105% 600px;
+  }
+`
+const swellReverse = keyframes`
+  0%, 100% {
+    transform: translate3d(0,8px,0);
+    background-size: 100% 450px;
+  }
+  50% {
+    transform: translate3d(0,-8px,0);
+    background-size: 110% 450px;
+  }
+`
+
 const LandingText = styled.div`
   grid-column: 2 / span 4;
   white-space: pre-wrap;
   margin: 6.5rem 0;
   > h1 {
-    max-width: 580px;
+    max-width: 650px;
   }
   > p {
     max-width: 360px;
@@ -47,7 +69,7 @@ const LandingText = styled.div`
     align-items: center;
     text-align: center;
     > h1 {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
   @media ${screens.mobileS} {
@@ -60,34 +82,43 @@ const LandingText = styled.div`
 const Waves = styled.div`
   grid-column: 1 / span 8;
   width: 100%;
-  height: 350px;
+  height: 450px;
   background-image: url(${wave});
-  background-repeat: no-repeat;
-  background-size: 100% 350px;
+  background-repeat: repeat-x;
+  background-size: 100% 450px;
   background-position: 50% 100%;
   z-index: 1;
   position: relative;
   margin-bottom: 10rem;
+  animation: ${swellReverse} 15s ease-in-out infinite;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
   @media ${screens.mobileM} {
-    background-size: 100% 200px;
-    height: 200px;
+    background-size: 150% 250px;
+    height: 250px;
     margin-bottom: 5rem;
+    animation: none;
   }
 `
 
 const UpperWave = styled.div`
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-image: url(${upperwave});
-  background-repeat: no-repeat;
-  background-size: 100% 400px;
+  background-repeat: repeat-x;
+  background-size: 100% 600px;
   position: absolute;
-  top: -20px;
+  top: -60px;
   z-index: 10;
-
+  transform: translate3d(0, 0, 0);
+  animation: ${swell} 15s ease-in-out -7s infinite;
+  opacity: 1;
+  will-change: transform;
   @media ${screens.mobileM} {
-    height: 300px;
-    background-size: 100% 220px;
+    height: 350px;
+    background-size: 150% 280px;
+    top: -40px;
+    animation: none;
   }
 `
 
@@ -96,7 +127,7 @@ const LegionellaContainer = styled.div`
   height: 100%;
   position: absolute;
   z-index: 5;
-  top: -480px;
+  top: -450px;
   .water {
     position: absolute;
     right: 0;
@@ -125,7 +156,11 @@ const LegionellaContainer = styled.div`
 const LegionellaSip = styled.div`
   grid-column: 4 / span 2;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    transform: translate(-10px);
+  }
   @media ${screens.mobileM} {
     margin-bottom: 5rem;
   }
@@ -150,7 +185,10 @@ const BlobRow = styled.div`
 
 const InfoBlobText = styled.article`
   flex-basis: 40%;
-  text-align: ${props => (props.even ? "right" : "left")};
+  p {
+    text-align: justify;
+    hyphens: auto;
+  }
   strong {
     color: ${colors.accent};
   }
@@ -166,6 +204,11 @@ const InfoBlob = styled.div`
   align-items: center;
   height: 300px;
   position: relative;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition-delay: 0.15s;
+  }
   svg {
     position: absolute;
     height: 100%;
@@ -216,10 +259,11 @@ const ContactUs = styled.section`
   background-size: 100% 100%;
   background-position: 50% 50%;
   text-align: center;
+  position: relative;
   h1 {
     color: ${colors.white};
     width: 100%;
-    max-width: 750px;
+    max-width: 780px;
   }
   p {
     color: ${colors.darkAccent};
@@ -313,13 +357,14 @@ const IndexPage = ({ data }) => {
       </Waves>
       <LegionellaSip>
         <Legionella width={115} height={32} rotate={21} top={0} right={0} />
+        <Legionella width={100} height={28} rotate={-30} top={0} right={-200} />
       </LegionellaSip>
       {data.landing.frontmatter.blobitems
         .filter(blob => blob.lang === intl.locale)
         .map((blob, index) => (
           <React.Fragment key={blob.title}>
             <BlobRow id={`about${index}`} even={index % 2}>
-              <InfoBlobText even={index % 2}>
+              <InfoBlobText>
                 <h2>{blob.title}</h2>
                 <div
                   dangerouslySetInnerHTML={{
@@ -353,6 +398,7 @@ const IndexPage = ({ data }) => {
           text={intl.formatMessage({ id: "index.contactUs" })}
           accent
         />
+        <Legionella width={125} height={42} rotate={41} bottom={200} right={150} />
       </ContactUs>
     </Layout>
   )

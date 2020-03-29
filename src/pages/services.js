@@ -59,6 +59,7 @@ const Blob = styled(Blob2)`
   @media ${screens.mobileM} {
     height: 100%;
     margin-top: 0;
+    opacity: 0.5;
   }
 `
 
