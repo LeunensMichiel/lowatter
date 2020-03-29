@@ -11,6 +11,7 @@ import Legionella from "../components/framework/legionella"
 import screens from "../components/framework/screens"
 
 import LinkedIn from "../images/svg/linkedin.inline.svg"
+import Ugent from "../images/svg/ugent-icon.inline.svg"
 import Blob6 from "../images/svg/blobs/blob6.inline.svg"
 import Blob7 from "../images/svg/blobs/blob7.inline.svg"
 import Blob8 from "../images/svg/blobs/blob8.inline.svg"
@@ -79,11 +80,12 @@ const CardBase = styled.div`
 `
 
 const Card = styled.section`
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
   position: relative;
   border-radius: 50px;
   z-index: 20;
-  height: 100%;
+  height: auto;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   transition: box-shadow 1s cubic-bezier(0.19, 1, 0.22, 1);
 
@@ -91,6 +93,7 @@ const Card = styled.section`
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
   }
   @media ${screens.mobileM} {
+    display: flex;
     flex-direction: column;
     width: calc(100% - 32px);
   }
@@ -98,12 +101,13 @@ const Card = styled.section`
 
 const CardInfo = styled.aside`
   background: ${colors.gradient};
-  flex-basis: 40%;
+  grid-column: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
+
   @media ${screens.mobileM} {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 0;
@@ -113,9 +117,9 @@ const CardInfo = styled.aside`
 const CardInfoDetails = styled.div`
   padding: 1rem 2.25rem;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   height: 100%;
-
   h3 {
     color: ${colors.white};
     margin-bottom: 0;
@@ -128,26 +132,25 @@ const CardInfoDetails = styled.div`
     color: ${colors.darkAccent};
     font-size: 0.875rem;
     line-height: 1;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
   }
-  a {
-    display: block;
-    height: 33px;
+  .social__icons {
+    display: flex;
+    align-items: center;
     margin-top: auto;
-    &:hover,
-    &:focus {
-      svg {
-        fill: ${colors.white} !important;
+    a {
+      display: block;
+      width: 33px;
+      margin-right: 16px;
+      &:hover,
+      &:focus {
+        svg {
+          fill: ${colors.white} !important;
+        }
       }
-    }
-    svg {
-      transition: fill 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-      fill: ${colors.darkAccent};
+      svg {
+        transition: fill 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        fill: ${colors.darkAccent};
+      }
     }
   }
   @media ${screens.tablet} {
@@ -159,8 +162,13 @@ const CardInfoDetails = styled.div`
       font-size: 0.7rem;
       margin-bottom: 1rem;
     }
-    svg {
-      width: 25px;
+    .social__icons {
+      a {
+        margin-right: 8px;
+      }
+      svg {
+        width: 25px;
+      }
     }
   }
 `
@@ -180,6 +188,7 @@ const ProfilePic = styled.div`
     border-top-left-radius: 50px;
   }
   @media ${screens.mobileM} {
+    padding-bottom: 66%;
     img {
       border-top-right-radius: 50px;
     }
@@ -187,17 +196,21 @@ const ProfilePic = styled.div`
 `
 
 const CardBody = styled.article`
+  grid-column: 2;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   background: ${colors.white};
-  flex-basis: 60%;
   padding: 2rem 1.25rem;
-  text-align: justify;
-  hyphens: auto;
+
   div {
-    max-height: 100%;
+    max-height: 550px;
     overflow-y: auto;
     padding: 0 1rem;
+
+    p {
+      text-align: justify;
+      hyphens: auto;
+    }
   }
   @media ${screens.tablet} {
     padding: 1.5rem;
@@ -248,13 +261,14 @@ const TeamPage = ({ data }) => {
                   <h3>{person.name}</h3>
                   <h4>{person.subtitle}</h4>
                   <p>{person.description}</p>
-                  <a
-                    href="https://www.linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <LinkedIn />
-                  </a>
+                  <div className="social__icons">
+                    <a href={person.linkedIn} target="_blank" rel="noopener noreferrer">
+                      <LinkedIn />
+                    </a>
+                    <a href={person.ugent} target="_blank" rel="noopener noreferrer">
+                      <Ugent />
+                    </a>
+                  </div>
                 </CardInfoDetails>
               </CardInfo>
               <CardBody>
@@ -298,12 +312,13 @@ export const query = graphql`
           description
           lang
           linkedIn
+          ugent
           name
           number
           subtitle
           image {
             childImageSharp {
-              fluid(maxWidth: 700, quality: 85) {
+              fluid(maxWidth: 600, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

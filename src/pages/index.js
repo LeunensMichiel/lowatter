@@ -380,6 +380,7 @@ const IndexPage = ({ data }) => {
                     objectFit="cover"
                     objectPosition="50% 50%"
                     alt={blob.description}
+                    loading="eager"
                     title={blob.title}
                     style={{ position: "static" }}
                   />
@@ -415,7 +416,7 @@ export const query = graphql`
           description
           image {
             childImageSharp {
-              fluid(maxWidth: 700, quality: 80) {
+              fluid(maxWidth: 400, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

@@ -34,6 +34,7 @@ const Description = styled.p`
     grid-column: 2 / span 6;
     color: ${colors.darkAccent};
     padding-bottom: 10rem;
+    font-size: 1.125rem;
   }
   @media ${screens.mobileMLandscape} {
     color: ${colors.darkAccent};
@@ -48,7 +49,8 @@ const Blob = styled(Blob2)`
   margin-right: -10rem;
   width: 300px;
   height: auto;
-  z-index: 1;
+  position: relative;
+  z-index: -1;
   transform: rotate(180deg);
   .stop-color {
     stop-color: ${colors.accent2};
@@ -63,7 +65,7 @@ const Blob = styled(Blob2)`
   }
 `
 
-const ServicesPage = ({ data }) => {
+const ServicesPage = () => {
   const intl = useIntl()
   return (
     <Layout>
@@ -72,10 +74,10 @@ const ServicesPage = ({ data }) => {
         description={intl.formatMessage({ id: "seo.servicesDescription" })}
         lang={intl.locale}
       />
-      <Title>{intl.formatMessage({ id: "services.title" })}</Title>
-      <Description>{intl.formatMessage({ id: "services.description" })}</Description>
       <Blob />
       <Legionella bottom={200} right={250} width={136} height={43} rotate={45} />
+      <Title>{intl.formatMessage({ id: "services.title" })}</Title>
+      <Description>{intl.formatMessage({ id: "services.description" })}</Description>
     </Layout>
   )
 }

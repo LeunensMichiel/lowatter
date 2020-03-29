@@ -8,4 +8,3 @@ lang: nl
 
 VLAIO mandaat Elisa
 
-![center]()

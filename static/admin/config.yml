@@ -10,6 +10,8 @@ logo_url: https://lowatter.com/uploads/logo.svg
 
 publish_mode: editorial_workflow
 
+local_backend: true
+
 collections:
   - label: "Paginas"
     name: "pages"
@@ -103,6 +105,12 @@ collections:
                   name: linkedIn,
                   widget: string,
                   hint: "Url van LinkedIn Profiel",
+                }
+              - {
+                  label: UGent URL,
+                  name: ugent,
+                  widget: string,
+                  hint: "Url van UGent Profiel",
                 }
               - {
                   label: "Biografie",

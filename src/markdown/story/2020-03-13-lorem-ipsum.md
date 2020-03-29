@@ -6,5 +6,3 @@ isMilestone: false
 lang: nl
 ---
 IOF
-
-![right]( "lorem")
