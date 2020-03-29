@@ -6,5 +6,3 @@ isMilestone: true
 lang: nl
 ---
 Doctoraatsverdediging Elisa
-
-![left]()
