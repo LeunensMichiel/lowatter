@@ -1,16 +1,6 @@
 ---
 teamcards:
-  - number: 1
-    lang: nl
-    name: Elisa Van Kenhove
-    subtitle: Ondernemer & Wetenschapper
-    description: |-
-      Doctoraat in de Ingenieurswetenschappen: Architectuur
-
-      Bedrijfsontwikkeling en -management, markt en juridische zaken
-    image: elisavankenhove_v3.jpg
-    linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
-    bio: >-
+  - bio: >-
       Elisa Van Kenhove (°1991) behaalde haar diploma ‘Master of Science in de
       Ingenieurswetenschappen: Architectuur (Architectuurontwerp en
       Bouwtechniek)’ (UGent, 2014, grote onderscheiding) met een masterthesis
@@ -45,16 +35,18 @@ teamcards:
       In 2020 kreeg Elisa een persoonlijk **spin-off mandaat** van het Vlaams
       Agentschap Innoveren en Ondernemen (VLAIO) ter voorbereiding op het
       oprichten van een spin-off bedrijf.
-  - number: 2
-    lang: en
+    number: 1
     name: Elisa Van Kenhove
-    subtitle: Entrepreneur & Scientist
+    lang: nl
+    subtitle: Ondernemer & Wetenschapper
+    ugent: 'https://www.ugent.be/'
+    image: elisavankenhove_v3.jpg
     description: |-
-      PhD in Civil Engineering: Architecture
+      Doctoraat in de Ingenieurswetenschappen: Architectuur
 
-      Business development and management, market and legal affairs
+      Bedrijfsontwikkeling en -management, markt en juridische zaken
     linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
-    bio: >-
+  - bio: >-
       Elisa Van Kenhove (°1991) obtained her degree 'Master of Science in
       Engineering: Architecture (Architectural Design and Construction
       Techniques)' (UGent, 2014, magna cum laude) with a master thesis on the
@@ -87,18 +79,18 @@ teamcards:
       In 2020, Elisa received a personal **spin-off mandate** from the Flemish
       Agency for Innovation and Entrepreneurship (VLAIO) in preparation for
       setting up a spin-off company.
+    number: 2
+    name: Elisa Van Kenhove
+    lang: en
+    subtitle: Entrepreneur & Scientist
+    ugent: 'https://www.ugent.be/'
     image: elisavankenhove_v3.jpg
-  - number: 3
-    lang: nl
-    name: Lien de Backer
-    subtitle: Wetenschapper & Ondernemer
     description: |-
-      Doctoraat in de Ingenieurswetenschappen
+      PhD in Civil Engineering: Architecture
 
-      Onderzoek en ontwikkeling (R&D), technologie en simulatie
-    image: liendebacker_v2.jpg
-    linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
-    bio: >-
+      Business development and management, market and legal affairs
+    linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
+  - bio: >-
       Lien studeerde in 2009 af met grote onderscheiding als Industrieel
       Ingenieur (Hogeschool Gent) met een masterproef over 'Restauratie van de
       Onze-Lieve-Vrouwkerk te Brugge. Stabiliteit van de toren met een
@@ -126,17 +118,18 @@ teamcards:
 
       In 2018 behaalde het LoWatter-team een **valorisatiebeurs** van het IOF
       (UGent) om het Legionella onderzoek verder te valoriseren.
-  - number: 4
-    lang: en
-    name: Lien De Backer
-    subtitle: Scientist & Entrepreneur
-    description: |-
-      PhD in Civil Engineering
-
-      Research and development (R&D), technology and simulation
+    number: 3
+    name: Lien de Backer
+    lang: nl
+    subtitle: Wetenschapper & Ondernemer
+    ugent: 'https://www.ugent.be/'
     image: liendebacker_v2.jpg
+    description: |-
+      Doctoraat in de Ingenieurswetenschappen
+
+      Onderzoek en ontwikkeling (R&D), technologie en simulatie
     linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
-    bio: >-
+  - bio: >-
       In 2009, Lien graduated magna cum laude as an Industrial Engineer
       (Hogeschool Gent) with a master dissertation about 'Restoration of the
       Church-of-our-Lady in Bruges. Stability of the Tower Using an
@@ -164,17 +157,18 @@ teamcards:
 
       In 2018, the LoWatter team received a **valorisation grant** from the IOF
       (UGent) to valorise the Legionella research carried out at UGent.
-  - number: 5
-    lang: nl
-    name: Emiel Vermeersch
-    subtitle: Technische consultant
+    number: 4
+    name: Lien De Backer
+    lang: en
+    subtitle: Scientist & Entrepreneur
+    ugent: 'https://www.ugent.be/'
+    image: liendebacker_v2.jpg
     description: |-
-      Master in de Ingenieurswetenschappen: Architectuur
+      PhD in Civil Engineering
 
-      Labo en in situ onderzoek
-    image: emielvermeersch.jpg
-    linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
-    bio: >-
+      Research and development (R&D), technology and simulation
+    linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
+  - bio: >-
       Emiel Vermeersch (°1996) behaalde zijn diploma ‘Master of Science in de
       Ingenieurswetenschappen: Architectuur (Architectuurontwerp en
       Bouwtechniek)’ (UGent, 2019, grote onderscheiding) met een masterthesis
@@ -191,17 +185,18 @@ teamcards:
 
       In 2018 behaalde het LoWatter team een **valorisatiebeurs** van het IOF
       (UGent) om het Legionella onderzoek te valoriseren.
-  - number: 6
-    lang: en
+    number: 5
     name: Emiel Vermeersch
+    lang: nl
     subtitle: Technische consultant
+    ugent: 'https://www.ugent.be/'
+    image: emielvermeersch.jpg
     description: |-
       Master in de Ingenieurswetenschappen: Architectuur
 
       Labo en in situ onderzoek
-    image: emielvermeersch.jpg
     linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
-    bio: >-
+  - bio: >-
       Emiel Vermeersch (°1996) obtained his diploma 'Master of Science in
       Engineering: Architecture (Architectural Design and Construction
       Techniques)' (UGent, 2019, magna cum laude) with a master thesis on
@@ -218,4 +213,15 @@ teamcards:
 
       In 2018, the LoWatter team obtained a  **valorisation grant**  from the
       IOF (UGent) to valorise the Legionella research.
+    number: 6
+    name: Emiel Vermeersch
+    lang: en
+    subtitle: Technische consultant
+    ugent: 'https://www.ugent.be/'
+    image: emielvermeersch.jpg
+    description: |-
+      Master in de Ingenieurswetenschappen: Architectuur
+
+      Labo en in situ onderzoek
+    linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
 ---
