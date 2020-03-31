@@ -1,7 +1,7 @@
 ---
-title: Proefstand af
+title: In gebruikname Legionella proefstand
 date: 2020-02-01T11:00:00.000Z
-description: Proefstand af
+description: De proefstand werd in gebruik genomen
 isMilestone: false
 lang: nl
 ---
