@@ -122,8 +122,8 @@ teamcards:
       Studiebureau Boydens waar ze gewerkt heeft als simulatie-expert.
 
 
-      In 2018 behaalde het LoWatter-team een **valorisatiebeurs** van het IOF
-      (UGent) om het Legionella onderzoek verder te valoriseren.
+      Sinds 2018 (**valorisatiebeurs IOF**) maakt Lien deel uit van het
+      LoWatter-team als R&D en simulatie-expert.
     number: 3
     name: Lien de Backer
     lang: nl
@@ -165,8 +165,8 @@ teamcards:
       Boydens where she worked as a simulation expert.
 
 
-      In 2018, the LoWatter team received a **valorisation grant** from the IOF
-      (UGent) to valorise the Legionella research carried out at UGent.
+      Lien has been part of the LoWatter team as an R&D and simulation expert
+      since 2018 (**valorisation grant IOF**).
     number: 4
     name: Lien De Backer
     lang: en
@@ -193,8 +193,8 @@ teamcards:
       in met Legionella geïnfecteerde gebouwen.
 
 
-      In 2018 behaalde het LoWatter team een **valorisatiebeurs** van het IOF
-      (UGent) om het Legionella onderzoek te valoriseren.
+      In 2019 (**valorisatiebeurs IOF**) sloot Emiel aan bij het LoWatter team
+      als technische expert.
     number: 5
     name: Emiel Vermeersch
     lang: nl
@@ -221,8 +221,8 @@ teamcards:
       infected with Legionella.
 
 
-      In 2018, the LoWatter team obtained a  **valorisation grant**  from the
-      IOF (UGent) to valorise the Legionella research.
+      In 2019 (**valorisation grant IOF**), Emiel joined the LoWatter team as a
+      technical expert.
     number: 6
     name: Emiel Vermeersch
     lang: en
