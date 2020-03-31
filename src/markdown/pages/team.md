@@ -39,7 +39,8 @@ teamcards:
     name: Elisa Van Kenhove
     lang: nl
     subtitle: Ondernemer & Wetenschapper
-    ugent: 'https://www.ugent.be/'
+    ugent: >-
+      https://www.ugent.be/ea/architectuur/nl/contact/medewerkers/elisa-van-kenhove
     image: elisavankenhove_v3.jpg
     description: |-
       Doctoraat in de Ingenieurswetenschappen: Architectuur
@@ -83,7 +84,8 @@ teamcards:
     name: Elisa Van Kenhove
     lang: en
     subtitle: Entrepreneur & Scientist
-    ugent: 'https://www.ugent.be/'
+    ugent: >-
+      https://www.ugent.be/ea/architectuur/nl/contact/medewerkers/elisa-van-kenhove
     image: elisavankenhove_v3.jpg
     description: |-
       PhD in Civil Engineering: Architecture
@@ -91,10 +93,10 @@ teamcards:
       Business development and management, market and legal affairs
     linkedIn: 'https://www.linkedin.com/in/elisavankenhove/'
   - bio: >-
-      Lien studeerde in 2009 af met grote onderscheiding als Industrieel
-      Ingenieur (Hogeschool Gent) met een masterproef over 'Restauratie van de
-      Onze-Lieve-Vrouwkerk te Brugge. Stabiliteit van de toren met een
-      FEM-analyse' (Buildsoft-pakket + ANSYS).
+      Lien De Backer (°1985) studeerde in 2009 af met grote onderscheiding als
+      Industrieel Ingenieur (Hogeschool Gent) met een masterproef over
+      'Restauratie van de Onze-Lieve-Vrouwkerk te Brugge. Stabiliteit van de
+      toren met een FEM-analyse' (Buildsoft-pakket + ANSYS).
 
 
       In augustus 2010 is Lien gestart als **doctoraatsonderzoeker** in de
@@ -116,13 +118,17 @@ teamcards:
       Lien behaalde haar doctoraat in de Ingenieurswetenschappen in 2018.
 
 
+      Lien deed aanvullend consultancy-ervaring in de praktijk op bij
+      Studiebureau Boydens waar ze gewerkt heeft als simulatie-expert.
+
+
       In 2018 behaalde het LoWatter-team een **valorisatiebeurs** van het IOF
       (UGent) om het Legionella onderzoek verder te valoriseren.
     number: 3
     name: Lien de Backer
     lang: nl
     subtitle: Wetenschapper & Ondernemer
-    ugent: 'https://www.ugent.be/'
+    ugent: 'https://telefoonboek.ugent.be/nl/people/802000851414'
     image: liendebacker_v2.jpg
     description: |-
       Doctoraat in de Ingenieurswetenschappen
@@ -130,9 +136,9 @@ teamcards:
       Onderzoek en ontwikkeling (R&D), technologie en simulatie
     linkedIn: 'https://www.linkedin.com/in/lien-de-backer-4a7aa225/'
   - bio: >-
-      In 2009, Lien graduated magna cum laude as an Industrial Engineer
-      (Hogeschool Gent) with a master dissertation about 'Restoration of the
-      Church-of-our-Lady in Bruges. Stability of the Tower Using an
+      In 2009, Lien De Backer (°1985) graduated magna cum laude as an Industrial
+      Engineer (Hogeschool Gent) with a master dissertation about 'Restoration
+      of the Church-of-our-Lady in Bruges. Stability of the Tower Using an
       FEM-Analysis' (Buildsoft package + ANSYS).
 
 
@@ -155,13 +161,17 @@ teamcards:
       Lien received her PhD in Civil Engineering in 2018.
 
 
+      Lien gained additional consultancy experience in practice at Studiebureau
+      Boydens where she worked as a simulation expert.
+
+
       In 2018, the LoWatter team received a **valorisation grant** from the IOF
       (UGent) to valorise the Legionella research carried out at UGent.
     number: 4
     name: Lien De Backer
     lang: en
     subtitle: Scientist & Entrepreneur
-    ugent: 'https://www.ugent.be/'
+    ugent: 'https://telefoonboek.ugent.be/en/people/802000851414'
     image: liendebacker_v2.jpg
     description: |-
       PhD in Civil Engineering
@@ -189,7 +199,7 @@ teamcards:
     name: Emiel Vermeersch
     lang: nl
     subtitle: Technische consultant
-    ugent: 'https://www.ugent.be/'
+    ugent: 'https://telefoonboek.ugent.be/nl/people/802003312584'
     image: emielvermeersch.jpg
     description: |-
       Master in de Ingenieurswetenschappen: Architectuur
@@ -216,12 +226,12 @@ teamcards:
     number: 6
     name: Emiel Vermeersch
     lang: en
-    subtitle: Technische consultant
-    ugent: 'https://www.ugent.be/'
+    subtitle: Technical consultant
+    ugent: 'https://telefoonboek.ugent.be/en/people/802003312584'
     image: emielvermeersch.jpg
     description: |-
-      Master in de Ingenieurswetenschappen: Architectuur
+      Master in Civil Engineering: Architecture
 
-      Labo en in situ onderzoek
+      Laboratory and in situ research
     linkedIn: 'https://www.linkedin.com/in/emiel-vermeersch-4a3646171/'
 ---
