@@ -106,7 +106,7 @@ blobitems:
       and an effective solution by **tackling the cause**.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: en
-  - title: Wat is onze doelgroep?
+  - title: Wie is onze doelgroep?
     description: >-
       We focussen zowel op residentiële als publieke **gebouwen met een grote
       warmwatervraag**, denk hierbij aan appartementsgebouwen, woonzorgcentra,
