@@ -46,8 +46,12 @@ blobitems:
     lang: en
   - title: Hoe doen we dit?
     description: >-
-      Concreet wil dit zeggen dat we snel en efficiënt de **oorzaak van een
-      infectie** in een warmwatersysteem kunnen opsporen, met behulp van onze
+      Wij bieden een **structurele oplossing** om uw Legionella-probleem met
+      wortel en tak uit te roeien.
+
+
+      Concreet wil dit zeggen dat we snel en efficiënt de oorzaak van een
+      infectie in een warmwatersysteem kunnen opsporen, met behulp van onze
       sterke UGent know-how en ons **predictief Legionella pneumophila
       simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe
       om de Legionella-concentratie te berekenen op iedere locatie in het
@@ -63,6 +67,9 @@ blobitems:
     lang: nl
   - title: How do we accomplish this?
     description: >-
+      We offer a **structural solution** to root out your Legionella problem.
+
+
       In concrete terms, this means that we can quickly and efficiently identify
       the **cause of an infection** in a hot water system, using our UGent
       know-how and our predictive **Legionella pneumophila simulation model**.
