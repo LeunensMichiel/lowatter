@@ -2,14 +2,14 @@
 blobitems:
   - title: Wie zijn we?
     description: >-
-      LoWatter is een toekomstige spin-off van de **Universiteit Gent**. Aan de
-      Universiteit Gent werd er de laatste jaren wetenschappelijk onderzoek
+      LoWatter is een dienstverlening van de **Universiteit Gent**. Aan de
+      Universiteit Gent wordt reeds vele jaren wetenschappelijk onderzoek
       verricht naar Legionella in sanitair warmwatersystemen. Centraal in dit
       onderzoek staat het evenwicht tussen gezondheid en energiebesparing.
 
 
       Als toekomstige spin-off van de Universiteit Gent kunnen we steeds rekenen
-      op ondersteuning van de Universiteit en staan we mee aan de basis van de
+      op ondersteuning van de Universiteit en liggen we mee aan de basis van de
       meest recente wetenschappelijke ontwikkelingen.
     image: ugent.jpg
     lang: nl
