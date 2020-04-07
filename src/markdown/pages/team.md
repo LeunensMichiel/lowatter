@@ -193,7 +193,7 @@ teamcards:
       in met Legionella geïnfecteerde gebouwen.
 
 
-      In 2019 (**valorisatiebeurs IOF**) sloot Emiel aan bij het LoWatter team
+      In 2019 (**valorisatiebeurs IOF**) sloot Emiel aan bij het LoWatter-team
       als technische expert.
     number: 5
     name: Emiel Vermeersch
