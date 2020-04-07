@@ -8,21 +8,21 @@ blobitems:
       onderzoek staat het evenwicht tussen gezondheid en energiebesparing.
 
 
-      Als toekomstige spin-off van de Universiteit Gent kunnen we steeds rekenen
-      op ondersteuning van de Universiteit en liggen we mee aan de basis van de
+      Als deel van de Universiteit Gent kunnen we steeds rekenen op
+      ondersteuning van de Universiteit en liggen we mee aan de basis van de
       meest recente wetenschappelijke ontwikkelingen.
     image: ugent.jpg
     lang: nl
   - title: Who are we?
     description: >-
-      LoWatter is a future spin-off of **Ghent University**. In recent years,
-      scientific research has been carried out at Ghent University on Legionella
-      in sanitary hot water systems. Central to this research is the balance
-      between health and energy savings.
+      LoWatter is a service of **Ghent University**. Ghent University has been
+      conducting scientific research into Legionella in domestic hot water
+      systems for many years. Central to this research is the balance between
+      health and energy savings.
 
 
-      As a future spin-off of Ghent University, we can always count on support
-      from the University and we are at the basis of the most recent scientific
+      As part of Ghent University, we can always count on support from the
+      University and we are at the basis of the most recent scientific
       developments.
     image: ugent.jpg
     lang: en
