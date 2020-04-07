@@ -2,7 +2,7 @@
 blobitems:
   - title: Wie zijn we?
     description: >-
-      LoWatter is een dienstverlening van de **Universiteit Gent**. Aan de
+      LOWATTER is een dienstverlening van de **Universiteit Gent**. Aan de
       Universiteit Gent wordt reeds vele jaren wetenschappelijk onderzoek
       verricht naar Legionella in sanitair warmwatersystemen. Centraal in dit
       onderzoek staat het evenwicht tussen gezondheid en energiebesparing.
@@ -15,7 +15,7 @@ blobitems:
     lang: nl
   - title: Who are we?
     description: >-
-      LoWatter is a service of **Ghent University**. Ghent University has been
+      LOWATTER is a service of **Ghent University**. Ghent University has been
       conducting scientific research into Legionella in domestic hot water
       systems for many years. Central to this research is the balance between
       health and energy savings.
