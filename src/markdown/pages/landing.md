@@ -46,7 +46,7 @@ blobitems:
     lang: en
   - title: Hoe doen we dit?
     description: >-
-      Wij bieden een **structurele oplossing** om uw Legionella-probleem met
+      Wij bieden een **structurele oplossing** om uw Legionella probleem met
       wortel en tak uit te roeien.
 
 
@@ -54,15 +54,15 @@ blobitems:
       infectie in een warmwatersysteem kunnen opsporen, met behulp van onze
       sterke UGent know-how en ons **predictief Legionella pneumophila
       simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe
-      om de Legionella-concentratie te berekenen op iedere locatie in het
+      om de Legionella concentratie te berekenen op iedere locatie in het
       systeem voor elk casespecifiek systeem. 
 
 
-      Naast het opsporen van de oorzaken die tot te hoge
-      Legionella-concentraties in het systeem leiden, kunnen we casespecifiek
-      verschillende oplossingen met elkaar vergelijken om zo tot de **meest
-      duurzame en (kost)effectieve oplossing** te komen alvorens die in de
-      praktijk te implementeren.
+      Naast het opsporen van de oorzaken die tot te hoge Legionella
+      concentraties in het systeem leiden, kunnen we casespecifiek verschillende
+      oplossingen met elkaar vergelijken om zo tot de **meest duurzame en
+      (kost)effectieve oplossing** te komen alvorens die in de praktijk te
+      implementeren.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: nl
   - title: How do we accomplish this?
