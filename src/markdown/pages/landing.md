@@ -125,4 +125,14 @@ blobitems:
       sports complexes, hotels and hospitals.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
+  - title: Qu'est-ce qui rend notre technologie unique?
+    description: >-
+      Les solutions que nous proposons sont durables, le fait que nous
+      **n'ajoutons aucun produit chimique** à l'eau potable rend notre
+      technologie unique.
+
+
+      Notre méthodologie est également unique, en combinant mesures, surveillance et simulations. Ainsi nous obtenons une meilleure compréhension de l'ensemble du système d'eau chaude et **une solution efficace qui attaque à la cause**.
+    lang: fr
+    image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
 ---
