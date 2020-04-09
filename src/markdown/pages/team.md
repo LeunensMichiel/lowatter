@@ -193,4 +193,42 @@ teamcards:
 
       Laboratory and in situ research
     linkedIn: https://www.linkedin.com/in/emiel-vermeersch-4a3646171/
+  - bio: >-
+      En 2009, Lien De Backer (°1985) a obtenu le diplôme d'ingénieur industriel
+      (Hogeschool Gent, magna cum laude) avec une thèse de maitrise sur “La
+      restauration de l'église Notre-Dame de Bruges. Stabilité de la tour à
+      l'aide d'une analyse FEM” (logiciel Buildsoft + ANSYS). En août 2010, Lien
+      a commencé en tant que chercheuse au sein du groupe de recherche en
+      Physique du bâtiment (UGent). De 2010 à 2013, elle a participé au projet
+      de recherche “Stratégies de modélisation de l'humidité des bâtiments
+      historiques afin de contrôler les risques de dommages”. Ce travail faisait
+      partie d'un projet FWO (Fonds flamand de la recherche scientifique) dédié
+      au développement de stratégie de simulation à fin d’analyser
+      l'interrelation entre le climat extérieur et intérieur, l'enveloppe du
+      bâtiment et la conception CVC (Climatisation, ventilation, chauffage) dans
+      des bâtiments historiques et à fin d’évaluer les risques possibles de
+      dommages au patrimoine culturel.
+
+
+      Au cours des années, Lien s'est intéressée à la construction de simulations (en utilisant TRNSYS, Modelica, Energyplus, Matlab e.a.). Ce qui lui attire le plus est le développement et l’usage d’outils de simulation pour modéliser et améliorer des cas spécifiques à partir de la pratique.
+
+
+      Lien a obtenu son doctorat en ingénieur-civil en 2018.
+
+
+      En plus Lien a acquis de l’expérience pratique dans le conseil au sein du Bureau d'études Boydens où elle a travaillé comme expert en simulation.
+
+
+      Lien fait partie de l'équipe LoWatter depuis 2018 (bourse de valorisation IOF) en tant qu'expert R&D et simulation.
+    number: 6
+    name: Lien De Backer
+    lang: fr
+    subtitle: Scientifique et entrepreneur
+    ugent: a
+    image: liendebacker_v2.jpg
+    description: |-
+      Docteur en ingénerie-civil
+
+      Recherche et développement (R&D), technologie et simulation
+    linkedIn: a
 ---
