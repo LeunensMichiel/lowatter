@@ -224,4 +224,26 @@ teamcards:
 
       Laboratory and in situ research
     linkedIn: https://www.linkedin.com/in/emiel-vermeersch-4a3646171/
+  - bio: >-
+      Emiel Vermeersch (°1996) a obtenu son diplôme d’ingénieur-civil architecte
+      (Conception architecturale et techniques de construction)” (UGent, 2019,
+      magna cum laude) avec une thèse de maitrise “Concevoir un système d'eau
+      chaude sain et durable - considérant son contexte juridique”.
+
+
+      Depuis 2019, il est **assistant scientifique** au sein du groupe de recherche en Physique du bâtiment de l'UGent, avec pour objectif principal la conception et la construction d'une installation de test Légionnella. De plus, il participe au suivi des campagnes de surveillance et des stratégies de désinfection dans des bâtiments infectés par la Légionnella.
+
+
+      En 2019 (grace au **bourse de valorisation d’IOF**), Emiel a rejoint l'équipe LoWatter en tant qu'expert technique.
+    number: 9
+    name: Emiel Vermeersch
+    lang: fr
+    subtitle: Consultant technique
+    ugent: https://telefoonboek.ugent.be/en/people/802003312584
+    image: emielvermeersch.jpg
+    description: |-
+      Ingénieur-civil architecte
+
+      Recherche en laboratoire et in situ
+    linkedIn: https://www.linkedin.com/in/emiel-vermeersch-4a3646171/
 ---
