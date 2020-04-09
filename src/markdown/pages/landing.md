@@ -31,8 +31,9 @@ blobitems:
       Sinds kort zijn we ook actief in de praktijk en brengen zo onze kennis
       naar het werkveld. In eerste instantie willen we via consultancy
       casespecifieke kennis verschaffen rond **desinfectie en
-      energiebesparing**. Aanvullend geven we ook advies omtrent de monitoring
-      van warmwaterinstallaties.
+      energiebesparing**. Aanvullend geven we ook advies omtrent het ontwerp en
+      de monitoring van warmwaterinstallaties. Bijkomend kunnen we meer
+      specifieke R&D uitvoeren met onze Legionella proefstand.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: nl
   - title: What are we doing?
@@ -40,8 +41,9 @@ blobitems:
       Recently we have also become active in practice, bringing our knowledge to
       the professional field. In first instance, we want to provide
       case-specific knowledge about **disinfection and energy savings** through
-      consultancy. In addition, we also advise on the monitoring of hot water
-      installations.
+      consultancy. In addition, we also advise on the design and monitoring of
+      hot water installations. Furthermore, we can carry out more specific R&D
+      with our Legionella test setup.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
   - title: Hoe doen we dit?
