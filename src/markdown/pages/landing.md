@@ -98,10 +98,10 @@ blobitems:
   - title: Wat maakt onze technologie uniek?
     description: >-
       De oplossingen die wij voorstellen zijn duurzaam, het feit dat we **geen
-      chemicaliën** toevoegen aan het drinkwater maakt onze technologie uniek.
+      chemicaliën toevoegen** aan het drinkwater maakt onze technologie uniek.
 
 
-      Ook onze methodiek is uniek. We combineren metingen, monitoring en simulaties. Dit zorgt voor een beter inzicht in het gehele warmwatersysteem en een effectieve oplossing waarbij we **de oorzaak aanpakken**.
+      Ook onze methodiek is uniek. We combineren metingen, monitoring en simulaties. Dit zorgt voor een beter inzicht in het gehele warmwatersysteem en een effectieve oplossing waarbij we de **oorzaak aanpakken**.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: nl
   - title: " What makes our technology unique?"
