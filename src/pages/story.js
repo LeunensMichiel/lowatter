@@ -64,7 +64,7 @@ const TimelineItem = styled.div`
       width: 100%;
       position: absolute;
       z-index: 2;
-      fill: ${props => (props.isMilestone ? colors.darkAccent : colors.accent)};
+      fill: ${props => (props.isMilestone ? colors.purple : colors.accent)};
     }
     span {
       z-index: 4;
@@ -82,7 +82,7 @@ const TimelineItem = styled.div`
     padding-right: 0;
     align-self: flex-end;
     > div:not(.legionella) {
-      background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
+      background: ${props => (props.isMilestone ? colors.purple : colors.accent2)};
       text-align: right;
       align-items: flex-end;
       border-radius: 82px 35px;
@@ -90,11 +90,11 @@ const TimelineItem = styled.div`
         right: auto;
         left: -11.5rem;
         svg {
-          ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
+          ${props => (props.isMilestone ? colors.purple : colors.accent2)};
         }
       }
       &:after {
-        background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent2)};
+        background: ${props => (props.isMilestone ? colors.purple : colors.accent2)};
         right: auto;
         left: -7.5px;
       }
@@ -148,7 +148,7 @@ const TimelineItemContent = styled.div`
   flex-direction: column;
   position: relative;
   text-align: left;
-  background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent)};
+  background: ${props => (props.isMilestone ? colors.purple : colors.accent)};
   border-radius: 35px 82px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   color: ${props => (props.isMilestone ? colors.white : colors.darkAccent)};
@@ -165,11 +165,11 @@ const TimelineItemContent = styled.div`
   }
   small {
     margin-bottom: 1.5rem;
-    color: ${props => (props.isMilestone ? colors.accent2 : colors.darkAccent)};
+    color: ${props => (props.isMilestone ? colors.darkAccent : colors.darkAccent)};
   }
   &:after {
     content: " ";
-    background: ${props => (props.isMilestone ? colors.darkAccent : colors.accent)};
+    background: ${props => (props.isMilestone ? colors.purple : colors.accent)};
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
     position: absolute;
     right: -7.5px;

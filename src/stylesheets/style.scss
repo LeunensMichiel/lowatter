@@ -39,15 +39,17 @@ main {
   min-height: 80%;
   position: relative;
   display: grid;
-  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(16px,
-      1fr);
+  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
+      16px,
+      1fr
+    );
   align-content: start;
 }
 
 a {
   color: $black;
   text-decoration: inherit;
-  transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
   &:hover,
   &:focus {
@@ -137,8 +139,10 @@ h4 {
 
 .modal {
   display: grid;
-  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(16px,
-      1fr);
+  grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
+      16px,
+      1fr
+    );
   align-content: start;
 
   min-height: 100%;

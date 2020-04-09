@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
-
 import { useIntl } from "gatsby-plugin-intl"
 import ReactMapGL, { Marker, NavigationControl, FullscreenControl } from "react-map-gl"
 
@@ -10,12 +9,12 @@ import Button from "../components/buttons/button"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import screens from "../components/framework/screens"
+import Legionella from "../components/framework/legionella"
 
-import "mapbox-gl/dist/mapbox-gl.css"
 import Pin from "../images/svg/location.inline.svg"
 import Blob from "../images/svg/blobs/blobContact.inline.svg"
 import contactwave from "../images/svg/waves/contactusNoFooter.svg"
-import Dots from "../images/svg/dots/dots-large-patch.inline.svg"
+import "mapbox-gl/dist/mapbox-gl.css"
 
 const swell = keyframes`
   0%, 100% {
@@ -62,11 +61,15 @@ const FormContainer = styled.section`
   border-radius: 50px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   z-index: 45;
-
   h1 {
     position: absolute;
     color: ${colors.white};
-    top: -75px;
+    top: -70px;
+    font-size: 2.25rem;
+  }
+  @media ${screens.tablet} {
+    width: 95%;
+    margin: 0 auto;
   }
   @media ${screens.mobileM} {
     flex-direction: column;
@@ -155,16 +158,46 @@ const InputWrapper = styled.div`
     grid-column: 1 / span 4;
   }
 `
+const ContactWave = styled.div`
+  background-image: url(${contactwave});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  grid-row: span 2;
+  grid-column: 1 / span 8;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  align-self: center;
+  z-index: -1;
+  margin-bottom: -1.5rem;
+  animation: ${swell} 10s ease-in-out -5s infinite;
 
-const ContactInfo = styled.aside`
+  @media ${screens.tablet} {
+    top: 20rem;
+  }
+  @media ${screens.mobileM} {
+    background-size: 200% 100%;
+    animation: none;
+  }
+`
+
+const ContactInfo = styled.div`
   grid-column: 2 / span 6;
   justify-self: center;
+  margin: 10rem 0;
+  position: relative;
+  @media ${screens.mobileM} {
+    margin: 6.25rem 0;
+  }
+`
+
+const ContactInfoText = styled.aside`
   display: flex;
   flex-direction: column;
-  margin: 12rem 0;
   padding: 1.5rem;
-  position: relative;
   z-index: 5;
+  position: relative;
   background: ${colors.white};
   color: ${colors.darkAccent};
   font-size: 1.25rem;
@@ -173,55 +206,17 @@ const ContactInfo = styled.aside`
   span:first-of-type {
     font-size: 1.5rem;
     font-weight: 600;
-    text-transform: uppercase;
   }
   span:nth-of-type(2) {
     margin: 0.625rem 0;
   }
-  @media ${screens.mobileM} {
-    margin: 6.25rem 0;
-  }
 `
 
-const ContactWave = styled.div`
-  background-image: url(${contactwave});
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
-  position: absolute;
-  grid-row: span 2;
-  grid-column: 1 / span 8;
-  height: 700px;
-  width: 100%;
-  align-self: end;
-  margin-bottom: 17rem;
-  z-index: 1;
-  animation: ${swell} 10s ease-in-out -5s infinite;
-
-  @media ${screens.mobileM} {
-    background-size: 200% 100%;
-    animation: none;
-    margin-bottom: 10rem;
-  }
-`
-
-const DotsContainer = styled.div`
-  position: absolute;
-  bottom: -80px;
-  right: 40px;
-  width: 250px;
-  z-index: 5;
-  @media ${screens.mobileM} {
-    right: 0;
-    bottom: -20px;
-  }
-`
-
-const ContactPage = ({ data }) => {
+const ContactPage = () => {
   const [viewport, setViewport] = useState({
     latitude: 51.045966,
     longitude: 3.727775,
-    zoom: 15,
+    zoom: 14.5,
   })
   const intl = useIntl()
   return (
@@ -342,16 +337,19 @@ const ContactPage = ({ data }) => {
             </ReactMapGL>
           </MapForm>
         </FormContainer>
-        <DotsContainer>
-          <Dots />
-        </DotsContainer>
       </ContactWrapper>
       <ContactWave />
       <ContactInfo>
-        <span>Lowatter</span>
-        <span>{intl.formatMessage({ id: "footer.email" })}</span>
-        <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[0]}</span>
-        <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[1]}</span>
+        <ContactInfoText>
+          <span>LoWatter</span>
+          <span>{intl.formatMessage({ id: "footer.email" })}</span>
+          <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[0]}</span>
+          <span>{intl.formatMessage({ id: "footer.address" }).split("\n")[1]}</span>
+        </ContactInfoText>
+        <Legionella top={23} left={-201} rotate={12} />
+        <Legionella top={-32} right={-221} rotate={-22} width={160} />
+        <Legionella bottom={-13} rotate={-24} right={60} height={47} width={124} />
+        <Legionella bottom={-79} right={-231} rotate={42} width={66} height={23} />
       </ContactInfo>
     </Layout>
   )

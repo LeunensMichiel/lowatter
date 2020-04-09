@@ -54,6 +54,7 @@ collections:
                 options:
                   - { label: "Nederlands", value: "nl" }
                   - { label: "English", value: "en" }
+                  - { label: "Français", value: "fr" }
       - label: "TeamPagina"
         name: "teampage"
         media_folder: ""
@@ -77,6 +78,7 @@ collections:
                 options:
                   - { label: "Nederlands", value: "nl" }
                   - { label: "English", value: "en" }
+                  - { label: "Français", value: "fr" }
               - { label: Naam, name: name, widget: string, hint: "Naam van de persoon" }
               - {
                   label: Ondertitel,
@@ -129,7 +131,12 @@ collections:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Datum", name: "date", widget: "datetime" }
       - { label: "Kleine beschrijving", name: "description", widget: "string" }
-      - { label: "Artikel", name: "body", widget: "markdown" }
+      - {
+          label: "Artikel",
+          name: "body",
+          widget: "markdown",
+          hint: "zet in alt `left` of `right` indien je een afbeelding links of rechts wil aligneren.",
+        }
       - { label: "Mijlpaal", name: "isMilestone", widget: "boolean" }
       - label: "Taal"
         name: "lang"
@@ -137,6 +144,7 @@ collections:
         options:
           - { label: "Nederlands", value: "nl" }
           - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
   - name: "TermsAndConditions"
     label: "Algemene Voorwaarden"
     folder: "src/markdown/terms"
@@ -154,6 +162,7 @@ collections:
         options:
           - { label: "Nederlands", value: "nl" }
           - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
   - label: "Notificatie"
     name: "notification"
     identifier_field: description
@@ -167,8 +176,10 @@ collections:
         fields:
           - { label: "Titel Nederlands", name: "titleNl", widget: "string" }
           - { label: "Titel Engels", name: "titleEn", widget: "string" }
+          - { label: "Titel Frans", name: "titleFr", widget: "string" }
           - { label: "Beschrijving Nederlands", name: "descriptionNl", widget: "text" }
           - { label: "Beschrijving Engels", name: "descriptionEn", widget: "text" }
+          - { label: "Beschrijving Frans", name: "descriptionFr", widget: "text" }
           - {
               label: "Begindatum",
               name: "begindate",
@@ -191,6 +202,14 @@ collections:
             required: false
           - label: "Overeenkomende story (en)"
             name: "relatedStoryEn"
+            widget: "relation"
+            collection: "stories"
+            searchFields: ["title"]
+            displayFields: ["title", "date"]
+            valueField: "body"
+            required: false
+          - label: "Overeenkomende story (fr)"
+            name: "relatedStoryFr"
             widget: "relation"
             collection: "stories"
             searchFields: ["title"]

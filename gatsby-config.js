@@ -3,7 +3,21 @@ module.exports = {
     title: `LoWatter`,
     description: `Controlling legionella in tapwater.`,
     author: `@michielleunens`,
-    siteUrl: `https://www.lowatter.com`,
+    siteUrl: `https://lowatter.com`,
+    keywords: [
+      `legionella`,
+      `bestrijding`,
+      `desinfectie`,
+      `probleem`,
+      `bestrijding legionella`,
+      `infectie`,
+      `consultancy`,
+      `tapwater`,
+      `controlling`,
+      `waterleidingen`,
+      `kraantjeswater`,
+      `ugent`,
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,8 +68,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1440,
-              quality: 85,
+              maxWidth: 1140,
+              quality: 80,
+              withWebp: true,
             },
           },
         ],
@@ -65,7 +80,7 @@ module.exports = {
       resolve: `gatsby-plugin-intl`,
       options: {
         path: `${__dirname}/src/utils/locales/`,
-        languages: [`en`, `nl`],
+        languages: [`en`, `nl`, `fr`],
         defaultLanguage: `nl`,
         redirect: true,
       },

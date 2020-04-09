@@ -47,15 +47,35 @@ const swellReverse = keyframes`
   }
 `
 
+const swellMed = keyframes`
+  0%, 100% {
+    transform: translate3d(0,-6px,0);
+    background-size: 200% 600px;
+
+  }
+  50% {
+    transform: translate3d(0,6px,0);
+    background-size: 205% 600px;
+  }
+`
+const swellReverseMed = keyframes`
+  0%, 100% {
+    background-size: 200% 450px;
+  }
+  50% {
+    background-size: 210% 450px;
+  }
+`
+
 const LandingText = styled.div`
   grid-column: 2 / span 4;
   white-space: pre-wrap;
-  margin: 6.5rem 0;
+  margin: 7.5rem 0;
   > h1 {
     max-width: 650px;
   }
   > p {
-    max-width: 360px;
+    max-width: 500px;
     margin-bottom: 3rem;
     color: ${colors.darkAccent};
   }
@@ -68,13 +88,16 @@ const LandingText = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 90%;
+    margin: 6.5rem auto;
     > h1 {
       font-size: 1.6rem;
     }
   }
   @media ${screens.mobileS} {
+    width: 100%;
     > h1 {
-      font-size: 1.8rem;
+      font-size: 1.25rem;
     }
   }
 `
@@ -92,7 +115,10 @@ const Waves = styled.div`
   margin-bottom: 10rem;
   animation: ${swellReverse} 15s ease-in-out infinite;
   transform: translate3d(0, 0, 0);
-  will-change: transform;
+
+  @media ${screens.tablet} {
+    animation: ${swellReverseMed} 15s ease-in-out infinite;
+  }
   @media ${screens.mobileM} {
     background-size: 150% 250px;
     height: 250px;
@@ -113,7 +139,10 @@ const UpperWave = styled.div`
   transform: translate3d(0, 0, 0);
   animation: ${swell} 15s ease-in-out -7s infinite;
   opacity: 1;
-  will-change: transform;
+
+  @media ${screens.tablet} {
+    animation: ${swellMed} 15s ease-in-out -7s infinite;
+  }
   @media ${screens.mobileM} {
     height: 350px;
     background-size: 150% 280px;
@@ -132,11 +161,19 @@ const LegionellaContainer = styled.div`
     position: absolute;
     right: 0;
   }
+  @media ${screens.tablet} {
+    top: -400px;
+  }
   @media ${screens.mobileM} {
     top: -200px;
     .water {
-      top: -200px;
+      top: -220px;
       width: 50%;
+    }
+  }
+  @media ${screens.mobileS} {
+    .water {
+      top: -200px;
     }
   }
   @media ${screens.mobileMLandscape} {
@@ -172,7 +209,7 @@ const BlobRow = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-direction: ${props => (props.even ? "row-reverse" : "row")};
-  margin-bottom: 10rem;
+  margin-bottom: 7.5rem;
   height: 100%;
 
   @media ${screens.mobileM} {
@@ -204,8 +241,7 @@ const InfoBlob = styled.div`
   align-items: center;
   height: 300px;
   position: relative;
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  &:hover {
+  &:hover > div {
     transform: scale3d(1.05, 1.05, 1.05);
     transition-delay: 0.15s;
   }
@@ -228,6 +264,7 @@ const BlobPicture = styled.div`
   position: absolute;
   clip-path: url('#clippie${props => props.index + 1}');
   z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   .gatsby-image-wrapper {
     max-height: 400px;
   }
@@ -239,28 +276,27 @@ const BlobPicture = styled.div`
     right: 0;
     bottom: 0;
     background: ${colors.gradient};
-    opacity: .20;
+    opacity: .15;
     z-index: 8;
   }
   `
 
 const ContactUs = styled.section`
   height: 100%;
-  min-height: 900px;
-  min-height: 95vh;
+  min-height: 700px;
   grid-column: 1 / span 8;
-  margin-bottom: -2px;
+  margin-bottom: -5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url(${contactwave});
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 140% 100%;
   background-position: 50% 50%;
   text-align: center;
   position: relative;
-  h1 {
+  h2 {
     color: ${colors.white};
     width: 100%;
     max-width: 780px;
@@ -272,15 +308,18 @@ const ContactUs = styled.section`
     margin-bottom: 4rem;
   }
   @media ${screens.tablet} {
-    h1,
+    background-size: 200% 100%;
+    margin-bottom: -3rem;
+    h2,
     p {
       max-width: 600px;
     }
   }
   @media ${screens.mobileM} {
     margin-top: 3rem;
-    padding: 12rem 16px;
+    padding: 10rem 16px;
     background-size: 200% 100%;
+    min-height: 550px;
     p {
       text-align: justify;
       margin-bottom: 2rem;
@@ -388,18 +427,18 @@ const IndexPage = ({ data }) => {
               </InfoBlob>
             </BlobRow>
             {index % 5 === 1 && <BigDots className="bigdots" css={DotStyle} />}
-            {index % 5 === 2 && <SmolDots css={DotStyle} />}
+            {index % 5 === 1 && <SmolDots css={DotStyle} />}
           </React.Fragment>
         ))}
       <ContactUs>
-        <h1>{intl.formatMessage({ id: "index.contactTitle" })}</h1>
+        <h2>{intl.formatMessage({ id: "index.contactTitle" })}</h2>
         <p>{intl.formatMessage({ id: "index.contactDescription" })}</p>
         <Button
           link="/contact/"
           text={intl.formatMessage({ id: "index.contactUs" })}
           accent
         />
-        <Legionella width={125} height={42} rotate={41} bottom={200} right={150} />
+        <Legionella width={125} height={42} rotate={41} bottom={140} right={120} />
       </ContactUs>
     </Layout>
   )
@@ -416,7 +455,7 @@ export const query = graphql`
           description
           image {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 80) {
+              fluid(maxWidth: 400, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -430,12 +469,15 @@ export const query = graphql`
       frontmatter {
         descriptionEn
         descriptionNl
+        descriptionFr
         enddate
         begindate
         relatedStoryNl
         relatedStoryEn
+        relatedStoryFr
         titleEn
         titleNl
+        titleFr
       }
     }
   }

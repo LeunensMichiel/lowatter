@@ -5,7 +5,7 @@ import { IntlContextConsumer, changeLocale, Link, useIntl } from "gatsby-plugin-
 
 import colors from "../framework/colors"
 
-import Logo from "../../images/svg/logo.inline.svg"
+import Logo from "../../images/svg/logo-white.inline.svg"
 import UGent from "../../images/svg/ugent-white.inline.svg"
 import LinkedIn from "../../images/svg/linkedin.inline.svg"
 import footerwave from "../../images/svg/waves/footerwave.svg"
@@ -48,7 +48,7 @@ const FooterContainer = styled.footer`
 `
 
 const ContactInfo = styled.aside`
-  grid-column: 4 / span 2;
+  grid-column: 5 / span 2;
   display: flex;
   flex-direction: column;
   span:first-of-type {
@@ -57,10 +57,6 @@ const ContactInfo = styled.aside`
   }
   span:nth-of-type(2) {
     margin: 0.625rem 0;
-  }
-  @media ${screens.tablet} {
-    grid-column: 4 / span 2;
-    align-items: flex-end;
   }
   @media ${screens.mobileM} {
     grid-column: 2 / span 4;
@@ -72,7 +68,7 @@ const ContactInfo = styled.aside`
   }
 `
 const NavigationWrapper = styled.aside`
-  grid-column: 6 / span 2;
+  grid-column: 7;
   justify-self: end;
   span {
     font-weight: 600;
@@ -156,19 +152,18 @@ const SubFooter = styled.div`
 `
 
 const LogoStyle = css`
-  grid-column: 2;
-  width: 100%;
+  grid-column: 2 / span 2;
+  max-width: 300px;
   .cls-1 {
     fill: ${colors.white} !important;
   }
   &.ugent {
-    grid-column: 3;
+    grid-column: 4;
     width: 100px;
     justify-self: center;
   }
 
   @media ${screens.mobileM} {
-    grid-column: 2 / span 2;
     &.ugent {
       justify-self: initial;
       grid-column: 6 / span 2;
@@ -239,7 +234,7 @@ const Footer = () => {
           }
         </IntlContextConsumer>
         <span>
-          <sup>© </sup>LOWATTER {new Date().getFullYear()} |{" "}
+          <sup>© </sup>LoWatter {new Date().getFullYear()} |{" "}
           {intl.formatMessage({ id: "footer.subText" })}{" "}
           <a href="https://www.leunesmedia.com" target="_blank" rel="noopener noreferrer">
             Leunes Media
