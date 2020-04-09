@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
-    "gatsby": "^2.20.8",
+    "gatsby": "^2.20.15",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-emotion": "^4.2.1",
@@ -30,7 +30,7 @@
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.3",
     "intersection-observer": "^0.7.0",
-    "netlify-cms-app": "^2.11.32",
+    "netlify-cms-app": "^2.12.5",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
