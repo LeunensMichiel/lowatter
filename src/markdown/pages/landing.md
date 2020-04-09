@@ -22,6 +22,16 @@ blobitems:
       As part of Ghent University, we can always count on support from the University and we are at the basis of the most recent scientific developments.
     image: ugent.jpg
     lang: en
+  - title: Qui sommes-nous?
+    description: LoWatter est un service de l’UGent, **l'université de Gand**.
+      l’UGent mène des recherches scientifiques sur les Légionnelles dans les
+      systèmes d'eau chaude sanitaire depuis de nombreuses années. Au centre de
+      cette recherche se trouve l'équilibre entre la santé et les économies
+      d'énergie. En tant que membre de l’UGent, nous pouvons toujours compter
+      sur le soutien de l'université et nous sommes à la base des développements
+      scientifiques les plus récents.
+    image: ugent.jpg
+    lang: fr
   - title: Wat doen we?
     description: Sinds kort zijn we ook actief in de praktijk en brengen zo onze
       kennis naar het werkveld. In eerste instantie willen we via consultancy
@@ -93,14 +103,12 @@ blobitems:
       sports complexes, hotels and hospitals.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
-  - title: Qui sommes-nous?
-    description: LoWatter est un service de l’UGent, **l'université de Gand**.
-      l’UGent mène des recherches scientifiques sur les Légionnelles dans les
-      systèmes d'eau chaude sanitaire depuis de nombreuses années. Au centre de
-      cette recherche se trouve l'équilibre entre la santé et les économies
-      d'énergie. En tant que membre de l’UGent, nous pouvons toujours compter
-      sur le soutien de l'université et nous sommes à la base des développements
-      scientifiques les plus récents.
-    image: ugent.jpg
+  - title: Que faisons-nous?
+    description: Récemment, nous sommes devenus actifs dans la pratique, apportant
+      nos connaissances au domaine professionnel. A base des connaissances bien
+      spécifiques nous conseillons cas par cas sur **la désinfection et les
+      économies d’énergie**, ainsi que sur la surveillance des installations
+      d’eau chaude.
+    image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: fr
 ---
