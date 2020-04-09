@@ -50,6 +50,14 @@ blobitems:
       our Legionella test setup.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
+  - title: Que faisons-nous?
+    description: Récemment, nous sommes devenus actifs dans la pratique, apportant
+      nos connaissances au domaine professionnel. A base des connaissances bien
+      spécifiques nous conseillons cas par cas sur **la désinfection et les
+      économies d’énergie**, ainsi que sur la surveillance des installations
+      d’eau chaude.
+    image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
+    lang: fr
   - title: Hoe doen we dit?
     description: >-
       Wij bieden een **structurele oplossing** om uw Legionella probleem met
@@ -103,12 +111,16 @@ blobitems:
       sports complexes, hotels and hospitals.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
-  - title: Que faisons-nous?
-    description: Récemment, nous sommes devenus actifs dans la pratique, apportant
-      nos connaissances au domaine professionnel. A base des connaissances bien
-      spécifiques nous conseillons cas par cas sur **la désinfection et les
-      économies d’énergie**, ainsi que sur la surveillance des installations
-      d’eau chaude.
-    image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
+  - title: Comment faisons-nous?
+    description: >-
+      Nous offrons **une solution structurelle** pour éliminer votre problème de
+      Légionnelles.
+
+
+      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une infection dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
+
+
+      De plus, nous pouvons comparer les différentes solutions spécifiques à un seul cas afin de trouver **la meilleure solution en ce qui concerne durabilité, efficacité et rentabilité**, avant même de les mettre en pratique.
+    image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: fr
 ---
