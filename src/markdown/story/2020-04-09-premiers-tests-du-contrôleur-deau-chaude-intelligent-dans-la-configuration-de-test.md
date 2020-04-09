@@ -1,7 +1,7 @@
 ---
 title: Premiers tests du contrôleur d'eau chaude intelligent dans la
   configuration de test
-date: "2020-01-03T11:00:00.000Z"
+date: "2020-03-01T11:00:00.000Z"
 description: Les premiers tests du contrôleur intelligent d'eau chaude dans la
   configuration de test sont prometteurs.
 isMilestone: false
