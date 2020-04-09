@@ -42,8 +42,8 @@ blobitems:
       the professional field. In first instance, we want to provide
       case-specific knowledge about **disinfection and energy savings** through
       consultancy. In addition, we also advise on the design and monitoring of
-      hot water installations. Furthermore, we can carry out more specific R&D
-      with our Legionella test setup.
+      hot water installations. Moreover, we can carry out more specific R&D with
+      our Legionella test setup.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
   - title: Hoe doen we dit?
