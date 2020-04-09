@@ -83,6 +83,18 @@ blobitems:
       Moreover, we can compare case specific solutions in order find the **most sustainable and (cost) effective solution** before implementing it in practice.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: en
+  - title: Comment faisons-nous?
+    description: >-
+      Nous offrons **une solution structurelle** pour éliminer votre problème de
+      Légionnelles.
+
+
+      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une infection dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
+
+
+      De plus, nous pouvons comparer les différentes solutions spécifiques à un seul cas afin de trouver **la meilleure solution en ce qui concerne durabilité, efficacité et rentabilité**, avant même de les mettre en pratique.
+    image: photo-by-john-schnobrich-on-unsplash_v2.jpg
+    lang: fr
   - title: Wat maakt onze technologie uniek?
     description: >-
       De oplossingen die wij voorstellen zijn duurzaam, het feit dat we **geen
@@ -113,16 +125,4 @@ blobitems:
       sports complexes, hotels and hospitals.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
-  - title: Comment faisons-nous?
-    description: >-
-      Nous offrons **une solution structurelle** pour éliminer votre problème de
-      Légionnelles.
-
-
-      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une infection dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
-
-
-      De plus, nous pouvons comparer les différentes solutions spécifiques à un seul cas afin de trouver **la meilleure solution en ce qui concerne durabilité, efficacité et rentabilité**, avant même de les mettre en pratique.
-    image: photo-by-john-schnobrich-on-unsplash_v2.jpg
-    lang: fr
 ---
