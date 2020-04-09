@@ -113,18 +113,6 @@ blobitems:
       Our methodology is also unique. We combine measurements, monitoring and simulations. These provide a better insight in the entire hot water system and an effective solution by **tackling the cause**.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: en
-  - title: Wie is onze doelgroep?
-    description: We focussen zowel op residentiële als publieke **gebouwen met een
-      grote warmwatervraag**, denk hierbij aan appartementsgebouwen,
-      woonzorgcentra, sportcomplexen, hotels en ziekenhuizen.
-    lang: nl
-    image: photo-by-roberto-nickson-on-unsplash_v2.jpg
-  - title: What is our target market?
-    description: We focus on both residential and public **buildings with a large
-      hot water demand**, such as apartment buildings, residential care centers,
-      sports complexes, hotels and hospitals.
-    image: photo-by-roberto-nickson-on-unsplash_v2.jpg
-    lang: en
   - title: Qu'est-ce qui rend notre technologie unique?
     description: >-
       Les solutions que nous proposons sont durables, le fait que nous
@@ -135,4 +123,16 @@ blobitems:
       Notre méthodologie est également unique, en combinant mesures, surveillance et simulations. Ainsi nous obtenons une meilleure compréhension de l'ensemble du système d'eau chaude et **une solution efficace qui attaque à la cause**.
     lang: fr
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
+  - title: Wie is onze doelgroep?
+    description: We focussen zowel op **residentiële als publieke gebouwen met een
+      grote warmwatervraag**, denk hierbij aan appartementsgebouwen,
+      woonzorgcentra, sportcomplexen, hotels en ziekenhuizen.
+    lang: nl
+    image: photo-by-roberto-nickson-on-unsplash_v2.jpg
+  - title: What is our target market?
+    description: We focus on both residential and public **buildings with a large
+      hot water demand**, such as apartment buildings, residential care centers,
+      sports complexes, hotels and hospitals.
+    image: photo-by-roberto-nickson-on-unsplash_v2.jpg
+    lang: en
 ---
