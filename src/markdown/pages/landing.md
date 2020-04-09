@@ -23,13 +23,14 @@ blobitems:
     image: ugent.jpg
     lang: en
   - title: Qui sommes-nous?
-    description: LoWatter est un service de l’UGent, **l'université de Gand**.
-      l’UGent mène des recherches scientifiques sur les Légionnelles dans les
-      systèmes d'eau chaude sanitaire depuis de nombreuses années. Au centre de
-      cette recherche se trouve l'équilibre entre la santé et les économies
-      d'énergie. En tant que membre de l’UGent, nous pouvons toujours compter
-      sur le soutien de l'université et nous sommes à la base des développements
-      scientifiques les plus récents.
+    description: >-
+      LoWatter est un service de l’UGent, **l'université de Gand**. l’UGent mène
+      des recherches scientifiques sur les Légionnelles dans les systèmes d'eau
+      chaude sanitaire depuis de nombreuses années. Au centre de cette recherche
+      se trouve l'équilibre entre la santé et les économies d'énergie.
+
+
+      En tant que membre de l’UGent, nous pouvons toujours compter sur le soutien de l'université et nous sommes à la base des développements scientifiques les plus récents.
     image: ugent.jpg
     lang: fr
   - title: Wat doen we?
