@@ -124,7 +124,7 @@ blobitems:
     lang: fr
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
   - title: Wie is onze doelgroep?
-    description: We focussen zowel op **residentiële als publieke gebouwen met een
+    description: We focussen zowel op residentiële als publieke **gebouwen met een
       grote warmwatervraag**, denk hierbij aan appartementsgebouwen,
       woonzorgcentra, sportcomplexen, hotels en ziekenhuizen.
     lang: nl
@@ -135,4 +135,11 @@ blobitems:
       sports complexes, hotels and hospitals.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
+  - title: Quel est notre marché cible?
+    description: Nous nous concentrons sur des **bâtiments résidentiels et publics
+      ayant une forte demande d'eau chaude**, tels que des immeubles à
+      appartements, des centres de soins résidentiels, des complexes sportifs,
+      des hôtels et des hôpitaux.
+    image: photo-by-roberto-nickson-on-unsplash_v2.jpg
+    lang: fr
 ---
