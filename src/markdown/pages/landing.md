@@ -55,8 +55,9 @@ blobitems:
     description: Récemment, nous sommes devenus actifs dans la pratique, apportant
       nos connaissances au domaine professionnel. A base des connaissances bien
       spécifiques nous conseillons cas par cas sur **la désinfection et les
-      économies d’énergie**, ainsi que sur la surveillance des installations
-      d’eau chaude.
+      économies d’énergie**, ainsi que sur la conception et la surveillance des
+      installations d’eau chaude. De plus, nous pouvons effectuer une R&D plus
+      spécifique avec notre configuration de test Legionella.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: fr
   - title: Hoe doen we dit?
