@@ -10,6 +10,8 @@ logo_url: https://lowatter.com/uploads/logo.svg
 
 publish_mode: editorial_workflow
 
+local_backend: true
+
 collections:
   - label: "Paginas"
     name: "pages"
@@ -55,7 +57,7 @@ collections:
                   - { label: "Nederlands", value: "nl" }
                   - { label: "English", value: "en" }
                   - { label: "Français", value: "fr" }
-      - label: "TeamPagina"
+      - label: "Teampagina"
         name: "teampage"
         media_folder: ""
         public_folder: ""
@@ -145,10 +147,74 @@ collections:
           - { label: "Nederlands", value: "nl" }
           - { label: "English", value: "en" }
           - { label: "Français", value: "fr" }
+  - name: "services"
+    label: "Service"
+    folder: "src/markdown/services"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Kleine beschrijving", name: "description", widget: "string" }
+      - { label: "Tekst van knop", name: "button", widget: "string" }
+      - {
+          label: "Link naar productpagina",
+          name: "url",
+          widget: "string",
+          hint: "Moet ofwel zijn: disinfectionconsultancy;advice;researchanddevelopment",
+        }
+      - label: "Productfoto"
+        name: "image"
+        widget: "image"
+        hint: "Maximum grootte: 650kb"
+        media_library:
+          config:
+            max_file_size: 650000
+            multiple: false
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
+  - name: "faqs"
+    label: "FAQ"
+    folder: "src/markdown/faq"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Faq onderwerp", name: "title", widget: "string" }
+      - label: "Rangnummer"
+        name: "rang"
+        hint: "Volgorde van de getoonde categoriën"
+        widget: "number"
+        valueType: "int"
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
+      - label: "Vragen & Antwoorden"
+        name: "faqitems"
+        widget: "list"
+        fields:
+          - { label: Vraag, name: question, widget: string }
+          - { label: Antwoord, name: answer, widget: text }
   - name: "TermsAndConditions"
     label: "Algemene Voorwaarden"
     folder: "src/markdown/terms"
-    create: false
     delete: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: lang
@@ -156,6 +222,90 @@ collections:
       preview: true
     fields:
       - { label: "Algemene voorwaarden", name: "body", widget: "markdown" }
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
+  - name: "disinfectionpage"
+    label: "Diensten - Desinfectieconsultancy pagina"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: "src/markdown/disinfection"
+    editor:
+      preview: true
+    fields:
+      - { label: Paginatitel, name: title, widget: string, hint: "Titel van de pagina" }
+      - label: "Stap"
+        hint: "De stapjesblobs"
+        name: "steps"
+        widget: "list"
+        fields:
+          - {
+              label: Titel stap,
+              name: steptitle,
+              widget: string,
+              hint: "Titel van een stap, bvb 'Melding probleem'",
+            }
+          - {
+              label: "Beschrijving stap",
+              name: "description",
+              widget: "markdown",
+              hint: "Beschrijving van een stap.",
+            }
+          - label: "Afbeelding stap"
+            name: "image"
+            widget: "image"
+            hint: "Afbeelding van een stap. Maximum grootte: 650kb"
+            media_library:
+              config:
+                max_file_size: 650000
+                multiple: false
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
+  - name: "advicepage"
+    label: "Diensten - Adviespagina"
+    folder: "src/markdown/advice"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Paginainhoud", name: "body", widget: "markdown" }
+      - label: "Taal"
+        name: "lang"
+        widget: "select"
+        options:
+          - { label: "Nederlands", value: "nl" }
+          - { label: "English", value: "en" }
+          - { label: "Français", value: "fr" }
+  - name: "rndpage"
+    label: "Diensten - R&Dpagina"
+    folder: "src/markdown/rnd"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Paginainhoud", name: "body", widget: "markdown" }
       - label: "Taal"
         name: "lang"
         widget: "select"

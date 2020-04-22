@@ -9,14 +9,17 @@ module.exports = {
       `bestrijding`,
       `desinfectie`,
       `probleem`,
-      `bestrijding legionella`,
+      `bestrijding`,
+      `lowatter`,
       `infectie`,
+      `leidingen`,
       `consultancy`,
       `tapwater`,
       `controlling`,
       `waterleidingen`,
       `kraantjeswater`,
       `ugent`,
+      `disinfection`,
     ],
   },
   plugins: [
@@ -26,13 +29,6 @@ module.exports = {
       options: {
         path: `${__dirname}/static/uploads`,
         name: "uploads",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/markdown`,
-        name: `markdown`,
       },
     },
     {
@@ -70,10 +66,21 @@ module.exports = {
             options: {
               maxWidth: 1140,
               quality: 80,
-              withWebp: true,
+              withWebp: false,
+              backgroundColor: "none",
+              linkImagesToOriginal: false,
+              loading: "eager",
+              disableBgImage: true,
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown`,
+        name: `markdown`,
       },
     },
     {

@@ -448,7 +448,7 @@ export default IndexPage
 
 export const query = graphql`
   query IndexQuery {
-    landing: markdownRemark(fileAbsolutePath: { regex: "/pages/landing/" }) {
+    landing: markdownRemark(fileAbsolutePath: { regex: "/markdown/pages/landing/" }) {
       frontmatter {
         title
         blobitems {
@@ -465,7 +465,9 @@ export const query = graphql`
         }
       }
     }
-    notification: markdownRemark(fileAbsolutePath: { regex: "/notification.md/" }) {
+    notification: markdownRemark(
+      fileAbsolutePath: { regex: "/markdown/notification.md/" }
+    ) {
       frontmatter {
         descriptionEn
         descriptionNl

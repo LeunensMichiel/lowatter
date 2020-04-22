@@ -19,11 +19,12 @@ import Blob8 from "../images/svg/blobs/blob8.inline.svg"
 const Title = styled.h1`
   grid-column: 2 / span 4;
   margin-top: 6.25rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  justify-self: start;
   position: relative;
   &::after {
     content: "";
-    width: 120px;
+    width: 70%;
     height: 8px;
     display: block;
     position: absolute;
@@ -32,22 +33,13 @@ const Title = styled.h1`
     z-index: -2;
     border-radius: 3px;
   }
-  @media ${screens.mobileM} {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    &::after {
-      content: "";
-      width: 60px;
-    }
-  }
   @media ${screens.tablet} {
     grid-column: 2 / span 6;
   }
 `
 
 const CardBase = styled.div`
-  margin: 5rem 0;
+  margin: 3rem 0;
   grid-column: ${props => (props.even ? "2 / span 5" : "3 / span 5")};
   position: relative;
   display: flex;
@@ -305,7 +297,7 @@ export default TeamPage
 
 export const query = graphql`
   query TeamQuery {
-    team: markdownRemark(fileAbsolutePath: { regex: "/pages/team/" }) {
+    team: markdownRemark(fileAbsolutePath: { regex: "/markdown/pages/team/" }) {
       frontmatter {
         teamcards {
           bio

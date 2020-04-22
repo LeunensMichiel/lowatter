@@ -314,7 +314,7 @@ export default StoryPage
 export const query = graphql`
   query StoryQuery {
     stories: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/story/" } }
+      filter: { fileAbsolutePath: { regex: "/markdown/story/" } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
