@@ -88,10 +88,10 @@ const LandingText = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%;
     margin: 6.5rem auto;
+    width: 90%;
     > h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
   @media ${screens.mobileS} {
@@ -197,9 +197,6 @@ const LegionellaSip = styled.div`
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   &:hover {
     transform: translate(-10px);
-  }
-  @media ${screens.mobileM} {
-    margin-bottom: 5rem;
   }
 `
 
