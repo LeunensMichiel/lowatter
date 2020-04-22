@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, image } = useStaticQuery(
     graphql`
       query {
         site {
@@ -12,6 +12,17 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            keywords
+            siteUrl
+          }
+        }
+        image: file(relativePath: { eq: "seo.jpg" }) {
+          childImageSharp {
+            original {
+              src
+              width
+              height
+            }
           }
         }
       }
@@ -19,6 +30,10 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaImage =
+    image && image.childImageSharp.original.src
+      ? `${site.siteMetadata.siteUrl}${image.childImageSharp.original.src}`
+      : null
 
   return (
     <Helmet
@@ -26,11 +41,15 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} - %s`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: "keywords",
+          content: site.siteMetadata.keywords.join(","),
         },
         {
           property: `og:title`,
@@ -41,12 +60,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: `og:type`,
+          content: `website`,
         },
         {
           name: `twitter:creator`,
@@ -60,13 +79,49 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+        {
+          name: "google-site-verification",
+          content: "odQrbKCZXxmou5a_yY9DbKB8gOyYV6gGUK5wyCMdtfk",
+        },
+      ]
+        .concat(
+          metaImage
+            ? [
+                {
+                  property: `og:image`,
+                  content: metaImage,
+                },
+                {
+                  property: `og:image:alt`,
+                  content: title,
+                },
+                {
+                  property: "og:image:width",
+                  content: image.childImageSharp.original.width,
+                },
+                {
+                  property: "og:image:height",
+                  content: image.childImageSharp.original.height,
+                },
+                {
+                  name: `twitter:card`,
+                  content: `summary_large_image`,
+                },
+              ]
+            : [
+                {
+                  name: `twitter:card`,
+                  content: `summary`,
+                },
+              ]
+        )
+        .concat(meta)}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `nl`,
   meta: [],
   description: ``,
 }

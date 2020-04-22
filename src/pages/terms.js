@@ -60,7 +60,9 @@ export default TermsconditionsPage
 
 export const query = graphql`
   query TermsQuery {
-    terms: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/terms/" } }) {
+    terms: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/markdown/terms/" } }
+    ) {
       edges {
         node {
           frontmatter {

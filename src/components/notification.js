@@ -131,12 +131,25 @@ const Notification = ({ notification }) => {
   )
 
   const story = {
-    title: intl.locale === "nl" ? notification.titleNl : notification.titleEn,
+    title:
+      intl.locale === "nl"
+        ? notification.titleNl
+        : intl.locale === "en"
+        ? notification.titleEn
+        : notification.titleFr,
     description:
-      intl.locale === "nl" ? notification.descriptionNl : notification.descriptionEn,
+      intl.locale === "nl"
+        ? notification.descriptionNl
+        : intl.locale === "en"
+        ? notification.descriptionEn
+        : notification.descriptionFr,
     date: notification.begindate,
     html:
-      intl.locale === "nl" ? notification.relatedStoryNl : notification.relatedStoryEn,
+      intl.locale === "nl"
+        ? notification.relatedStoryNl
+        : intl.locale === "en"
+        ? notification.relatedStoryEn
+        : notification.relatedStoryFr,
   }
 
   const openModal = () => {

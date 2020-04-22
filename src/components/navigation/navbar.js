@@ -6,7 +6,6 @@ import colors from "../framework/colors"
 import screens from "../framework/screens"
 
 import Logo from "../../images/svg/logo.inline.svg"
-import TripleDot from "../../images/svg/triple-dot-menu.inline.svg"
 import wave from "../../images/svg/waves/navwave.svg"
 
 const NavigationBarContainer = styled.header`
@@ -14,9 +13,11 @@ const NavigationBarContainer = styled.header`
   background: url(${wave});
   background-repeat: no-repeat;
   background-size: 1140px 200px;
-  background-position: calc(50% - 300px) 100%;
+  background-position: calc(100% + 400px) 100%;
   padding: 1.5rem 0;
-
+  @media ${screens.tablet} {
+    background-position: calc(100% + 700px) 100%;
+  }
   @media ${screens.mobileM} {
     background: ${colors.darkAccent};
     position: fixed;
@@ -42,41 +43,35 @@ const NavigationBar = styled.nav`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  svg {
-    .cls-1 {
-      transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-    &:hover {
-      .cls-1 {
-        fill: ${colors.darkAccent};
-      }
-    }
-  }
 
+  @media ${screens.laptop} {
+    width: calc(100% - 32px);
+  }
   @media ${screens.mobileM} {
     align-items: flex-start;
     flex-direction: column;
-    .cls-1 {
+    height: 100%;
+    svg * {
       fill: ${colors.white} !important;
-    }
-  }
-  @media ${screens.laptop} {
-    width: calc(100% - 32px);
+    }import { cleanup } from '@testing-library/react';
+
   }
 `
 
 const NavigationItems = styled.div`
   margin-left: auto;
+  margin-right: -1rem;
   display: flex;
   justify-content: space-evenly;
-  margin-right: -1rem;
   position: relative;
   @media ${screens.mobileM} {
     flex-direction: column;
+    justify-content: stretch;
     margin-right: 0;
     margin-left: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
+    height: 100%;
   }
 `
 
@@ -85,14 +80,31 @@ const NavigationItem = styled(Link)`
   font-size: 1.25rem;
   text-transform: capitalize;
   display: inline-block;
+  opacity: 1;
   &.active {
-    color: ${colors.accent2};
+    color: ${colors.darkAccent};
+    opacity: 0.9;
   }
-
+  &:hover,
+  &:focus {
+    color: ${colors.darkAccent};
+    opacity: 0.8;
+  }
+  @media ${screens.tablet} {
+    font-size: 1.125rem;
+    margin: 1rem 0.5rem;
+  }
   @media ${screens.mobileM} {
     margin: 1rem 0;
     font-size: 2rem;
     color: ${colors.white};
+    &.active {
+      color: ${colors.accent2};
+    }
+    &:hover,
+    &:focus {
+      color: ${colors.accent2};
+    }
   }
 `
 
@@ -154,26 +166,29 @@ const NavIcon = styled.div`
   }
 `
 
-const StyledDotMenu = styled.div`
+const LanguageMenu = styled.div`
   align-self: center;
   padding: 1rem;
-  padding-top: 22px;
   outline: none;
-
-  cursor: pointer;
   position: relative;
-  &:hover,
-  &:focus {
-    svg {
-      fill: ${colors.accent2};
-    }
+  opacity: 1;
+  color: ${colors.black};
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  span span {
+    font-size: 10px;
+    vertical-align: 0.2em;
+    padding-left: 4px;
   }
-  svg {
-    transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  @media ${screens.tablet} {
+    font-size: 1.125rem;
+    padding: 1rem 1rem 1rem 0.5rem;
   }
   @media ${screens.mobileM} {
+    margin-top: auto;
     padding: 0;
-    svg {
+    span {
       display: none;
     }
   }
@@ -235,6 +250,8 @@ const DotNav = styled.nav`
     border-radius: 4px;
     z-index: 14;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 16px;
+
     &:hover,
     &:focus {
       background: ${colors.accent2};
@@ -251,7 +268,6 @@ const DotNav = styled.nav`
     box-shadow: none;
     opacity: 1;
     transform: none;
-
     > a {
       color: ${colors.white};
       padding: 0 1rem;
@@ -309,15 +325,20 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
             <NavigationItem activeClassName="active" to="/contact/">
               {intl.formatMessage({ id: "navigation.contact" })}
             </NavigationItem>
-            <StyledDotMenu
+            <LanguageMenu
               aria-pressed="false"
               tabIndex="0"
               role="button"
               onKeyDown={() => setOverflowMenuActive(!overflowMenuActive)}
               onClick={() => setOverflowMenuActive(!overflowMenuActive)}
+              onMouseEnter={() => setOverflowMenuActive(true)}
+              onMouseLeave={() => setOverflowMenuActive(false)}
             >
-              <TripleDot />
-              <DotNav show={overflowMenuActive}>
+              <span>
+                {intl.locale}
+                <span>▼</span>
+              </span>
+              <DotNav show={overflowMenuActive} role="menu">
                 <div className="more-menu-caret">
                   <div className="more-menu-caret-outer"></div>
                   <div className="more-menu-caret-inner"></div>
@@ -326,12 +347,12 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
                   {({ languages }) =>
                     languages.map(language => (
                       <a
+                        role="menuitem"
                         key={language}
                         onKeyDown={() => changeLocale(language)}
                         onClick={() => changeLocale(language)}
                         aria-pressed="false"
                         tabIndex="0"
-                        role="button"
                       >
                         {language}
                       </a>
@@ -339,7 +360,7 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
                   }
                 </IntlContextConsumer>
               </DotNav>
-            </StyledDotMenu>
+            </LanguageMenu>
           </NavigationItems>
         </NavigationBar>
       </NavigationBarContainer>

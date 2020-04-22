@@ -11,7 +11,7 @@ blobitems:
       Als toekomstige spin-off van de Universiteit Gent kunnen we steeds rekenen
       op ondersteuning van de Universiteit en staan we mee aan de basis van de
       meest recente wetenschappelijke ontwikkelingen.
-    image: ghent_university.jpg
+    image: ugent.jpg
     lang: nl
   - title: Who are we?
     description: >-
@@ -24,7 +24,7 @@ blobitems:
       As a future spin-off of Ghent University, we can always count on support
       from the University and we are at the basis of the most recent scientific
       developments.
-    image: ghent_university.jpg
+    image: ugent.jpg
     lang: en
   - title: Wat doen we?
     description: >-
@@ -33,7 +33,7 @@ blobitems:
       casespecifieke kennis verschaffen rond **desinfectie en
       energiebesparing**. Aanvullend geven we ook advies omtrent de monitoring
       van warmwaterinstallaties.
-    image: photo-by-onne-beauty-on-unsplash_v2.jpg
+    image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: nl
   - title: What are we doing?
     description: >-
@@ -42,7 +42,7 @@ blobitems:
       case-specific knowledge about **disinfection and energy savings** through
       consultancy. In addition, we also advise on the monitoring of hot water
       installations.
-    image: photo-by-onne-beauty-on-unsplash_v2.jpg
+    image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
   - title: Hoe doen we dit?
     description: >-
@@ -99,14 +99,14 @@ blobitems:
       and an effective solution by **tackling the cause**.
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
     lang: en
-  - title: In welke gebouwen?
+  - title: Wat is onze doelgroep?
     description: >-
       We focussen zowel op residentiële als publieke **gebouwen met een grote
       warmwatervraag**, denk hierbij aan appartementsgebouwen, woonzorgcentra,
       sportcomplexen, hotels en ziekenhuizen.
     lang: nl
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
-  - title: ' In which buildings?'
+  - title: What is our target market?
     description: >-
       We focus on both residential and public **buildings with a large hot water
       demand**, such as apartment buildings, residential care centers, sports

@@ -23,8 +23,9 @@ const StoryContainer = styled.div`
   p {
     text-align: justify;
     margin: 2rem 0;
-
     img {
+      border-radius: 38px;
+      width: 100%;
       &[alt~="right"] {
         width: 50%;
         padding-left: 1rem;
