@@ -194,6 +194,12 @@ const Faq = styled.section`
   }
 `
 
+const LegionellaSip = styled.div`
+  grid-column: 2 / span 6;
+  position: relative;
+  margin-bottom: 5rem;
+`
+
 const ServicesPage = ({ data }) => {
   const intl = useIntl()
   const blobs = [<Blob3 />, <Blob4 />, <Blob1 />, <Blob5 />, <Blob2 />]
@@ -242,6 +248,11 @@ const ServicesPage = ({ data }) => {
       <Faq>
         <Button link="/faq/" text={intl.formatMessage({ id: "services.faqButton" })} />
       </Faq>
+      <LegionellaSip>
+        <Legionella width={125} height={42} rotate={41} bottom={40} right={0} />
+        <Legionella width={200} height={62} rotate={-31} bottom={50} left={20} />
+        <Legionella width={85} height={30} rotate={11} bottom={20} right={150} />
+      </LegionellaSip>
     </Layout>
   )
 }

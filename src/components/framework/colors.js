@@ -5,6 +5,7 @@ const colors = {
   accent: "#4BB98B",
   accent2: "#4DD996",
   secondaryBlack: "#616765",
+  secondaryDark: "#2f6a70",
   lightGray: "#D9DEDC",
   gradient: "linear-gradient(102.48deg, #4BB98B 9.06%, #4DD996 90.94%)",
   gradientReverse: "linear-gradient(0deg, #4BB98B 9.06%, #4DD996 90.94%)",

@@ -14,8 +14,7 @@ import screens from "../framework/screens"
 const FooterContainer = styled.footer`
   margin-top: auto;
   padding-top: 2rem;
-  min-height: 500px;
-  min-height: 45vh;
+  min-height: 420px;
   display: grid;
   grid-template-columns: minmax(16px, 1fr) repeat(6, minmax(48px, 190px)) minmax(
       16px,
@@ -51,6 +50,8 @@ const ContactInfo = styled.aside`
   grid-column: 5 / span 2;
   display: flex;
   flex-direction: column;
+  font-size: 0.875rem;
+
   span:first-of-type {
     font-weight: 600;
     text-transform: uppercase;
@@ -70,6 +71,9 @@ const ContactInfo = styled.aside`
 const NavigationWrapper = styled.aside`
   grid-column: 7;
   justify-self: end;
+  font-size: 0.875rem;
+  min-width: 180px;
+
   span {
     font-weight: 600;
     text-transform: uppercase;
@@ -77,6 +81,7 @@ const NavigationWrapper = styled.aside`
   @media ${screens.mobileM} {
     grid-column: 6 / span 2;
     width: 100%;
+    min-width: unset;
   }
   @media ${screens.mobileSLandscape} {
     grid-column: 6 / span 2;
@@ -91,7 +96,7 @@ const Navigation = styled.nav`
     flex-direction: column;
     text-decoration: underline;
     &:nth-of-type(2) {
-      margin-left: 2rem;
+      margin-left: 0.5rem;
     }
   }
   @media ${screens.mobileM} {

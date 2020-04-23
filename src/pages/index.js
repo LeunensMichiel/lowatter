@@ -22,8 +22,6 @@ import Blob2 from "../images/svg/blobs/blob2.inline.svg"
 import Blob3 from "../images/svg/blobs/blob3.inline.svg"
 import Blob4 from "../images/svg/blobs/blob4.inline.svg"
 import Blob5 from "../images/svg/blobs/blob5.inline.svg"
-import SmolDots from "../images/svg/dots/dots-smol.inline.svg"
-import BigDots from "../images/svg/dots/dots-large.inline.svg"
 
 const swell = keyframes`
   0%, 100% {
@@ -88,10 +86,10 @@ const LandingText = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%;
     margin: 6.5rem auto;
+    width: 90%;
     > h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
   @media ${screens.mobileS} {
@@ -198,9 +196,6 @@ const LegionellaSip = styled.div`
   &:hover {
     transform: translate(-10px);
   }
-  @media ${screens.mobileM} {
-    margin-bottom: 5rem;
-  }
 `
 
 const BlobRow = styled.div`
@@ -211,6 +206,7 @@ const BlobRow = styled.div`
   flex-direction: ${props => (props.even ? "row-reverse" : "row")};
   margin-bottom: 7.5rem;
   height: 100%;
+  position: relative;
 
   @media ${screens.mobileM} {
     grid-column: 2 / span 6;
@@ -283,9 +279,9 @@ const BlobPicture = styled.div`
 
 const ContactUs = styled.section`
   height: 100%;
-  min-height: 700px;
+  min-height: 550px;
   grid-column: 1 / span 8;
-  margin-bottom: -5rem;
+  margin-bottom: -2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -330,20 +326,6 @@ const ContactUs = styled.section`
   }
 `
 
-const DotStyle = css`
-  grid-column: 1;
-  height: 100%;
-  max-height: 450px;
-
-  &.bigdots {
-    grid-column: 8;
-    justify-self: end;
-  }
-  @media ${screens.mobileM} {
-    display: none;
-  }
-`
-
 const IndexPage = ({ data }) => {
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
   const intl = useIntl()
@@ -356,6 +338,8 @@ const IndexPage = ({ data }) => {
         styles={css`
           .globalfooter {
             background-color: ${colors.black};
+            min-height: 320px !important;
+            padding-top: 0 !important;
           }
         `}
       />
@@ -425,9 +409,13 @@ const IndexPage = ({ data }) => {
                   />
                 </BlobPicture>
               </InfoBlob>
+              {index % 5 === 1 && (
+                <Legionella width={145} height={50} rotate={-31} top={0} left={-120} />
+              )}
+              {index % 5 === 3 && (
+                <Legionella width={115} height={34} rotate={-51} top={0} right={-250} />
+              )}
             </BlobRow>
-            {index % 5 === 1 && <BigDots className="bigdots" css={DotStyle} />}
-            {index % 5 === 1 && <SmolDots css={DotStyle} />}
           </React.Fragment>
         ))}
       <ContactUs>

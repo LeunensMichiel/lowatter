@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import colors from "../components/framework/colors"
 import screens from "../components/framework/screens"
 import Accordion from "../components/accordion"
+import Legionella from "../components/framework/legionella"
 
 const FaqTitle = styled.h1`
   grid-column: 4 / span 2;
@@ -57,6 +58,12 @@ const Faq = styled.section`
   }
 `
 
+const LegionellaSip = styled.div`
+  grid-column: 2 / span6;
+  position: relative;
+  margin-bottom: 5rem;
+`
+
 const FaqPage = ({ data }) => {
   const intl = useIntl()
 
@@ -74,12 +81,17 @@ const FaqPage = ({ data }) => {
           .map(filteredFaq => (
             <React.Fragment key={filteredFaq.node.frontmatter.title}>
               <h2>{filteredFaq.node.frontmatter.title}</h2>
-              {filteredFaq.node.frontmatter.faqitems.map(faqitem => (
+              {filteredFaq.node.frontmatter.faqitems.map((faqitem, index) => (
                 <Accordion title={faqitem.question} description={faqitem.answer} />
               ))}
             </React.Fragment>
           ))}
       </Faq>
+      <LegionellaSip>
+        <Legionella width={85} height={30} rotate={11} bottom={20} left={150} />
+        <Legionella width={125} height={42} rotate={21} bottom={0} right={200} />
+        <Legionella width={200} height={62} rotate={-31} left={320} />
+      </LegionellaSip>
     </Layout>
   )
 }

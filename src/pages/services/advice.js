@@ -7,6 +7,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import colors from "../../components/framework/colors"
 import screens from "../../components/framework/screens"
+import Legionella from "../../components/framework/legionella"
 
 const Header = styled.h1`
   grid-column: 3 / span 4;
@@ -81,6 +82,11 @@ const Page = styled.article`
     }
   }
 `
+const LegionellaSip = styled.div`
+  grid-column: 1;
+  position: relative;
+  margin-bottom: 5rem;
+`
 
 const AdvicePage = ({ data }) => {
   const intl = useIntl()
@@ -99,6 +105,10 @@ const AdvicePage = ({ data }) => {
             <Page dangerouslySetInnerHTML={{ __html: page.node.html }} />
           </React.Fragment>
         ))}
+      <LegionellaSip>
+        <Legionella width={115} height={30} rotate={-11} bottom={20} left={250} />
+        <Legionella width={150} height={52} rotate={31} right={220} />
+      </LegionellaSip>
     </Layout>
   )
 }

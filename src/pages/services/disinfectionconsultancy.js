@@ -8,6 +8,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import colors from "../../components/framework/colors"
 import screens from "../../components/framework/screens"
+import Legionella from "../../components/framework/legionella"
 
 import Blob1 from "../../images/svg/blobs/blob1.inline.svg"
 import Blob2 from "../../images/svg/blobs/blob2.inline.svg"
@@ -139,6 +140,12 @@ const StyledChevron = styled(Chevron)`
   }
 `
 
+const LegionellaSip = styled.div`
+  grid-column: 2 / span6;
+  position: relative;
+  margin-bottom: 5rem;
+`
+
 const DisinfectionPage = ({ data }) => {
   const intl = useIntl()
   const blobs = [<Blob1 />, <Blob2 />, <Blob3 />, <Blob4 />, <Blob5 />]
@@ -187,6 +194,10 @@ const DisinfectionPage = ({ data }) => {
             ))}
           </React.Fragment>
         ))}
+      <LegionellaSip>
+        <Legionella width={115} height={30} rotate={-11} bottom={20} left={150} />
+        <Legionella width={150} height={52} rotate={31} right={320} />
+      </LegionellaSip>
     </Layout>
   )
 }
