@@ -246,6 +246,7 @@ const TeamPage = ({ data }) => {
                     objectFit="cover"
                     objectPosition="50% 50%"
                     alt={person.name}
+                    loading="eager"
                     title={person.name}
                   />
                 </ProfilePic>
