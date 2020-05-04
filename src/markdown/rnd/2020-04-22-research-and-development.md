@@ -1,5 +1,7 @@
 ---
-title: Research and Development
+title: Support research and development
 lang: en
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor convallis amet sed malesuada ac feugiat donec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor convallis amet sed malesuada ac feugiat donec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor convallis amet sed malesuada ac feugiat donec.
+Support R&D (tests on our Legionella test setup)
+
+![](proefopstelling.jpg)
