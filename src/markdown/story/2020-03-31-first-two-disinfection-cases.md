@@ -9,4 +9,4 @@ LoWatter currently offers its services for solving Legionella problems in a stud
 
 That many more may follow ;-)
 
-![](/uploads/photo-by-alexander-londoño-on-unsplash.jpg "Photo for illustration")
+![](/uploads/photobyalexanderlondoñoonunsplash.jpg "Photo for illustration")
