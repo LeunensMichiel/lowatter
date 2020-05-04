@@ -1,5 +1,5 @@
 ---
-title: 'Toekenning valorisatiebeurs (IOF Advanced, UGent)'
+title: Toekenning valorisatiebeurs (IOF Advanced, UGent)
 date: 2018-01-11T11:00:00.000Z
 description: Toekenning IOF Advanced beurs
 isMilestone: false
@@ -11,4 +11,4 @@ Het vervolgtraject op het doctoraat van Elisa Van Kenhove wordt deels uitgevoerd
 
 (2) stand-alone controller (doelmarkt: grote/publieke gebouwen).
 
-![](/uploads/iof-project-funding.jpg "bron: https://www.ugent.be/techtransfer/nl/academici/iof")
+![](/uploads/iof-project-funding_v2.jpg "bron: https://www.ugent.be/techtransfer/nl/academici/iof")
