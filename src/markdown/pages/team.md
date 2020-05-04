@@ -22,7 +22,7 @@ teamcards:
     lang: nl
     subtitle: Ondernemer & Wetenschapper
     ugent: https://www.ugent.be/ea/architectuur/nl/contact/medewerkers/elisa-van-kenhove
-    image: elisavankenhove_v3.jpg
+    image: elisavankenhove_v4.jpg
     description: |-
       Doctoraat in de Ingenieurswetenschappen: Architectuur
 
@@ -50,7 +50,7 @@ teamcards:
     lang: en
     subtitle: Entrepreneur & Scientist
     ugent: https://www.ugent.be/ea/architectuur/nl/contact/medewerkers/elisa-van-kenhove
-    image: elisavankenhove_v3.jpg
+    image: elisavankenhove_v4.jpg
     description: |-
       PhD in Civil Engineering: Architecture
 
@@ -78,7 +78,7 @@ teamcards:
     lang: fr
     subtitle: Entrepreneur et scientifique
     ugent: https://www.ugent.be/ea/architectuur/nl/contact/medewerkers/elisa-van-kenhove
-    image: elisavankenhove_v3.jpg
+    image: elisavankenhove_v4.jpg
     description: >-
       Docteur en ingénerie-civil architecture
 
