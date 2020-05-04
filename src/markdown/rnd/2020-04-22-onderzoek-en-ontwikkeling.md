@@ -1,8 +1,7 @@
 ---
-title: Onderzoek en Ontwikkeling
+title: Ondersteuning onderzoek en ontwikkeling
 lang: nl
 ---
+Ondersteuning R&D (testen op onze Legionella proefstand)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor convallis amet sed malesuada ac feugiat donec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor convallis amet sed malesuada ac feugiat donec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor convallis amet sed malesuada ac feugiat donec. d
-
-![](seo.jpg)
+![](proefopstelling.jpg)
