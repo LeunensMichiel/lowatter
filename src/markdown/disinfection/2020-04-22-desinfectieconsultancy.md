@@ -1,15 +1,31 @@
 ---
 title: Desinfectieconsultancy
 steps:
-  - steptitle: Melding Legionellaprobleem
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor
-      convallis amet sed malesuada ac feugiat donec. Morbi elit ultricies
-      pharetra velit feugiat posuere et sed. Eget laoreet donec sapien, nec. A
-      enim aliquam pellentesque sit in mi tincidunt.
-    image: julian-hochgesang-pvikejwyofa-unsplash.jpg
+  - steptitle: Melding Legionella-probleem
+    description: Melding Legionella-probleem
+    image: stap1.jpg
   - steptitle: Bestuderen hydraulisch schema
-    description: Lorem ipsum dolor sit amet, **consectetur** adipiscing elit. Quam
-      dolor convallis amet sed malesuada ac feugiat donec.
-    image: michiel-leunens-jljmonu2xiu-unsplash.jpg
+    description: Bestuderen hydraulisch schema
+    image: stap2.jpg
+  - steptitle: Plaatsbezoek
+    description: Plaatsbezoek
+    image: stap3.jpg
+  - steptitle: Uitvoeren bijkomende metingen
+    description: Uitvoeren bijkomende metingen van temperaturen, debieten,
+      Legionella-concentraties
+    image: stap4.jpg
+  - steptitle: Opstellen simulatiemodel
+    description: Opstellen simulatiemodel van sanitair warmwatersysteem
+    image: stap5.jpg
+  - steptitle: Uitrekenen varianten
+    description: Uitrekenen varianten systeemrenovatie of sturing
+    image: stap6.jpg
+  - steptitle: Advies over meest effectieve variant
+    description: Advies over meest effectieve variant op vlak van gezondheid,
+      energiegebruik, watergebruik en/of kost
+    image: stap7.jpg
+  - steptitle: Ondersteuning bij uitvoering
+    description: Ondersteuning bij uitvoering
+    image: stap8.jpg
 lang: nl
 ---
