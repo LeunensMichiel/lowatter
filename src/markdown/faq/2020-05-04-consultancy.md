@@ -1,5 +1,5 @@
 ---
-title: Consultancy
+title: Dienstverlening
 rang: 3
 lang: nl
 faqitems:
