@@ -244,7 +244,7 @@ const ServicesPage = ({ data }) => {
             </ProductGridItem>
           ))}
       </ProductGrid>
-      <ServiceTitle>{intl.formatMessage({ id: "services.faqtitle" })}</ServiceTitle>
+      <ServiceTitle>{intl.formatMessage({ id: "faq.title" })}</ServiceTitle>
       <Faq>
         <Button link="/faq/" text={intl.formatMessage({ id: "services.faqButton" })} />
       </Faq>

@@ -212,6 +212,7 @@ const DotNav = styled.nav`
   display: flex;
   flex-direction: column;
   position: absolute;
+  min-width: ${props => (props.long ? "180" : "unset")}px;
   top: 100%;
   right: 8px;
   z-index: 10;
@@ -306,7 +307,7 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
             >
               {intl.formatMessage({ id: "navigation.services" })}
               <span>▼</span>
-              <DotNav show={serviceOverflowMenuActive} role="menu">
+              <DotNav long show={serviceOverflowMenuActive} role="menu">
                 <Link activeClassName="active" to="/services/disinfectionconsultancy/">
                   {intl.formatMessage({ id: "navigation.disinfection" })}
                 </Link>
