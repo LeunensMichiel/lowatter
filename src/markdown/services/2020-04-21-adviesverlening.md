@@ -1,5 +1,5 @@
 ---
-title: "Ontwerp en monitoring adviesverlening "
+title: Adviesverlening bij ontwerp en monitoring
 description: Adviesverlening
 button: Adviesverlening
 url: advice
