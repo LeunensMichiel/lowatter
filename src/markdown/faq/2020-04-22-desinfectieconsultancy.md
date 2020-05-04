@@ -5,6 +5,6 @@ lang: nl
 faqitems:
   - question: Beheersplan
     answer: Meer info volgt binnenkort
-  - question: BBT
+  - question: Best beschikbare technieken (BBT)
     answer: Meer info volgt binnenkort
 ---
