@@ -165,7 +165,7 @@ const DisinfectionPage = ({ data }) => {
               <React.Fragment key={filteredDisinfection.node.frontmatter.steptitle}>
                 <BlobRow even={index % 2}>
                   <InfoBlobText>
-                    <h3>{`${intl.formatMessage({ id: "desinfection.step" })} ${index +
+                    <h3>{`${intl.formatMessage({ id: "disinfection.step" })} ${index +
                       1}`}</h3>
                     <h2>{step.steptitle}</h2>
                     <div
