@@ -1,6 +1,6 @@
 ---
 title: Legionella in buildings
-rang: 3
+rang: 2
 lang: en
 faqitems:
   - question: How does Legionella enter the building?
