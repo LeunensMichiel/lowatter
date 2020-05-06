@@ -11,7 +11,7 @@ faqitems:
       conform te zijn. De richtlijnen in dit handboek worden gezien als de code
       van goede praktijk.
 
-      Het Agentschap Zorg en Gezondheid gebruikt dit handboek en de FAQ-lijst als referentiedocumenten bij het uitoefenen van zijn toezichtsfunctie op de naleving van het Vlaams Legionellabesluit van 4 mei 2007.
+      Het Agentschap Zorg en Gezondheid gebruikt dit handboek als referentiedocument bij het uitoefenen van zijn toezichtsfunctie op de naleving van het Vlaams Legionellabesluit van 4 mei 2007.
 
       Het handboek kan je downloaden via onderstaande link: https://www.zorg-en-gezondheid.be/handboek-best-beschikbare-technieken-voor-legionellabeheersing
   - question: Welke alternatieve maatregelen voor Legionellabeheersing zijn er
