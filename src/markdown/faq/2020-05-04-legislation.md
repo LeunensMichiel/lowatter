@@ -1,6 +1,6 @@
 ---
 title: Legionella legislation
-rang: 2
+rang: 3
 lang: en
 faqitems:
   - question: What is the BBT (2017)?
