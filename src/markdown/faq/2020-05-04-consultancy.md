@@ -33,7 +33,7 @@ faqitems:
     question: Kan er ook Legionella voorkomen in een luchtbevochtiger?
   - answer: Neen, het water in verwarmingsinstallaties zit in een gesloten circuit.
       Legionella bacteriën hebben niet genoeg zuurstof en voedingsstoffen om
-      hier lage tijd in te overleven.
+      hier lange tijd in te overleven.
     question: Kan je ziek worden van het ontluchten van een verwarmingsinstallatie
       aangezien hierbij ook aerosolen vrijkomen?
 ---
