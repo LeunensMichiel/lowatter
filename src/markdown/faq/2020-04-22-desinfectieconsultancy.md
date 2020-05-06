@@ -1,5 +1,5 @@
 ---
-title: Wetgeving
+title: Legionella regelgeving
 rang: 2
 lang: nl
 faqitems:
