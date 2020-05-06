@@ -1,6 +1,6 @@
 ---
 title: Legionella in gebouwen
-rang: 3
+rang: 2
 lang: nl
 faqitems:
   - question: Hoe komt Legionella binnen in het gebouw?
