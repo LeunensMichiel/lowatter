@@ -3,7 +3,7 @@ title: Legionella legislation
 rang: 2
 lang: en
 faqitems:
-  - question: What is BBT (2017)?
+  - question: What is the BBT (2017)?
     answer: >-
       BBT is the Best Available Techniques for Legionella Control manual. This
       manual describes the technical guidelines for Legionella control to which
