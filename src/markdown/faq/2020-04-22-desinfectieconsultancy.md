@@ -1,6 +1,6 @@
 ---
 title: Legionella regelgeving
-rang: 2
+rang: 3
 lang: nl
 faqitems:
   - question: Wat is het BBT (2017)?
