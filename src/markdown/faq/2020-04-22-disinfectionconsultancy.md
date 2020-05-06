@@ -43,8 +43,8 @@ faqitems:
       infected? Infection occurs by inhaling contaminated aerosols, aerosols are
       very small water droplets that are produced by, for example, a shower
       head. These drops are so small that they can enter the lungs. Please note
-      that steam/vapor cannot contain Legionella bacteria as these drops are too
-      small to carry bacteria.
+      that steam/vapour cannot contain Legionella bacteria as these drops are
+      too small to carry bacteria.
     question: How do you get infected?
   - answer: >-
       Legionella pneumophila is the most dangerous Legionella species for
