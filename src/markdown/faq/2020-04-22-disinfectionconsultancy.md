@@ -38,11 +38,12 @@ faqitems:
     question: How common is a Legionella infection?
   - answer: A big misunderstanding is that you get a Legionella infection by
       drinking contaminated water. This is not true. Legionella bacteria cannot
-      survive in a human stomach. Drinking tap water therefore does not present
-      any risk of contamination. How do you get infected? Contamination occurs
-      by inhaling contaminated aerosols, aerosols are very small water droplets
-      that are produced by, for example, a shower head. These drops are so small
-      that they can enter the lungs. Please note, steam / vapor cannot contain
-      Legionella bacteria as these drops are too small to carry the bacteria.
+      survive in the human stomach. Drinking tap water therefore does not
+      present any contamination risk. If that is the case, how do you get
+      infected? Infection occurs by inhaling contaminated aerosols, aerosols are
+      very small water droplets that are produced by, for example, a shower
+      head. These drops are so small that they can enter the lungs. Please note
+      that steam/vapor cannot contain Legionella bacteria as these drops are too
+      small to carry bacteria.
     question: How do you get infected?
 ---
