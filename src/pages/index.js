@@ -26,42 +26,40 @@ import Blob5 from "../images/svg/blobs/blob5.inline.svg"
 const swell = keyframes`
   0%, 100% {
     transform: translate3d(0,-6px,0);
-    background-size: 100% 600px;
+    transform: scale(1);
 
   }
   50% {
     transform: translate3d(0,6px,0);
-    background-size: 105% 600px;
+    transform: scale(1, 1.1);
   }
 `
 const swellReverse = keyframes`
   0%, 100% {
     transform: translate3d(0,8px,0);
-    background-size: 100% 450px;
   }
   50% {
     transform: translate3d(0,-8px,0);
-    background-size: 110% 450px;
   }
 `
 
 const swellMed = keyframes`
   0%, 100% {
     transform: translate3d(0,-6px,0);
-    background-size: 200% 600px;
+    transform: scale(1);
 
   }
   50% {
     transform: translate3d(0,6px,0);
-    background-size: 205% 600px;
+    transform: scale(1, 1.1);
   }
 `
 const swellReverseMed = keyframes`
   0%, 100% {
-    background-size: 200% 450px;
+    transform: translate3d(0,8px,0);
   }
   50% {
-    background-size: 210% 450px;
+    transform: translate3d(0,-8px,0);
   }
 `
 
@@ -115,6 +113,7 @@ const Waves = styled.div`
   transform: translate3d(0, 0, 0);
 
   @media ${screens.tablet} {
+    background-size: 120% 450px;
     animation: ${swellReverseMed} 15s ease-in-out infinite;
   }
   @media ${screens.mobileM} {
@@ -139,11 +138,12 @@ const UpperWave = styled.div`
   opacity: 1;
 
   @media ${screens.tablet} {
+    background-size: 150% 600px;
     animation: ${swellMed} 15s ease-in-out -7s infinite;
   }
   @media ${screens.mobileM} {
-    height: 350px;
     background-size: 150% 280px;
+    height: 350px;
     top: -40px;
     animation: none;
   }

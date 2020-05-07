@@ -18,10 +18,11 @@ import "mapbox-gl/dist/mapbox-gl.css"
 
 const swell = keyframes`
   0%, 100% {
-    background-size: 100% 100%;
+    transform: scale(1,1);
+
   }
   50% {
-    background-size: 120% 100%;
+    transform: scale(1, 1.1);
   }
 `
 
@@ -172,7 +173,6 @@ const ContactWave = styled.div`
   z-index: -1;
   margin-bottom: -1.5rem;
   animation: ${swell} 10s ease-in-out -5s infinite;
-
   @media ${screens.tablet} {
     top: 20rem;
   }
