@@ -1,18 +1,15 @@
 ---
 title: Desinfectieconsultancy
-pagedescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Quisque est elit, pretium ut mi sed, sagittis porttitor neque. Curabitur
-  mattis neque non est pulvinar, et pharetra quam placerat. Etiam lorem metus,
-  pulvinar in vestibulum ut, iaculis eget nunc. Vivamus feugiat semper
-  elementum. Nunc non facilisis nunc, vel congue quam. Aliquam cursus, arcu
-  tempor rutrum euismod, libero nisi porttitor erat, id semper neque nisi et
-  est. In cursus dui non metus auctor eleifend. Praesent in lobortis elit. Sed
-  ut lacus condimentum, pretium mi sit amet, congue nunc. Sed ipsum sem,
-  venenatis nec vulputate vitae, vulputate eget nisi. Fusce vel massa nec magna
-  congue semper. Mauris vestibulum sed dolor in consequat. Pellentesque
-  pellentesque volutpat ex, nec molestie urna mattis a. Suspendisse potenti. Sed
-  faucibus mi ut nisl elementum tempor. Proin id orci in sem ultrices tincidunt.
-  "
+pagedescription: We werken met een innovatieve desinfectietool. Dit houdt in dat
+  er een simulatiemodel van het watersysteem wordt opgebouwd. Met dit
+  simulatiemodel is het mogelijk om de oorzaak van de infectie in snel tempo
+  “virtueel” op te sporen. Immers, indien de oorzaak niet weggenomen wordt, zal
+  de Legionella concentratie in het systeem na verloop van tijd weer toenemen.
+  Er zullen verschillende voorstellen gedaan worden om de oorzaak aan te pakken
+  door een renovatiemaatregel uit te voeren. Het simulatiemodel voorspelt op
+  voorhand de effecten van de verschillende renovatiemaatregelen. Dus er wordt
+  geen tijd verloren met het uittesten van afzonderlijke maatregelen in de
+  praktijk. Aanvullend kunnen er voorstellen tot energiebesparing gedaan worden.
 steps:
   - steptitle: Melding Legionella-probleem
     description: In de eerste stap ontvangen wij van de klant de melding van een
