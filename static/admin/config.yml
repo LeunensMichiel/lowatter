@@ -239,6 +239,12 @@ collections:
       preview: true
     fields:
       - { label: Paginatitel, name: title, widget: string, hint: "Titel van de pagina" }
+      - {
+          label: Paginabeschrijving,
+          name: pagedescription,
+          widget: text,
+          hint: "beschrijving van de pagina",
+        }
       - label: "Stap"
         hint: "De stapjesblobs"
         name: "steps"

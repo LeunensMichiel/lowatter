@@ -21,7 +21,7 @@ const Header = styled.h1`
   grid-column: 3 / span 4;
   justify-self: start;
   margin-top: 6.25rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
   font-size: 1.25rem;
   z-index: 2;
@@ -42,6 +42,15 @@ const Header = styled.h1`
     font-size: 1.125rem;
   }
 `
+const Paragraph = styled.p`
+  grid-column: 3 / span 4;
+  margin-bottom: 6.25rem;
+  @media ${screens.mobileM} {
+    grid-column: 2 / span 6;
+    margin-bottom: 1.5rem;
+  }
+`
+
 const BlobRow = styled.div`
   grid-column: ${props => (props.even ? "2 / span 5" : "3 / span 5")};
   display: flex;
@@ -161,6 +170,7 @@ const DisinfectionPage = ({ data }) => {
         .map(filteredDisinfection => (
           <React.Fragment key={filteredDisinfection.node.frontmatter.lang}>
             <Header>{filteredDisinfection.node.frontmatter.title}</Header>
+            <Paragraph>{filteredDisinfection.node.frontmatter.pagedescription}</Paragraph>
             {filteredDisinfection.node.frontmatter.steps.map((step, index) => (
               <React.Fragment key={filteredDisinfection.node.frontmatter.steptitle}>
                 <BlobRow even={index % 2}>
@@ -214,6 +224,7 @@ export const query = graphql`
           frontmatter {
             title
             lang
+            pagedescription
             steps {
               steptitle
               description
