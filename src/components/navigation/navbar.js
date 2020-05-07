@@ -317,6 +317,9 @@ const Navbar = ({ show, hamburgerClickHandler }) => {
                 <Link activeClassName="active" to="/services/researchanddevelopment/">
                   {intl.formatMessage({ id: "navigation.researchanddevelopment" })}
                 </Link>
+                <Link activeClassName="active" to="/faq/">
+                  {intl.formatMessage({ id: "navigation.faq" })}
+                </Link>
               </DotNav>
             </NavigationItem>
             <NavigationItem activeClassName="active" to="/contact/">
