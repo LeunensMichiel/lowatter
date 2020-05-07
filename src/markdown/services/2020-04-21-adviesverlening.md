@@ -1,10 +1,13 @@
 ---
-title: "Adviesverlening "
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna diam
-  venenatis aliquam etiam magna et aliquam, ornare faucibus. Accumsan, sem
-  suscipit sed adipiscing enim turpis accumsan dui feugiat. Suspendisse.
-button: Monitoring
+title: Adviesverlening bij ontwerp en monitoring
+description: Wij verlenen advies tijdens de ontwerp-, renovatie- en/of
+  commissioningsfase. De adviesverlening is gericht op eigenaars van gebouwen en
+  vastgoedbeheerders en zal hen adviseren hoe ze hun huidige installatie
+  Legionella veilig kunnen ontwerpen, verbeteren en/of vervangen. Vervolgens
+  zullen we ook meer energiezuinige en duurzame oplossingen voor een specifieke
+  case voorstellen, zonder het risico op Legionella te verhogen.
+button: Leer meer over onze adviesverlening
 url: advice
-image: michiel-leunens-jljmonu2xiu-unsplash.jpg
+image: photobyscottgrahamonunsplash.jpg
 lang: nl
 ---

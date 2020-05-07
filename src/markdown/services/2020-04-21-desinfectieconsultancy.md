@@ -1,9 +1,10 @@
 ---
 title: Desinfectieconsultancy
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna diam
-  venenatis aliquam etiam magna et aliquam, ornare faucibus. Accumsan, sem
-  suscipit sed adipiscing enim turpis accumsan dui feugiat. Suspendisse.
-button: Workflow
+description: Het in snel tempo opstellen van casespecifieke simulatiemodellen
+  waarmee het infectierisico in de ontwerpfase kan worden onderzocht
+  (preventief) en de effectiviteit van desinfectietechnieken eerst “virtueel”
+  kan worden getest op een geïnfecteerd systeem (curatief).
+button: Hoe gaan we precies te werk?
 url: disinfectionconsultancy
 image: julian-hochgesang-pvikejwyofa-unsplash.jpg
 lang: nl

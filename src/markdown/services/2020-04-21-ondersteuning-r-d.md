@@ -1,10 +1,11 @@
 ---
-title: Ondersteuning R&D
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna diam
-  venenatis aliquam etiam magna et aliquam, ornare faucibus. Accumsan, sem
-  suscipit sed adipiscing enim turpis accumsan "
-button: Onze proefstand
+title: Ondersteuning bij R&D
+description: Een proefopstelling werd ontworpen en gebouwd voor onderzoek en
+  ontwikkeling. De proefopstelling bevat Legionella pneumophila, hiermee kunnen
+  we de effectiviteit van anti-Legionella producten testen en optimaliseren
+  alvorens ze op de markt te brengen.
+button: Kom meer te weten over mogelijke R&D testen met onze proefstand
 url: researchanddevelopment
-image: day-6-8-of-10-high-resolution.jpg
+image: proefopstelling.jpg
 lang: nl
 ---
