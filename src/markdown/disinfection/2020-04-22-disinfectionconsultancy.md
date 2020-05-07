@@ -1,18 +1,14 @@
 ---
 title: Disinfection consultancy
-pagedescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Quisque est elit, pretium ut mi sed, sagittis porttitor neque. Curabitur
-  mattis neque non est pulvinar, et pharetra quam placerat. Etiam lorem metus,
-  pulvinar in vestibulum ut, iaculis eget nunc. Vivamus feugiat semper
-  elementum. Nunc non facilisis nunc, vel congue quam. Aliquam cursus, arcu
-  tempor rutrum euismod, libero nisi porttitor erat, id semper neque nisi et
-  est. In cursus dui non metus auctor eleifend. Praesent in lobortis elit. Sed
-  ut lacus condimentum, pretium mi sit amet, congue nunc. Sed ipsum sem,
-  venenatis nec vulputate vitae, vulputate eget nisi. Fusce vel massa nec magna
-  congue semper. Mauris vestibulum sed dolor in consequat. Pellentesque
-  pellentesque volutpat ex, nec molestie urna mattis a. Suspendisse potenti. Sed
-  faucibus mi ut nisl elementum tempor. Proin id orci in sem ultrices tincidunt.
-  "
+pagedescription: We work with an innovative disinfection tool. This means that a
+  simulation model of the water system is being built. With this simulation
+  model it is possible to quickly identify the cause of the infection
+  “virtually”. After all, if the cause is not tackled, the Legionella
+  concentration in the system will come back and even increase over time.
+  Several proposals will be made to tackle the cause by implementing a
+  renovation measure. The simulation model predicts in advance the effects of
+  the various renovation measures. So no time is wasted testing individual
+  measures in practice. In addition, proposals for energy savings can be made.
 steps:
   - steptitle: Notification of Legionella problem
     description: In the first step, we receive a notification from the customer of a
