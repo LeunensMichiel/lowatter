@@ -24,7 +24,8 @@ Besluit van de Vlaamse Regering betreffende de preventie van de veteranenziekte 
 
 Best Beschikbare Technieken (BBT) voor Legionella-beheersing in Nieuwe Sanitaire Systemen - Studie uitgevoerd door het Vlaams Kenniscentrum voor Beste Beschikbare Technieken (VITO) en het Wetenschappelijk en Technische Centrum voor het Bouwbedrijf (WTCB) in opdracht van Agentschap Zorg & Gezondheid, december 2017, Brussel, België.
 
-Nature, *https://www.nature.com/articles/d41586-020-01286-9?utmsource=twt_nnc&utm_medium=social&utm_campaign=naturenews&utm_medium=social&utm_content=organic&utm_source=twitter&utm_campaign=NatureNews&sf233436754=1*, 2020
+Nature,\
+*https://www.nature.com/articles/d41586-020-01286-9?utmsource=twt_nnc&utm_medium=social&utm_campaign=naturenews&utm_medium=social&utm_content=organic&utm_source=twitter&utm_campaign=NatureNews&sf233436754=1*, 2020
 
 Proctor et. al., Considerations for Large Building Water Quality after Extended Stagnation, 2020. Nature, As lockdowns lift, new hazards lurk in the water, 2020.
 
