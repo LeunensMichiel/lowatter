@@ -39,7 +39,7 @@ blobitems:
       casespecifieke kennis verschaffen rond **desinfectie en
       energiebesparing**. Aanvullend geven we ook advies omtrent het ontwerp en
       de monitoring van warmwaterinstallaties. Bijkomend kunnen we meer
-      specifieke R&D uitvoeren met onze Legionella proefstand.
+      specifieke R&D uitvoeren met onze legionella-proefstand.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: nl
   - title: What are we doing?
@@ -62,14 +62,14 @@ blobitems:
     lang: fr
   - title: Hoe doen we dit?
     description: >-
-      Wij bieden een **structurele oplossing** om uw Legionella probleem met
+      Wij bieden een **structurele oplossing** om uw legionella-probleem met
       wortel en tak uit te roeien.
 
 
-      Concreet wil dit zeggen dat we snel en efficiënt de oorzaak van een infectie in een warmwatersysteem kunnen opsporen, met behulp van onze sterke UGent know-how en ons **predictief Legionella pneumophila simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe om de Legionella concentratie te berekenen op iedere locatie in het systeem voor elk casespecifiek systeem. 
+      Concreet wil dit zeggen dat we snel en efficiënt de oorzaak van een infectie in een warmwatersysteem kunnen opsporen, met behulp van onze sterke UGent know-how en ons **predictief Legionella pneumophila simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe om de legionella-concentratie te berekenen op iedere locatie in het systeem voor elk casespecifiek systeem. 
 
 
-      Naast het opsporen van de oorzaken die tot te hoge Legionella concentraties in het systeem leiden, kunnen we casespecifiek verschillende oplossingen met elkaar vergelijken om zo tot de **meest duurzame en (kost)effectieve oplossing** te komen alvorens die in de praktijk te implementeren.
+      Naast het opsporen van de oorzaken die tot te hoge legionella-concentraties in het systeem leiden, kunnen we casespecifiek verschillende oplossingen met elkaar vergelijken om zo tot de **meest duurzame en (kost)effectieve oplossing** te komen alvorens die in de praktijk te implementeren.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: nl
   - title: How do we accomplish this?
