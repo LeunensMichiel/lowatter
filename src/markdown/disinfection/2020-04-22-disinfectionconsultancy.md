@@ -2,7 +2,7 @@
 title: Disinfection consultancy
 pagedescription: We work with an innovative disinfection tool. This means that a
   simulation model of the water system is being built. With this simulation
-  model it is possible to quickly identify the cause of the infection
+  model it is possible to quickly identify the cause of the contamination
   “virtually”. After all, if the cause is not tackled, the Legionella
   concentration in the system will come back and even increase over time.
   Several proposals will be made to tackle the cause by implementing a
@@ -32,9 +32,9 @@ steps:
       With the help of our disinfection tool, the case-specific simulation model
       is built and calculated within 24 hours after obtaining the necessary data
       (hydraulic schedule and site visit). Our case-specific simulation model
-      allows us to identify the causes of the infection in existing infected
-      buildings, and to choose suitable disinfection measures for the infected
-      system.
+      allows us to identify the causes of the contamination in existing
+      contaminated buildings, and to choose suitable decontamination measures
+      for the contaminated system.
 
 
       A case-specific simulation model can be compiled for any building with a hot water demand, such as sports complexes, hotels, residential care centers and hospitals.
@@ -44,19 +44,19 @@ steps:
       The entire hot water system of your building is dynamically simulated,
       which makes it possible to predict the temperatures and Legionella
       concentrations throughout the system at any time. For example, the
-      infection risk associated with a particular part of the installation can
-      be assessed, temperature regimes can be optimized and the risk of
-      infection can be reduced. In addition, the simulation model can also be
-      used to propose energy saving strategies.
+      contamination risk associated with a particular part of the installation
+      can be assessed, temperature regimes can be optimized and the risk of
+      contamination can be reduced. In addition, the simulation model can also
+      be used to propose energy saving strategies.
 
 
       Now that the simulation model has been drawn up, we can test the effectiveness of various renovation measures and/or controls "virtually" before implementing these measures in practice (e.g. insulating certain pipes, adjusting flow rates of certain circuits, etc.).
     image: step6.jpg
   - steptitle: Advice on the most effective measure(s)
     description: Based on this, we provide advice on which case-specific measure(s)
-      will ensure that the infection disappears and does not recur. The measures
-      we propose are sustainable and effective on the long-term. Important
-      parameters here are health, energy use, water use and/or cost.
+      will ensure that the contamination disappears and does not recur. The
+      measures we propose are sustainable and effective on the long-term.
+      Important parameters here are health, energy use, water use and/or cost.
     image: step7.jpg
   - steptitle: Support during implementation
     description: The customer chooses which measure is most feasible for him, we
