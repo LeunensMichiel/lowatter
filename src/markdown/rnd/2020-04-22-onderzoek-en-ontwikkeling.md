@@ -2,9 +2,6 @@
 title: Ondersteuning bij onderzoek en ontwikkeling
 lang: nl
 ---
-Een proefopstelling werd ontworpen en gebouwd voor onderzoek en ontwikkeling. Deze proefopstelling stelt een residentieel warmwatersysteem voor. Het distributiesysteem is een circulatieleiding. De proefopstelling is zo ontworpen dat de productie-eenheid gemakkelijk vervangen kan worden. Momenteel worden er testen uitgevoerd met een elektrische boiler en warmtepompboiler. In de toekomst voorzien we ook een warmtepompboiler verbonden met zonnecollectoren. Dit laat toe om verschillende systeemconfiguraties met deze componenten te testen.
+Een proefopstelling werd ontworpen en gebouwd voor onderzoek en ontwikkeling. Deze proefopstelling stelt een residentieel warmwatersysteem voor. Het distributiesysteem is een circulatieleiding. De proefopstelling is zo ontworpen dat de productie-eenheid gemakkelijk vervangen kan worden op vraag van de klant. Momenteel worden er testen uitgevoerd met een elektrische boiler en warmtepompboiler. We voorzien ook een warmtepompboiler verbonden met zonnecollectoren. Dit laat toe om verschillende systeemconfiguraties met deze componenten te testen. Uiteraard kan ook uw specifieke hardware geinstalleerd en getest worden.
 
-
-De proefopstelling bevat Legionella pneumophila serogroep 1, hiermee kunnen we de effectiviteit van anti-Legionella producten testen en optimaliseren alvorens ze op de markt te brengen.
-
-![](proefopstelling.jpg "Vooraanzicht Legionella proefopstelling")
+Binnen deze proefopstelling kan veilig met Legionella pneumophila serogroep 1 gewerkt worden, hiermee kunnen we de effectiviteit van anti-Legionella producten testen en optimaliseren alvorens ze op de markt te brengen, maar ook uw hardware specifiek testen op mogelijke Legionella risico’s.
