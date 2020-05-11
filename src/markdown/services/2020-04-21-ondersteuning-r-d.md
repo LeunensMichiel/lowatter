@@ -6,6 +6,6 @@ description: Wij hebben proefopstellingen en u kan hier gebruik van maken voor
   producten testen en optimaliseren alvorens ze op de markt te brengen.
 button: Kom meer te weten over mogelijke R&D testen met onze proefstand
 url: researchanddevelopment
-image: proefopstelling.jpg
+image: detail_proefopstelling.jpg
 lang: nl
 ---
