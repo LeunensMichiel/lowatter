@@ -10,7 +10,7 @@ teamcards:
       Sinds 2014 is ze **onderzoeker** binnen de onderzoeksgroep Bouwfysica van de UGent, met als voornaamste topics technische installaties in gebouwen, energiegebruik in woningen en renovatie van beschermd erfgoed. Daarnaast voert ze onderwijstaken uit.
 
 
-      In 2014 (start 1 januari 2015) kreeg Elisa een persoonlijke **doctoraatsbeurs** van het agentschap voor Innovatie door Wetenschap en Technologie (IWT/VLAIO) op het onderwerp ‘Gekoppelde thermohydraulische en biologische modellering van Legionella pneumophila besmetting in sanitair warmwatersystemen’. Dit doctoraat had als doel een simulatiemodel te ontwikkelen dat toelaat het infectierisico door Legionella pneumophila te onderzoeken in de ontwerpfase van sanitair warmwatersystemen en de effectiviteit van desinfectietechnieken op een geïnfecteerd systeem te testen. Dit model diende als basis voor het evalueren van veelgebruikte sanitair warmwaterinstallaties en hun energiezuinige alternatieven om zo tot nieuwe ‘best practice’ richtlijnen te komen. In 2018 behaalde Elisa haar doctoraat in de Ingenieurswetenschappen: Architectuur.
+      In 2014 (start 1 januari 2015) kreeg Elisa een persoonlijke **doctoraatsbeurs** van het agentschap voor Innovatie door Wetenschap en Technologie (IWT/VLAIO) op het onderwerp ‘Gekoppelde thermohydraulische en biologische modellering van Legionella pneumophila besmetting in sanitair warmwatersystemen’. Dit doctoraat had als doel een simulatiemodel te ontwikkelen dat toelaat het contaminatierisico door Legionella pneumophila te onderzoeken in de ontwerpfase van sanitair warmwatersystemen en de effectiviteit van decontaminatietechnieken op een gecontamineerd systeem te testen. Dit model diende als basis voor het evalueren van veelgebruikte sanitair warmwaterinstallaties en hun energiezuinige alternatieven om zo tot nieuwe ‘best practice’ richtlijnen te komen. In 2018 behaalde Elisa haar doctoraat in de Ingenieurswetenschappen: Architectuur.
 
 
       In 2018 behaalde het LoWatter-team een **valorisatiebeurs** van het IOF (UGent) om het onderzoek verricht tijdens Elisa haar doctoraat te valoriseren.
@@ -38,7 +38,7 @@ teamcards:
       Since 2014 she has been a **researcher** at the Building Physics research group of Ghent University, with her main topics being technical installations in buildings, energy use in homes and renovation of protected heritage. She also carries out teaching tasks.
 
 
-      In 2014 (start January 1, 2015), Elisa received a personal **PhD grant** from the Agency for Innovation by Science and Technology (IWT/VLAIO) on the topic 'Thermohydraulic and Biologic Modeling of Legionella Pneumophila Proliferation in Domestic Hot Water Systems'. The aim of this PhD was to develop a simulation model that allows to investigate the infection risk by Legionella pneumophila in the design phase of domestic hot water systems and to test the effectiveness of disinfection techniques on an infected system. This model served as a basis for evaluating commonly used sanitary hot water installations and their energy-efficient alternatives in order to arrive at new 'best practice' guidelines. In 2018, Elisa obtained her PhD in Civil Engineering: Architecture.
+      In 2014 (start January 1, 2015), Elisa received a personal **PhD grant** from the Agency for Innovation by Science and Technology (IWT/VLAIO) on the topic 'Thermohydraulic and Biologic Modeling of Legionella Pneumophila Proliferation in Domestic Hot Water Systems'. The aim of this PhD was to develop a simulation model that allows to investigate the contamination risk by Legionella pneumophila in the design phase of domestic hot water systems and to test the effectiveness of decontamination techniques on a contaminated system. This model served as a basis for evaluating commonly used sanitary hot water installations and their energy-efficient alternatives in order to arrive at new 'best practice' guidelines. In 2018, Elisa obtained her PhD in Civil Engineering: Architecture.
 
 
       In 2018, the LoWatter team received a **valorisation grant** from the IOF (UGent) to valorise the Legionella research carried out at UGent.
@@ -66,7 +66,7 @@ teamcards:
       Depuis 2014, elle est **chercheuse** du groupe de recherche en Physique du bâtiment de l’UGent, ses principaux sujets étant les installations techniques du bâtiment, l’utilisation d'énergie des maisons et la rénovation du patrimoine immobilier. Elle effectue également des missions d'enseignement.
 
 
-      En 2014 (date de départ le 1er janvier 2015), Elisa a reçu une **bourse de doctorat** personnelle de l’Institut de science et technologie de l'Agence flamande d'innovation et d’entreprenariat (IWT/VLAIO) sur le thème “Modélisation thermohydraulique et biologique de la prolifération de Légionnella pneumophila dans l'eau chaude des systèmes sanitaires”. L'objectif de ce doctorat était de développer un modèle de simulation permettant d'étudier le risque d'infection par Légionnella pneumophila dans la phase de conception de systèmes d'eau chaude sanitaire et de tester l'efficacité des techniques de désinfection sur un système infecté. Ce modèle a servi de base à l'évaluation des installations d'eau chaude sanitaire couramment utilisées et leurs alternatives écologiques afin d'arriver à de nouvelles lignes directrices sur les “meilleures pratiques”. En 2018, Elisa a obtenu son doctorat en ingénieur-civil architecture.
+      En 2014 (date de départ le 1er janvier 2015), Elisa a reçu une **bourse de doctorat** personnelle de l’Institut de science et technologie de l'Agence flamande d'innovation et d’entreprenariat (IWT/VLAIO) sur le thème “Modélisation thermohydraulique et biologique de la prolifération de Légionnella pneumophila dans l'eau chaude des systèmes sanitaires”. L'objectif de ce doctorat était de développer un modèle de simulation permettant d'étudier le risque de contamination par Légionnella pneumophila dans la phase de conception de systèmes d'eau chaude sanitaire et de tester l'efficacité des techniques de décontamination sur un système contaminé. Ce modèle a servi de base à l'évaluation des installations d'eau chaude sanitaire couramment utilisées et leurs alternatives écologiques afin d'arriver à de nouvelles lignes directrices sur les “meilleures pratiques”. En 2018, Elisa a obtenu son doctorat en ingénieur-civil architecture.
 
 
       En 2018, l'équipe LoWatter a reçu une **bourse de valorisation** de l'IOF Advanced (fonds de recherche industriel de l’UGent) pour valoriser les recherches Légionnella menées à l'UGent.
@@ -186,7 +186,7 @@ teamcards:
       waterdichte regelgeving'.
 
 
-      Sinds 2019 is hij **wetenschappelijk medewerker** binnen de onderzoeksgroep Bouwfysica van de UGent, met als voornaamste focus het ontwerp en de opbouw van een Legionella proefopstelling. Daarenboven helpt hij mee met het opvolgen van monitoringcampagnes en desinfectiestrategieën in met Legionella geïnfecteerde gebouwen.
+      Sinds 2019 is hij **wetenschappelijk medewerker** binnen de onderzoeksgroep Bouwfysica van de UGent, met als voornaamste focus het ontwerp en de opbouw van een legionella-proefopstelling. Daarenboven helpt hij mee met het opvolgen van monitoringcampagnes en decontaminatiestrategieën in met Legionella pneumophila gecontamineerde gebouwen.
 
 
       In 2019 (**valorisatiebeurs IOF**) sloot Emiel aan bij het LoWatter-team als technische expert.
@@ -209,7 +209,7 @@ teamcards:
       Legal Context'.
 
 
-      Since 2019 he is a **scientific assistant** within the Building Physics research group of Ghent University, with the main focus being the design and construction of a Legionella test set-up. In addition, he helps to follow up monitoring campaigns and disinfection strategies in buildings infected with Legionella.
+      Since 2019 he is a **scientific assistant** within the Building Physics research group of Ghent University, with the main focus being the design and construction of a Legionella test set-up. In addition, he helps to follow up monitoring campaigns and decontamination strategies in buildings contaminated with Legionella.
 
 
       In 2019 (**valorisation grant IOF**), Emiel joined the LoWatter team as a technical expert.
@@ -231,7 +231,7 @@ teamcards:
       chaude sain et durable - considérant son contexte juridique”.
 
 
-      Depuis 2019, il est **assistant scientifique** au sein du groupe de recherche en Physique du bâtiment de l'UGent, avec pour objectif principal la conception et la construction d'une installation de test Légionnella. De plus, il participe au suivi des campagnes de surveillance et des stratégies de désinfection dans des bâtiments infectés par la Légionnella.
+      Depuis 2019, il est **assistant scientifique** au sein du groupe de recherche en Physique du bâtiment de l'UGent, avec pour objectif principal la conception et la construction d'une installation de test Légionnella. De plus, il participe au suivi des campagnes de surveillance et des stratégies de décontamination dans des bâtiments contaminés par la Légionnella.
 
 
       En 2019 (grace au **bourse de valorisation d’IOF**), Emiel a rejoint l'équipe LoWatter en tant qu'expert technique.
