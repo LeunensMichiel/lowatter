@@ -1,7 +1,7 @@
 ---
-title: Desinfectieconsultancy
-pagedescription: We werken met een innovatieve desinfectietool. Dit houdt in dat
-  er een simulatiemodel van het watersysteem wordt opgebouwd. Met dit
+title: Decontaminatie-consultancy
+pagedescription: We werken met een innovatieve decontaminatietool. Dit houdt in
+  dat er een simulatiemodel van het watersysteem wordt opgebouwd. Met dit
   simulatiemodel is het mogelijk om de oorzaak van de contaminatie in snel tempo
   “virtueel” op te sporen. Immers, indien de oorzaak niet weggenomen wordt, zal
   de legionella-concentratie in het systeem na verloop van tijd weer toenemen.
@@ -31,11 +31,11 @@ steps:
     image: stap4.jpg
   - steptitle: Opstellen simulatiemodel
     description: >-
-      Met behulp van onze desinfectietool wordt het casespecifiek simulatiemodel
-      opgebouwd en uitgerekend binnen de 24 uur na het verkrijgen van de nodige
-      gegevens (hydraulisch schema en bezoek ter plaatse). Ons casespecifiek
-      simulatiemodel laat ons toe om de contaminatie-oorzaken te achterhalen in
-      bestaande gecontamineerde gebouwen, en vervolgens geschikte
+      Met behulp van onze decontaminatietool wordt het casespecifiek
+      simulatiemodel opgebouwd en uitgerekend binnen de 24 uur na het verkrijgen
+      van de nodige gegevens (hydraulisch schema en bezoek ter plaatse). Ons
+      casespecifiek simulatiemodel laat ons toe om de contaminatie-oorzaken te
+      achterhalen in bestaande gecontamineerde gebouwen, en vervolgens geschikte
       decontaminatiemaatregelen te kiezen voor het gecontamineerde systeem.
 
 
