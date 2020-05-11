@@ -64,9 +64,6 @@ const ContactInfo = styled.aside`
     width: 100%;
     align-items: stretch;
   }
-  @media ${screens.mobileSLandscape} {
-    grid-column: 3 / span 2;
-  }
 `
 const NavigationWrapper = styled.aside`
   grid-column: 7;
@@ -159,6 +156,7 @@ const SubFooter = styled.div`
 const LogoStyle = css`
   grid-column: 2 / span 2;
   max-width: 300px;
+  width: 100%;
   .cls-1 {
     fill: ${colors.white} !important;
   }
