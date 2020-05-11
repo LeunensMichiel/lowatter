@@ -2,18 +2,18 @@
 title: Desinfectieconsultancy
 pagedescription: We werken met een innovatieve desinfectietool. Dit houdt in dat
   er een simulatiemodel van het watersysteem wordt opgebouwd. Met dit
-  simulatiemodel is het mogelijk om de oorzaak van de infectie in snel tempo
+  simulatiemodel is het mogelijk om de oorzaak van de contaminatie in snel tempo
   “virtueel” op te sporen. Immers, indien de oorzaak niet weggenomen wordt, zal
-  de Legionella concentratie in het systeem na verloop van tijd weer toenemen.
+  de legionella-concentratie in het systeem na verloop van tijd weer toenemen.
   Er zullen verschillende voorstellen gedaan worden om de oorzaak aan te pakken
   door een renovatiemaatregel uit te voeren. Het simulatiemodel voorspelt op
   voorhand de effecten van de verschillende renovatiemaatregelen. Dus er wordt
   geen tijd verloren met het uittesten van afzonderlijke maatregelen in de
   praktijk. Aanvullend kunnen er voorstellen tot energiebesparing gedaan worden.
 steps:
-  - steptitle: Melding Legionella-probleem
+  - steptitle: Melding legionella-probleem
     description: In de eerste stap ontvangen wij van de klant de melding van een
-      Legionella-probleem. Deze melding wordt discreet behandeld.
+      legionella-probleem. Deze melding wordt discreet behandeld.
     image: stap1.jpg
   - steptitle: Bestuderen hydraulisch schema
     description: Vervolgens gaan we de sanitair warmwaterinstallatie bestuderen aan
@@ -26,17 +26,17 @@ steps:
     image: stap3.jpg
   - steptitle: Uitvoeren bijkomende metingen
     description: Indien nodig of gewenst kunnen we bijkomende metingen uitvoeren.
-      Dit kan gaan van metingen van temperaturen, debieten tot Legionella
-      concentraties.
+      Dit kan gaan van metingen van temperaturen, debieten tot
+      legionella-concentraties.
     image: stap4.jpg
   - steptitle: Opstellen simulatiemodel
     description: >-
       Met behulp van onze desinfectietool wordt het casespecifiek simulatiemodel
       opgebouwd en uitgerekend binnen de 24 uur na het verkrijgen van de nodige
       gegevens (hydraulisch schema en bezoek ter plaatse). Ons casespecifiek
-      simulatiemodel laat ons toe om de infectieoorzaken te achterhalen in
-      bestaande geïnfecteerde gebouwen, en vervolgens geschikte
-      desinfectiemaatregelen te kiezen voor het besmette systeem.
+      simulatiemodel laat ons toe om de contaminatie-oorzaken te achterhalen in
+      bestaande gecontamineerde gebouwen, en vervolgens geschikte
+      decontaminatiemaatregelen te kiezen voor het gecontamineerde systeem.
 
 
       Een casespecifiek simulatiemodel kan opgesteld worden voor elk gebouw met een warmwatervraag, denk maar aan sportcomplexen, hotels, woonzorgcentra en ziekenhuizen.
@@ -44,22 +44,22 @@ steps:
   - steptitle: Uitrekenen varianten qua renovatie en/of sturing
     description: >-
       Het volledige warmwatersysteem van uw gebouw wordt dynamisch gesimuleerd,
-      dit laat toe om de temperaturen en de Legionella concentraties doorheen
-      het systeem op iedere ogenblik te voorspellen. Zo kan het infectierisico
-      geassocieerd met een bepaald onderdeel van de installatie beoordeeld
-      worden, temperatuurregimes geoptimaliseerd en het infectierisico
-      verminderd. Bovendien kan het simulatiemodel ook ingezet worden om
-      energiebesparingsstrategieën voor te stellen.
+      dit laat toe om de temperaturen en de legionella-concentraties doorheen
+      het systeem op iedere ogenblik te voorspellen. Zo kan het
+      contaminatierisico geassocieerd met een bepaald onderdeel van de
+      installatie beoordeeld worden, temperatuurregimes geoptimaliseerd en het
+      contaminatierisico verminderd. Bovendien kan het simulatiemodel ook
+      ingezet worden om energiebesparingsstrategieën voor te stellen.
 
 
       Nu het simulatiemodel opgesteld is, kunnen we de effectiviteit van verschillende renovatiemaatregelen en/of sturingen “virtueel” testen alvorens deze maatregelen in de praktijk te implementeren (bv. het isoleren van bepaalde leidingen, inregelen van bepaalde kringen, enzovoort).
     image: stap6.jpg
   - steptitle: Advies over meest effectieve maatregel(en)
     description: Aan de hand daarvan verlenen wij advies over welke casespecifieke
-      maatregelen er voor zullen zorgen dat de infectie verdwijnt en niet meer
-      terugkeert. De maatregelen die we voorstellen zijn duurzaam en effectief
-      op lange termijn. Belangrijke parameters hierbij zijn gezondheid,
-      energiegebruik, watergebruik en/of kost.
+      maatregelen er voor zullen zorgen dat de contaminatie verdwijnt en niet
+      meer terugkeert. De maatregelen die we voorstellen zijn duurzaam en
+      effectief op lange termijn. Belangrijke parameters hierbij zijn
+      gezondheid, energiegebruik, watergebruik en/of kost.
     image: stap7.jpg
   - steptitle: Ondersteuning bij uitvoering
     description: De klant kiest welke maatregel voor hem het meest haalbaar is, wij
