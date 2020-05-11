@@ -6,6 +6,6 @@ description: We have test setups and you can use them for research and
   before introducing them to the market.
 button: Learn more about the R&D support with our test setup
 url: researchanddevelopment
-image: proefopstelling.jpg
+image: detail_proefopstelling.jpg
 lang: en
 ---
