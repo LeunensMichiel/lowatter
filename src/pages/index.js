@@ -281,7 +281,6 @@ const ContactUs = styled.section`
   height: 100%;
   min-height: 550px;
   grid-column: 1 / span 8;
-  margin-bottom: -2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,17 +303,14 @@ const ContactUs = styled.section`
     margin-bottom: 4rem;
   }
   @media ${screens.tablet} {
-    background-size: 200% 100%;
-    margin-bottom: -3rem;
+    background-size: 200% 101%;
     h2,
     p {
       max-width: 600px;
     }
   }
   @media ${screens.mobileM} {
-    margin-top: 3rem;
     padding: 10rem 16px;
-    background-size: 200% 100%;
     min-height: 550px;
     p {
       text-align: justify;

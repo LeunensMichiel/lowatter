@@ -21,11 +21,13 @@ const AccordionTitle = styled.h3`
   text-transform: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   user-select: none;
   svg {
     fill: ${colors.black} !important;
-    margin-left: auto;
+    margin-left: 4px;
+    min-width: 7px;
     height: 11px;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
