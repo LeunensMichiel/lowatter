@@ -36,7 +36,7 @@ blobitems:
   - title: Wat doen we?
     description: Sinds kort zijn we ook actief in de praktijk en brengen zo onze
       kennis naar het werkveld. In eerste instantie willen we via consultancy
-      casespecifieke kennis verschaffen rond **desinfectie en
+      casespecifieke kennis verschaffen rond **decontaminatie en
       energiebesparing**. Aanvullend geven we ook advies omtrent het ontwerp en
       de monitoring van warmwaterinstallaties. Bijkomend kunnen we meer
       specifieke R&D uitvoeren met onze legionella-proefstand.
@@ -45,16 +45,16 @@ blobitems:
   - title: What are we doing?
     description: Recently we have also become active in practice, bringing our
       knowledge to the professional field. In first instance, we want to provide
-      case-specific knowledge about **disinfection and energy savings** through
-      consultancy. In addition, we also advise on the design and monitoring of
-      hot water installations. Moreover, we can carry out more specific R&D with
-      our Legionella test setup.
+      case-specific knowledge about **decontamination and energy savings**
+      through consultancy. In addition, we also advise on the design and
+      monitoring of hot water installations. Moreover, we can carry out more
+      specific R&D with our Legionella test setup.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
   - title: Que faisons-nous?
     description: Récemment, nous sommes devenus actifs dans la pratique, apportant
       nos connaissances au domaine professionnel. A base des connaissances bien
-      spécifiques nous conseillons cas par cas sur **la désinfection et les
+      spécifiques nous conseillons cas par cas sur **la décontamination et les
       économies d’énergie**, ainsi que sur la conception et la surveillance des
       installations d’eau chaude. De plus, nous pouvons effectuer une R&D plus
       spécifique avec notre configuration de test Legionella.
@@ -66,7 +66,7 @@ blobitems:
       wortel en tak uit te roeien.
 
 
-      Concreet wil dit zeggen dat we snel en efficiënt de oorzaak van een infectie in een warmwatersysteem kunnen opsporen, met behulp van onze sterke UGent know-how en ons **predictief Legionella pneumophila simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe om de legionella-concentratie te berekenen op iedere locatie in het systeem voor elk casespecifiek systeem. 
+      Concreet wil dit zeggen dat we snel en efficiënt de oorzaak van een contaminatie in een warmwatersysteem kunnen opsporen, met behulp van onze sterke UGent know-how en ons **predictief Legionella pneumophila simulatiemodel**. Dit zelf ontwikkelde dynamisch simulatiemodel laat toe om de legionella-concentratie te berekenen op iedere locatie in het systeem voor elk casespecifiek systeem. 
 
 
       Naast het opsporen van de oorzaken die tot te hoge legionella-concentraties in het systeem leiden, kunnen we casespecifiek verschillende oplossingen met elkaar vergelijken om zo tot de **meest duurzame en (kost)effectieve oplossing** te komen alvorens die in de praktijk te implementeren.
@@ -77,7 +77,7 @@ blobitems:
       We offer a **structural solution** to root out your Legionella problem.
 
 
-      In concrete terms, this means that we can quickly and efficiently identify the **cause of an infection** in a hot water system, using our UGent know-how and our predictive **Legionella pneumophila simulation model**. This self-developed dynamic simulation model makes it possible to calculate the Legionella concentration at any point in the system for each case-specific system.
+      In concrete terms, this means that we can quickly and efficiently identify the **cause of a contamination** in a hot water system, using our UGent know-how and our predictive **Legionella pneumophila simulation model**. This self-developed dynamic simulation model makes it possible to calculate the Legionella concentration at any point in the system for each case-specific system.
 
 
       Moreover, we can compare case specific solutions in order find the **most sustainable and (cost) effective solution** before implementing it in practice.
@@ -89,7 +89,7 @@ blobitems:
       Légionnelles.
 
 
-      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une infection dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
+      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une contamination dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
 
 
       De plus, nous pouvons comparer les différentes solutions spécifiques à un seul cas afin de trouver **la meilleure solution en ce qui concerne durabilité, efficacité et rentabilité**, avant même de les mettre en pratique.
