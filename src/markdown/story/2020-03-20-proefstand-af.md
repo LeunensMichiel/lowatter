@@ -1,5 +1,5 @@
 ---
-title: In gebruikname Legionella proefstand
+title: In gebruikname legionella-proefstand
 date: 2020-02-01T11:00:00.000Z
 description: De proefstand werd in gebruik genomen
 isMilestone: false
@@ -9,6 +9,6 @@ De energie nodig voor de productie van warm water domineert de totale energievra
 
 Aan de hand van een simulatiemodel dat ontwikkeld werd aan de onderzoeksgroep Bouwfysica kan de bacteriegroei in een warmwatersysteem echter inschat worden, waardoor het gecontroleerd verlagen van de temperatuur in combinatie met warmteschokken, gestuurd door onze **slimme warmwatercontroller**, in de toekomst mogelijks interessant wordt.
 
-Er werd een **proefopstelling** gebouwd om de werking van de slimme warmwatercontroller optimaal te testen en onderzoeken. Als de werking aangetoond wordt, dan kan er getracht worden om dit nieuwe product te laten goedkeuren als alternatieve Legionella beheersmaatregel in Vlaanderen. Op die manier kan er veel energie bespaard worden zonder de gezondheid van de bewoner in gevaar te brengen.
+Er werd een **proefopstelling** gebouwd om de werking van de slimme warmwatercontroller optimaal te testen en onderzoeken. Als de werking aangetoond wordt, dan kan er getracht worden om dit nieuwe product te laten goedkeuren als alternatieve legionella-beheersmaatregel in Vlaanderen. Op die manier kan er veel energie bespaard worden zonder de gezondheid van de bewoner in gevaar te brengen.
 
-![](/uploads/proefopstelling.jpg "Vooraanzicht Legionella proefopstelling")
+![](/uploads/proefopstelling.jpg "Vooraanzicht legionella-proefopstelling")
