@@ -15,6 +15,17 @@ faqitems:
       healthy domestic hot water systems, it is necessary to look at the
       interactions between Legionella pneumophila bacteria and the domestic hot
       water system. "
+  - answer: >-
+      Legionella pneumophila is the most dangerous Legionella species for
+      humans, it is able to induce two kinds of illnesses that appear two to ten
+      days after exposure.
+
+      One is Legionnaires’ Disease, a life threatening pneumonia against which the victim requires urgent medication. Symptoms of Legionellosis are a general ill feeling, headache, muscle pain, cough and shortness of breath, followed by pneumonia with a fever of over 39°C. Legionellosis must be treated with antibiotics, and even after the infection, the disease can have long-lasting consequences.
+
+      The other disease caused by the species is Pontiac Fever, named after an outbreak in Pontiac, Michigan in 1968. This variant is an flue like acute respiratory disease. Having Pontiac fever, the patient will experience mild flu-like symptoms for 2 to 5 days, such as fever, muscle pain, headache and cough. The disease is not dangerous in this mild form, there is no pneumonia. The complaints can pass without treatment.
+
+      It was only after 1976, after the outbreak in Philadelphia, where Legionella was discovered, that public health officials were able to ascertain that the same bacterium caused the previous outbreaks of Pontiac Fever.
+    question: What are the symptoms of a Legionella infection?
   - question: When is Legionella discovered?
     answer: The Legionella bacterium delivers its name from an outbreak at the
       American Legion’s Convention at the Bellevue Stratford Hotel in
@@ -46,15 +57,4 @@ faqitems:
       that steam/vapour cannot contain Legionella bacteria as these drops are
       too small to carry bacteria.
     question: How do you get infected?
-  - answer: >-
-      Legionella pneumophila is the most dangerous Legionella species for
-      humans, it is able to induce two kinds of illnesses that appear two to ten
-      days after exposure.
-
-      One is Legionnaires’ Disease, a life threatening pneumonia against which the victim requires urgent medication. Symptoms of Legionellosis are a general ill feeling, headache, muscle pain, cough and shortness of breath, followed by pneumonia with a fever of over 39°C. Legionellosis must be treated with antibiotics, and even after the infection, the disease can have long-lasting consequences.
-
-      The other disease caused by the species is Pontiac Fever, named after an outbreak in Pontiac, Michigan in 1968. This variant is an flue like acute respiratory disease. Having Pontiac fever, the patient will experience mild flu-like symptoms for 2 to 5 days, such as fever, muscle pain, headache and cough. The disease is not dangerous in this mild form, there is no pneumonia. The complaints can pass without treatment.
-
-      It was only after 1976, after the outbreak in Philadelphia, where Legionella was discovered, that public health officials were able to ascertain that the same bacterium caused the previous outbreaks of Pontiac Fever.
-    question: What are the symptoms of a Legionella infection?
 ---
