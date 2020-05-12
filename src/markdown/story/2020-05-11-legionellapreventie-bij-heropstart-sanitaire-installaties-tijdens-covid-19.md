@@ -14,8 +14,7 @@ In de strijd tegen de verspreiding van het coronavirus, zijn een groot aantal ge
 
 **Officiële richtlijnen**
 
-De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  vind je hier:\
-https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf
+De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  kan je [hier](https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf) downloaden.
 
 **Overige referenties**
 
