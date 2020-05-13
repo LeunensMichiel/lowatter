@@ -33,7 +33,7 @@ descriptionFr: In de strijd tegen de verspreiding van het coronavirus, zijn een
   zonder bijkomende maatregelen, brengt hierdoor gezondheidsrisico's met zich
   mee. We maakten een infographic die als leidraad kan dienen bij een veilige
   heropstart.
-begindate: 2020-05-11T14:18:29.036Z
+begindate: 2020-05-12T10:11:58.449Z
 enddate: 2020-07-30T16:00:00.000Z
 relatedStoryNl: >-
   In de strijd tegen de verspreiding van het coronavirus, zijn een groot aantal
@@ -53,7 +53,7 @@ relatedStoryNl: >-
   **Officiële richtlijnen**
 
 
-  De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  vind je hier: https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf via https://www.zorg-en-gezondheid.be/legionella
+  De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  kan je [hier](https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf) downloaden.
 
 
   **Overige referenties**
@@ -68,18 +68,13 @@ relatedStoryNl: >-
   Best Beschikbare Technieken (BBT) voor Legionella-beheersing in Nieuwe Sanitaire Systemen - Studie uitgevoerd door het Vlaams Kenniscentrum voor Beste Beschikbare Technieken (VITO) en het Wetenschappelijk en Technische Centrum voor het Bouwbedrijf (WTCB) in opdracht van Agentschap Zorg & Gezondheid, december 2017, Brussel, België.
 
 
-  Nature,\
-
-  *https://www.nature.com/articles/d41586-020-01286-9?utmsource=twt_nnc&utm_medium=social&utm_campaign=naturenews&utm_medium=social&utm_content=organic&utm_source=twitter&utm_campaign=NatureNews&sf233436754=1*, 2020
+  Nature, *https://www.nature.com/articles/d41586-020-01286-9*, 2020
 
 
   Proctor et. al., Considerations for Large Building Water Quality after Extended Stagnation, 2020. Nature, As lockdowns lift, new hazards lurk in the water, 2020.
 
 
   Aquadomo, *https://www.aquadomo.be/legionellapreventie-en-covid-19*, 2020.
-
-
-  Nijhuisindustries, *https://www.nijhuisindustries.com/news/prevent-legionella-in-buildings-during-lockdown-or-in-normal-operation-article-1-of-3/*, 2020.
 relatedStoryEn: >-
   In de strijd tegen de verspreiding van het coronavirus, zijn een groot aantal
   gebouwen inactief, denk hierbij aan kantoren, hotels, sportcomplexen, tweede
@@ -98,7 +93,7 @@ relatedStoryEn: >-
   **Officiële richtlijnen**
 
 
-  De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  vind je hier: https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf via https://www.zorg-en-gezondheid.be/legionella
+  De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  kan je [hier](https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf) downloaden.
 
 
   **Overige referenties**
@@ -113,18 +108,13 @@ relatedStoryEn: >-
   Best Beschikbare Technieken (BBT) voor Legionella-beheersing in Nieuwe Sanitaire Systemen - Studie uitgevoerd door het Vlaams Kenniscentrum voor Beste Beschikbare Technieken (VITO) en het Wetenschappelijk en Technische Centrum voor het Bouwbedrijf (WTCB) in opdracht van Agentschap Zorg & Gezondheid, december 2017, Brussel, België.
 
 
-  Nature,\
-
-  *https://www.nature.com/articles/d41586-020-01286-9?utmsource=twt_nnc&utm_medium=social&utm_campaign=naturenews&utm_medium=social&utm_content=organic&utm_source=twitter&utm_campaign=NatureNews&sf233436754=1*, 2020
+  Nature, *https://www.nature.com/articles/d41586-020-01286-9*, 2020
 
 
   Proctor et. al., Considerations for Large Building Water Quality after Extended Stagnation, 2020. Nature, As lockdowns lift, new hazards lurk in the water, 2020.
 
 
   Aquadomo, *https://www.aquadomo.be/legionellapreventie-en-covid-19*, 2020.
-
-
-  Nijhuisindustries, *https://www.nijhuisindustries.com/news/prevent-legionella-in-buildings-during-lockdown-or-in-normal-operation-article-1-of-3/*, 2020.
 relatedStoryFr: >-
   In de strijd tegen de verspreiding van het coronavirus, zijn een groot aantal
   gebouwen inactief, denk hierbij aan kantoren, hotels, sportcomplexen, tweede
@@ -143,7 +133,7 @@ relatedStoryFr: >-
   **Officiële richtlijnen**
 
 
-  De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  vind je hier: https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf via https://www.zorg-en-gezondheid.be/legionella
+  De volledige officiële richtlijnen voor sanitaire installaties van het Agentschap Zorg & Gezondheid  kan je [hier](https://www.zorg-en-gezondheid.be/sites/default/files/atoms/files/20200505%20-%20Procedure%20heropstart%20sanitaire%20installaties%20na%20periode%20van%20inactiviteit%20v.pdf) downloaden.
 
 
   **Overige referenties**
@@ -158,16 +148,11 @@ relatedStoryFr: >-
   Best Beschikbare Technieken (BBT) voor Legionella-beheersing in Nieuwe Sanitaire Systemen - Studie uitgevoerd door het Vlaams Kenniscentrum voor Beste Beschikbare Technieken (VITO) en het Wetenschappelijk en Technische Centrum voor het Bouwbedrijf (WTCB) in opdracht van Agentschap Zorg & Gezondheid, december 2017, Brussel, België.
 
 
-  Nature,\
-
-  *https://www.nature.com/articles/d41586-020-01286-9?utmsource=twt_nnc&utm_medium=social&utm_campaign=naturenews&utm_medium=social&utm_content=organic&utm_source=twitter&utm_campaign=NatureNews&sf233436754=1*, 2020
+  Nature, *https://www.nature.com/articles/d41586-020-01286-9*, 2020
 
 
   Proctor et. al., Considerations for Large Building Water Quality after Extended Stagnation, 2020. Nature, As lockdowns lift, new hazards lurk in the water, 2020.
 
 
   Aquadomo, *https://www.aquadomo.be/legionellapreventie-en-covid-19*, 2020.
-
-
-  Nijhuisindustries, *https://www.nijhuisindustries.com/news/prevent-legionella-in-buildings-during-lockdown-or-in-normal-operation-article-1-of-3/*, 2020.
 ---
