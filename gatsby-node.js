@@ -11,6 +11,7 @@ exports.onCreateNode = ({ node }) => {
     const steps = node.frontmatter.steps
     const relatedStoryNl = node.frontmatter.relatedStoryNl
     const relatedStoryEn = node.frontmatter.relatedStoryEn
+    const relatedStoryFr = node.frontmatter.relatedStoryFr
     if (teamcards) {
       teamcards.map(card => (card.bio = htmlify(card.bio)))
     }
@@ -25,6 +26,9 @@ exports.onCreateNode = ({ node }) => {
     }
     if (relatedStoryEn) {
       node.frontmatter.relatedStoryEn = htmlify(relatedStoryEn)
+    }
+    if (relatedStoryFr) {
+      node.frontmatter.relatedStoryFr = htmlify(relatedStoryFr)
     }
     return node
   }
