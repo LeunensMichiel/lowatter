@@ -7,5 +7,6 @@ description: Wij hebben proefopstellingen en u kan hier gebruik van maken voor
 button: Kom meer te weten over mogelijke R&D testen met onze proefstand
 url: researchanddevelopment
 image: detail_proefopstelling.jpg
+rang: 3
 lang: nl
 ---

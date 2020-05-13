@@ -262,6 +262,7 @@ export const query = graphql`
   query servicesquery {
     services: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/markdown/services/" } }
+      sort: { fields: frontmatter___rang }
     ) {
       edges {
         node {
@@ -270,6 +271,7 @@ export const query = graphql`
             description
             lang
             url
+            rang
             button
             image {
               childImageSharp {

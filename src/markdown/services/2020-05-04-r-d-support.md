@@ -7,5 +7,6 @@ description: We have test setups and you can use them for research and
 button: Learn more about the R&D support with our test setup
 url: researchanddevelopment
 image: detail_proefopstelling.jpg
+rang: 3
 lang: en
 ---

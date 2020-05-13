@@ -24,7 +24,7 @@ collections:
         file: "src/markdown/pages/landing.md"
         fields:
           - label: "InfoBlobs"
-            hint: "De blobs, ofwel groene bollen, op je hoofdpagina. Elke blob heeft een Titel, beschrijving en afbeelding."
+            hint: "De blobs, ofwel groene bollen, op je hoofdpagina. Elke blob heeft een titel, beschrijving en afbeelding."
             name: "blobitems"
             widget: "list"
             fields:
@@ -163,7 +163,7 @@ collections:
           label: "Link naar productpagina",
           name: "url",
           widget: "string",
-          hint: "Moet ofwel zijn: disinfectionconsultancy;advice;researchanddevelopment",
+          hint: "MOET ofwel zijn (anders breekt de link): disinfectionconsultancy;advice;researchanddevelopment",
         }
       - label: "Productfoto"
         name: "image"
@@ -173,6 +173,11 @@ collections:
           config:
             max_file_size: 650000
             multiple: false
+      - label: "Rangnummer"
+        name: "rang"
+        hint: "Volgorde van de getoonde services"
+        widget: "number"
+        valueType: "int"
       - label: "Taal"
         name: "lang"
         widget: "select"

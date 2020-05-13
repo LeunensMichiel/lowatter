@@ -10,5 +10,6 @@ description: Wij verlenen advies tijdens de ontwerp-, renovatie- en/of
 button: Leer meer over onze adviesverlening
 url: advice
 image: photobyscottgrahamonunsplash.jpg
+rang: 2
 lang: nl
 ---

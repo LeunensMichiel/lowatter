@@ -10,5 +10,6 @@ description: We provide advice during the design, renovation and/or
 button: Design and monitoring advice
 url: Learn more about our design and monitoring advice
 image: photobyscottgrahamonunsplash.jpg
+rang: 2
 lang: en
 ---
