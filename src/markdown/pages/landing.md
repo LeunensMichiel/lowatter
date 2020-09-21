@@ -116,12 +116,11 @@ blobitems:
     lang: en
   - title: Qu'est-ce qui rend notre technologie unique?
     description: >-
-      Les solutions que nous proposons sont durables, le fait que nous
-      **n'ajoutons aucun produit chimique** à l'eau potable rend notre
-      technologie unique.
+      Les solutions que nous proposons sont durables et uniques: nous
+      **n'ajoutons aucun produit chimique** à l'eau potable.
 
 
-      Notre méthodologie est également unique, en combinant mesures, surveillance et simulations. Ainsi nous obtenons une meilleure compréhension de l'ensemble du système d'eau chaude et **une solution efficace qui attaque à la cause**.
+      Notre méthodologie, combinant mesures, surveillance et simulations, est également unique. Nous obtenons de la sorte une meilleure compréhension de l'ensemble du système d'eau chaude et **une solution efficace qui s’attaque à la cause**.
     lang: fr
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
   - title: Wie is onze doelgroep?
@@ -137,10 +136,10 @@ blobitems:
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
   - title: Quel est notre marché cible?
-    description: Nous nous concentrons sur des **bâtiments résidentiels et publics
-      ayant une forte demande d'eau chaude**, tels que des immeubles à
-      appartements, des centres de soins résidentiels, des complexes sportifs,
-      des hôtels et des hôpitaux.
+    description: Nous nous concentrons tant sur les **bâtiments résidentiels que
+      publics ayant une forte demande en eau chaude**, tels que les immeubles à
+      appartements, les centres de soins résidentiels, les complexes sportifs,
+      les hôtels et les hôpitaux.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: fr
 ---
