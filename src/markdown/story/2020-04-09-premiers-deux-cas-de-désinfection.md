@@ -1,12 +1,12 @@
 ---
-title: Premiers deux cas de désinfection
-date: "2020-03-01T11:00:00.000Z"
-description: Démarrage de consultance de désinfection avec les 2 premiers cas.
+title: Deux premiers cas de décontamination
+date: 2020-03-01T11:00:00.000Z
+description: Démarrage de consultance de décontamination avec les 2 premiers cas.
 isMilestone: false
 lang: fr
 ---
-LoWatter offre actuellement ses services pour résoudre les problèmes de Légionnella dans un complexe de logements étudiants et un complexe sportif. Ce sont nos deux premiers cas de désinfection.
+LoWatter offre actuellement ses services pour résoudre les problèmes de Legionella dans un complexe de logements d’étudiants et un complexe sportif. Ils constituent nos deux premiers cas de décontamination.
 
-Il y en aura bien d’autres ;-).
+Il y en aura bien d’autres ;-)
 
-![](/uploads/photo-by-alexander-londoño-on-unsplash.jpg)
+![](/uploads/photobyalexanderlondoñoonunsplash.jpg)
