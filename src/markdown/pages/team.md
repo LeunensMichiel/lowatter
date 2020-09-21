@@ -57,30 +57,30 @@ teamcards:
       Business development and management, market and legal affairs
     linkedIn: https://www.linkedin.com/in/elisavankenhove/
   - bio: >-
-      Elisa Van Kenhove (°1991) a obtenu son diplôme d’ingénieur-civil
-      architecte en 2014 (Conception architecturale et techniques de
-      construction) (UGent, magna cum laude) avec une thèse de maitrise sur
-      “l'Optimisation d'un immeuble de bureaux GEOTABS”.
+      Elisa Van Kenhove (°1991) a obtenu son diplôme d’ingénieure
+      civile-architecte en 2014 (Conception architecturale et techniques de
+      construction) (UGent, grande distinction) avec une thèse de maîtrise sur
+      l'optimisation d'un immeuble de bureaux GEOTABS. 
 
 
-      Depuis 2014, elle est **chercheuse** du groupe de recherche en Physique du bâtiment de l’UGent, ses principaux sujets étant les installations techniques du bâtiment, l’utilisation d'énergie des maisons et la rénovation du patrimoine immobilier. Elle effectue également des missions d'enseignement.
+      Depuis 2014, elle est **chercheuse** au sein du groupe de recherche en Physique du bâtiment de l’UGent, ses principaux sujets d’étude étant les installations techniques dans les bâtiments, l’utilisation d'énergie dans les maisons et la rénovation du patrimoine immobilier protégé. Elle effectue également des missions d'enseignement.
 
 
-      En 2014 (date de départ le 1er janvier 2015), Elisa a reçu une **bourse de doctorat** personnelle de l’Institut de science et technologie de l'Agence flamande d'innovation et d’entreprenariat (IWT/VLAIO) sur le thème “Modélisation thermohydraulique et biologique de la prolifération de Légionnella pneumophila dans l'eau chaude des systèmes sanitaires”. L'objectif de ce doctorat était de développer un modèle de simulation permettant d'étudier le risque de contamination par Légionnella pneumophila dans la phase de conception de systèmes d'eau chaude sanitaire et de tester l'efficacité des techniques de décontamination sur un système contaminé. Ce modèle a servi de base à l'évaluation des installations d'eau chaude sanitaire couramment utilisées et leurs alternatives écologiques afin d'arriver à de nouvelles lignes directrices sur les “meilleures pratiques”. En 2018, Elisa a obtenu son doctorat en ingénieur-civil architecture.
+      En 2014, Elisa a décroché une **bourse de doctorat** personnelle de l’Institut de Science et Technologie de l'Agence flamande d'Innovation et d’Entreprenariat (VLAIO) sur le thème “Modélisation thermohydraulique et biologique de la prolifération de Legionella pneumophila dans l'eau chaude des systèmes sanitaires”. L'objectif de ce doctorat était de développer un modèle de simulation permettant d'étudier le risque de contamination par la Legionella pneumophila dans la phase de conception de systèmes d'eau chaude sanitaire et de tester l'efficacité des techniques de décontamination sur un système infecté. Ce modèle a servi de base à l'évaluation des installations d'eau chaude sanitaire couramment utilisées et leurs alternatives écologiques afin d'arriver à de nouvelles lignes directrices sur les “meilleures pratiques”. Elisa a obtenu son doctorat en Sciences Architecturales et Ingénierie en 2018.
 
 
-      En 2018, l'équipe LoWatter a reçu une **bourse de valorisation** de l'IOF Advanced (fonds de recherche industriel de l’UGent) pour valoriser les recherches Légionnella menées à l'UGent.
+      En 2018 également, l'équipe LoWatter a reçu une **bourse de valorisation** de l'IOF (fonds de recherche industriel de l’UGent) pour valoriser les recherches menées par Elisa sur la Legionella dans le cadre de son doctorat.
 
 
-      En 2020, Elisa a reçu un **mandat d’essaimage** personnel de l'Agence flamande d'innovation et d'entrepreneuriat (VLAIO) en vue de l’essaimage.
+      En 2020, Elisa a reçu un **mandat d’essaimage** personnel de l'Agence flamande d'Innovation et d’Entreprenariat (VLAIO) en vue de préparer la création d’un spin-off.
     number: 3
     name: Elisa Van Kenhove
     lang: fr
-    subtitle: Entrepreneur et scientifique
+    subtitle: Entrepreneuse et scientifique
     ugent: https://www.ugent.be/ea/architectuur/nl/contact/medewerkers/elisa-van-kenhove
     image: elisavankenhove_v4.jpg
     description: >-
-      Docteur en ingénerie-civil architecture
+      Docteure en Sciences Architecturales et Ingénierie
 
 
       Développement commercial et gestion d’entreprise, marché et affaires juridiques
