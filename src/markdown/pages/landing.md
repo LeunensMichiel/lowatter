@@ -24,13 +24,13 @@ blobitems:
     lang: en
   - title: Qui sommes-nous?
     description: >-
-      LoWatter est un service de l’UGent, **l'université de Gand**. l’UGent mène
-      des recherches scientifiques sur les Légionnelles dans les systèmes d'eau
-      chaude sanitaire depuis de nombreuses années. Au centre de cette recherche
-      se trouve l'équilibre entre la santé et les économies d'énergie.
+      LoWatter est un service de **l’Université de Gand** (UGent). Depuis de
+      nombreuses années, l’UGent mène des recherches scientifiques sur les
+      légionnelles dans les systèmes d'eau chaude sanitaire. L'équilibre entre
+      santé et économies d'énergie se trouve au centre de cette recherche.
 
 
-      En tant que membre de l’UGent, nous pouvons toujours compter sur le soutien de l'université et nous sommes à la base des développements scientifiques les plus récents.
+      En tant que membres de l’UGent, nous pouvons toujours compter sur le soutien de celle-ci et nous avons élaboré et participé aux développements scientifiques les plus récents.
     image: ugent.jpg
     lang: fr
   - title: Wat doen we?
@@ -52,12 +52,13 @@ blobitems:
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
   - title: Que faisons-nous?
-    description: Récemment, nous sommes devenus actifs dans la pratique, apportant
-      nos connaissances au domaine professionnel. A base des connaissances bien
-      spécifiques nous conseillons cas par cas sur **la décontamination et les
-      économies d’énergie**, ainsi que sur la conception et la surveillance des
-      installations d’eau chaude. De plus, nous pouvons effectuer une R&D plus
-      spécifique avec notre configuration de test Legionella.
+    description: Depuis peu, nous sommes également actifs dans la pratique,
+      transposant ainsi nos connaissances sur le terrain. Tout d’abord, nous
+      désirons fournir des informations au cas par cas sur **la décontamination
+      et les économies d’énergie**. Nous apportons ensuite nos conseils pour le
+      développement et la surveillance des installations d’eau chaude. De plus,
+      nous pouvons effectuer des recherches plus spécifiques au moyen de notre
+      banc d’essai-légionnelles.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: fr
   - title: Hoe doen we dit?
@@ -83,16 +84,16 @@ blobitems:
       Moreover, we can compare case specific solutions in order find the **most sustainable and (cost) effective solution** before implementing it in practice.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: en
-  - title: Comment faisons-nous?
+  - title: Quelle est notre méthode de travail?
     description: >-
       Nous offrons **une solution structurelle** pour éliminer votre problème de
-      Légionnelles.
+      légionnelles. 
 
 
-      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une contamination dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
+      Cela signifie concrètement que nous pouvons identifier rapidement et efficacement la cause d'une contamination dans un système d'eau chaude, en utilisant notre savoir-faire d’UGent et notre **modèle de simulation prédictif de la Legionella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de légionnelles en tout point du système et pour chaque système étudié spécifique.
 
 
-      De plus, nous pouvons comparer les différentes solutions spécifiques à un seul cas afin de trouver **la meilleure solution en ce qui concerne durabilité, efficacité et rentabilité**, avant même de les mettre en pratique.
+      En plus de la détection des causes entrainant de hautes concentrations en légionnelles dans un système, nous pouvons comparer différentes solutions spécifiques afin de trouver ainsi **la meilleure solution en termes de durabilité, efficacité et rentabilité**, avant son implémentation sur le terrain.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: fr
   - title: Wat maakt onze technologie uniek?
@@ -115,12 +116,11 @@ blobitems:
     lang: en
   - title: Qu'est-ce qui rend notre technologie unique?
     description: >-
-      Les solutions que nous proposons sont durables, le fait que nous
-      **n'ajoutons aucun produit chimique** à l'eau potable rend notre
-      technologie unique.
+      Les solutions que nous proposons sont durables et uniques: nous
+      **n'ajoutons aucun produit chimique** à l'eau potable.
 
 
-      Notre méthodologie est également unique, en combinant mesures, surveillance et simulations. Ainsi nous obtenons une meilleure compréhension de l'ensemble du système d'eau chaude et **une solution efficace qui attaque à la cause**.
+      Notre méthodologie, combinant mesures, surveillance et simulations, est également unique. Nous obtenons de la sorte une meilleure compréhension de l'ensemble du système d'eau chaude et **une solution efficace qui s’attaque à la cause**.
     lang: fr
     image: jacek-dylag-vve7xkiuq_y-unsplash.jpg
   - title: Wie is onze doelgroep?
@@ -136,10 +136,10 @@ blobitems:
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: en
   - title: Quel est notre marché cible?
-    description: Nous nous concentrons sur des **bâtiments résidentiels et publics
-      ayant une forte demande d'eau chaude**, tels que des immeubles à
-      appartements, des centres de soins résidentiels, des complexes sportifs,
-      des hôtels et des hôpitaux.
+    description: Nous nous concentrons tant sur les **bâtiments résidentiels que
+      publics ayant une forte demande en eau chaude**, tels que les immeubles à
+      appartements, les centres de soins résidentiels, les complexes sportifs,
+      les hôtels et les hôpitaux.
     image: photo-by-roberto-nickson-on-unsplash_v2.jpg
     lang: fr
 ---
