@@ -148,33 +148,33 @@ teamcards:
       Research and development (R&D), technology and simulation
     linkedIn: https://www.linkedin.com/in/lien-de-backer-4a7aa225/
   - bio: >-
-      En 2009, Lien De Backer (°1985) a obtenu le diplôme d'ingénieur industriel
-      (Hogeschool Gent, magna cum laude) avec une thèse de maitrise sur “La
-      restauration de l'église Notre-Dame de Bruges. Stabilité de la tour à
-      l'aide d'une analyse FEM” (logiciel Buildsoft + ANSYS).
+      En 2009, Lien De Backer (°1985) a obtenu le diplôme d'ingénieure
+      industrielle (Hogeschool Gent, grande distinction) avec une thèse de
+      maîtrise sur “La restauration de l'église Notre-Dame de Bruges. Stabilité
+      de la tour à l'aide d'une analyse FEM” (logiciel Buildsoft + ANSYS).
 
 
-      En août 2010, Lien a commencé en tant que **chercheuse** au sein du groupe de recherche en Physique du bâtiment (UGent). De 2010 à 2013, elle a participé au projet de recherche “Stratégies de modélisation de l'humidité des bâtiments historiques afin de contrôler les risques de dommages”. Ce travail faisait partie d'un projet FWO (Fonds flamand de la recherche scientifique) dédié au développement de stratégie de simulation à fin d’analyser l'interrelation entre le climat extérieur et intérieur, l'enveloppe du bâtiment et la conception CVC (Climatisation, ventilation, chauffage) dans des bâtiments historiques et à fin d’évaluer les risques possibles de dommages au patrimoine culturel.
+      En août 2010, Lien a commencé en tant que **chercheuse doctorante** au sein du groupe de recherche en Physique du bâtiment (UGent). De 2010 à 2013, elle a participé au projet de recherche “Stratégies de modélisation de l'humidité des bâtiments historiques afin de contrôler les risques de dommages”. Ce travail faisait partie d'un projet FWO (Fonds flamand de recherche scientifique) dédié au développement de stratégies de simulation afin d’analyser l'interrelation entre le climat extérieur et intérieur, l'enveloppe du bâtiment et la conception CVC (climatisation, ventilation, chauffage) dans les bâtiments historiques et afin d’évaluer les risques possibles de dommages au patrimoine culturel.
 
 
-      Au cours des années, Lien s'est intéressée à la construction de simulations (en utilisant TRNSYS, Modelica, Energyplus, Matlab e.a.). Ce qui lui attire le plus est le développement et l’usage d’outils de simulation pour modéliser et améliorer des cas spécifiques à partir de la pratique.
+      Durant ces années, Lien s'est intéressée au développement de simulations (en utilisant TRNSYS, Modelica, Energyplus, Matlab e.a.). Ce qui l’attire le plus est le développement et l’usage d’outils de simulation pour modéliser et améliorer des cas spécifiques tirés de la pratique.
 
 
-      Lien a obtenu son doctorat en ingénieur-civil en 2018.
+      Lien a obtenu son doctorat en Sciences Architecturales et Ingénierie en 2018.
 
 
-      En plus Lien a acquis de l’expérience pratique dans le conseil au sein du Bureau d'études Boydens où elle a travaillé comme expert en simulation.
+      De plus, Lien a acquis de l’expérience pratique en tant que conseillère en ingénierie au sein du Bureau d'études Boydens où elle a travaillé comme experte en simulation.
 
 
-      Lien fait partie de l'équipe LoWatter depuis 2018 (**bourse de valorisation IOF**) en tant qu'expert R&D et simulation.
+      Lien fait partie de l'équipe LoWatter depuis 2018 (**bourse de valorisation IOF**) en tant qu'experte R&D et simulation.
     number: 6
     name: Lien De Backer
     lang: fr
-    subtitle: Scientifique et entrepreneur
+    subtitle: Scientifique et entrepreneuse
     ugent: https://telefoonboek.ugent.be/en/people/802000851414
     image: liendebacker_v2.jpg
     description: |-
-      Docteur en ingénerie-civil
+      Docteure en Sciences Architecturales et Ingénierie
 
       Recherche et développement (R&D), technologie et simulation
     linkedIn: https://www.linkedin.com/in/lien-de-backer-4a7aa225/
