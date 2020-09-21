@@ -231,7 +231,7 @@ teamcards:
       chaude sain et durable – dans le cadre d’une réglementation sans faille”.
 
 
-      Depuis 2019, il est **assistant scientifique** au sein du groupe de recherche en Physique du bâtiment de l'UGent en tant que collaborateur scientifique, avec pour objectif principal la conception et la construction d'une installation de test pour la *Legionella*. Il participe également au suivi des campagnes de surveillance et des stratégies de décontamination dans des bâtiments infectés par la *Legionella*.
+      Depuis 2019, il est **assistant scientifique** au sein du groupe de recherche en Physique du bâtiment de l'UGent en tant que collaborateur scientifique, avec pour objectif principal la conception et la construction d'une installation de test pour la Legionella. Il participe également au suivi des campagnes de surveillance et des stratégies de décontamination dans des bâtiments infectés par la Legionella.
 
 
       En 2019 (grâce à une **bourse de valorisation IOF**), Emiel a rejoint l'équipe LoWatter en tant qu'expert technique.
