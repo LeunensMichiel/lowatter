@@ -84,16 +84,16 @@ blobitems:
       Moreover, we can compare case specific solutions in order find the **most sustainable and (cost) effective solution** before implementing it in practice.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: en
-  - title: Comment faisons-nous?
+  - title: Quelle est notre méthode de travail?
     description: >-
       Nous offrons **une solution structurelle** pour éliminer votre problème de
-      Légionnelles.
+      légionnelles. 
 
 
-      Concrètement, cela signifie que nous pouvons identifier rapidement et efficacement la cause d'une contamination dans un système d'eau chaude, en utilisant notre savoir-faire UGent et notre **modèle de simulation prédictif Légionnella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de Légionnella en tout point du système et pour chaque système sous étude.
+      Cela signifie concrètement que nous pouvons identifier rapidement et efficacement la cause d'une contamination dans un système d'eau chaude, en utilisant notre savoir-faire d’UGent et notre **modèle de simulation prédictif de la Legionella pneumophila**. Ce modèle de simulation dynamique et auto-développé permet de calculer la concentration de légionnelles en tout point du système et pour chaque système étudié spécifique.
 
 
-      De plus, nous pouvons comparer les différentes solutions spécifiques à un seul cas afin de trouver **la meilleure solution en ce qui concerne durabilité, efficacité et rentabilité**, avant même de les mettre en pratique.
+      En plus de la détection des causes entrainant de hautes concentrations en légionnelles dans un système, nous pouvons comparer différentes solutions spécifiques afin de trouver ainsi **la meilleure solution en termes de durabilité, efficacité et rentabilité**, avant son implémentation sur le terrain.
     image: photo-by-john-schnobrich-on-unsplash_v2.jpg
     lang: fr
   - title: Wat maakt onze technologie uniek?
