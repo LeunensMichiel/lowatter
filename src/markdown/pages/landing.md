@@ -52,12 +52,13 @@ blobitems:
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: en
   - title: Que faisons-nous?
-    description: Récemment, nous sommes devenus actifs dans la pratique, apportant
-      nos connaissances au domaine professionnel. A base des connaissances bien
-      spécifiques nous conseillons cas par cas sur **la décontamination et les
-      économies d’énergie**, ainsi que sur la conception et la surveillance des
-      installations d’eau chaude. De plus, nous pouvons effectuer une R&D plus
-      spécifique avec notre configuration de test Legionella.
+    description: Depuis peu, nous sommes également actifs dans la pratique,
+      transposant ainsi nos connaissances sur le terrain. Tout d’abord, nous
+      désirons fournir des informations au cas par cas sur **la décontamination
+      et les économies d’énergie**. Nous apportons ensuite nos conseils pour le
+      développement et la surveillance des installations d’eau chaude. De plus,
+      nous pouvons effectuer des recherches plus spécifiques au moyen de notre
+      banc d’essai-légionnelles.
     image: photo-by-chandler-cruttenden-on-unsplash_v2.jpg
     lang: fr
   - title: Hoe doen we dit?
